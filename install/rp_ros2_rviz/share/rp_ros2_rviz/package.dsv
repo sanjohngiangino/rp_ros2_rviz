@@ -1,0 +1,8 @@
+source;share/rp_ros2_rviz/hook/cmake_prefix_path.ps1
+source;share/rp_ros2_rviz/hook/cmake_prefix_path.dsv
+source;share/rp_ros2_rviz/hook/cmake_prefix_path.sh
+source;share/rp_ros2_rviz/local_setup.bash
+source;share/rp_ros2_rviz/local_setup.dsv
+source;share/rp_ros2_rviz/local_setup.ps1
+source;share/rp_ros2_rviz/local_setup.sh
+source;share/rp_ros2_rviz/local_setup.zsh

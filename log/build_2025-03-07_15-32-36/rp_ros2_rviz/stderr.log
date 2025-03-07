@@ -1,0 +1,8 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/canvas.cpp:[m[K In constructor ‘[01m[KCanvas::[01;32m[KCanvas[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/canvas.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   10 |         [01;31m[KRCLPP_INFO[m[K(this->get_logger(),"Nodo di canva caricato")
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KRCLCPP_INFO[m[K
+gmake[2]: *** [CMakeFiles/canvas_node.dir/build.make:76: CMakeFiles/canvas_node.dir/src/canvas.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/canvas_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
