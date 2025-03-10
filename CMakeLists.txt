@@ -10,11 +10,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-
 find_package(OpenCV REQUIRED)
 
+add_executable(listener_node src/listener.cpp)
+ament_target_dependencies(listener_node rclcpp std_msgs)
+
 add_executable(canvas_node src/canvas.cpp)
-ament_target_dependencies(canvas_node rclcpp OpenCV)
+ament_target_dependencies(canvas_node rclcpp std_msgs OpenCV)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -28,7 +30,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS canvas_node
+install(TARGETS listener_node canvas_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

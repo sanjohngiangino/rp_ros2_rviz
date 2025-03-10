@@ -821,4 +821,10 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: \
  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

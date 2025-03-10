@@ -1,0 +1,41 @@
+[0.022s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.144s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.483s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.569s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.585s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.618s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.647s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.761s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.765s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.872s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.978s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.001s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.046s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.299s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.300s] -- Configured cppcheck include dirs: 
+[1.300s] -- Configured cppcheck exclude dirs and/or files: 
+[1.305s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.305s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.316s] -- Added test 'lint_cmake' to check CMake code style
+[1.322s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.353s] -- Added test 'uncrustify' to check C / C++ code style
+[1.353s] -- Configured uncrustify additional arguments: 
+[1.358s] -- Added test 'xmllint' to check XML markup files
+[1.363s] -- Configuring done (1.3s)
+[1.369s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[1.369s]   Cannot find source file:
+[1.369s] 
+[1.369s]     src/listener_node.cpp
+[1.369s] 
+[1.369s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+[1.369s]   .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+[1.369s]   .f95 .f03 .hip .ispc
+[1.370s] 
+[1.370s] [0m
+[1.376s] [31mCMake Error at CMakeLists.txt:15 (add_executable):
+[1.376s]   No SOURCES given to target: listener_node
+[1.377s] 
+[1.377s] [0m
+[1.377s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.382s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[1.386s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

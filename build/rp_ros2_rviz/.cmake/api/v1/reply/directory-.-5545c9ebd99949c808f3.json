@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 31,
+				"line" : 33,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 35,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
@@ -223,6 +223,29 @@
 	},
 	"installers" : 
 	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/rp_ros2_rviz",
+			"paths" : 
+			[
+				"listener_node"
+			],
+			"targetId" : "listener_node::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "listener_node::@6890427a1f51a3e7e1df",
+				"index" : 1
+			},
+			"destination" : "lib/rp_ros2_rviz",
+			"type" : "cxxModuleBmi"
+		},
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
