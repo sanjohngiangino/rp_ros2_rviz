@@ -40,4 +40,13 @@ struct Grid {
                   float angle,
                   const CellType& val_min,
                   const int max_range) const;
+
+  int getValue(int r, int c) const {
+    if (r >= 0 && r < rows && c >= 0 && c < cols) {
+      return values[r * cols + c];  // Usa l'operatore [] per l'accesso all'array
+      } else {
+        return -1;  // Gestisci i casi fuori dai limiti
+    }
+}
+
 };

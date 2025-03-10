@@ -4,11 +4,12 @@
 #include "world.h"
 #include "opencv2/opencv.hpp"
 #include "canvas.h"
+
 struct GridMap:
   public Grid,
 
   public WorldItem{
-    
+
   float resolution=1; // meters_per_pixel
   float inv_resolution=1; //pixel_per_meter;
   Vec2f grid_origin;
@@ -40,6 +41,10 @@ struct GridMap:
 
   void draw(Canvas& dest) const override;
   cv::Mat cv_image;
+
+  void printGridMap() const;  // Aggiungi la dichiarazione della funzione qui
+
+
 }
 
 ;

@@ -16,10 +16,7 @@ find_package(Eigen3 REQUIRED)
 add_executable(listener_node src/listener.cpp)
 ament_target_dependencies(listener_node rclcpp std_msgs)
 
-add_executable(canvas_node src/canvas.cpp)
-ament_target_dependencies(canvas_node rclcpp std_msgs OpenCV)
-
-add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp)
+add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp)
 ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
 
 if(BUILD_TESTING)
@@ -34,7 +31,7 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/include
 )
 
-install(TARGETS listener_node canvas_node world_node
+install(TARGETS listener_node world_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

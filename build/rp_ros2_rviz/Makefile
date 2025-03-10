@@ -211,19 +211,6 @@ listener_node/fast:
 .PHONY : listener_node/fast
 
 #=============================================================================
-# Target rules for targets named canvas_node
-
-# Build rule for target.
-canvas_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 canvas_node
-.PHONY : canvas_node
-
-# fast build rule for target.
-canvas_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/build
-.PHONY : canvas_node/fast
-
-#=============================================================================
 # Target rules for targets named world_node
 
 # Build rule for target.
@@ -241,7 +228,7 @@ src/canvas.o: src/canvas.cpp.o
 
 # target to build an object file
 src/canvas.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/src/canvas.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.o
 .PHONY : src/canvas.cpp.o
 
 src/canvas.i: src/canvas.cpp.i
@@ -249,7 +236,7 @@ src/canvas.i: src/canvas.cpp.i
 
 # target to preprocess a source file
 src/canvas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/src/canvas.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.i
 .PHONY : src/canvas.cpp.i
 
 src/canvas.s: src/canvas.cpp.s
@@ -257,7 +244,7 @@ src/canvas.s: src/canvas.cpp.s
 
 # target to generate assembly for a file
 src/canvas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/src/canvas.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.s
 .PHONY : src/canvas.cpp.s
 
 src/grid.o: src/grid.cpp.o
@@ -395,7 +382,6 @@ help:
 	@echo "... test"
 	@echo "... rp_ros2_rviz_uninstall"
 	@echo "... uninstall"
-	@echo "... canvas_node"
 	@echo "... listener_node"
 	@echo "... world_node"
 	@echo "... src/canvas.o"

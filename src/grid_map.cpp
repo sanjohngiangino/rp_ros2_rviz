@@ -89,3 +89,15 @@ void GridMap::draw(Canvas& dest) const {
     }
   WorldItem::draw(dest);
 }
+
+void GridMap::printGridMap() const {
+  for (int r = 0; r < rows; ++r) {
+      for (int c = 0; c < cols; ++c) {
+          int value = getValue(r, c);  // O usa cv_image per ottenere i valori
+          std::cout << value << " ";
+      }
+      std::cout << std::endl;
+  }
+}
+
+

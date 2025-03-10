@@ -1,46 +1,50 @@
-#include "rclcpp/rclcpp.hpp"
-#include <opencv2/opencv.hpp>
-#include "std_msgs/msg/string.hpp"
+#include "rp_ros2_rviz/canvas.h"
+#include <cstring>
 
-class Canvas : public rclcpp::Node {
-    public:
-    Canvas() : Node("canvas_node") {
-        subscription_ = this->create_subscription<std_msgs::msg::String>(
-            "map_path", 10, std::bind(&Canvas::map_path_callback, this, std::placeholders::_1)
-        );
+void Canvas::init(int r,
+          int c, 
+          float res) {
+  draw_image=cv::Mat(r, c, CV_8UC1);
+  clear();
+  canvas_origin=Vec2f(r/2, c/2);
+  resolution=res;
+  _c2w.t=-canvas_origin*resolution;
+  _c2w.R.setIdentity();
+  _c2w.R=_c2w.R.scale(resolution);
+  _w2c.R.setIdentity();
+  _w2c.R=_w2c.R.scale(1./resolution);
+  _w2c.t=canvas_origin;
+}
 
-        RCLCPP_INFO(this->get_logger(), "Waiting for map...");
-    }
+void Canvas::clear() {
+  memset(draw_image.data, 0, draw_image.rows*draw_image.cols*sizeof(uint8_t));
+}
 
-private:
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
-    cv::Mat canvas_;
+void Canvas::drawCircle(const Vec2f& center, const float radius, const uint8_t gray_value) {
+  Vec2f c_center=w2c(center);
+  float c_radius=radius/resolution;
+  cv::circle(draw_image, cv::Point(c_center.y(), c_center.x()), c_radius, cv::Scalar(gray_value));
+}
 
-    void map_path_callback(const std_msgs::msg::String::SharedPtr msg) {
-        std::string map_path = msg->data;
+void Canvas::drawPoint(const Vec2f& pos, const uint8_t gray_value) {
+  Vec2f c_pos=w2c(pos);
+  if (c_pos.x() <0
+      || c_pos.x()>=rows()
+      || c_pos.y()<0
+      || c_pos.y()>cols())
+    return;
+  draw_image.at<uint8_t>(c_pos.x(), c_pos.y())=gray_value;
+}
 
-        canvas_ = cv::imread(map_path, cv::IMREAD_COLOR);
-        if (canvas_.empty()) {
-            RCLCPP_ERROR(this->get_logger(), "Cannot Load map from that file: %s", map_path.c_str());
-            return;
-        }
+void Canvas::drawLine(const Vec2f& p_start, const Vec2f& p_end, const uint8_t gray_value) {
+  Vec2f c_start=w2c(p_start);
+  Vec2f c_end=w2c(p_end);
+  cv::line(draw_image,
+           cv::Point(c_start.y(), c_start.x()),
+           cv::Point(c_end.y(), c_end.x()),
+           cv::Scalar(gray_value), 1);
+}
 
-        int new_height = 500;
-        float aspect_ratio = static_cast<float>(canvas_.cols) / canvas_.rows;
-        int new_width = static_cast<int>(new_height * aspect_ratio);
-
-        cv::resize(canvas_, canvas_, cv::Size(new_width, new_height));
-        cv::imshow("Map Canvas", canvas_);
-        cv::waitKey(0);
-
-        RCLCPP_INFO(this->get_logger(), "Map loaded from: %s", map_path.c_str());
-    }
-};
-
-int main(int argc, char ** argv)
-{
-    rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Canvas>());
-    rclcpp::shutdown();
-    return 0;
+void Canvas::show(){
+  cv::imshow("canvas", draw_image);
 }

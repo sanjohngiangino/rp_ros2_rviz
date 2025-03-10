@@ -1,0 +1,30 @@
+[0.010s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.083s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.447s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.530s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.549s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.568s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.588s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.694s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.698s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.788s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.878s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.897s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.939s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.033s] [31mCMake Error at CMakeLists.txt:34 (install):
+[1.033s]   install TARGETS given target "canvas_node" which does not exist.
+[1.033s] 
+[1.033s] [0m
+[1.207s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.207s] -- Configured cppcheck include dirs: /home/john/Desktop/rp_ros2_rviz/include
+[1.207s] -- Configured cppcheck exclude dirs and/or files: 
+[1.214s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.214s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.226s] -- Added test 'lint_cmake' to check CMake code style
+[1.234s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.283s] -- Added test 'uncrustify' to check C / C++ code style
+[1.283s] -- Configured uncrustify additional arguments: 
+[1.289s] -- Added test 'xmllint' to check XML markup files
+[1.293s] -- Configuring incomplete, errors occurred!
+[1.299s] gmake: *** [Makefile:430: cmake_check_build_system] Error 1
+[1.303s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

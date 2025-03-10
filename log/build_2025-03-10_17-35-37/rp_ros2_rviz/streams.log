@@ -1,0 +1,18 @@
+[0.010s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.074s] [ 22%] Built target listener_node
+[0.082s] [ 44%] Built target canvas_node
+[0.087s] [ 55%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.089s] [ 66%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/grid_map.cpp.o[0m
+[1.355s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:[m[K In member function ‘[01m[Kvirtual void GridMap::[01;32m[Kdraw[m[K(Canvas&) const[m[K’:
+[1.355s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:80:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kt[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.355s]    80 |   Vec2f [01;35m[Kt[m[K=_piw.t*(1./dest.resolution);
+[1.355s]       |         [01;35m[K^[m[K
+[1.366s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:[m[K In member function ‘[01m[Kvoid GridMap::[01;32m[KprintGridMap[m[K() const[m[K’:
+[1.366s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:96:23:[m[K [01;31m[Kerror: [m[K‘[01m[KgetValue[m[K’ was not declared in this scope
+[1.366s]    96 |           int value = [01;31m[KgetValue[m[K(r, c);  // O usa cv_image per ottenere i valori
+[1.367s]       |                       [01;31m[K^~~~~~~~[m[K
+[1.632s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:104: CMakeFiles/world_node.dir/src/grid_map.cpp.o] Error 1
+[1.632s] gmake[2]: *** Waiting for unfinished jobs....
+[6.389s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[6.389s] gmake: *** [Makefile:146: all] Error 2
+[6.393s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

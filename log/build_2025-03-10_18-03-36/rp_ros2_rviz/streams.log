@@ -1,0 +1,21 @@
+[0.030s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.396s] [ 22%] Built target listener_node
+[0.397s] [ 33%] [32mBuilding CXX object CMakeFiles/canvas_node.dir/src/canvas.cpp.o[0m
+[0.408s] [ 44%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[2.262s] [ 55%] [32m[1mLinking CXX executable canvas_node[0m
+[3.675s] /usr/bin/ld: /usr/lib/gcc/aarch64-linux-gnu/13/../../../aarch64-linux-gnu/Scrt1.o: in function `_start':
+[3.676s] (.text+0x1c): undefined reference to `main'
+[3.676s] /usr/bin/ld: (.text+0x20): undefined reference to `main'
+[3.730s] collect2: error: ld returned 1 exit status
+[3.735s] gmake[2]: *** [CMakeFiles/canvas_node.dir/build.make:226: canvas_node] Error 1
+[3.736s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/canvas_node.dir/all] Error 2
+[3.736s] gmake[1]: *** Waiting for unfinished jobs....
+[8.086s] [ 66%] [32m[1mLinking CXX executable world_node[0m
+[8.883s] /usr/bin/ld: CMakeFiles/world_node.dir/src/world_node.cpp.o: in function `WorldNode::loadGridMapCallback(std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >)':
+[8.883s] world_node.cpp:(.text._ZN9WorldNode19loadGridMapCallbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN9WorldNode19loadGridMapCallbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x3d8): undefined reference to `Canvas::init(int, int, float)'
+[8.883s] /usr/bin/ld: world_node.cpp:(.text._ZN9WorldNode19loadGridMapCallbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE[_ZN9WorldNode19loadGridMapCallbackESt10shared_ptrIN8std_msgs3msg7String_ISaIvEEEE]+0x56c): undefined reference to `Canvas::show()'
+[8.990s] collect2: error: ld returned 1 exit status
+[8.990s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:282: world_node] Error 1
+[8.990s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[8.992s] gmake: *** [Makefile:146: all] Error 2
+[8.995s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
