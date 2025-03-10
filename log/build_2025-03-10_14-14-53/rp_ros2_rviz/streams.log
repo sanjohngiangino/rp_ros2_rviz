@@ -1,0 +1,44 @@
+[0.031s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.108s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.518s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.621s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.648s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.686s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.726s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.882s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.887s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.019s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.169s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.205s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.296s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.492s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.493s] -- Configured cppcheck include dirs: /home/john/Desktop/rp_ros2_rviz/include
+[1.493s] -- Configured cppcheck exclude dirs and/or files: 
+[1.501s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.501s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.510s] -- Added test 'lint_cmake' to check CMake code style
+[1.521s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.576s] -- Added test 'uncrustify' to check C / C++ code style
+[1.576s] -- Configured uncrustify additional arguments: 
+[1.588s] -- Added test 'xmllint' to check XML markup files
+[1.590s] -- Configuring done (1.5s)
+[1.648s] -- Generating done (0.0s)
+[1.658s] -- Build files have been written to: /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[1.724s] [ 28%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world.cpp.o[0m
+[1.724s] [ 28%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[1.756s] [ 57%] Built target listener_node
+[1.798s] [ 85%] Built target canvas_node
+[1.872s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kworld.h: No such file or directory
+[1.872s]     1 | #include [01;31m[K"world.h"[m[K
+[1.872s]       |          [01;31m[K^~~~~~~~~[m[K
+[1.872s] compilation terminated.
+[1.878s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:90: CMakeFiles/world_node.dir/src/world.cpp.o] Error 1
+[1.878s] gmake[2]: *** Waiting for unfinished jobs....
+[2.730s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kworld.h: No such file or directory
+[2.730s]     3 | #include [01;31m[K"world.h"[m[K
+[2.734s]       |          [01;31m[K^~~~~~~~~[m[K
+[2.734s] compilation terminated.
+[2.734s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[2.735s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[2.735s] gmake: *** [Makefile:146: all] Error 2
+[2.745s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

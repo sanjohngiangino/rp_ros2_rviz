@@ -4,8 +4,8 @@
 class ListenerNode : public rclcpp::Node {
 public:
     ListenerNode() : Node("listener_node") {
-        publisher_ = this->create_publisher<std_msgs::msg::String>("map_path", 10)
-        
+        publisher_ = this->create_publisher<std_msgs::msg::String>("map_path", 10);
+
         RCLCPP_INFO(this->get_logger(), "Node Loaded. Please insert path of the map:");
         std::string map_path;
         std::getline(std::cin, map_path);

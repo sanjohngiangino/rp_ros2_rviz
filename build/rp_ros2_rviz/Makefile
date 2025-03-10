@@ -223,6 +223,19 @@ canvas_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/build
 .PHONY : canvas_node/fast
 
+#=============================================================================
+# Target rules for targets named world_node
+
+# Build rule for target.
+world_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 world_node
+.PHONY : world_node
+
+# fast build rule for target.
+world_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/build
+.PHONY : world_node/fast
+
 src/canvas.o: src/canvas.cpp.o
 .PHONY : src/canvas.o
 
@@ -246,6 +259,54 @@ src/canvas.s: src/canvas.cpp.s
 src/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/canvas_node.dir/build.make CMakeFiles/canvas_node.dir/src/canvas.cpp.s
 .PHONY : src/canvas.cpp.s
+
+src/grid.o: src/grid.cpp.o
+.PHONY : src/grid.o
+
+# target to build an object file
+src/grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.o
+.PHONY : src/grid.cpp.o
+
+src/grid.i: src/grid.cpp.i
+.PHONY : src/grid.i
+
+# target to preprocess a source file
+src/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.i
+.PHONY : src/grid.cpp.i
+
+src/grid.s: src/grid.cpp.s
+.PHONY : src/grid.s
+
+# target to generate assembly for a file
+src/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.s
+.PHONY : src/grid.cpp.s
+
+src/grid_map.o: src/grid_map.cpp.o
+.PHONY : src/grid_map.o
+
+# target to build an object file
+src/grid_map.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.o
+.PHONY : src/grid_map.cpp.o
+
+src/grid_map.i: src/grid_map.cpp.i
+.PHONY : src/grid_map.i
+
+# target to preprocess a source file
+src/grid_map.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.i
+.PHONY : src/grid_map.cpp.i
+
+src/grid_map.s: src/grid_map.cpp.s
+.PHONY : src/grid_map.s
+
+# target to generate assembly for a file
+src/grid_map.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.s
+.PHONY : src/grid_map.cpp.s
 
 src/listener.o: src/listener.cpp.o
 .PHONY : src/listener.o
@@ -271,6 +332,54 @@ src/listener.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_node.dir/build.make CMakeFiles/listener_node.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
 
+src/world.o: src/world.cpp.o
+.PHONY : src/world.o
+
+# target to build an object file
+src/world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.o
+.PHONY : src/world.cpp.o
+
+src/world.i: src/world.cpp.i
+.PHONY : src/world.i
+
+# target to preprocess a source file
+src/world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.i
+.PHONY : src/world.cpp.i
+
+src/world.s: src/world.cpp.s
+.PHONY : src/world.s
+
+# target to generate assembly for a file
+src/world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.s
+.PHONY : src/world.cpp.s
+
+src/world_node.o: src/world_node.cpp.o
+.PHONY : src/world_node.o
+
+# target to build an object file
+src/world_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world_node.cpp.o
+.PHONY : src/world_node.cpp.o
+
+src/world_node.i: src/world_node.cpp.i
+.PHONY : src/world_node.i
+
+# target to preprocess a source file
+src/world_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world_node.cpp.i
+.PHONY : src/world_node.cpp.i
+
+src/world_node.s: src/world_node.cpp.s
+.PHONY : src/world_node.s
+
+# target to generate assembly for a file
+src/world_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world_node.cpp.s
+.PHONY : src/world_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +397,25 @@ help:
 	@echo "... uninstall"
 	@echo "... canvas_node"
 	@echo "... listener_node"
+	@echo "... world_node"
 	@echo "... src/canvas.o"
 	@echo "... src/canvas.i"
 	@echo "... src/canvas.s"
+	@echo "... src/grid.o"
+	@echo "... src/grid.i"
+	@echo "... src/grid.s"
+	@echo "... src/grid_map.o"
+	@echo "... src/grid_map.i"
+	@echo "... src/grid_map.s"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/world.o"
+	@echo "... src/world.i"
+	@echo "... src/world.s"
+	@echo "... src/world_node.o"
+	@echo "... src/world_node.i"
+	@echo "... src/world_node.s"
 .PHONY : help
 
 

@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(Eigen3 REQUIRED)
 
 add_executable(listener_node src/listener.cpp)
 ament_target_dependencies(listener_node rclcpp std_msgs)
@@ -18,19 +19,22 @@ ament_target_dependencies(listener_node rclcpp std_msgs)
 add_executable(canvas_node src/canvas.cpp)
 ament_target_dependencies(canvas_node rclcpp std_msgs OpenCV)
 
+add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp)
+ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS listener_node canvas_node
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+  ${PROJECT_SOURCE_DIR}/include
+)
+
+install(TARGETS listener_node canvas_node world_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

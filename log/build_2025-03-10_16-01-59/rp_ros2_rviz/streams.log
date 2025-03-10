@@ -1,0 +1,12 @@
+[0.029s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.208s] [ 28%] Built target canvas_node
+[0.218s] [ 42%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.218s] [ 71%] Built target listener_node
+[0.979s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kgrid_map.h: No such file or directory
+[0.979s]     5 | #include [01;31m[K"grid_map.h"[m[K
+[0.980s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.980s] compilation terminated.
+[0.989s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[0.990s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[0.991s] gmake: *** [Makefile:146: all] Error 2
+[1.018s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

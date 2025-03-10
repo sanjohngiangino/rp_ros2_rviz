@@ -390,6 +390,12 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp \
   /opt/ros/jazzy/include/tracetools/tracetools/config.h \
   /opt/ros/jazzy/include/tracetools/tracetools/tracetools.h \
   /opt/ros/jazzy/include/tracetools/tracetools/utils.hpp \
@@ -1304,6 +1310,22 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/alloca.h:
+
+/usr/include/aarch64-linux-gnu/sys/user.h:
+
+/usr/include/aarch64-linux-gnu/sys/ucontext.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/aarch64-linux-gnu/sys/types.h:
+
+/usr/include/c++/13/pstl/glue_numeric_defs.h:
+
+/usr/include/aarch64-linux-gnu/sys/time.h:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
@@ -1812,6 +1834,8 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 
 /opt/ros/jazzy/include/rmw/rmw/impl/config.h:
 
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
+
 /opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
@@ -1829,10 +1853,6 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /usr/include/aarch64-linux-gnu/asm/bitsperlong.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
-
-/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
@@ -1971,8 +1991,6 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 /usr/include/aarch64-linux-gnu/bits/locale.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
-
-/usr/include/aarch64-linux-gnu/sys/user.h:
 
 /usr/include/aarch64-linux-gnu/bits/timesize.h:
 
@@ -2186,11 +2204,15 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 
 /opt/ros/jazzy/include/rmw/rmw/event_callback_type.h:
 
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
+
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /usr/include/asm-generic/posix_types.h:
 
 /opt/ros/jazzy/include/rmw/rmw/events_statuses/incompatible_type.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/string.hpp:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
@@ -2275,6 +2297,12 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 /usr/include/c++/13/cstdio:
 
 /opt/ros/jazzy/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
+
+/opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp:
 
@@ -2374,7 +2402,7 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 
 /opt/ros/jazzy/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/usr/include/alloca.h:
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
 
 /opt/ros/jazzy/include/tracetools/tracetools/config.h:
 
@@ -2443,6 +2471,8 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 /usr/include/aarch64-linux-gnu/bits/confname.h:
 
 /usr/include/aarch64-linux-gnu/bits/cpu-set.h:
+
+/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/endian.h:
 
@@ -2657,15 +2687,3 @@ CMakeFiles/canvas_node.dir/src/canvas.cpp.o: /home/john/Desktop/rp_ros2_rviz/src
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/messages_members.h:
-
-/usr/include/c++/13/pstl/glue_numeric_defs.h:
-
-/usr/include/aarch64-linux-gnu/sys/time.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/aarch64-linux-gnu/sys/types.h:
-
-/usr/include/aarch64-linux-gnu/sys/ucontext.h:
-
-/usr/include/asm-generic/bitsperlong.h:

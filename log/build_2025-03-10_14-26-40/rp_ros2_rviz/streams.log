@@ -1,0 +1,28 @@
+[0.011s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.099s] [ 28%] Built target canvas_node
+[0.101s] [ 57%] Built target listener_node
+[0.104s] [ 71%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[3.304s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[3.304s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:13:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<World, __gnu_cxx::_S_atomic, false, false>::element_type = struct World[m[K’ {aka ‘[01m[Kstruct World[m[K’} has no member named ‘[01m[KaddItem[m[K’
+[3.304s]    13 |         world_->[01;31m[KaddItem[m[K(std::shared_ptr<WorldItem>(robot_item));
+[3.304s]       |                 [01;31m[K^~~~~~~[m[K
+[3.314s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KposeCallback[m[K(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.314s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:25:22:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+[3.314s]    25 |         new_pose.t = [01;31m[KEigen[m[K::Vector2f(msg->position.x, msg->position.y);
+[3.314s]       |                      [01;31m[K^~~~~[m[K
+[3.315s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:26:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct Isometry2f[m[K’ has no member named ‘[01m[Krotation[m[K’
+[3.315s]    26 |         new_pose.[01;31m[Krotation[m[K() = Eigen::Rotation2Df(msg->orientation.w);  // Questo è solo un esempio
+[3.315s]       |                  [01;31m[K^~~~~~~~[m[K
+[3.315s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:26:31:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+[3.315s]    26 |         new_pose.rotation() = [01;31m[KEigen[m[K::Rotation2Df(msg->orientation.w);  // Questo è solo un esempio
+[3.315s]       |                               [01;31m[K^~~~~[m[K
+[3.315s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:29:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<World, __gnu_cxx::_S_atomic, false, false>::element_type = struct World[m[K’ {aka ‘[01m[Kstruct World[m[K’} has no member named ‘[01m[KupdateItemPose[m[K’
+[3.315s]    29 |         world_->[01;31m[KupdateItemPose[m[K(robot_item, new_pose);  // Aggiornamento della posizione nel mondo
+[3.315s]       |                 [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.333s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:29:32:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_item[m[K’ was not declared in this scope
+[3.333s]    29 |         world_->updateItemPose([01;31m[Krobot_item[m[K, new_pose);  // Aggiornamento della posizione nel mondo
+[3.333s]       |                                [01;31m[K^~~~~~~~~~[m[K
+[5.661s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[5.661s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[5.661s] gmake: *** [Makefile:146: all] Error 2
+[5.666s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

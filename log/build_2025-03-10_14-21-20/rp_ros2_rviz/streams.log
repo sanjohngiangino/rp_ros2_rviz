@@ -1,0 +1,24 @@
+[0.015s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.085s] [ 28%] Built target listener_node
+[0.085s] [ 57%] Built target canvas_node
+[0.096s] [ 71%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[3.248s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KposeCallback[m[K(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.248s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+[3.248s]    28 |         [01;31m[KEigen[m[K::Isometry2f new_pose;
+[3.248s]       |         [01;31m[K^~~~~[m[K
+[3.248s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Knew_pose[m[K’ was not declared in this scope
+[3.248s]    29 |         [01;31m[Knew_pose[m[K.translation() = Eigen::Vector2f(msg->position.x, msg->position.y);
+[3.249s]       |         [01;31m[K^~~~~~~~[m[K
+[3.249s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:29:34:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+[3.249s]    29 |         new_pose.translation() = [01;31m[KEigen[m[K::Vector2f(msg->position.x, msg->position.y);
+[3.249s]       |                                  [01;31m[K^~~~~[m[K
+[3.249s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:30:25:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+[3.249s]    30 |         new_pose.rotate([01;31m[KEigen[m[K::Rotation2Df(msg->orientation.w));  // Ruotiamo in base all'orientamento (solo Z)
+[3.249s]       |                         [01;31m[K^~~~~[m[K
+[3.249s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct WorldItem[m[K’ has no member named ‘[01m[KupdatePose[m[K’
+[3.249s]    33 |         item1_->[01;31m[KupdatePose[m[K(new_pose);
+[3.249s]       |                 [01;31m[K^~~~~~~~~~[m[K
+[5.580s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[5.581s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
+[5.581s] gmake: *** [Makefile:146: all] Error 2
+[5.585s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

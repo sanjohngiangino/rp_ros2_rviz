@@ -1,0 +1,3 @@
+[ 33%] Built target listener_node
+[ 50%] [32mBuilding CXX object CMakeFiles/grid_map_node.dir/src/grid_map.cpp.o[0m
+[ 83%] Built target canvas_node
