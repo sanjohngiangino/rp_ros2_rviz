@@ -13,9 +13,6 @@ find_package(geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 
-add_executable(listener_node src/listener.cpp)
-ament_target_dependencies(listener_node rclcpp std_msgs)
-
 add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp src/differential_drive_robot.cpp)
 ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
 
