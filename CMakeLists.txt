@@ -29,7 +29,7 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/msg
 )
 
-install(TARGETS listener_node world_node
+install(TARGETS world_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -36,13 +36,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 35,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 39,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -229,33 +229,10 @@
 			"destination" : "lib/rp_ros2_rviz",
 			"paths" : 
 			[
-				"listener_node"
-			],
-			"targetId" : "listener_node::@6890427a1f51a3e7e1df",
-			"targetIndex" : 0,
-			"type" : "target"
-		},
-		{
-			"backtrace" : 1,
-			"component" : "Unspecified",
-			"cxxModuleBmiTarget" : 
-			{
-				"id" : "listener_node::@6890427a1f51a3e7e1df",
-				"index" : 0
-			},
-			"destination" : "lib/rp_ros2_rviz",
-			"type" : "cxxModuleBmi"
-		},
-		{
-			"backtrace" : 1,
-			"component" : "Unspecified",
-			"destination" : "lib/rp_ros2_rviz",
-			"paths" : 
-			[
 				"world_node"
 			],
 			"targetId" : "world_node::@6890427a1f51a3e7e1df",
-			"targetIndex" : 3,
+			"targetIndex" : 2,
 			"type" : "target"
 		},
 		{
@@ -264,7 +241,7 @@
 			"cxxModuleBmiTarget" : 
 			{
 				"id" : "world_node::@6890427a1f51a3e7e1df",
-				"index" : 3
+				"index" : 2
 			},
 			"destination" : "lib/rp_ros2_rviz",
 			"type" : "cxxModuleBmi"

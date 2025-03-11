@@ -198,19 +198,6 @@ rp_ros2_rviz_uninstall/fast:
 .PHONY : rp_ros2_rviz_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named listener_node
-
-# Build rule for target.
-listener_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener_node
-.PHONY : listener_node
-
-# fast build rule for target.
-listener_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_node.dir/build.make CMakeFiles/listener_node.dir/build
-.PHONY : listener_node/fast
-
-#=============================================================================
 # Target rules for targets named world_node
 
 # Build rule for target.
@@ -319,30 +306,6 @@ src/grid_map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.s
 .PHONY : src/grid_map.cpp.s
 
-src/listener.o: src/listener.cpp.o
-.PHONY : src/listener.o
-
-# target to build an object file
-src/listener.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_node.dir/build.make CMakeFiles/listener_node.dir/src/listener.cpp.o
-.PHONY : src/listener.cpp.o
-
-src/listener.i: src/listener.cpp.i
-.PHONY : src/listener.i
-
-# target to preprocess a source file
-src/listener.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_node.dir/build.make CMakeFiles/listener_node.dir/src/listener.cpp.i
-.PHONY : src/listener.cpp.i
-
-src/listener.s: src/listener.cpp.s
-.PHONY : src/listener.s
-
-# target to generate assembly for a file
-src/listener.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_node.dir/build.make CMakeFiles/listener_node.dir/src/listener.cpp.s
-.PHONY : src/listener.cpp.s
-
 src/world.o: src/world.cpp.o
 .PHONY : src/world.o
 
@@ -406,7 +369,6 @@ help:
 	@echo "... test"
 	@echo "... rp_ros2_rviz_uninstall"
 	@echo "... uninstall"
-	@echo "... listener_node"
 	@echo "... world_node"
 	@echo "... src/canvas.o"
 	@echo "... src/canvas.i"
@@ -420,9 +382,6 @@ help:
 	@echo "... src/grid_map.o"
 	@echo "... src/grid_map.i"
 	@echo "... src/grid_map.s"
-	@echo "... src/listener.o"
-	@echo "... src/listener.i"
-	@echo "... src/listener.s"
 	@echo "... src/world.o"
 	@echo "... src/world.i"
 	@echo "... src/world.s"
