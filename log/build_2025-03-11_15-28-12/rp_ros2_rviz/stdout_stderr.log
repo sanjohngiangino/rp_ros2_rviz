@@ -1,0 +1,48 @@
+[ 22%] Built target listener_node
+[ 33%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:22:38:[m[K [01;31m[Kerror: [m[K‘[01m[KWorld[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[KWorld[m[K’?
+   22 |     rclcpp::Publisher<std_msgs::msg::[01;31m[KWorld[m[K>::SharedPtr world_publisher_;
+      |                                      [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:3[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:64:8:[m[K [01;36m[Knote: [m[K‘[01m[KWorld[m[K’ declared here
+   64 | struct [01;36m[KWorld[m[K: public WorldItem{
+      |        [01;36m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:22:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   22 |     rclcpp::Publisher<std_msgs::msg::World[01;31m[K>[m[K::SharedPtr world_publisher_;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:22:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   22 |     rclcpp::Publisher<std_msgs::msg::World>::[01;31m[KSharedPtr[m[K world_publisher_;
+      |                                              [01;31m[K^~~~~~~~~[m[K
+      |                                                       [32m[K;[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:22:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kworld_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   22 |     rclcpp::Publisher<std_msgs::msg::World>::SharedPtr [01;31m[Kworld_publisher_[m[K;
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                        [32m[Krmw_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworld_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_publishers[m[K’?
+   18 |         [01;31m[Kworld_publisher_[m[K = this->create_publisher<rp_ros2_rviz::msg::World>("World", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kcount_publishers[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:51:[m[K [01;31m[Kerror: [m[K‘[01m[Krp_ros2_rviz[m[K’ was not declared in this scope
+   18 |         world_publisher_ = this->create_publisher<[01;31m[Krp_ros2_rviz[m[K::msg::World>("World", 10);
+      |                                                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   18 |         world_publisher_ = this->[01;31m[Kcreate_publisher<rp_ros2_rviz::msg::World>[m[K("World", 10);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWorldNode::create_publisher<<expression error> >(const char [6], int)[m[K’
+   18 |         world_publisher_ = [01;31m[Kthis->create_publisher<rp_ros2_rviz::msg::World>("World", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  197 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   18 |         world_publisher_ = [01;31m[Kthis->create_publisher<rp_ros2_rviz::msg::World>("World", 10)[m[K;
+      |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

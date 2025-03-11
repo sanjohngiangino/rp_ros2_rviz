@@ -16,7 +16,7 @@ find_package(Eigen3 REQUIRED)
 add_executable(listener_node src/listener.cpp)
 ament_target_dependencies(listener_node rclcpp std_msgs)
 
-add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp)
+add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp src/differential_drive_robot.cpp)
 ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
 
 if(BUILD_TESTING)
@@ -29,6 +29,7 @@ endif()
 include_directories(
   ${catkin_INCLUDE_DIRS}
   ${PROJECT_SOURCE_DIR}/include
+  ${PROJECT_SOURCE_DIR}/msg
 )
 
 install(TARGETS listener_node world_node

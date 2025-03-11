@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/world_node.dir/src/canvas.cpp.o"
   "CMakeFiles/world_node.dir/src/canvas.cpp.o.d"
+  "CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o"
+  "CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o.d"
   "CMakeFiles/world_node.dir/src/grid.cpp.o"
   "CMakeFiles/world_node.dir/src/grid.cpp.o.d"
   "CMakeFiles/world_node.dir/src/grid_map.cpp.o"

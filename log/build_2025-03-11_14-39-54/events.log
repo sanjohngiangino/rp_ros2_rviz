@@ -1,0 +1,106 @@
+[0.000000] (-) TimerEvent: {}
+[0.002301] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.002340] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.046847] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.046941] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.048095] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'john', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/john', 'OLDPWD': '/home/john/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2193', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'john', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'john', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/john/.pixi/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/john:@/tmp/.ICE-unix/2153,unix/john:/tmp/.ICE-unix/2153', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1fec9c29_f31f_453d_a823_7159257511af', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9PN322', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.110', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100657] (-) TimerEvent: {}
+[0.201950] (-) TimerEvent: {}
+[0.303590] (-) TimerEvent: {}
+[0.334223] (rp_ros2_rviz) StdoutLine: {'line': b'[ 22%] Built target listener_node\n'}
+[0.409178] (-) TimerEvent: {}
+[0.416559] (rp_ros2_rviz) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o\x1b[0m\n'}
+[0.417948] (rp_ros2_rviz) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.509750] (-) TimerEvent: {}
+[0.610624] (-) TimerEvent: {}
+[0.712308] (-) TimerEvent: {}
+[0.816883] (-) TimerEvent: {}
+[0.917809] (-) TimerEvent: {}
+[1.020087] (-) TimerEvent: {}
+[1.124001] (-) TimerEvent: {}
+[1.224709] (-) TimerEvent: {}
+[1.326163] (-) TimerEvent: {}
+[1.426996] (-) TimerEvent: {}
+[1.530762] (-) TimerEvent: {}
+[1.631332] (-) TimerEvent: {}
+[1.735180] (-) TimerEvent: {}
+[1.836820] (-) TimerEvent: {}
+[1.938912] (-) TimerEvent: {}
+[2.047091] (-) TimerEvent: {}
+[2.149941] (-) TimerEvent: {}
+[2.250877] (-) TimerEvent: {}
+[2.351242] (-) TimerEvent: {}
+[2.452374] (-) TimerEvent: {}
+[2.553068] (-) TimerEvent: {}
+[2.658930] (-) TimerEvent: {}
+[2.760020] (-) TimerEvent: {}
+[2.860599] (-) TimerEvent: {}
+[2.965853] (-) TimerEvent: {}
+[3.066282] (-) TimerEvent: {}
+[3.166771] (-) TimerEvent: {}
+[3.267086] (-) TimerEvent: {}
+[3.368082] (-) TimerEvent: {}
+[3.468755] (-) TimerEvent: {}
+[3.571650] (-) TimerEvent: {}
+[3.671962] (-) TimerEvent: {}
+[3.772286] (-) TimerEvent: {}
+[3.872901] (-) TimerEvent: {}
+[3.973748] (-) TimerEvent: {}
+[4.075745] (-) TimerEvent: {}
+[4.176628] (-) TimerEvent: {}
+[4.277249] (-) TimerEvent: {}
+[4.378626] (-) TimerEvent: {}
+[4.479873] (-) TimerEvent: {}
+[4.580778] (-) TimerEvent: {}
+[4.681528] (-) TimerEvent: {}
+[4.782758] (-) TimerEvent: {}
+[4.883346] (-) TimerEvent: {}
+[4.938988] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::\x1b[01;32m\x1b[KloadGridMapCallback\x1b[m\x1b[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.939358] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:31:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveRobot::DifferentialDriveRobot(GridMap**)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.939635] (rp_ros2_rviz) StderrLine: {'line': b'   31 |             DifferentialDriveRobot ddr(&grid_map\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.939713] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.939815] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:6\x1b[m\x1b[K:\n'}
+[4.939886] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:7:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveRobot::\x1b[01;32m\x1b[KDifferentialDriveRobot\x1b[m\x1b[K(WorldItem*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.939973] (rp_ros2_rviz) StderrLine: {'line': b'    7 |   \x1b[01;36m\x1b[KDifferentialDriveRobot\x1b[m\x1b[K(WorldItem* p=0): WorldItem(p) {}\n'}
+[4.940025] (rp_ros2_rviz) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.940104] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:7:37:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KGridMap**\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KWorldItem*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.940156] (rp_ros2_rviz) StderrLine: {'line': b'    7 |   DifferentialDriveRobot(\x1b[01;36m\x1b[KWorldItem* p=0\x1b[m\x1b[K): WorldItem(p) {}\n'}
+[4.940194] (rp_ros2_rviz) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.940231] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr DifferentialDriveRobot::\x1b[01;32m\x1b[KDifferentialDriveRobot\x1b[m\x1b[K(const DifferentialDriveRobot&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.940347] (rp_ros2_rviz) StderrLine: {'line': b'    4 | struct \x1b[01;36m\x1b[KDifferentialDriveRobot\x1b[m\x1b[K: public WorldItem {\n'}
+[4.964848] (rp_ros2_rviz) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.965650] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KGridMap**\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst DifferentialDriveRobot&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.965707] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr DifferentialDriveRobot::\x1b[01;32m\x1b[KDifferentialDriveRobot\x1b[m\x1b[K(DifferentialDriveRobot&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.965750] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h:4:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KGridMap**\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KDifferentialDriveRobot&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.967123] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:43:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ko\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.967262] (rp_ros2_rviz) StderrLine: {'line': b'   43 |                 int key = cv::waitKey(10);  \x1b[01;31m\x1b[Ko\x1b[m\x1b[K\n'}
+[4.967690] (rp_ros2_rviz) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.967744] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:43:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kkey\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.967790] (rp_ros2_rviz) StderrLine: {'line': b'   43 |                 int \x1b[01;35m\x1b[Kkey\x1b[m\x1b[K = cv::waitKey(10);  o\n'}
+[4.967831] (rp_ros2_rviz) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.983727] (-) TimerEvent: {}
+[5.084626] (-) TimerEvent: {}
+[5.185909] (-) TimerEvent: {}
+[5.295124] (-) TimerEvent: {}
+[5.397681] (-) TimerEvent: {}
+[5.498162] (-) TimerEvent: {}
+[5.598920] (-) TimerEvent: {}
+[5.699964] (-) TimerEvent: {}
+[5.800616] (-) TimerEvent: {}
+[5.901146] (-) TimerEvent: {}
+[6.001874] (-) TimerEvent: {}
+[6.102748] (-) TimerEvent: {}
+[6.204184] (-) TimerEvent: {}
+[6.305750] (-) TimerEvent: {}
+[6.406738] (-) TimerEvent: {}
+[6.507631] (-) TimerEvent: {}
+[6.608154] (-) TimerEvent: {}
+[6.708934] (-) TimerEvent: {}
+[6.810010] (-) TimerEvent: {}
+[6.910530] (-) TimerEvent: {}
+[6.911604] (rp_ros2_rviz) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1\n'}
+[6.912063] (rp_ros2_rviz) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2\n'}
+[6.913241] (rp_ros2_rviz) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.928046] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[6.971707] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[6.983982] (-) EventReactorShutdown: {}

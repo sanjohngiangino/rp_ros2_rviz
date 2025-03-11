@@ -247,6 +247,30 @@ src/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.s
 .PHONY : src/canvas.cpp.s
 
+src/differential_drive_robot.o: src/differential_drive_robot.cpp.o
+.PHONY : src/differential_drive_robot.o
+
+# target to build an object file
+src/differential_drive_robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o
+.PHONY : src/differential_drive_robot.cpp.o
+
+src/differential_drive_robot.i: src/differential_drive_robot.cpp.i
+.PHONY : src/differential_drive_robot.i
+
+# target to preprocess a source file
+src/differential_drive_robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.i
+.PHONY : src/differential_drive_robot.cpp.i
+
+src/differential_drive_robot.s: src/differential_drive_robot.cpp.s
+.PHONY : src/differential_drive_robot.s
+
+# target to generate assembly for a file
+src/differential_drive_robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.s
+.PHONY : src/differential_drive_robot.cpp.s
+
 src/grid.o: src/grid.cpp.o
 .PHONY : src/grid.o
 
@@ -387,6 +411,9 @@ help:
 	@echo "... src/canvas.o"
 	@echo "... src/canvas.i"
 	@echo "... src/canvas.s"
+	@echo "... src/differential_drive_robot.o"
+	@echo "... src/differential_drive_robot.i"
+	@echo "... src/differential_drive_robot.s"
 	@echo "... src/grid.o"
 	@echo "... src/grid.i"
 	@echo "... src/grid.s"
