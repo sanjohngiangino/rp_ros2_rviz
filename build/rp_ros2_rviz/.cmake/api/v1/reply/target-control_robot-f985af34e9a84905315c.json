@@ -634,6 +634,11 @@
 					"path" : "/opt/ros/jazzy/include/std_msgs"
 				},
 				{
+					"backtrace" : 97,
+					"isSystem" : true,
+					"path" : "/opt/ros/jazzy/include/geometry_msgs"
+				},
+				{
 					"backtrace" : 98,
 					"isSystem" : true,
 					"path" : "/usr/include/opencv4"
@@ -805,32 +810,32 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so",
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_py.so",
 				"role" : "libraries"
 			},
 			{
@@ -1260,7 +1265,47 @@
 			},
 			{
 				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_py.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
 				"fragment" : "/opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so",
 				"role" : "libraries"
 			},
 			{

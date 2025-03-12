@@ -17,7 +17,7 @@ public:
         std::getline(std::cin, map_path);
         try {
 
-            GridMap* grid_map = new GridMap(map_path.c_str(), 0.1, world_.get(), Isometry2f(0, 10, 0.3));
+            GridMap* grid_map = new GridMap(map_path.c_str(), 0.1, world_.get(), Isometry2f(0, 0, 0));
             RCLCPP_INFO(this->get_logger(), "GridMap successful created");
             /*
             DifferentialDriveRobot* ddr = new DifferentialDriveRobot(grid_map);
@@ -31,23 +31,32 @@ public:
             LaserScan scan(90);
             //Lidar* lid = new Lidar(scan, ddr);
             
+
             Canvas canvas;
             canvas.init(grid_map->rows / 2, grid_map->cols / 2, 0.2);
 
+            //position_pub_ = this->create_publisher<geometry_msgs::msg::Pose>("robot_pose", 10);
+            goal_pub_ = this->create_publisher<geometry_msgs::msg::Pose>("goal_pose", 10);
+            
             control_sub_ = this->create_subscription<std_msgs::msg::String>(
                 "robot_control", 10, std::bind(&WorldNode::controlCallback, this, std::placeholders::_1));
             
-            
+
             int key=0;
+            //cv::namedWindow("World");
+            //cv::setMouseCallback("World", onMouse, this);
 
             while (rclcpp::ok()) {
                 world_->draw(canvas);  
-                canvas.show();         
-                key=cv::waitKey(1);
- 
+                canvas.show();
+
+                cv::setMouseCallback("canvas", onMouse, this);
+
                 rclcpp::spin_some(this->get_node_base_interface());  
                 world_->timerTick(0.1); 
+                cv::waitKey(1);
             }
+            
                 /*
             int key=0;
             float rv, tv;
@@ -78,9 +87,6 @@ public:
     }
 
 private:
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr control_sub_;  // Subscription for control messages
-    std::shared_ptr<World> world_;
-    std::shared_ptr<DifferentialDriveRobot> ddr_;
 
     void controlCallback(const std_msgs::msg::String::SharedPtr msg) {
         std::string command = msg->data;
@@ -111,7 +117,41 @@ private:
 
         RCLCPP_INFO(this->get_logger(), "Robot control updated: tv=%f, rv=%f", tv, rv);
     }
-   
+    /*
+    void publishRobotPose() {
+        geometry_msgs::msg::Pose pose_msg;
+        pose_msg.position.x = ddr_->pose_in_parent.x();
+        pose_msg.position.y = ddr_->pose_in_parent.y();
+        pose_msg.orientation.z = sin(ddr_->pose_in_parent.theta() / 2.0);
+        pose_msg.orientation.w = cos(ddr_->pose_in_parent.theta() / 2.0);
+
+        position_pub_->publish(pose_msg);
+    }
+    */
+   static void onMouse(int event, int x, int y, int flags, void* userdata) {
+    if (event == cv::EVENT_LBUTTONDOWN && userdata) {
+        auto* self = reinterpret_cast<WorldNode*>(userdata);
+
+        if (!self) {
+            std::cerr << "Errore: userdata non valido in onMouse" << std::endl;
+            return;
+        }
+
+        geometry_msgs::msg::Pose goal_msg;
+        goal_msg.position.x = x * 0.1;
+        goal_msg.position.y = y * 0.1;
+
+        self->goal_pub_->publish(goal_msg);
+        RCLCPP_INFO(self->get_logger(), "Goal impostato a: (%f, %f)", goal_msg.position.x, goal_msg.position.y);
+    }
+}
+
+
+    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr control_sub_;
+    rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr position_pub_;
+    rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr goal_pub_;
+    std::shared_ptr<World> world_;
+    std::shared_ptr<DifferentialDriveRobot> ddr_;
 
 };
 

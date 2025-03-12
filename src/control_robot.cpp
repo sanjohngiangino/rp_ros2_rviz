@@ -2,6 +2,7 @@
 #include <std_msgs/msg/string.hpp>
 #include <opencv2/opencv.hpp> 
 #include <termios.h>
+#include <geometry_msgs/msg/pose.hpp>
 
 char getKey() {
     struct termios oldt, newt;
@@ -18,50 +19,35 @@ char getKey() {
 class ControlNode : public rclcpp::Node {
 public:
     ControlNode() : Node("control_node") {
-        control_pub_ = this->create_publisher<std_msgs::msg::String>("robot_control", 10);
-
-        timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(100),
-            std::bind(&ControlNode::controlLoop, this)
-        );
+        
+        goal_sub_ = this->create_subscription<geometry_msgs::msg::Pose>(
+            "goal_pose", 10, std::bind(&ControlNode::goalCallback, this, std::placeholders::_1));
+        
+            control_pub_ = this->create_publisher<std_msgs::msg::String>("robot_control", 10);
     }
 
 private:
-    void controlLoop() {
-            RCLCPP_INFO(this->get_logger(), "Sono dentro a control");
+    void goalCallback(const geometry_msgs::msg::Pose::SharedPtr msg) {
+        goal_x_ = msg->position.x;
+        goal_y_ = msg->position.y;
+        RCLCPP_INFO(this->get_logger(), "Goal ricevuto: x=%f, y=%f", goal_x_, goal_y_);
+        auto message = std_msgs::msg::String();
+        std::string command;
 
-            char key = getKey();
+        command = "tv=1";
+        message.data = command;
 
-            std::string command;
-            /*
-            if (command == "q") {  // Puoi usare "q" per uscire dal ciclo se lo desideri
-                RCLCPP_INFO(this->get_logger(), "Uscita dal nodo");
-                rclcpp::shutdown();
-                return;
-            }
-            */
-            auto message = std_msgs::msg::String();
-            if (key == 65) {  
-                command = "tv=1";  
-            } else if (key == 66) {  
-                command = "tv=-1";  
-            } else if (key == 67) {  
-                command = "rv=0.5";  
-            } else if (key == 68) { 
-                command = "rv=-0.5";  
-            } else if (key == 113) { 
-                command ="stop";
-            } 
-            message.data = command;
+        control_pub_->publish(message); 
 
-            control_pub_->publish(message); 
-    
-            RCLCPP_INFO(this->get_logger(), "Comando pubblicato: %s", command.c_str());
-        
+        RCLCPP_INFO(this->get_logger(), "Comando pubblicato: %s", command.c_str());
+
     }
 
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr control_pub_;  
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr control_pub_;
+    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr goal_sub_;
     rclcpp::TimerBase::SharedPtr timer_;
+
+    double goal_x_ = 0.0, goal_y_ = 0.0; 
 };
 
 int main(int argc, char **argv) {
