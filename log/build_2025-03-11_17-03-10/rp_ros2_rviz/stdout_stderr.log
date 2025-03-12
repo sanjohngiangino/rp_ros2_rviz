@@ -1,0 +1,56 @@
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/john/Desktop/rp_ros2_rviz/include;/home/john/Desktop/rp_ros2_rviz/msg
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[ 12%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/lidar.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Klidar.h: No such file or directory
+    1 | #include [01;31m[K"lidar.h"[m[K
+      |          [01;31m[K^~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:160: CMakeFiles/world_node.dir/src/lidar.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:28:33:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KLidar::Lidar(LaserScan&, DifferentialDriveRobot**)[m[K’
+   28 |             Lidar lid(scan, &ddr[01;31m[K)[m[K;
+      |                                 [01;31m[K^[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:7[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:22:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KLidar::[01;32m[KLidar[m[K(LaserScan&, WorldItem*)[m[K’
+   22 |   [01;36m[KLidar[m[K(LaserScan& my_scan, WorldItem* p=0);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:22:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[KDifferentialDriveRobot**[m[K’ to ‘[01m[KWorldItem*[m[K’
+   22 |   Lidar(LaserScan& my_scan, [01;36m[KWorldItem* p=0[m[K);
+      |                             [01;36m[K~~~~~~~~~~~^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Lidar::[01;32m[KLidar[m[K(const Lidar&)[m[K’
+   17 | struct [01;36m[KLidar[m[K: public WorldItem {
+      |        [01;36m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:17:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Lidar::[01;32m[KLidar[m[K(Lidar&&)[m[K’
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h:17:8:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:28:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   28 |             Lidar [01;35m[Klid[m[K(scan, &ddr);
+      |                   [01;35m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

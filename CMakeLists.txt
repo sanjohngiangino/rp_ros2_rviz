@@ -13,7 +13,10 @@ find_package(geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
 
-add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp src/differential_drive_robot.cpp)
+add_executable(control_robot src/control_robot.cpp)
+ament_target_dependencies(control_robot rclcpp OpenCV std_msgs)
+
+add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp src/differential_drive_robot.cpp src/lidar.cpp )
 ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
 
 if(BUILD_TESTING)
@@ -29,7 +32,7 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/msg
 )
 
-install(TARGETS world_node
+install(TARGETS world_node control_robot
   DESTINATION lib/${PROJECT_NAME}
 )
 

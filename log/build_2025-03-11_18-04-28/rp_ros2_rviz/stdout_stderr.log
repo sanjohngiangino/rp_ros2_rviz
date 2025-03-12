@@ -1,0 +1,8 @@
+[ 11%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/control_robot.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:[m[K In member function ‘[01m[Kvoid ControlNode::[01;32m[KcontrolLoop[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:18:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+   18 |             int key =[01;31m[Kcv[m[K::waitKey(0);
+      |                      [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/control_robot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

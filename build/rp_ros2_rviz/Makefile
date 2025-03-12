@@ -198,6 +198,19 @@ rp_ros2_rviz_uninstall/fast:
 .PHONY : rp_ros2_rviz_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named control_robot
+
+# Build rule for target.
+control_robot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 control_robot
+.PHONY : control_robot
+
+# fast build rule for target.
+control_robot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/build
+.PHONY : control_robot/fast
+
+#=============================================================================
 # Target rules for targets named world_node
 
 # Build rule for target.
@@ -233,6 +246,30 @@ src/canvas.s: src/canvas.cpp.s
 src/canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.s
 .PHONY : src/canvas.cpp.s
+
+src/control_robot.o: src/control_robot.cpp.o
+.PHONY : src/control_robot.o
+
+# target to build an object file
+src/control_robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.o
+.PHONY : src/control_robot.cpp.o
+
+src/control_robot.i: src/control_robot.cpp.i
+.PHONY : src/control_robot.i
+
+# target to preprocess a source file
+src/control_robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.i
+.PHONY : src/control_robot.cpp.i
+
+src/control_robot.s: src/control_robot.cpp.s
+.PHONY : src/control_robot.s
+
+# target to generate assembly for a file
+src/control_robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.s
+.PHONY : src/control_robot.cpp.s
 
 src/differential_drive_robot.o: src/differential_drive_robot.cpp.o
 .PHONY : src/differential_drive_robot.o
@@ -306,6 +343,30 @@ src/grid_map.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.s
 .PHONY : src/grid_map.cpp.s
 
+src/lidar.o: src/lidar.cpp.o
+.PHONY : src/lidar.o
+
+# target to build an object file
+src/lidar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.o
+.PHONY : src/lidar.cpp.o
+
+src/lidar.i: src/lidar.cpp.i
+.PHONY : src/lidar.i
+
+# target to preprocess a source file
+src/lidar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.i
+.PHONY : src/lidar.cpp.i
+
+src/lidar.s: src/lidar.cpp.s
+.PHONY : src/lidar.s
+
+# target to generate assembly for a file
+src/lidar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.s
+.PHONY : src/lidar.cpp.s
+
 src/world.o: src/world.cpp.o
 .PHONY : src/world.o
 
@@ -369,10 +430,14 @@ help:
 	@echo "... test"
 	@echo "... rp_ros2_rviz_uninstall"
 	@echo "... uninstall"
+	@echo "... control_robot"
 	@echo "... world_node"
 	@echo "... src/canvas.o"
 	@echo "... src/canvas.i"
 	@echo "... src/canvas.s"
+	@echo "... src/control_robot.o"
+	@echo "... src/control_robot.i"
+	@echo "... src/control_robot.s"
 	@echo "... src/differential_drive_robot.o"
 	@echo "... src/differential_drive_robot.i"
 	@echo "... src/differential_drive_robot.s"
@@ -382,6 +447,9 @@ help:
 	@echo "... src/grid_map.o"
 	@echo "... src/grid_map.i"
 	@echo "... src/grid_map.s"
+	@echo "... src/lidar.o"
+	@echo "... src/lidar.i"
+	@echo "... src/lidar.s"
 	@echo "... src/world.o"
 	@echo "... src/world.i"
 	@echo "... src/world.s"

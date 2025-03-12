@@ -1,0 +1,10 @@
+[0.009s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.092s] [ 11%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/control_robot.cpp.o[0m
+[1.893s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:[m[K In member function ‘[01m[Kvoid ControlNode::[01;32m[KcontrolLoop[m[K()[m[K’:
+[1.893s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:18:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+[1.893s]    18 |             int key =[01;31m[Kcv[m[K::waitKey(0);
+[1.893s]       |                      [01;31m[K^~[m[K
+[2.748s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/control_robot.cpp.o] Error 1
+[2.748s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/world_node.dir/all] Error 2
+[2.748s] gmake: *** [Makefile:146: all] Error 2
+[2.749s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

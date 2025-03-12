@@ -1,0 +1,11 @@
+[0.018s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.086s] [ 80%] Built target world_node
+[0.088s] [ 90%] [32mBuilding CXX object CMakeFiles/control_robot.dir/src/control_robot.cpp.o[0m
+[2.734s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:[m[K In member function ‘[01m[Kvoid ControlNode::[01;32m[KcontrolLoop[m[K()[m[K’:
+[2.734s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/control_robot.cpp:20:24:[m[K [01;31m[Kerror: [m[K‘[01m[KgetKey[m[K’ was not declared in this scope
+[2.734s]    20 |             char key = [01;31m[KgetKey[m[K();  // Ottieni il tasto premuto
+[2.735s]       |                        [01;31m[K^~~~~~[m[K
+[4.186s] gmake[2]: *** [CMakeFiles/control_robot.dir/build.make:76: CMakeFiles/control_robot.dir/src/control_robot.cpp.o] Error 1
+[4.186s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/control_robot.dir/all] Error 2
+[4.187s] gmake: *** [Makefile:146: all] Error 2
+[4.192s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -843,4 +843,5 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h \
  /home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid.h \
- /home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h
+ /home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/differential_drive_robot.h \
+ /home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/lidar.h

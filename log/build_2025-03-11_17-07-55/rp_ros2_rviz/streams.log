@@ -1,0 +1,25 @@
+[0.027s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.132s] [ 12%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[3.271s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[3.271s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:35:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktv[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[3.271s]    35 |                 [01;31m[Ktv[m[K=0; rv=0;
+[3.271s]       |                 [01;31m[K^~[m[K
+[3.271s]       |                 [32m[Ktm[m[K
+[3.281s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:35:23:[m[K [01;31m[Kerror: [m[K‘[01m[Krv[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv[m[K’?
+[3.281s]    35 |                 tv=0; [01;31m[Krv[m[K=0;
+[3.281s]       |                       [01;31m[K^~[m[K
+[3.281s]       |                       [32m[Kcv[m[K
+[3.293s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:36:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kw[m[K’ was not declared in this scope
+[3.293s]    36 |                 [01;31m[Kw[m[K.draw(canvas);
+[3.294s]       |                 [01;31m[K^[m[K
+[3.308s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:38:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kkey[m[K’ was not declared in this scope; did you mean ‘[01m[Kkey_t[m[K’?
+[3.308s]    38 |                 [01;31m[Kkey[m[K=cv::waitKey(0);
+[3.308s]       |                 [01;31m[K^~~[m[K
+[3.308s]       |                 [32m[Kkey_t[m[K
+[3.308s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:28:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.308s]    28 |             Lidar* [01;35m[Klid[m[K = new Lidar(scan, ddr);
+[3.308s]       |                    [01;35m[K^~~[m[K
+[4.614s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[4.614s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/world_node.dir/all] Error 2
+[4.616s] gmake: *** [Makefile:146: all] Error 2
+[4.620s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
