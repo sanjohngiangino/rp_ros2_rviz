@@ -1,0 +1,56 @@
+[0.013s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.080s] [ 20%] Built target control_robot
+[0.111s] [ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[4.123s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[4.123s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.124s]    53 |             int [01;35m[Kkey[m[K=0;
+[4.124s]       |                 [01;35m[K^~~[m[K
+[4.148s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’:
+[4.148s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:80:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kshown_image[m[K’ was not declared in this scope
+[4.148s]    80 |     background_image.copyTo([01;31m[Kshown_image[m[K);
+[4.148s]       |                             [01;31m[K^~~~~~~~~~~[m[K
+[4.169s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:81:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath[m[K’ was not declared in this scope; did you mean ‘[01m[Krcpputils::fs::path[m[K’?
+[4.170s]    81 |     drawPoints(shown_image, mapping, Eigen::Isometry2f::Identity(), [01;31m[Kpath[m[K, 255);
+[4.170s]       |                                                                     [01;31m[K^~~~[m[K
+[4.170s]       |                                                                     [32m[Krcpputils::fs::path[m[K
+[4.170s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:26[m[K,
+[4.170s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:26[m[K,
+[4.171s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[4.171s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[4.171s] [01m[K/opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:75:7:[m[K [01;36m[Knote: [m[K‘[01m[Krcpputils::fs::path[m[K’ declared here
+[4.171s]    75 | class [01;36m[Kpath[m[K
+[4.171s]       |       [01;36m[K^~~~[m[K
+[4.190s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[KdrawPoints[m[K’ was not declared in this scope
+[4.190s]    81 |     [01;31m[KdrawPoints[m[K(shown_image, mapping, Eigen::Isometry2f::Identity(), path, 255);
+[4.190s]       |     [01;31m[K^~~~~~~~~~[m[K
+[4.205s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.205s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:162:18:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.205s]   162 |         [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.205s]       |         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.211s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:164:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath[m[K’ was not declared in this scope; did you mean ‘[01m[Krcpputils::fs::path[m[K’?
+[4.211s]   164 |         printPath([01;31m[Kpath[m[K);
+[4.211s]       |                   [01;31m[K^~~~[m[K
+[4.211s]       |                   [32m[Krcpputils::fs::path[m[K
+[4.211s] [01m[K/opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:75:7:[m[K [01;36m[Knote: [m[K‘[01m[Krcpputils::fs::path[m[K’ declared here
+[4.211s]    75 | class [01;36m[Kpath[m[K
+[4.211s]       |       [01;36m[K^~~~[m[K
+[4.228s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:164:9:[m[K [01;31m[Kerror: [m[K‘[01m[KprintPath[m[K’ was not declared in this scope
+[4.228s]   164 |         [01;31m[KprintPath[m[K(path);
+[4.229s]       |         [01;31m[K^~~~~~~~~[m[K
+[4.256s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:169:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kuse_gradient[m[K’ was not declared in this scope
+[4.257s]   169 |                             [01;31m[Kuse_gradient[m[K);
+[4.257s]       |                             [01;31m[K^~~~~~~~~~~~[m[K
+[4.257s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:170:18:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.257s]   170 |         [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.257s]       |         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.274s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:180:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_mode[m[K’ was not declared in this scope; did you mean ‘[01m[Kbackground_image[m[K’?
+[4.274s]   180 |     cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+[4.274s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.274s]       |                                    [32m[Kbackground_image[m[K
+[4.287s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:153:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.287s]   153 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.287s]       |                                                  [01;35m[K~~~~^~~[m[K
+[6.315s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[6.315s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[6.316s] gmake: *** [Makefile:146: all] Error 2
+[6.319s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -1,6 +1,9 @@
 #pragma once
 #include <cstdint> // for uint8_t
 #include <utility> // for std::pair
+#include <Eigen/Core>
+
+using Vector2i=Eigen::Matrix<int,2,1>;
 
 struct Grid {
   using CellType=uint8_t;

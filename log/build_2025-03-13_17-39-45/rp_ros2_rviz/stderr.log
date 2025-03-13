@@ -1,0 +1,7 @@
+/usr/bin/ld: CMakeFiles/world_node.dir/src/world_node.cpp.o: in function `WorldNode::onMouse(int, int, int, int, void*)':
+world_node.cpp:(.text._ZN9WorldNode7onMouseEiiiiPv[_ZN9WorldNode7onMouseEiiiiPv]+0x16c): undefined reference to `DMapPlanner::computePolicy(Eigen::Matrix<float, 2, 1, 0, 2, 1> const&)'
+/usr/bin/ld: world_node.cpp:(.text._ZN9WorldNode7onMouseEiiiiPv[_ZN9WorldNode7onMouseEiiiiPv]+0x1b4): undefined reference to `DMapPlanner::computePath(std::__cxx11::list<Eigen::Matrix<float, 2, 1, 0, 2, 1>, std::allocator<Eigen::Matrix<float, 2, 1, 0, 2, 1> > >&, Eigen::Matrix<float, 2, 1, 0, 2, 1> const&, float, unsigned long, bool) const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:330: world_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

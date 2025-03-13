@@ -295,6 +295,54 @@ src/differential_drive_robot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.s
 .PHONY : src/differential_drive_robot.cpp.s
 
+src/dmap.o: src/dmap.cpp.o
+.PHONY : src/dmap.o
+
+# target to build an object file
+src/dmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.o
+.PHONY : src/dmap.cpp.o
+
+src/dmap.i: src/dmap.cpp.i
+.PHONY : src/dmap.i
+
+# target to preprocess a source file
+src/dmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.i
+.PHONY : src/dmap.cpp.i
+
+src/dmap.s: src/dmap.cpp.s
+.PHONY : src/dmap.s
+
+# target to generate assembly for a file
+src/dmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.s
+.PHONY : src/dmap.cpp.s
+
+src/dmap_planner.o: src/dmap_planner.cpp.o
+.PHONY : src/dmap_planner.o
+
+# target to build an object file
+src/dmap_planner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.o
+.PHONY : src/dmap_planner.cpp.o
+
+src/dmap_planner.i: src/dmap_planner.cpp.i
+.PHONY : src/dmap_planner.i
+
+# target to preprocess a source file
+src/dmap_planner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.i
+.PHONY : src/dmap_planner.cpp.i
+
+src/dmap_planner.s: src/dmap_planner.cpp.s
+.PHONY : src/dmap_planner.s
+
+# target to generate assembly for a file
+src/dmap_planner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.s
+.PHONY : src/dmap_planner.cpp.s
+
 src/grid.o: src/grid.cpp.o
 .PHONY : src/grid.o
 
@@ -441,6 +489,12 @@ help:
 	@echo "... src/differential_drive_robot.o"
 	@echo "... src/differential_drive_robot.i"
 	@echo "... src/differential_drive_robot.s"
+	@echo "... src/dmap.o"
+	@echo "... src/dmap.i"
+	@echo "... src/dmap.s"
+	@echo "... src/dmap_planner.o"
+	@echo "... src/dmap_planner.i"
+	@echo "... src/dmap_planner.s"
 	@echo "... src/grid.o"
 	@echo "... src/grid.i"
 	@echo "... src/grid.s"

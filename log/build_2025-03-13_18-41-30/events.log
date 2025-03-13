@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.002335] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.002402] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.008143] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.012756] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.013485] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'john', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/john', 'OLDPWD': '/home/john/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2193', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'john', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'john', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/john/.pixi/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/john:@/tmp/.ICE-unix/2153,unix/john:/tmp/.ICE-unix/2153', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ae9238d3_4e99_4b27_8097_98b517ca3fd7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9PN322', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.307', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.094214] (rp_ros2_rviz) StdoutLine: {'line': b'[ 16%] Built target control_robot\n'}
+[0.100381] (-) TimerEvent: {}
+[0.117080] (rp_ros2_rviz) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.117239] (rp_ros2_rviz) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/grid_map.cpp.o\x1b[0m\n'}
+[0.117282] (rp_ros2_rviz) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/lidar.cpp.o\x1b[0m\n'}
+[0.203730] (-) TimerEvent: {}
+[0.331285] (-) TimerEvent: {}
+[0.431609] (-) TimerEvent: {}
+[0.532013] (-) TimerEvent: {}
+[0.633399] (-) TimerEvent: {}
+[0.735681] (-) TimerEvent: {}
+[0.838544] (-) TimerEvent: {}
+[0.941439] (-) TimerEvent: {}
+[1.044711] (-) TimerEvent: {}
+[1.145397] (-) TimerEvent: {}
+[1.247869] (-) TimerEvent: {}
+[1.348330] (-) TimerEvent: {}
+[1.452126] (-) TimerEvent: {}
+[1.555728] (-) TimerEvent: {}
+[1.661496] (-) TimerEvent: {}
+[1.767177] (-) TimerEvent: {}
+[1.872449] (-) TimerEvent: {}
+[1.975848] (-) TimerEvent: {}
+[2.076483] (-) TimerEvent: {}
+[2.179166] (-) TimerEvent: {}
+[2.279478] (-) TimerEvent: {}
+[2.368379] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void GridMap::\x1b[01;32m\x1b[Kdraw\x1b[m\x1b[K(Canvas&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.381321] (-) TimerEvent: {}
+[2.386592] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:80:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.386751] (rp_ros2_rviz) StderrLine: {'line': b'   80 |   Vec2f \x1b[01;35m\x1b[Kt\x1b[m\x1b[K=_piw.t*(1./dest.resolution);\n'}
+[2.386793] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.476472] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Lidar::\x1b[01;32m\x1b[KtimerTick\x1b[m\x1b[K(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.476624] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:31:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.476666] (rp_ros2_rviz) StderrLine: {'line': b'   31 | void Lidar::timerTick(\x1b[01;35m\x1b[Kfloat dt\x1b[m\x1b[K) {\n'}
+[2.476701] (rp_ros2_rviz) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[2.481559] (-) TimerEvent: {}
+[2.582118] (-) TimerEvent: {}
+[2.686679] (-) TimerEvent: {}
+[2.787056] (-) TimerEvent: {}
+[2.887437] (-) TimerEvent: {}
+[2.988502] (-) TimerEvent: {}
+[3.089154] (-) TimerEvent: {}
+[3.189456] (-) TimerEvent: {}
+[3.290351] (-) TimerEvent: {}
+[3.391443] (-) TimerEvent: {}
+[3.492794] (-) TimerEvent: {}
+[3.593649] (-) TimerEvent: {}
+[3.694391] (-) TimerEvent: {}
+[3.796776] (-) TimerEvent: {}
+[3.897751] (-) TimerEvent: {}
+[3.998478] (-) TimerEvent: {}
+[4.099106] (-) TimerEvent: {}
+[4.199619] (-) TimerEvent: {}
+[4.301359] (-) TimerEvent: {}
+[4.409241] (-) TimerEvent: {}
+[4.509624] (-) TimerEvent: {}
+[4.613114] (-) TimerEvent: {}
+[4.713774] (-) TimerEvent: {}
+[4.814627] (-) TimerEvent: {}
+[4.915263] (-) TimerEvent: {}
+[5.015633] (-) TimerEvent: {}
+[5.116436] (-) TimerEvent: {}
+[5.217272] (-) TimerEvent: {}
+[5.317872] (-) TimerEvent: {}
+[5.323334] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWorldNode::\x1b[01;32m\x1b[KWorldNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.323491] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kkey\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.323535] (rp_ros2_rviz) StderrLine: {'line': b'   53 |             int \x1b[01;35m\x1b[Kkey\x1b[m\x1b[K=0;\n'}
+[5.326623] (rp_ros2_rviz) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.351497] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void WorldNode::\x1b[01;32m\x1b[KonMouse\x1b[m\x1b[K(int, int, int, int, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.351793] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:79:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kval\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.351840] (rp_ros2_rviz) StderrLine: {'line': b'   79 |     static void onMouse(int event, int x, int y, \x1b[01;35m\x1b[Kint val\x1b[m\x1b[K, void* arg) {\n'}
+[5.351876] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K~~~~^~~\x1b[m\x1b[K\n'}
+[5.418758] (-) TimerEvent: {}
+[5.520365] (-) TimerEvent: {}
+[5.621427] (-) TimerEvent: {}
+[5.722116] (-) TimerEvent: {}
+[5.822572] (-) TimerEvent: {}
+[5.923385] (-) TimerEvent: {}
+[6.024001] (-) TimerEvent: {}
+[6.124609] (-) TimerEvent: {}
+[6.225582] (-) TimerEvent: {}
+[6.326526] (-) TimerEvent: {}
+[6.427293] (-) TimerEvent: {}
+[6.529304] (-) TimerEvent: {}
+[6.630489] (-) TimerEvent: {}
+[6.730811] (-) TimerEvent: {}
+[6.831486] (-) TimerEvent: {}
+[6.932638] (-) TimerEvent: {}
+[7.033366] (-) TimerEvent: {}
+[7.134179] (-) TimerEvent: {}
+[7.235404] (-) TimerEvent: {}
+[7.336747] (-) TimerEvent: {}
+[7.437309] (-) TimerEvent: {}
+[7.537694] (-) TimerEvent: {}
+[7.638601] (-) TimerEvent: {}
+[7.739247] (-) TimerEvent: {}
+[7.839679] (-) TimerEvent: {}
+[7.941360] (-) TimerEvent: {}
+[8.042148] (-) TimerEvent: {}
+[8.142506] (-) TimerEvent: {}
+[8.243104] (-) TimerEvent: {}
+[8.344426] (-) TimerEvent: {}
+[8.445408] (-) TimerEvent: {}
+[8.547051] (-) TimerEvent: {}
+[8.648056] (-) TimerEvent: {}
+[8.748857] (-) TimerEvent: {}
+[8.850212] (-) TimerEvent: {}
+[8.951042] (-) TimerEvent: {}
+[9.051624] (-) TimerEvent: {}
+[9.152255] (-) TimerEvent: {}
+[9.253003] (-) TimerEvent: {}
+[9.354334] (-) TimerEvent: {}
+[9.455379] (-) TimerEvent: {}
+[9.555746] (-) TimerEvent: {}
+[9.656629] (-) TimerEvent: {}
+[9.757486] (-) TimerEvent: {}
+[9.857822] (-) TimerEvent: {}
+[9.959135] (-) TimerEvent: {}
+[10.059580] (-) TimerEvent: {}
+[10.160553] (-) TimerEvent: {}
+[10.261120] (-) TimerEvent: {}
+[10.361585] (-) TimerEvent: {}
+[10.446640] (rp_ros2_rviz) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable world_node\x1b[0m\n'}
+[10.462606] (-) TimerEvent: {}
+[10.563571] (-) TimerEvent: {}
+[10.664121] (-) TimerEvent: {}
+[10.765186] (-) TimerEvent: {}
+[10.865554] (-) TimerEvent: {}
+[10.966147] (-) TimerEvent: {}
+[11.066792] (-) TimerEvent: {}
+[11.167304] (-) TimerEvent: {}
+[11.267829] (-) TimerEvent: {}
+[11.368587] (-) TimerEvent: {}
+[11.469004] (-) TimerEvent: {}
+[11.569585] (-) TimerEvent: {}
+[11.670011] (-) TimerEvent: {}
+[11.771300] (-) TimerEvent: {}
+[11.871756] (-) TimerEvent: {}
+[11.972579] (-) TimerEvent: {}
+[12.065683] (rp_ros2_rviz) StdoutLine: {'line': b'[100%] Built target world_node\n'}
+[12.072770] (-) TimerEvent: {}
+[12.080585] (rp_ros2_rviz) CommandEnded: {'returncode': 0}
+[12.084485] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'install'}
+[12.100802] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'john', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/john', 'OLDPWD': '/home/john/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2193', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'john', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'john', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/john/.pixi/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/john:@/tmp/.ICE-unix/2153,unix/john:/tmp/.ICE-unix/2153', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ae9238d3_4e99_4b27_8097_98b517ca3fd7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9PN322', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.307', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[12.118564] (rp_ros2_rviz) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.126584] (rp_ros2_rviz) StdoutLine: {'line': b'-- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node\n'}
+[12.131764] (rp_ros2_rviz) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node" to ""\n'}
+[12.133497] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/control_robot\n'}
+[12.133765] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/package_run_dependencies/rp_ros2_rviz\n'}
+[12.134430] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/parent_prefix_path/rp_ros2_rviz\n'}
+[12.134732] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.sh\n'}
+[12.134773] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.dsv\n'}
+[12.134861] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.sh\n'}
+[12.135262] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.dsv\n'}
+[12.135351] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.bash\n'}
+[12.135391] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.sh\n'}
+[12.135428] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.zsh\n'}
+[12.135464] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.dsv\n'}
+[12.135504] (rp_ros2_rviz) StdoutLine: {'line': b'-- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.dsv\n'}
+[12.136754] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/packages/rp_ros2_rviz\n'}
+[12.136808] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig.cmake\n'}
+[12.136844] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig-version.cmake\n'}
+[12.136878] (rp_ros2_rviz) StdoutLine: {'line': b'-- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.xml\n'}
+[12.141797] (rp_ros2_rviz) CommandEnded: {'returncode': 0}
+[12.170556] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 0}
+[12.171413] (-) EventReactorShutdown: {}

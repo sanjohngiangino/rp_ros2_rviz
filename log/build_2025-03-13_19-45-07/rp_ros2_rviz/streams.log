@@ -1,0 +1,56 @@
+[0.015s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.103s] [ 16%] Built target control_robot
+[0.126s] [ 25%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[4.936s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:215:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[4.936s]   215 | }
+[4.936s]       |  [01;31m[K^[m[K
+[4.936s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:11:39:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[4.936s]    11 | class WorldNode : public rclcpp::Node [01;36m[K{[m[K
+[4.936s]       |                                       [01;36m[K^[m[K
+[4.958s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[4.958s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:14:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kworld_[m[K’ was not declared in this scope; did you mean ‘[01m[KWorld[m[K’?
+[4.958s]    14 |         [01;31m[Kworld_[m[K = std::make_shared<World>();
+[4.961s]       |         [01;31m[K^~~~~~[m[K
+[4.961s]       |         [32m[KWorld[m[K
+[4.984s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:33:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kddr_[m[K’ was not declared in this scope
+[4.984s]    33 |             [01;31m[Kddr_[m[K = std::make_shared<DifferentialDriveRobot>(grid_map);
+[4.984s]       |             [01;31m[K^~~~[m[K
+[5.004s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:44:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_pub_[m[K’ was not declared in this scope
+[5.004s]    44 |             [01;31m[Kgoal_pub_[m[K = this->create_publisher<geometry_msgs::msg::Pose>("goal_pose", 10);
+[5.004s]       |             [01;31m[K^~~~~~~~~[m[K
+[5.031s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:46:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_sub_[m[K’ was not declared in this scope
+[5.032s]    46 |             [01;31m[Kcontrol_sub_[m[K = this->create_subscription<std_msgs::msg::String>(
+[5.032s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[5.064s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:55:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.064s]    55 |             int [01;35m[Kkey[m[K=0;
+[5.064s]       |                 [01;35m[K^~~[m[K
+[5.099s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[5.099s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:83:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.099s]    83 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[5.099s]       |                                                  [01;35m[K~~~~^~~[m[K
+[5.122s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KcontrolCallback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[5.122s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_sequence[m[K’ was not declared in this scope
+[5.122s]   116 |     [01;31m[Kcommand_sequence[m[K = msg->data;
+[5.123s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.147s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:117:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_queue[m[K’ was not declared in this scope
+[5.147s]   117 |     [01;31m[Kcommand_queue[m[K = std::queue<char>(std::deque<char>(command_sequence.begin(), command_sequence.end()));
+[5.147s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[5.171s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KexecuteNextCommand[m[K()[m[K’:
+[5.171s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:123:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand_queue[m[K’ was not declared in this scope
+[5.171s]   123 |     if (![01;31m[Kcommand_queue[m[K.empty()) {
+[5.171s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[5.191s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:144:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kddr_[m[K’ was not declared in this scope
+[5.191s]   144 |         [01;31m[Kddr_[m[K->trans_vel = tv;
+[5.191s]       |         [01;31m[K^~~~[m[K
+[5.193s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KdrawObstacles[m[K(Canvas&, const Vector2iVector&)[m[K’:
+[5.193s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:161:54:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[5.193s]   161 | void printObstacles(const Vector2iVector& obstacles) [01;31m[K{[m[K
+[5.193s]       |                                                      [01;31m[K^[m[K
+[5.200s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[5.200s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:215:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[5.200s]   215 | }
+[5.200s]       |  [01;31m[K^[m[K
+[7.365s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[7.365s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[7.365s] gmake: *** [Makefile:146: all] Error 2
+[7.372s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

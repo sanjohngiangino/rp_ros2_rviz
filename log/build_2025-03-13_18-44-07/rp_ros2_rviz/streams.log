@@ -1,0 +1,109 @@
+[0.019s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.121s] [ 16%] Built target control_robot
+[0.148s] [ 25%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
+[0.148s] [ 33%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[2.868s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[Kinit[m[K(float, float, float, const DMap&)[m[K’:
+[2.868s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:25:17:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGridMap::resize(int&, int&, float&)[m[K’
+[2.868s]    25 |   [01;31m[Kmapping.resize(obstacle_costs.rows, obstacle_costs.cols, resolution)[m[K;
+[2.868s]       |   [01;31m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.868s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:3[m[K,
+[2.868s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:5[m[K,
+[2.868s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:1[m[K:
+[2.868s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid.h:12:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Grid::[01;32m[Kresize[m[K(int, int)[m[K’
+[2.868s]    12 |   void [01;36m[Kresize[m[K(int r, int c);
+[2.868s]       |        [01;36m[K^~~~~~[m[K
+[2.868s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid.h:12:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 3 provided
+[2.882s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[2.882s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:43:31:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::Vector2f[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<float, 2, 1>[m[K’} to ‘[01m[KVec2f[m[K’
+[2.882s]    43 |   Vector2i goal_i=mapping.w2g([01;31m[Kgoal[m[K).cast<int>();
+[2.882s]       |                               [01;31m[K^~~~[m[K
+[2.882s]       |                               [01;31m[K|[m[K
+[2.882s]       |                               [01;31m[Kconst Eigen::Vector2f {aka const Eigen::Matrix<float, 2, 1>}[m[K
+[2.882s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:38:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KVec2f GridMap::[01;32m[Kw2g[m[K(Vec2f) const[m[K’
+[2.882s]    38 |   inline Vec2f w2g([01;36m[Kconst Vec2f w[m[K) const {
+[2.882s]       |                    [01;36m[K~~~~~~~~~~~~^[m[K
+[2.882s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:43:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[2.882s]    43 |   Vector2i goal_i=mapping.w2g(goal).cast<[01;31m[Kint[m[K>();
+[2.882s]       |                                          [01;31m[K^~~[m[K
+[2.889s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.889s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[2.889s]       |        [01;35m[K^~~~~~~~~[m[K
+[2.890s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kfloat DMapPlanner::[01;32m[KcomputePath[m[K(std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, const Eigen::Vector2f&, float, size_t, bool) const[m[K’:
+[2.891s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:114:28:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KEigen::Matrix<float, 2, 1>[m[K’ to ‘[01m[KVec2f[m[K’
+[2.891s]   114 |       auto pgf=mapping.w2g([01;31m[Kcurrent[m[K);
+[2.891s]       |                            [01;31m[K^~~~~~~[m[K
+[2.891s]       |                            [01;31m[K|[m[K
+[2.891s]       |                            [01;31m[KEigen::Matrix<float, 2, 1>[m[K
+[2.891s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:38:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KVec2f GridMap::[01;32m[Kw2g[m[K(Vec2f) const[m[K’
+[2.891s]    38 |   inline Vec2f w2g([01;36m[Kconst Vec2f w[m[K) const {
+[2.891s]       |                    [01;36m[K~~~~~~~~~~~~^[m[K
+[2.891s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:115:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[2.891s]   115 |       auto pg=pgf.cast<[01;31m[Kint[m[K>();
+[2.891s]       |                        [01;31m[K^~~[m[K
+[2.900s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:142:26:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst Eigen::Vector2f[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<float, 2, 1>[m[K’} to ‘[01m[KVec2f[m[K’
+[2.900s]   142 |     auto pgf=mapping.w2g([01;31m[Kstart_pose[m[K);
+[2.900s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[2.900s]       |                          [01;31m[K|[m[K
+[2.900s]       |                          [01;31m[Kconst Eigen::Vector2f {aka const Eigen::Matrix<float, 2, 1>}[m[K
+[2.900s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:38:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KVec2f GridMap::[01;32m[Kw2g[m[K(Vec2f) const[m[K’
+[2.900s]    38 |   inline Vec2f w2g([01;36m[Kconst Vec2f w[m[K) const {
+[2.900s]       |                    [01;36m[K~~~~~~~~~~~~^[m[K
+[2.900s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:143:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[2.900s]   143 |     auto pg=pgf.cast<[01;31m[Kint[m[K>();
+[2.900s]       |                      [01;31m[K^~~[m[K
+[2.905s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:155:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[2.905s]   155 |       path.push_back(mapping.g2w(d_grid.ptr2rc(current).cast<[01;31m[Kfloat[m[K>()));
+[2.905s]       |                                                              [01;31m[K^~~~~[m[K
+[3.418s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/dmap_planner.cpp.o] Error 1
+[3.418s] gmake[2]: *** Waiting for unfinished jobs....
+[4.741s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:9[m[K:
+[4.741s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:7:23:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+[4.741s]     7 |                 const [01;31m[KGridMapping[m[K& mapping,
+[4.741s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[4.741s]       |                       [32m[KGridMap[m[K
+[4.741s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:[m[K In function ‘[01m[Kvoid[01;32m[K drawPoints[m[K(cv::Mat&, const int&, const Eigen::Isometry2f&, const ContainerType&, uint8_t)[m[K’:
+[4.741s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:12:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kw2g[m[K’ in ‘[01m[Kmapping[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+[4.741s]    12 |     const auto pg=mapping.[01;31m[Kw2g[m[K(X*p);
+[4.741s]       |                           [01;31m[K^~~[m[K
+[4.745s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[4.745s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:71:26:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+[4.745s]    71 |     void redisplay(const [01;31m[KGridMapping[m[K& mapping) {
+[4.745s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[4.745s]       |                          [32m[KGridMap[m[K
+[4.788s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[4.788s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.788s]    53 |             int [01;35m[Kkey[m[K=0;
+[4.788s]       |                 [01;35m[K^~~[m[K
+[4.816s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.816s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:88:66:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KEigen::Vector2f[m[K’ {aka ‘[01m[KEigen::Matrix<float, 2, 1>[m[K’} to ‘[01m[KVec2f[m[K’
+[4.816s]    88 |         Eigen::Vector2f world_pose = planner->mapping.g2w(Eigen::[01;31m[KVector2f(y, x)[m[K);
+[4.816s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.816s]       |                                                                  [01;31m[K|[m[K
+[4.816s]       |                                                                  [01;31m[KEigen::Vector2f {aka Eigen::Matrix<float, 2, 1>}[m[K
+[4.816s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:5[m[K:
+[4.816s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:33:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[KVec2f GridMap::[01;32m[Kg2w[m[K(Vec2f) const[m[K’
+[4.816s]    33 |   inline Vec2f g2w([01;36m[Kconst Vec2f g[m[K) const {
+[4.816s]       |                    [01;36m[K~~~~~~~~~~~~^[m[K
+[4.823s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:94:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KGridMap[m[K’ to ‘[01m[Kconst int&[m[K’
+[4.823s]    94 |             self->redisplay([01;31m[Kplanner->mapping[m[K);  // Chiama redisplay su self (istanza di WorldNode)
+[4.823s]       |                             [01;31m[K~~~~~~~~~^~~~~~~[m[K
+[4.823s]       |                                      [01;31m[K|[m[K
+[4.823s]       |                                      [01;31m[KGridMap[m[K
+[4.823s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:71:39:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const int&)[m[K’
+[4.823s]    71 |     void redisplay([01;36m[Kconst GridMapping& mapping[m[K) {
+[4.823s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[4.823s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:97:38:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KGridMap[m[K’ to ‘[01m[Kconst int&[m[K’
+[4.824s]    97 |             self->redisplay([01;31m[Kplanner->mapping[m[K);  // Chiama redisplay su self (istanza di WorldNode)
+[4.824s]       |                             [01;31m[K~~~~~~~~~^~~~~~~[m[K
+[4.824s]       |                                      [01;31m[K|[m[K
+[4.824s]       |                                      [01;31m[KGridMap[m[K
+[4.824s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:71:39:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const int&)[m[K’
+[4.824s]    71 |     void redisplay([01;36m[Kconst GridMapping& mapping[m[K) {
+[4.824s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[4.824s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:79:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.824s]    79 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.824s]       |                                                  [01;35m[K~~~~^~~[m[K
+[6.448s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[6.448s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[6.448s] gmake: *** [Makefile:146: all] Error 2
+[6.456s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

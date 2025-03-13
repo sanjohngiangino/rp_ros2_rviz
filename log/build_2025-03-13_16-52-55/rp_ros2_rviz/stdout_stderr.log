@@ -1,0 +1,167 @@
+[ 20%] Built target control_robot
+[ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:4[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:8[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:12:16:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid_[m[K’ does not name a type; did you mean ‘[01m[KGrid[m[K’?
+   12 | using DMapGrid=[01;31m[KGrid_[m[K<DMapCell>;
+      |                [01;31m[K^~~~~[m[K
+      |                [32m[KGrid[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:16:36:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2i[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::Vector2i[m[K’?
+   16 | using Vector2iVector = std::vector<[01;31m[KVector2i[m[K>;
+      |                                    [01;31m[K^~~~~~~~[m[K
+      |                                    [32m[KEigen::Vector2i[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:2[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:485:34:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector2i[m[K’ declared here
+  485 | typedef Matrix<Type, Size, 1>    [01;36m[KVector[m[K##SizeSuffix##TypeSuffix;  \
+      |                                  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:496:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_MAKE_TYPEDEFS[m[K’
+  496 | [01;36m[KEIGEN_MAKE_TYPEDEFS[m[K(Type, TypeSuffix, 2, 2) \
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:504:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K’
+  504 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(int,                  i)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:16:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   16 | using Vector2iVector = std::vector<Vector2i[01;31m[K>[m[K;
+      |                                            [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:16:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:19:30:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+   19 | struct DMap: public DMapGrid [01;31m[K{[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:32:21:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2iVector[m[K’ does not name a type; did you mean ‘[01m[KVector2fVector[m[K’?
+   32 |   void update(const [01;31m[KVector2iVector[m[K& obstacles);
+      |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                     [32m[KVector2fVector[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:35:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid_[m[K’ does not name a type; did you mean ‘[01m[KGrid[m[K’?
+   35 |   [01;31m[KGrid_[m[K<float> distances(float max_distance=std::numeric_limits<float>::max()) const;
+      |   [01;31m[K^~~~~[m[K
+      |   [32m[KGrid[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:[m[K In constructor ‘[01m[KDMap::[01;32m[KDMap[m[K(int, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:20:24:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KDMap[m[K’ does not have any field named ‘[01m[KDMapGrid[m[K’
+   20 |   DMap(int r, int c) : [01;31m[KDMapGrid[m[K(r, c){}
+      |                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:[m[K In member function ‘[01m[Kint DMap::[01;32m[KparentDistance[m[K(const DMapCell*) const[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:25:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2i[m[K’ was not declared in this scope; did you mean ‘[01m[KEigen::Vector2i[m[K’?
+   25 |     [01;31m[KVector2i[m[K parent_pos=ptr2rc(c->parent);
+      |     [01;31m[K^~~~~~~~[m[K
+      |     [32m[KEigen::Vector2i[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:485:34:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector2i[m[K’ declared here
+  485 | typedef Matrix<Type, Size, 1>    [01;36m[KVector[m[K##SizeSuffix##TypeSuffix;  \
+      |                                  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:496:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_MAKE_TYPEDEFS[m[K’
+  496 | [01;36m[KEIGEN_MAKE_TYPEDEFS[m[K(Type, TypeSuffix, 2, 2) \
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:504:1:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K’
+  504 | [01;36m[KEIGEN_MAKE_TYPEDEFS_ALL_SIZES[m[K(int,                  i)
+      | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:26:14:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kc_pos[m[K’
+   26 |     Vector2i [01;31m[Kc_pos[m[K=ptr2rc(c);
+      |              [01;31m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:27:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kparent_pos[m[K’ was not declared in this scope
+   27 |     return ([01;31m[Kparent_pos[m[K-c_pos).squaredNorm();
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap.h:27:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kc_pos[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   27 |     return (parent_pos-[01;31m[Kc_pos[m[K).squaredNorm();
+      |                        [01;31m[K^~~~~[m[K
+      |                        [32m[Kcos[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:[m[K At global scope:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+    9 |   [01;31m[KGridMapping[m[K mapping; // to convert from world to grid coordinates
+      |   [01;31m[K^~~~~~~~~~~[m[K
+      |   [32m[KGridMap[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:10:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid[m[K’ is not a template
+   10 |   [01;31m[KGrid[m[K<float> obstacle_costs; // cost of a cell based on distance
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:11:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid[m[K’ is not a template
+   11 |   [01;31m[KGrid[m[K<float> distances; // useless, kept only for visualization
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:12:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid[m[K’ is not a template
+   12 |   [01;31m[KGrid[m[K<float> policy; // surface pointing to the goal
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:13:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid[m[K’ is not a template
+   13 |   [01;31m[KGrid[m[K<Vector2f> policy_gradients; // surface pointing to the goal
+      |   [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:29:22:[m[K [01;31m[Kerror: [m[K‘[01m[KGrid_[m[K’ does not name a type; did you mean ‘[01m[KGrid[m[K’?
+   29 |   using DijkstraGrid=[01;31m[KGrid_[m[K<DijkstraCell>;
+      |                      [01;31m[K^~~~~[m[K
+      |                      [32m[KGrid[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:30:3:[m[K [01;31m[Kerror: [m[K‘[01m[KDijkstraGrid[m[K’ does not name a type; did you mean ‘[01m[KDijkstraCell[m[K’?
+   30 |   [01;31m[KDijkstraGrid[m[K d_grid;
+      |   [01;31m[K^~~~~~~~~~~~[m[K
+      |   [32m[KDijkstraCell[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:32:36:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2i[m[K’ does not name a type; did you mean ‘[01m[KVector2f[m[K’?
+   32 |   inline float traversalCost(const [01;31m[KVector2i[m[K& from, const Vector2i& to) const {
+      |                                    [01;31m[K^~~~~~~~[m[K
+      |                                    [32m[KVector2f[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:32:58:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2i[m[K’ does not name a type; did you mean ‘[01m[KVector2f[m[K’?
+   32 |   inline float traversalCost(const Vector2i& from, const [01;31m[KVector2i[m[K& to) const {
+      |                                                          [01;31m[K^~~~~~~~[m[K
+      |                                                          [32m[KVector2f[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:[m[K In member function ‘[01m[Kfloat DMapPlanner::[01;32m[KtraversalCost[m[K(const int&, const int&) const[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:33:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KsquaredNorm[m[K’ in ‘[01m[K(((int)from) - ((int)to))[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   33 |     return sqrt((from-to).[01;31m[KsquaredNorm[m[K()) * obstacle_costs.at(to.x(), to.y());
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:33:65:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kx[m[K’ in ‘[01m[Kto[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   33 |     return sqrt((from-to).squaredNorm()) * obstacle_costs.at(to.[01;31m[Kx[m[K(), to.y());
+      |                                                                 [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:33:73:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ky[m[K’ in ‘[01m[Kto[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   33 |     return sqrt((from-to).squaredNorm()) * obstacle_costs.at(to.x(), to.[01;31m[Ky[m[K());
+      |                                                                         [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   53 |             int [01;35m[Kkey[m[K=0;
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+  145 |     Eigen::Vector2f world_pose=planner->[01;31m[Kmapping[m[K.g2w(Eigen::Vector2f(y,x));
+      |                                         [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:151:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+  151 |         redisplay(planner->[01;31m[Kmapping[m[K);
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:151:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kredisplay[m[K’ was not declared in this scope
+  151 |         [01;31m[Kredisplay[m[K(planner->mapping);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:153:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath[m[K’ was not declared in this scope; did you mean ‘[01m[Krcpputils::fs::path[m[K’?
+  153 |         printPath([01;31m[Kpath[m[K);
+      |                   [01;31m[K^~~~[m[K
+      |                   [32m[Krcpputils::fs::path[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:26[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:26[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/opt/ros/jazzy/include/rcpputils/rcpputils/filesystem_helper.hpp:75:7:[m[K [01;36m[Knote: [m[K‘[01m[Krcpputils::fs::path[m[K’ declared here
+   75 | class [01;36m[Kpath[m[K
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:153:9:[m[K [01;31m[Kerror: [m[K‘[01m[KprintPath[m[K’ was not declared in this scope
+  153 |         [01;31m[KprintPath[m[K(path);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:156:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+  156 |                             planner->[01;31m[Kmapping[m[K.resolution*2,
+      |                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:158:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kuse_gradient[m[K’ was not declared in this scope
+  158 |                             [01;31m[Kuse_gradient[m[K);
+      |                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+  159 |         redisplay(planner->[01;31m[Kmapping[m[K);
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kredisplay[m[K’ was not declared in this scope
+  159 |         [01;31m[Kredisplay[m[K(planner->mapping);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:169:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_mode[m[K’ was not declared in this scope
+  169 |     cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+      |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:172:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+  172 |         cerr << "\r distance: " << planner->distances.at(y,x)*planner->[01;31m[Kmapping[m[K.resolution << "        ";
+      |                                                                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:179:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kd_grid[m[K’
+  179 |         auto &d_cell=planner->[01;31m[Kd_grid[m[K.at(y,x);
+      |                               [01;31m[K^~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:181:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kd_grid[m[K’
+  181 |         parent_pos=planner->[01;31m[Kd_grid[m[K.ptr2rc(d_cell.parent);
+      |                             [01;31m[K^~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:142:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  142 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

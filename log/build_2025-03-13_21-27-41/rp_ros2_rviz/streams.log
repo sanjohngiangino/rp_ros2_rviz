@@ -1,0 +1,69 @@
+[0.027s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.126s] [ 16%] Built target control_robot
+[0.165s] [ 25%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[4.171s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[4.171s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:69:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.171s]    69 |             int [01;35m[Kkey[m[K=0;
+[4.171s]       |                 [01;35m[K^~~[m[K
+[4.207s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.208s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:107:20:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.208s]   107 |           [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.208s]       |           [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.208s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:21:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+[4.208s]   109 |           printPath([01;31m[Kpath[m[K);
+[4.208s]       |                     [01;31m[K^~~~[m[K
+[4.208s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.208s]   149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+[4.208s]       |                     [01;36m[K^~~~[m[K
+[4.219s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:11:[m[K [01;31m[Kerror: [m[K‘[01m[KprintPath[m[K’ was not declared in this scope
+[4.219s]   109 |           [01;31m[KprintPath[m[K(path);
+[4.219s]       |           [01;31m[K^~~~~~~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:110:32:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+[4.220s]   110 |           planner->computePath([01;31m[Kpath[m[K,
+[4.220s]       |                                [01;31m[K^~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.220s]   149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+[4.220s]       |                     [01;36m[K^~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:114:32:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::use_gradient[m[K’ in static member function
+[4.220s]   114 |                                [01;31m[Kuse_gradient[m[K);
+[4.220s]       |                                [01;31m[K^~~~~~~~~~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:144:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.220s]   144 | bool [01;36m[Kuse_gradient[m[K=false;
+[4.220s]       |      [01;36m[K^~~~~~~~~~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:21:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+[4.220s]   116 |           printPath([01;31m[Kpath[m[K);
+[4.220s]       |                     [01;31m[K^~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.220s]   149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+[4.220s]       |                     [01;36m[K^~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:125:40:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::background_mode[m[K’ in static member function
+[4.220s]   125 |         cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+[4.220s]       |                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.220s]   145 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+[4.220s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.220s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:126:16:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::background_mode[m[K’ in static member function
+[4.221s]   126 |         switch([01;31m[Kbackground_mode[m[K) {
+[4.221s]       |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.221s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.221s]   145 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+[4.221s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.230s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:98:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.231s]    98 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.231s]       |                                                  [01;35m[K~~~~^~~[m[K
+[4.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMap&)[m[K’:
+[4.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:195:15:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KdrawPoints(cv::Mat&, const GridMap&, const Eigen::Transform<float, 2, 1>, std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, int)[m[K’
+[4.235s]   195 |     [01;31m[KdrawPoints(shown_image, mapping, Eigen::Isometry2f::Identity(), path, 255)[m[K;
+[4.235s]       |     [01;31m[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.235s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:9[m[K:
+[4.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:6:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ContainerType> void[01;32m[K drawPoints[m[K(cv::Mat&, const GridMapping&, const Eigen::Isometry2f&, const ContainerType&, uint8_t)[m[K’
+[4.235s]     6 | void [01;36m[KdrawPoints[m[K(cv::Mat& dest,
+[4.235s]       |      [01;36m[K^~~~~~~~~~[m[K
+[4.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:6:6:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:195:29:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kmapping[m[K’ (type ‘[01m[Kconst GridMap[m[K’) to type ‘[01m[Kconst GridMapping&[m[K’
+[4.235s]   195 |     drawPoints(shown_image, [01;36m[Kmapping[m[K, Eigen::Isometry2f::Identity(), path, 255);
+[4.235s]       |                             [01;36m[K^~~~~~~[m[K
+[6.920s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[6.921s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[6.921s] gmake: *** [Makefile:146: all] Error 2
+[6.929s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

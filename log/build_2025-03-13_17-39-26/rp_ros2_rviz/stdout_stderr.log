@@ -1,0 +1,18 @@
+[ 20%] Built target control_robot
+[ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   53 |             int [01;35m[Kkey[m[K=0;
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:79:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+[ 40%] [32m[1mLinking CXX executable world_node[0m
+/usr/bin/ld: CMakeFiles/world_node.dir/src/world_node.cpp.o: in function `WorldNode::onMouse(int, int, int, int, void*)':
+world_node.cpp:(.text._ZN9WorldNode7onMouseEiiiiPv[_ZN9WorldNode7onMouseEiiiiPv]+0x16c): undefined reference to `DMapPlanner::computePolicy(Eigen::Matrix<float, 2, 1, 0, 2, 1> const&)'
+/usr/bin/ld: world_node.cpp:(.text._ZN9WorldNode7onMouseEiiiiPv[_ZN9WorldNode7onMouseEiiiiPv]+0x1b4): undefined reference to `DMapPlanner::computePath(std::__cxx11::list<Eigen::Matrix<float, 2, 1, 0, 2, 1>, std::allocator<Eigen::Matrix<float, 2, 1, 0, 2, 1> > >&, Eigen::Matrix<float, 2, 1, 0, 2, 1> const&, float, unsigned long, bool) const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:330: world_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,273 @@
+[0.000000] (-) TimerEvent: {}
+[0.000340] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.000820] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.031395] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.038139] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.038206] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'john', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/john', 'OLDPWD': '/home/john/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2193', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'john', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'john', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/john/.pixi/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/john:@/tmp/.ICE-unix/2153,unix/john:/tmp/.ICE-unix/2153', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ae9238d3_4e99_4b27_8097_98b517ca3fd7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.9PN322', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.307', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.100087] (-) TimerEvent: {}
+[0.201140] (-) TimerEvent: {}
+[0.303677] (-) TimerEvent: {}
+[0.404955] (-) TimerEvent: {}
+[0.505249] (-) TimerEvent: {}
+[0.580431] (rp_ros2_rviz) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.581437] (rp_ros2_rviz) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/grid_map.cpp.o\x1b[0m\n'}
+[0.606333] (-) TimerEvent: {}
+[0.607533] (rp_ros2_rviz) StdoutLine: {'line': b'[ 33%] Built target control_robot\n'}
+[0.611257] (rp_ros2_rviz) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/lidar.cpp.o\x1b[0m\n'}
+[0.632378] (rp_ros2_rviz) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o\x1b[0m\n'}
+[0.707004] (-) TimerEvent: {}
+[0.811371] (-) TimerEvent: {}
+[0.914784] (-) TimerEvent: {}
+[1.016424] (-) TimerEvent: {}
+[1.118869] (-) TimerEvent: {}
+[1.219313] (-) TimerEvent: {}
+[1.319930] (-) TimerEvent: {}
+[1.423425] (-) TimerEvent: {}
+[1.524048] (-) TimerEvent: {}
+[1.630105] (-) TimerEvent: {}
+[1.735287] (-) TimerEvent: {}
+[1.836051] (-) TimerEvent: {}
+[1.936411] (-) TimerEvent: {}
+[2.037277] (-) TimerEvent: {}
+[2.139844] (-) TimerEvent: {}
+[2.242914] (-) TimerEvent: {}
+[2.343255] (-) TimerEvent: {}
+[2.447434] (-) TimerEvent: {}
+[2.547964] (-) TimerEvent: {}
+[2.651076] (-) TimerEvent: {}
+[2.753835] (-) TimerEvent: {}
+[2.867835] (-) TimerEvent: {}
+[2.970798] (-) TimerEvent: {}
+[3.071218] (-) TimerEvent: {}
+[3.172877] (-) TimerEvent: {}
+[3.276251] (-) TimerEvent: {}
+[3.377109] (-) TimerEvent: {}
+[3.478410] (-) TimerEvent: {}
+[3.584851] (-) TimerEvent: {}
+[3.685172] (-) TimerEvent: {}
+[3.787163] (-) TimerEvent: {}
+[3.897146] (-) TimerEvent: {}
+[4.000150] (-) TimerEvent: {}
+[4.100450] (-) TimerEvent: {}
+[4.201719] (-) TimerEvent: {}
+[4.303971] (-) TimerEvent: {}
+[4.406124] (-) TimerEvent: {}
+[4.507094] (-) TimerEvent: {}
+[4.610158] (-) TimerEvent: {}
+[4.711058] (-) TimerEvent: {}
+[4.811798] (-) TimerEvent: {}
+[4.914117] (-) TimerEvent: {}
+[5.014458] (-) TimerEvent: {}
+[5.115376] (-) TimerEvent: {}
+[5.219209] (-) TimerEvent: {}
+[5.323855] (-) TimerEvent: {}
+[5.424223] (-) TimerEvent: {}
+[5.526910] (-) TimerEvent: {}
+[5.631981] (-) TimerEvent: {}
+[5.732331] (-) TimerEvent: {}
+[5.786145] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void Lidar::\x1b[01;32m\x1b[KtimerTick\x1b[m\x1b[K(float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.788219] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:31:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdt\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.788276] (rp_ros2_rviz) StderrLine: {'line': b'   31 | void Lidar::timerTick(\x1b[01;35m\x1b[Kfloat dt\x1b[m\x1b[K) {\n'}
+[5.788311] (rp_ros2_rviz) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~^~\x1b[m\x1b[K\n'}
+[5.832477] (-) TimerEvent: {}
+[5.934104] (-) TimerEvent: {}
+[6.034974] (-) TimerEvent: {}
+[6.138472] (-) TimerEvent: {}
+[6.244013] (-) TimerEvent: {}
+[6.344484] (-) TimerEvent: {}
+[6.443064] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DMapPlanner::\x1b[01;32m\x1b[KcomputePolicy\x1b[m\x1b[K(const Eigen::Vector2f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.443213] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:43:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::Vector2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::Matrix<float, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[KVec2f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.443256] (rp_ros2_rviz) StderrLine: {'line': b'   43 |   Vector2i goal_i=mapping.w2g(\x1b[01;31m\x1b[Kgoal\x1b[m\x1b[K).cast<int>();\n'}
+[6.443291] (rp_ros2_rviz) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.443325] (rp_ros2_rviz) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[6.443358] (rp_ros2_rviz) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[Kconst Eigen::Vector2f {aka const Eigen::Matrix<float, 2, 1>}\x1b[m\x1b[K\n'}
+[6.443391] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:5\x1b[m\x1b[K,\n'}
+[6.443424] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:1\x1b[m\x1b[K:\n'}
+[6.443456] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:39:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[KVec2f GridMap::\x1b[01;32m\x1b[Kw2g\x1b[m\x1b[K(Vec2f) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.447396] (-) TimerEvent: {}
+[6.453210] (rp_ros2_rviz) StderrLine: {'line': b'   39 |   inline Vec2f w2g(\x1b[01;36m\x1b[Kconst Vec2f w\x1b[m\x1b[K) const {\n'}
+[6.453354] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.453393] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:43:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.453430] (rp_ros2_rviz) StderrLine: {'line': b'   43 |   Vector2i goal_i=mapping.w2g(goal).cast<\x1b[01;31m\x1b[Kint\x1b[m\x1b[K>();\n'}
+[6.453465] (rp_ros2_rviz) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.477114] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kstep_mode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.478811] (rp_ros2_rviz) StderrLine: {'line': b'   54 |   bool \x1b[01;35m\x1b[Kstep_mode\x1b[m\x1b[K=true;\n'}
+[6.478900] (rp_ros2_rviz) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.486327] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat DMapPlanner::\x1b[01;32m\x1b[KcomputePath\x1b[m\x1b[K(std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, const Eigen::Vector2f&, float, size_t, bool) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.486513] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:114:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[KEigen::Matrix<float, 2, 1>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[KVec2f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.487294] (rp_ros2_rviz) StderrLine: {'line': b'  114 |       auto pgf=mapping.w2g(\x1b[01;31m\x1b[Kcurrent\x1b[m\x1b[K);\n'}
+[6.487336] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.487374] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[6.487408] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[KEigen::Matrix<float, 2, 1>\x1b[m\x1b[K\n'}
+[6.487442] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:39:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[KVec2f GridMap::\x1b[01;32m\x1b[Kw2g\x1b[m\x1b[K(Vec2f) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.487486] (rp_ros2_rviz) StderrLine: {'line': b'   39 |   inline Vec2f w2g(\x1b[01;36m\x1b[Kconst Vec2f w\x1b[m\x1b[K) const {\n'}
+[6.487521] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.487708] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:115:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.487746] (rp_ros2_rviz) StderrLine: {'line': b'  115 |       auto pg=pgf.cast<\x1b[01;31m\x1b[Kint\x1b[m\x1b[K>();\n'}
+[6.487777] (rp_ros2_rviz) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.518251] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:142:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::Vector2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst Eigen::Matrix<float, 2, 1>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[KVec2f\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.518401] (rp_ros2_rviz) StderrLine: {'line': b'  142 |     auto pgf=mapping.w2g(\x1b[01;31m\x1b[Kstart_pose\x1b[m\x1b[K);\n'}
+[6.518438] (rp_ros2_rviz) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.518480] (rp_ros2_rviz) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[6.519069] (rp_ros2_rviz) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[Kconst Eigen::Vector2f {aka const Eigen::Matrix<float, 2, 1>}\x1b[m\x1b[K\n'}
+[6.519143] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:39:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[KVec2f GridMap::\x1b[01;32m\x1b[Kw2g\x1b[m\x1b[K(Vec2f) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.519184] (rp_ros2_rviz) StderrLine: {'line': b'   39 |   inline Vec2f w2g(\x1b[01;36m\x1b[Kconst Vec2f w\x1b[m\x1b[K) const {\n'}
+[6.522930] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.522983] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:143:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.523019] (rp_ros2_rviz) StderrLine: {'line': b'  143 |     auto pg=pgf.cast<\x1b[01;31m\x1b[Kint\x1b[m\x1b[K>();\n'}
+[6.523054] (rp_ros2_rviz) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.536322] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:155:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.536794] (rp_ros2_rviz) StderrLine: {'line': b'  155 |       path.push_back(mapping.g2w(d_grid.ptr2rc(current).cast<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>()));\n'}
+[6.536907] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.548799] (-) TimerEvent: {}
+[6.577862] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void GridMap::\x1b[01;32m\x1b[Kdraw\x1b[m\x1b[K(Canvas&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.578020] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/grid_map.cpp:80:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.578064] (rp_ros2_rviz) StderrLine: {'line': b'   80 |   Vec2f \x1b[01;35m\x1b[Kt\x1b[m\x1b[K=_piw.t*(1./dest.resolution);\n'}
+[6.578099] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[6.649076] (-) TimerEvent: {}
+[6.752977] (-) TimerEvent: {}
+[6.853402] (-) TimerEvent: {}
+[6.955016] (-) TimerEvent: {}
+[7.057235] (-) TimerEvent: {}
+[7.161375] (-) TimerEvent: {}
+[7.263088] (-) TimerEvent: {}
+[7.363772] (-) TimerEvent: {}
+[7.466115] (-) TimerEvent: {}
+[7.567899] (-) TimerEvent: {}
+[7.668430] (-) TimerEvent: {}
+[7.772270] (-) TimerEvent: {}
+[7.772866] (rp_ros2_rviz) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/dmap_planner.cpp.o] Error 1\n'}
+[7.772975] (rp_ros2_rviz) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[7.872667] (-) TimerEvent: {}
+[7.976000] (-) TimerEvent: {}
+[8.076907] (-) TimerEvent: {}
+[8.177713] (-) TimerEvent: {}
+[8.278256] (-) TimerEvent: {}
+[8.378830] (-) TimerEvent: {}
+[8.479228] (-) TimerEvent: {}
+[8.580692] (-) TimerEvent: {}
+[8.681051] (-) TimerEvent: {}
+[8.785332] (-) TimerEvent: {}
+[8.886623] (-) TimerEvent: {}
+[8.987449] (-) TimerEvent: {}
+[9.089399] (-) TimerEvent: {}
+[9.190092] (-) TimerEvent: {}
+[9.292063] (-) TimerEvent: {}
+[9.395879] (-) TimerEvent: {}
+[9.497100] (-) TimerEvent: {}
+[9.601677] (-) TimerEvent: {}
+[9.702123] (-) TimerEvent: {}
+[9.807080] (-) TimerEvent: {}
+[9.907948] (-) TimerEvent: {}
+[10.009927] (-) TimerEvent: {}
+[10.122011] (-) TimerEvent: {}
+[10.223886] (-) TimerEvent: {}
+[10.333978] (-) TimerEvent: {}
+[10.441395] (-) TimerEvent: {}
+[10.517986] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:9\x1b[m\x1b[K:\n'}
+[10.519404] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:7:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGridMapping\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[KGridMap\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[10.519449] (rp_ros2_rviz) StderrLine: {'line': b'    7 |                 const \x1b[01;31m\x1b[KGridMapping\x1b[m\x1b[K& mapping,\n'}
+[10.519486] (rp_ros2_rviz) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.519520] (rp_ros2_rviz) StderrLine: {'line': b'      |                       \x1b[32m\x1b[KGridMap\x1b[m\x1b[K\n'}
+[10.519958] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid\x1b[01;32m\x1b[K drawPoints\x1b[m\x1b[K(cv::Mat&, const int&, const Eigen::Isometry2f&, const ContainerType&, uint8_t)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.520018] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:12:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kw2g\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kmapping\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.520057] (rp_ros2_rviz) StderrLine: {'line': b'   12 |     const auto pg=mapping.\x1b[01;31m\x1b[Kw2g\x1b[m\x1b[K(X*p);\n'}
+[10.520091] (rp_ros2_rviz) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[10.553436] (-) TimerEvent: {}
+[10.617843] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWorldNode::\x1b[01;32m\x1b[KWorldNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.618025] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:34:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[KDMapPlanner::\x1b[01;32m\x1b[KDMapPlanner\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.618081] (rp_ros2_rviz) StderrLine: {'line': b'   34 |             DMapPlanner \x1b[01;31m\x1b[Kplanner\x1b[m\x1b[K;\n'}
+[10.618126] (rp_ros2_rviz) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.636337] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:8\x1b[m\x1b[K:\n'}
+[10.636864] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:8:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KDMapPlanner::\x1b[01;32m\x1b[KDMapPlanner\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[10.636913] (rp_ros2_rviz) StderrLine: {'line': b'    8 | struct \x1b[01;36m\x1b[KDMapPlanner\x1b[m\x1b[K {\n'}
+[10.636957] (rp_ros2_rviz) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.636993] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:8:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KGridMap::GridMap()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.637029] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:5\x1b[m\x1b[K:\n'}
+[10.637062] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:29:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KGridMap::\x1b[01;32m\x1b[KGridMap\x1b[m\x1b[K(const char*, float, WorldItem*, const Isometry2f&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.637423] (rp_ros2_rviz) StderrLine: {'line': b'   29 |   \x1b[01;36m\x1b[KGridMap\x1b[m\x1b[K(const char* filename,\n'}
+[10.637469] (rp_ros2_rviz) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.637505] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:29:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 0 provided\n'}
+[10.637920] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:22:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KGridMap::\x1b[01;32m\x1b[KGridMap\x1b[m\x1b[K(int, int, float, WorldItem*, const Isometry2f&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.638069] (rp_ros2_rviz) StderrLine: {'line': b'   22 |   \x1b[01;36m\x1b[KGridMap\x1b[m\x1b[K(int rows,\n'}
+[10.638327] (rp_ros2_rviz) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.638366] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/grid_map.h:22:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 5 arguments, 0 provided\n'}
+[10.654331] (-) TimerEvent: {}
+[10.741361] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:71:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kkey\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.743226] (rp_ros2_rviz) StderrLine: {'line': b'   71 |             int \x1b[01;35m\x1b[Kkey\x1b[m\x1b[K=0;\n'}
+[10.747760] (rp_ros2_rviz) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[10.778000] (-) TimerEvent: {}
+[10.857113] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::\x1b[01;32m\x1b[Kredisplay\x1b[m\x1b[K(const GridMap&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.862841] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:187:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KdrawPoints(cv::Mat&, const GridMap&, const Eigen::Transform<float, 2, 1>, std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.862898] (rp_ros2_rviz) StderrLine: {'line': b'  187 |     \x1b[01;31m\x1b[KdrawPoints(shown_image, mapping, Eigen::Isometry2f::Identity(), path, 255)\x1b[m\x1b[K;\n'}
+[10.863154] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.863200] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:6:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ContainerType> void\x1b[01;32m\x1b[K drawPoints\x1b[m\x1b[K(cv::Mat&, const int&, const Eigen::Isometry2f&, const ContainerType&, uint8_t)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.863242] (rp_ros2_rviz) StderrLine: {'line': b'    6 | void \x1b[01;36m\x1b[KdrawPoints\x1b[m\x1b[K(cv::Mat& dest,\n'}
+[10.863276] (rp_ros2_rviz) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.863308] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:6:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[10.863343] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:187:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kmapping\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kconst GridMap\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Kconst int&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.872374] (rp_ros2_rviz) StderrLine: {'line': b'  187 |     drawPoints(shown_image, \x1b[01;36m\x1b[Kmapping\x1b[m\x1b[K, Eigen::Isometry2f::Identity(), path, 255);\n'}
+[10.872499] (rp_ros2_rviz) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[10.882006] (-) TimerEvent: {}
+[10.986980] (-) TimerEvent: {}
+[11.089263] (-) TimerEvent: {}
+[11.198134] (-) TimerEvent: {}
+[11.300818] (-) TimerEvent: {}
+[11.411779] (-) TimerEvent: {}
+[11.513368] (-) TimerEvent: {}
+[11.618888] (-) TimerEvent: {}
+[11.719458] (-) TimerEvent: {}
+[11.825446] (-) TimerEvent: {}
+[11.927493] (-) TimerEvent: {}
+[12.033187] (-) TimerEvent: {}
+[12.135427] (-) TimerEvent: {}
+[12.240096] (-) TimerEvent: {}
+[12.340793] (-) TimerEvent: {}
+[12.442007] (-) TimerEvent: {}
+[12.544324] (-) TimerEvent: {}
+[12.647489] (-) TimerEvent: {}
+[12.749891] (-) TimerEvent: {}
+[12.851865] (-) TimerEvent: {}
+[12.954185] (-) TimerEvent: {}
+[13.054791] (-) TimerEvent: {}
+[13.161126] (-) TimerEvent: {}
+[13.263166] (-) TimerEvent: {}
+[13.368026] (-) TimerEvent: {}
+[13.470319] (-) TimerEvent: {}
+[13.576359] (-) TimerEvent: {}
+[13.677130] (-) TimerEvent: {}
+[13.777886] (-) TimerEvent: {}
+[13.879447] (-) TimerEvent: {}
+[13.981504] (-) TimerEvent: {}
+[14.102158] (-) TimerEvent: {}
+[14.203922] (-) TimerEvent: {}
+[14.305101] (-) TimerEvent: {}
+[14.407023] (-) TimerEvent: {}
+[14.509145] (-) TimerEvent: {}
+[14.611751] (-) TimerEvent: {}
+[14.713320] (-) TimerEvent: {}
+[14.814810] (-) TimerEvent: {}
+[14.916103] (-) TimerEvent: {}
+[15.016907] (-) TimerEvent: {}
+[15.120963] (-) TimerEvent: {}
+[15.222015] (-) TimerEvent: {}
+[15.322408] (-) TimerEvent: {}
+[15.424774] (-) TimerEvent: {}
+[15.526221] (-) TimerEvent: {}
+[15.626850] (-) TimerEvent: {}
+[15.727310] (-) TimerEvent: {}
+[15.828125] (-) TimerEvent: {}
+[15.930198] (-) TimerEvent: {}
+[16.030923] (-) TimerEvent: {}
+[16.131756] (-) TimerEvent: {}
+[16.233967] (-) TimerEvent: {}
+[16.335311] (-) TimerEvent: {}
+[16.438295] (-) TimerEvent: {}
+[16.539956] (-) TimerEvent: {}
+[16.640825] (-) TimerEvent: {}
+[16.643889] (rp_ros2_rviz) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1\n'}
+[16.644022] (rp_ros2_rviz) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2\n'}
+[16.644067] (rp_ros2_rviz) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.650112] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[16.701248] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[16.712472] (-) EventReactorShutdown: {}

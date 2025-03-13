@@ -1,0 +1,59 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:191:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ cannot be overloaded with ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’
+  191 | void [01;31m[Kredisplay[m[K(const GridMapping& mapping) {
+      |      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:90:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’
+   90 |     void [01;36m[Kredisplay[m[K(const GridMapping& mapping) {
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:69:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   69 |             int [01;35m[Kkey[m[K=0;
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:107:20:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+  107 |           [01;31m[Kredisplay(planner->mapping)[m[K;
+      |           [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:21:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+  109 |           printPath([01;31m[Kpath[m[K);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+      |                     [01;36m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:11:[m[K [01;31m[Kerror: [m[K‘[01m[KprintPath[m[K’ was not declared in this scope
+  109 |           [01;31m[KprintPath[m[K(path);
+      |           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:110:32:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+  110 |           planner->computePath([01;31m[Kpath[m[K,
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+      |                     [01;36m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:114:32:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::use_gradient[m[K’ in static member function
+  114 |                                [01;31m[Kuse_gradient[m[K);
+      |                                [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:144:6:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | bool [01;36m[Kuse_gradient[m[K=false;
+      |      [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:21:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+  116 |           printPath([01;31m[Kpath[m[K);
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:149:21:[m[K [01;36m[Knote: [m[Kdeclared here
+  149 | std::list<Vector2f> [01;36m[Kpath[m[K;
+      |                     [01;36m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:125:40:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::background_mode[m[K’ in static member function
+  125 |         cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+      |                                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  145 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+      |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:126:16:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::background_mode[m[K’ in static member function
+  126 |         switch([01;31m[Kbackground_mode[m[K) {
+      |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  145 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+      |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:98:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   98 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

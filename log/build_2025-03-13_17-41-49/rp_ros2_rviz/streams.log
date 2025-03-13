@@ -1,0 +1,38 @@
+[0.012s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.095s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.427s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.505s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.533s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.587s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.620s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.742s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.750s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.858s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.972s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.994s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.039s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.062s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.072s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.432s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.432s] -- Configured cppcheck include dirs: /home/john/Desktop/rp_ros2_rviz/include;/home/john/Desktop/rp_ros2_rviz/msg
+[1.433s] -- Configured cppcheck exclude dirs and/or files: 
+[1.450s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.450s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.479s] -- Added test 'lint_cmake' to check CMake code style
+[1.493s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.626s] -- Added test 'uncrustify' to check C / C++ code style
+[1.626s] -- Configured uncrustify additional arguments: 
+[1.645s] -- Added test 'xmllint' to check XML markup files
+[1.649s] -- Configuring done (1.6s)
+[1.694s] -- Generating done (0.0s)
+[1.705s] -- Build files have been written to: /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[1.777s] [ 18%] Built target control_robot
+[1.791s] [ 27%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
+[1.823s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kdmap_planner.h: No such file or directory
+[1.823s]     1 | #include [01;31m[K"dmap_planner.h"[m[K
+[1.824s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.824s] compilation terminated.
+[1.825s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/dmap_planner.cpp.o] Error 1
+[1.825s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[1.829s] gmake: *** [Makefile:146: all] Error 2
+[1.844s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -1,0 +1,21 @@
+[0.009s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.074s] [ 20%] Built target control_robot
+[0.083s] [ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.085s] [ 40%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/canvas.cpp.o[0m
+[0.085s] [ 50%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/grid.cpp.o[0m
+[0.087s] [ 60%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o[0m
+[0.669s] [ 70%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/lidar.cpp.o[0m
+[1.049s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:8[m[K:
+[1.049s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:5:10:[m[K [01;31m[Kfatal error: [m[Kgrid_mapping.h: No such file or directory
+[1.049s]     5 | #include [01;31m[K"grid_mapping.h"[m[K
+[1.049s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.049s] compilation terminated.
+[1.080s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[1.080s] gmake[2]: *** Waiting for unfinished jobs....
+[4.443s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:[m[K In member function ‘[01m[Kvirtual void Lidar::[01;32m[KtimerTick[m[K(float)[m[K’:
+[4.444s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/lidar.cpp:31:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdt[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.444s]    31 | void Lidar::timerTick([01;35m[Kfloat dt[m[K) {
+[4.444s]       |                       [01;35m[K~~~~~~^~[m[K
+[5.149s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[5.149s] gmake: *** [Makefile:146: all] Error 2
+[5.154s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

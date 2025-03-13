@@ -1,0 +1,34 @@
+[0.028s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.185s] [ 20%] Built target control_robot
+[0.250s] [ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[5.824s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[5.824s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.824s]    53 |             int [01;35m[Kkey[m[K=0;
+[5.824s]       |                 [01;35m[K^~~[m[K
+[5.850s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[5.850s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:162:18:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[5.851s]   162 |         [01;31m[Kredisplay(planner->mapping)[m[K;
+[5.851s]       |         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[5.851s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:30:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KWorldNode::path[m[K’ in static member function
+[5.851s]   165 |         planner->computePath([01;31m[Kpath[m[K,
+[5.851s]       |                              [01;31m[K^~~~[m[K
+[5.851s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:83:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[5.851s]    83 | std::list<Vector2f> [01;36m[Kpath[m[K;
+[5.851s]       |                     [01;36m[K^~~~[m[K
+[5.877s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:169:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kuse_gradient[m[K’ was not declared in this scope
+[5.877s]   169 |                             [01;31m[Kuse_gradient[m[K);
+[5.877s]       |                             [01;31m[K^~~~~~~~~~~~[m[K
+[5.877s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:170:18:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[5.877s]   170 |         [01;31m[Kredisplay(planner->mapping)[m[K;
+[5.877s]       |         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[5.896s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:180:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_mode[m[K’ was not declared in this scope; did you mean ‘[01m[Kbackground_image[m[K’?
+[5.896s]   180 |     cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+[5.897s]       |                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.897s]       |                                    [32m[Kbackground_image[m[K
+[5.908s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:153:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.908s]   153 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[5.908s]       |                                                  [01;35m[K~~~~^~~[m[K
+[8.063s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[8.064s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[8.064s] gmake: *** [Makefile:146: all] Error 2
+[8.067s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

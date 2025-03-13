@@ -4,8 +4,12 @@
 #include "world.h"
 #include "opencv2/opencv.hpp"
 #include "canvas.h"
+#include <Eigen/Core>
+
+using Vector2iVector = std::vector<Vector2i>;
 
 struct GridMap:
+
   public Grid,
 
   public WorldItem{
@@ -14,6 +18,7 @@ struct GridMap:
   float inv_resolution=1; //pixel_per_meter;
   Vec2f grid_origin;
   Isometry2f _piw, _ipiw;
+
   GridMap(int rows,
           int cols,
           float res,
@@ -44,7 +49,12 @@ struct GridMap:
 
   void printGridMap() const;  // Aggiungi la dichiarazione della funzione qui
 
+  Vector2iVector getObstacles() const;
+
+  void drawObstacles(Canvas& dest) const;
 
 }
 
 ;
+
+

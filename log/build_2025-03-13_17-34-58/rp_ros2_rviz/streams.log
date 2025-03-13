@@ -1,0 +1,25 @@
+[0.021s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.096s] [ 20%] Built target control_robot
+[0.110s] [ 30%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[3.854s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[3.854s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.855s]    53 |             int [01;35m[Kkey[m[K=0;
+[3.855s]       |                 [01;35m[K^~~[m[K
+[3.870s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[3.870s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:87:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<DifferentialDriveRobot, __gnu_cxx::_S_atomic, false, false>::element_type = struct DifferentialDriveRobot[m[K’ {aka ‘[01m[Kstruct DifferentialDriveRobot[m[K’} has no member named ‘[01m[Kplanner_[m[K’
+[3.870s]    87 |         DMapPlanner* planner = self->ddr_->[01;31m[Kplanner_[m[K;  // Ottieni l'oggetto DMapPlanner, se necessario
+[3.870s]       |                                            [01;31m[K^~~~~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:96:104:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldNode[m[K’ has no member named ‘[01m[Kuse_gradient[m[K’
+[3.889s]    96 |             planner->computePath(self->path, world_pose, planner->mapping.resolution * 2, 10000, self->[01;31m[Kuse_gradient[m[K);
+[3.889s]       |                                                                                                        [01;31m[K^~~~~~~~~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:100:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldNode[m[K’ has no member named ‘[01m[Kbackground_mode[m[K’; did you mean ‘[01m[Kbackground_image[m[K’?
+[3.889s]   100 |         std::cerr << "background_mode= " << self->[01;31m[Kbackground_mode[m[K << std::endl;  // Accedi a background_mode su self
+[3.889s]       |                                                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.889s]       |                                                   [32m[Kbackground_image[m[K
+[3.889s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:79:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.889s]    79 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.889s]       |                                                  [01;35m[K~~~~^~~[m[K
+[7.046s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[7.047s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[7.047s] gmake: *** [Makefile:146: all] Error 2
+[7.071s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -1,0 +1,82 @@
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+    9 |   [01;31m[KGridMapping[m[K mapping; // to convert from world to grid coordinates
+      |   [01;31m[K^~~~~~~~~~~[m[K
+      |   [32m[KGridMap[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[Kinit[m[K(float, float, float, const DMap&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:25:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmapping[m[K’ was not declared in this scope
+   25 |   [01;31m[Kmapping[m[K.resize(obstacle_costs.rows, obstacle_costs.cols, resolution);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:41:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmapping[m[K’ was not declared in this scope
+   41 |   d_grid.resize([01;31m[Kmapping[m[K.rows, mapping.cols);
+      |                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:43:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   43 |   Vector2i goal_i=mapping.w2g(goal).cast<[01;31m[Kint[m[K>();
+      |                                          [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   54 |   bool [01;35m[Kstep_mode[m[K=true;
+      |        [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kfloat DMapPlanner::[01;32m[KcomputePath[m[K(std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, const Eigen::Vector2f&, float, size_t, bool) const[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:107:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmapping[m[K’ was not declared in this scope
+  107 |     approach_cost=[01;31m[Kmapping[m[K.resolution*2;
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:114:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kmapping[m[K’ was not declared in this scope
+  114 |       auto pgf=[01;31m[Kmapping[m[K.w2g(current);
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:115:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+  115 |       auto pg=pgf.cast<[01;31m[Kint[m[K>();
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:142:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kmapping[m[K’ was not declared in this scope
+  142 |     auto pgf=[01;31m[Kmapping[m[K.w2g(start_pose);
+      |              [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:143:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+  143 |     auto pg=pgf.cast<[01;31m[Kint[m[K>();
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:155:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+  155 |       path.push_back(mapping.g2w(d_grid.ptr2rc(current).cast<[01;31m[Kfloat[m[K>()));
+      |                                                              [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:174: CMakeFiles/world_node.dir/src/dmap_planner.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:8[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:9:3:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+    9 |   [01;31m[KGridMapping[m[K mapping; // to convert from world to grid coordinates
+      |   [01;31m[K^~~~~~~~~~~[m[K
+      |   [32m[KGridMap[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:9[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:7:23:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+    7 |                 const [01;31m[KGridMapping[m[K& mapping,
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+      |                       [32m[KGridMap[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:[m[K In function ‘[01m[Kvoid[01;32m[K drawPoints[m[K(cv::Mat&, const int&, const Eigen::Isometry2f&, const ContainerType&, uint8_t)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/display_utils.h:12:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kw2g[m[K’ in ‘[01m[Kmapping[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+   12 |     const auto pg=mapping.[01;31m[Kw2g[m[K(X*p);
+      |                           [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:71:26:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMapping[m[K’ does not name a type; did you mean ‘[01m[KGridMap[m[K’?
+   71 |     void redisplay(const [01;31m[KGridMapping[m[K& mapping) {
+      |                          [01;31m[K^~~~~~~~~~~[m[K
+      |                          [32m[KGridMap[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:53:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   53 |             int [01;35m[Kkey[m[K=0;
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:88:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+   88 |         Eigen::Vector2f world_pose = planner->[01;31m[Kmapping[m[K.g2w(Eigen::Vector2f(y, x));
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:94:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+   94 |             self->redisplay(planner->[01;31m[Kmapping[m[K);  // Chiama redisplay su self (istanza di WorldNode)
+      |                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:96:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+   96 |             planner->computePath(self->path, world_pose, planner->[01;31m[Kmapping[m[K.resolution * 2, 10000, self->use_gradient);
+      |                                                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:97:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct DMapPlanner[m[K’ has no member named ‘[01m[Kmapping[m[K’
+   97 |             self->redisplay(planner->[01;31m[Kmapping[m[K);  // Chiama redisplay su self (istanza di WorldNode)
+      |                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:79:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   79 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

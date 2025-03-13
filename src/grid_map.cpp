@@ -100,4 +100,49 @@ void GridMap::printGridMap() const {
   }
 }
 
+Vector2iVector GridMap::getObstacles() const {
+  Vector2iVector obstacles;  
+
+  // Itera su tutte le celle della griglia
+  for (int r = 0; r < rows; ++r) {
+      for (int c = 0; c < cols; ++c) {
+          // Ottieni il valore della cella dalla griglia
+          int value = getValue(r, c);  // Usa getValue per ottenere il valore della cella
+          // Considera gli ostacoli se il valore della cella è maggiore di una soglia
+          if (value < 127) {  // Cambia la soglia a seconda dei tuoi dati
+              obstacles.push_back(Vector2i(c, r)); // Aggiungi le coordinate dell'ostacolo
+          }
+      }
+  }
+  
+  return obstacles;
+}
+
+
+void GridMap::drawObstacles(Canvas& dest) const {
+  Vector2iVector obstacles = getObstacles();
+
+  Rotation2f Rt = _piw.R.inverse();                      // Rotazione inversa
+  Rotation2f sRt = Rt.scale(inv_resolution);              // Scala per la risoluzione della grid
+  Rotation2f s2Rt = Rt.scale(dest.resolution * inv_resolution*0.25);  // Scala per la risoluzione della canvas
+
+  dest.draw_image.setTo(255);
+
+  Vec2f sT = grid_origin - sRt * (dest.canvas_origin * dest.resolution + _piw.t);
+
+  for (const auto& obstacle : obstacles) {
+    int r = obstacle.x();  
+    int c = obstacle.y(); 
+
+    Vec2f dest_v(c, r); 
+    Vec2f src_v = s2Rt * dest_v + sT;
+    int src_r = src_v.x();
+    int src_c = src_v.y();
+
+    if (src_r >= 0 && src_r < dest.rows() && src_c >= 0 && src_c < dest.cols()) {
+      dest.draw_image.at<uint8_t>(src_r, src_c) = 0;  // 0 potrebbe essere il valore per il "nero" per un ostacolo visibile
+    }
+  }
+  WorldItem::draw(dest);
+}
 

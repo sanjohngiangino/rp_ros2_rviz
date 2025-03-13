@@ -1,0 +1,29 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:43:27:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KVector2iVector[m[K’ {aka ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K’} to ‘[01m[KCanvas&[m[K’
+   43 |             drawObstacles([01;31m[Kobstacles[m[K,canvas);
+      |                           [01;31m[K^~~~~~~~~[m[K
+      |                           [01;31m[K|[m[K
+      |                           [01;31m[KVector2iVector {aka std::vector<Eigen::Matrix<int, 2, 1> >}[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:153:28:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WorldNode::[01;32m[KdrawObstacles[m[K(Canvas&, const Vector2iVector&)[m[K’
+  153 | void drawObstacles([01;36m[KCanvas& canvas[m[K, const Vector2iVector& obstacles) {
+      |                    [01;36m[K~~~~~~~~^~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:56:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   56 |             int [01;35m[Kkey[m[K=0;
+      |                 [01;35m[K^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:82:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   82 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KdrawObstacles[m[K(Canvas&, const Vector2iVector&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:157:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCanvas::drawCircle(Vec2f&)[m[K’
+  157 |         [01;31m[Kcanvas.drawCircle(center)[m[K;  // Disegna un cerchio per ogni ostacolo
+      |         [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:6[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:3[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/canvas.h:27:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid Canvas::[01;32m[KdrawCircle[m[K(const Vec2f&, float, uint8_t)[m[K’
+   27 |   void [01;36m[KdrawCircle[m[K(const Vec2f& center, const float radius, const uint8_t gray_value);
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/canvas.h:27:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
