@@ -1,0 +1,60 @@
+[0.036s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.083s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.452s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.538s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.558s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.590s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.619s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.741s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.746s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.852s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.963s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.990s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.039s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.065s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.333s] -- Configuring incomplete, errors occurred!
+[1.334s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.334s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.334s]   rp_ros2_rviz --arguments-file
+[1.334s]   /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/rosidl_adapter__arguments__rp_ros2_rviz.json
+[1.334s]   --output-dir
+[1.334s]   /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/rosidl_adapter/rp_ros2_rviz
+[1.334s]   --output-file
+[1.334s]   /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/rosidl_adapter/rp_ros2_rviz.idls)
+[1.335s]   returned error code 1:
+[1.335s] 
+[1.335s]   Traceback (most recent call last):
+[1.335s] 
+[1.335s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.335s]     File "<frozen runpy>", line 88, in _run_code
+[1.335s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.335s]       sys.exit(main())
+[1.335s]                ^^^^^^
+[1.335s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.336s]       abs_idl_file = convert_to_idl(
+[1.336s]                      ^^^^^^^^^^^^^^^
+[1.336s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.336s]       return convert_msg_to_idl(
+[1.336s]              ^^^^^^^^^^^^^^^^^^^
+[1.336s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.336s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.336s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.336s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[1.337s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[1.337s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.337s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[1.337s]       self.base_type = BaseType(
+[1.337s]                        ^^^^^^^^^
+[1.337s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.337s]       raise InvalidResourceName(
+[1.337s] 
+[1.337s]   rosidl_adapter.parser.InvalidResourceName: 'sequence' is an invalid message
+[1.337s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.338s] 
+[1.338s] Call Stack (most recent call first):
+[1.338s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.338s]   CMakeLists.txt:24 (rosidl_generate_interfaces)
+[1.338s] 
+[1.338s] [0m
+[1.343s] gmake: *** [Makefile:470: cmake_check_build_system] Error 1
+[1.350s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

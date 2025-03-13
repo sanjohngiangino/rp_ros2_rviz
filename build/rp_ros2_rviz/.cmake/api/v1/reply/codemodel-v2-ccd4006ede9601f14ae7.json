@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-03beb6635dbe68d80b5c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rp_ros2_rviz",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "control_robot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control_robot-4332b1d737fbbb3e1baa.json",
+					"name" : "control_robot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rp_ros2_rviz_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rp_ros2_rviz_uninstall-5f468d468b283c76fa42.json",
+					"name" : "rp_ros2_rviz_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f485937c6c219145adab.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "world_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-world_node-3146f2518268d0f25595.json",
+					"name" : "world_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz",
+		"source" : "/home/john/Desktop/rp_ros2_rviz"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

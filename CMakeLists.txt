@@ -12,12 +12,14 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Eigen3 REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 add_executable(control_robot src/control_robot.cpp)
 ament_target_dependencies(control_robot rclcpp OpenCV std_msgs geometry_msgs)
 
 add_executable(world_node src/world_node.cpp src/world.cpp src/grid_map.cpp src/grid.cpp src/canvas.cpp src/differential_drive_robot.cpp src/lidar.cpp )
 ament_target_dependencies(world_node rclcpp geometry_msgs Eigen3 OpenCV std_msgs)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

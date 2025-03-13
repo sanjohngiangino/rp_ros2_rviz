@@ -15,6 +15,8 @@ public:
         RCLCPP_INFO(this->get_logger(), "World Created. Please insert path of the map: (only png files)");
         std::string map_path;
         std::getline(std::cin, map_path);
+        rclcpp::TimerBase::SharedPtr timer_;
+
         try {
 
             GridMap* grid_map = new GridMap(map_path.c_str(), 0.1, world_.get(), Isometry2f(0, 0, 0));
@@ -42,6 +44,11 @@ public:
                 "robot_control", 10, std::bind(&WorldNode::controlCallback, this, std::placeholders::_1));
             
 
+            timer_ = this->create_wall_timer(
+                std::chrono::milliseconds(500), 
+                std::bind(&WorldNode::executeNextCommand, this)
+            );
+            
             int key=0;
             //cv::namedWindow("World");
             //cv::setMouseCallback("World", onMouse, this);
@@ -87,36 +94,82 @@ public:
     }
 
 private:
+void controlCallback(const std_msgs::msg::String::SharedPtr msg) {
+    // Memorizza la sequenza di comandi
+    command_sequence = msg->data;
+    command_queue = std::queue<char>(std::deque<char>(command_sequence.begin(), command_sequence.end()));
+    
+    // Log
+    RCLCPP_INFO(this->get_logger(), "Sequenza di comandi ricevuta: %s", msg->data.c_str());
+}
+void executeNextCommand() {
+    if (!command_queue.empty()) {
+        char command_char = command_queue.front();
+        command_queue.pop(); // Estrai il comando dalla coda
 
-    void controlCallback(const std_msgs::msg::String::SharedPtr msg) {
-        std::string command = msg->data;
         float tv = 0, rv = 0;
-
-        if (command == "tv=1") {
+        if (command_char == 'w') {
             tv = 1;
-            msg->data = "";
-        } else if (command == "tv=-1") {
-            tv = -1;
-            msg->data = "";
-
-        } else if (command == "rv=0.5") {
-            rv = -0.5; 
-            msg->data = "";
-
-        } else if (command == "rv=-0.5") {
+       
+        } else if (command_char == 'a') {
             rv = 0.5;
-            msg->data = "";
-
-        } else if (command == "stop"){
-            tv =0,rv=0;
+        } else if (command_char == 's') {
+            tv = -1;
+        } else if (command_char == 'd') {
+            rv = -0.5;
+        } else if (command_char == 'q'){
+            tv = 0;
+            rv = 0;
+            RCLCPP_WARN(this->get_logger(), "Comando non riconosciuto: %c", command_char);
         }
-        RCLCPP_INFO(this->get_logger(), "Prima di cambiare i valori");
+
+        // Esegui il comando
         ddr_->trans_vel = tv;
         ddr_->rot_vel = rv;
-        
 
-        RCLCPP_INFO(this->get_logger(), "Robot control updated: tv=%f, rv=%f", tv, rv);
+        // Log per monitorare lo stato del robot
+        RCLCPP_INFO(this->get_logger(), "Comando eseguito: tv=%f, rv=%f", tv, rv);
+    } else {
+        RCLCPP_INFO(this->get_logger(), "Sequenza completata.");
     }
+}
+/*
+void controlCallback(const std_msgs::msg::String::SharedPtr msg) {
+    std::string command_sequence = msg->data;  // La stringa ricevuta con la sequenza di comandi
+    float tv = 0, rv = 0;
+
+    // Itera su ogni carattere della sequenza
+    for (char command_char : command_sequence) {
+        if (command_char == 'w') {
+            tv = 1;
+            rv = 0;
+        } else if (command_char == 'a') {
+            rv = 0.5;
+            tv = 0;
+        } else if (command_char == 's') {
+            tv = -1;
+            rv = 0;
+        } else if (command_char == 'd') {
+            rv = -0.5;
+            tv = 0;
+        } else if (command_char == 'q'){
+            tv = 0;
+            rv = 0;
+            RCLCPP_WARN(this->get_logger(), "Comando non riconosciuto: %c", command_char);
+        }
+
+        // Applica il comando al robot
+        ddr_->trans_vel = tv;
+        ddr_->rot_vel = rv;
+
+        // Log per monitorare lo stato del robot
+        RCLCPP_INFO(this->get_logger(), "Comando eseguito: tv=%f, rv=%f", tv, rv);
+    }
+
+    // Stato finale dopo aver eseguito tutta la sequenza
+    RCLCPP_INFO(this->get_logger(), "Sequenza completata: tv=%f, rv=%f", tv, rv);
+}*/
+
     /*
     void publishRobotPose() {
         geometry_msgs::msg::Pose pose_msg;
@@ -152,6 +205,8 @@ private:
     rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr goal_pub_;
     std::shared_ptr<World> world_;
     std::shared_ptr<DifferentialDriveRobot> ddr_;
+    std::string command_sequence;  // Sequenza di comandi ricevuta
+    std::queue<char> command_queue;
 
 };
 

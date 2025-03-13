@@ -4,18 +4,6 @@
 #include <termios.h>
 #include <geometry_msgs/msg/pose.hpp>
 
-char getKey() {
-    struct termios oldt, newt;
-    char ch;
-    tcgetattr(STDIN_FILENO, &oldt);
-    newt = oldt;
-    newt.c_lflag &= ~(ICANON | ECHO);
-    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
-    ch = getchar();
-    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
-    return ch;
-}
-
 class ControlNode : public rclcpp::Node {
 public:
     ControlNode() : Node("control_node") {
@@ -34,7 +22,7 @@ private:
         auto message = std_msgs::msg::String();
         std::string command;
 
-        command = "tv=1";
+        command = "wwwaadddsssq";
         message.data = command;
 
         control_pub_->publish(message); 
