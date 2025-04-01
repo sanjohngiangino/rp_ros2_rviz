@@ -1,9 +1,0 @@
-[0.019s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
-[0.124s] [ 25%] [32m[1mLinking CXX executable dmap_node[0m
-[0.783s] /usr/bin/ld: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o: in function `DmapNode::DmapNode()':
-[0.783s] dmap_node.cpp:(.text._ZN8DmapNodeC2Ev[_ZN8DmapNodeC5Ev]+0x398): undefined reference to `Robot::Robot(int, int, float, int)'
-[0.910s] collect2: error: ld returned 1 exit status
-[0.914s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:275: dmap_node] Error 1
-[0.914s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
-[0.914s] gmake: *** [Makefile:146: all] Error 2
-[0.925s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

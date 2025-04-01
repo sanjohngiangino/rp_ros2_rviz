@@ -1,1 +1,1 @@
-/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/ament_cmake_environment_hooks/path.dsv
+prepend-non-duplicate-if-exists;PATH;bin

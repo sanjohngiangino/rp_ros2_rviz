@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/dmap_node" "/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/world_node" "/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/pathplanner_node" "TARGETS" "dmap_node" "world_node" "pathplanner_node" "DESTINATION" "lib/rp_ros2_rviz")

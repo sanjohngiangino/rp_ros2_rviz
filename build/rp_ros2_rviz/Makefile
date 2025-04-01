@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz
+CMAKE_SOURCE_DIR = /home/john/Desktop/rp_ros2_rviz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz
+CMAKE_BINARY_DIR = /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

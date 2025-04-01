@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz
+CMAKE_SOURCE_DIR = /home/john/Desktop/rp_ros2_rviz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz
+CMAKE_BINARY_DIR = /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
 
 # Utility rule file for rp_ros2_rviz_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/rp_ros2_rviz_uninstall.dir/compiler_depend.make
 include CMakeFiles/rp_ros2_rviz_uninstall.dir/progress.make
 
 CMakeFiles/rp_ros2_rviz_uninstall:
-	/usr/bin/cmake -P /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 rp_ros2_rviz_uninstall: CMakeFiles/rp_ros2_rviz_uninstall
 rp_ros2_rviz_uninstall: CMakeFiles/rp_ros2_rviz_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/rp_ros2_rviz_uninstall.dir/clean:
 .PHONY : CMakeFiles/rp_ros2_rviz_uninstall.dir/clean
 
 CMakeFiles/rp_ros2_rviz_uninstall.dir/depend:
-	cd /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/john/Desktop/path_ros/rp_ros2_rviz /home/john/Desktop/path_ros/rp_ros2_rviz /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/rp_ros2_rviz_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/john/Desktop/rp_ros2_rviz /home/john/Desktop/rp_ros2_rviz /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/rp_ros2_rviz_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/rp_ros2_rviz_uninstall.dir/depend
 

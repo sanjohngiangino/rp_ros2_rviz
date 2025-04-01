@@ -1,1 +1,2 @@
-/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/ament_cmake_environment_hooks/local_setup.dsv
+source;share/rp_ros2_rviz/environment/ament_prefix_path.sh
+source;share/rp_ros2_rviz/environment/path.sh
