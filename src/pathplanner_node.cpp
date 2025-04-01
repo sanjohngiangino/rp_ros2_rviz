@@ -8,6 +8,7 @@
 #include "rp_ros2_rviz/dmap_planner.h"
 #include "rp_ros2_rviz/display_utils.h"
 #include "rp_ros2_rviz/robot.h"
+#include "geometry_msgs/msg/point.hpp"
 
 class PathPlanner : public rclcpp::Node
 {
@@ -22,7 +23,10 @@ public:
             "PathImage", 10, std::bind(&PathPlanner::string_callback, this, std::placeholders::_1));
 
         bool_pub_path = this->create_publisher<std_msgs::msg::Bool>("stop_publish", 10);
-
+        
+        robot_position_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
+            "Robot", 10, std::bind(&PathPlanner::robotCallback, this, std::placeholders::_1));
+        
         // Creazione del timer
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
@@ -33,10 +37,24 @@ public:
     }
 
 private:
+    void robotCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
+        latest_robot_position = Eigen::Vector2f(msg->x, msg->y);
+        has_robot_position_ = true;
+        RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
+                    latest_robot_position.x(), latest_robot_position.y());
+        if (!dmap_ready_) return;
+
+        
+        makePath(this->dmap, 0.05, 1.0);
+
+    }
+
     void string_callback(const std_msgs::msg::String::SharedPtr msg)
     {   
         image_path =  msg->data;
         RCLCPP_INFO(this->get_logger(), "Ricevuto PNG: '%s'", image_path.c_str());
+        RCLCPP_INFO(this->get_logger(), "Inizializzazione Dmap");
+
         bool_msg.data = true;
         bool_pub_path->publish(bool_msg);
         custom_image = cv::imread(image_path, cv::IMREAD_COLOR);
@@ -44,37 +62,46 @@ private:
             timer_->cancel();  // Ferma il timer
         }*/
         int rows=custom_image.rows, cols=custom_image.cols;
-        float resolution=0.05;
 
-        DMap dmap(rows, cols);
-        dmap.clear();
+        dmap =std::make_shared<DMap>(rows, cols);
+        dmap->clear();
 
         Vector2iVector obs = getObstaclesFromImage(custom_image);
-        dmap.update(obs);
-    
-        my_robot = std::make_unique<Robot>(10.0f, 0.0f, 0, 1);
-        cerr << "robot_pose in definition: " << my_robot->position << endl;
+        dmap->update(obs);
+        dmap_ready_ = true;
+        path_generated_ = false;
 
-        float expansion_range=1;
-        planner.init(resolution, 0.3, expansion_range, dmap);
-        planner.computePolicy(my_robot->position);
-        
-        Eigen::Vector2f world_pose=planner.mapping.g2w(Eigen::Vector2f(0,0));
-
-        planner.computePath(path,
-            world_pose,
-            planner.mapping.resolution*2,
-            10000,
-            use_gradient);
-        
-            my_robot->followPath(path);
-        cerr << "robot_pose in ending: " << my_robot->position << endl;
-
-        RCLCPP_INFO(this->get_logger(), "Path completato");
-
-
-
+        RCLCPP_INFO(this->get_logger(), "✅ DMap pronto. Aspetto posizione robot...");
     }
+
+    void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range){
+        int retries = 200;
+        while (!has_robot_position_ && rclcpp::ok() && retries-- > 0) {
+            RCLCPP_WARN(this->get_logger(), "⏳ In attesa della posizione del robot...");
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+
+        if (!has_robot_position_) {
+            RCLCPP_ERROR(this->get_logger(), "❌ Posizione del robot non ricevuta. Aborto pianificazione.");
+            return;
+        }
+            
+        RCLCPP_INFO(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)", 
+                latest_robot_position.x(), latest_robot_position.y());
+
+        planner.init(resolution, 0.3, expansion_range, *dmap);
+        //planner.computePolicy(my_robot->position);
+    
+        Eigen::Vector2f world_goal = planner.mapping.g2w(latest_robot_position);
+    
+        planner.computePath(path, world_goal, planner.mapping.resolution * 2, 10000, use_gradient);
+    
+        //my_robot->followPath(path);
+        /*
+        RCLCPP_INFO(this->get_logger(), "🏁 Path completato. Posizione finale: (%.2f, %.2f)",
+                    my_robot->position.x(), my_robot->position.y());*/
+    }
+    
 
     void publishBool()
     {
@@ -116,10 +143,15 @@ private:
     std::string image_path;
     cv::Mat custom_image;
     DMapPlanner planner;
-    std::unique_ptr<Robot> my_robot;  // 🔹 Puntatore unico a Robot (inizialmente nullo)    
+    Eigen::Vector2f latest_robot_position = Eigen::Vector2f::Zero();
+    bool has_robot_position_ = false;
+    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr robot_position_sub_;
+    //std::unique_ptr<Robot> my_robot;  // 🔹 Puntatore unico a Robot (inizialmente nullo)    
     std::list<Vector2f> path;
     bool use_gradient = false;
-
+    bool dmap_ready_ = false;
+    bool path_generated_ = false;
+    std::shared_ptr<DMap>  dmap;
 };
 
 int main(int argc, char **argv)

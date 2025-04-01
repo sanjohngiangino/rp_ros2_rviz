@@ -61,6 +61,7 @@ public:
         background_image = custom_image.clone();
         shown_image = background_image.clone();
 
+        /*
         std::vector<Eigen::Vector2f> fake_path = {
             {10.0f, 10.0f}, {9.5f, 9.5f}, {9.0f, 9.0f}, {8.5f, 8.5f},
             {8.0f, 8.0f}, {7.5f, 7.5f}, {7.0f, 7.0f}, {6.5f, 6.5f},
@@ -69,7 +70,7 @@ public:
             {2.0f, 2.0f}, {1.5f, 1.5f}, {1.0f, 1.0f}, {0.5f, 0.5f},
             {0.0f, 0.0f}
         };
-        followPath(fake_path);
+        followPath(fake_path);*/
     }
 
     /*
@@ -144,6 +145,17 @@ public:
                 timer_->cancel();  // Ferma il timer
                 timer_.reset();    // Libera la memoria del timer
             }
+
+            if (my_robot) {
+                auto robot_pos = my_robot->position;
+                geometry_msgs::msg::Point pos_msg;
+                pos_msg.x = robot_pos.x();
+                pos_msg.y = robot_pos.y();
+                pos_msg.z = 0.0;
+                RCLCPP_INFO(this->get_logger(), "📤 Posizione robot pubblicata: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+                robot_publisher_->publish(pos_msg);
+            }
+            
         } else {
             //RCLCPP_INFO(this->get_logger(), "Ricevuto start, continuo la pubblicazione.");
             continue_publishing_ = true;

@@ -1,0 +1,115 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:80:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   80 |         [01;31m[Kwhile[m[K (!has_robot_position_ && rclcpp::ok() && retries-- > 0) {
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:85:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+   85 |         [01;31m[Kif[m[K (!has_robot_position_) {
+      |         [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:90:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   90 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:90:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   90 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)",
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:93:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ does not name a type; did you mean ‘[01m[KDMapPlanner[m[K’?
+   93 |         [01;31m[Kplanner[m[K.init(resolution, 0.3, expansion_range, dmap);
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[KDMapPlanner[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ does not name a type; did you mean ‘[01m[KDMapPlanner[m[K’?
+   98 |         [01;31m[Kplanner[m[K.computePath(path, world_goal, planner.mapping.resolution * 2, 10000, use_gradient);
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[KDMapPlanner[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:104:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  104 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:96:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ was not declared in this scope
+   96 |         Eigen::Vector2f world_goal = [01;31m[Kplanner[m[K.mapping.g2w(latest_robot_position);
+      |                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:96:58:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_robot_position[m[K’ was not declared in this scope
+   96 |         Eigen::Vector2f world_goal = planner.mapping.g2w([01;31m[Klatest_robot_position[m[K);
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_msg[m[K’ was not declared in this scope
+   19 |         [01;31m[Kbool_msg[m[K.data = false;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   22 |         [01;31m[Ksubscription_[m[K = this->create_subscription<std_msgs::msg::String>(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:25:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_pub_path[m[K’ was not declared in this scope
+   25 |         [01;31m[Kbool_pub_path[m[K = this->create_publisher<std_msgs::msg::Bool>("stop_publish", 10);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_position_sub_[m[K’ was not declared in this scope
+   27 |         [01;31m[Krobot_position_sub_[m[K = this->create_subscription<geometry_msgs::msg::Point>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   31 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:33:37:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishBool[m[K’ is not a member of ‘[01m[KPathPlanner[m[K’
+   33 |             std::bind(&PathPlanner::[01;31m[KpublishBool[m[K, this));
+      |                                     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KrobotCallback[m[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:41:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_robot_position[m[K’ was not declared in this scope
+   41 |         [01;31m[Klatest_robot_position[m[K = Eigen::Vector2f(msg->x, msg->y);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:42:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_robot_position_[m[K’ was not declared in this scope
+   42 |         [01;31m[Khas_robot_position_[m[K = true;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:45:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap_ready_[m[K’ was not declared in this scope
+   45 |         if (![01;31m[Kdmap_ready_[m[K) return;
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_generated_[m[K’ was not declared in this scope
+   47 |         if (![01;31m[Kpath_generated_[m[K) {
+      |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:48:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass PathPlanner[m[K’ has no member named ‘[01m[Kdmap[m[K’
+   48 |             makePath(this->[01;31m[Kdmap[m[K, 0.05, 1.0);
+      |                            [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:55:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_path[m[K’ was not declared in this scope; did you mean ‘[01m[KmakePath[m[K’?
+   55 |         [01;31m[Kimage_path[m[K =  msg->data;
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[KmakePath[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:59:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_msg[m[K’ was not declared in this scope
+   59 |         [01;31m[Kbool_msg[m[K.data = true;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_pub_path[m[K’ was not declared in this scope
+   60 |         [01;31m[Kbool_pub_path[m[K->publish(bool_msg);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcustom_image[m[K’ was not declared in this scope
+   61 |         [01;31m[Kcustom_image[m[K = cv::imread(image_path, cv::IMREAD_COLOR);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:67:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap[m[K’ was not declared in this scope; did you mean ‘[01m[KDMap[m[K’?
+   67 |         [01;31m[Kdmap[m[K =std::make_shared<DMap>(rows, cols);
+      |         [01;31m[K^~~~[m[K
+      |         [32m[KDMap[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:67:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kcols[m[K’ was not declared in this scope; did you mean ‘[01m[Kcosl[m[K’?
+   67 |         dmap =std::make_shared<DMap>(rows, [01;31m[Kcols[m[K);
+      |                                            [01;31m[K^~~~[m[K
+      |                                            [32m[Kcosl[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:70:30:[m[K [01;31m[Kerror: [m[K‘[01m[KgetObstaclesFromImage[m[K’ was not declared in this scope
+   70 |         Vector2iVector obs = [01;31m[KgetObstaclesFromImage[m[K(custom_image);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap_ready_[m[K’ was not declared in this scope
+   72 |         [01;31m[Kdmap_ready_[m[K = true;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_generated_[m[K’ was not declared in this scope
+   73 |         [01;31m[Kpath_generated_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K publishBool[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:109:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_pub_path[m[K’ was not declared in this scope
+  109 |         [01;31m[Kbool_pub_path[m[K->publish(bool_msg);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:109:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_msg[m[K’ was not declared in this scope
+  109 |         bool_pub_path->publish([01;31m[Kbool_msg[m[K);
+      |                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K At global scope:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:156:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  156 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

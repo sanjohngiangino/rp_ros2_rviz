@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.064s] [ 33%] Built target world_node
+[0.064s] [ 66%] Built target dmap_node
+[0.072s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[3.541s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KrobotCallback[m[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.541s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:45:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap_ready_[m[K’ was not declared in this scope
+[3.541s]    45 |         if (![01;31m[Kdmap_ready_[m[K) return;
+[3.541s]       |              [01;31m[K^~~~~~~~~~~[m[K
+[3.563s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_generated_[m[K’ was not declared in this scope
+[3.564s]    47 |         if (![01;31m[Kpath_generated_[m[K) {
+[3.564s]       |              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.574s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:48:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap[m[K’ was not declared in this scope; did you mean ‘[01m[KDMap[m[K’?
+[3.574s]    48 |             makePath([01;31m[Kdmap[m[K, 0.05, 1.0);
+[3.574s]       |                      [01;31m[K^~~~[m[K
+[3.574s]       |                      [32m[KDMap[m[K
+[3.598s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.598s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap_ready_[m[K’ was not declared in this scope
+[3.598s]    72 |         [01;31m[Kdmap_ready_[m[K = true;
+[3.598s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[3.624s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_generated_[m[K’ was not declared in this scope
+[3.624s]    73 |         [01;31m[Kpath_generated_[m[K = false;
+[3.624s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[6.607s] gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+[6.607s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+[6.607s] gmake: *** [Makefile:146: all] Error 2
+[6.614s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

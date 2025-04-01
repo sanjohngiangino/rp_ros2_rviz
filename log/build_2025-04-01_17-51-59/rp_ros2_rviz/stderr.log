@@ -1,0 +1,12 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KrobotCallback[m[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:48:28:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::optional<DMap>[m[K’ to ‘[01m[Kconst DMap&[m[K’
+   48 |             makePath([01;31m[Kthis->dmap[m[K, 0.05, 1.0);
+      |                      [01;31m[K~~~~~~^~~~[m[K
+      |                            [01;31m[K|[m[K
+      |                            [01;31m[Kstd::optional<DMap>[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:78:31:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid PathPlanner::[01;32m[KmakePath[m[K(const DMap&, float, float)[m[K’
+   78 |     void makePath([01;36m[Kconst DMap& dmap[m[K, float resolution, float expansion_range) {
+      |                   [01;36m[K~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
