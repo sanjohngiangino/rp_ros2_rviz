@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.062s] [ 53%] Built target dmap_node
+[0.062s] [ 66%] Built target pathplanner_node
+[0.069s] [ 73%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[4.513s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvvoid[m[K’ does not name a type; did you mean ‘[01m[Kvoid[m[K’?
+[4.513s]   152 |     [01;31m[Kvvoid[m[K redisplay() {
+[4.513s]       |     [01;31m[K^~~~~[m[K
+[4.513s]       |     [32m[Kvoid[m[K
+[4.522s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In lambda function:
+[4.523s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:69:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldNode[m[K’ has no member named ‘[01m[Kredisplay[m[K’
+[4.523s]    69 |             this->[01;31m[Kredisplay[m[K();
+[4.523s]       |                   [01;31m[K^~~~~~~~~[m[K
+[4.539s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.540s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:239:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.540s]   239 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.540s]       |                                                  [01;35m[K~~~~^~~[m[K
+[7.001s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[7.001s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+[7.002s] gmake: *** [Makefile:146: all] Error 2
+[7.007s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

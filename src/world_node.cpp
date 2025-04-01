@@ -48,7 +48,7 @@ public:
 
     custom_image = cv::imread("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", cv::IMREAD_COLOR);
     
-    my_robot = std::make_unique<Robot>(10.0f, 0.0f, 0, 1);
+    my_robot = std::make_unique<Robot>(10.0f, 10.0f, 0, 1);
     
     timer_ = this->create_wall_timer(
         std::chrono::seconds(1),
@@ -60,6 +60,16 @@ public:
     } else {
         background_image = custom_image.clone();
         shown_image = background_image.clone();
+
+        std::vector<Eigen::Vector2f> fake_path = {
+            {10.0f, 10.0f}, {9.5f, 9.5f}, {9.0f, 9.0f}, {8.5f, 8.5f},
+            {8.0f, 8.0f}, {7.5f, 7.5f}, {7.0f, 7.0f}, {6.5f, 6.5f},
+            {6.0f, 6.0f}, {5.5f, 5.5f}, {5.0f, 5.0f}, {4.5f, 4.5f},
+            {4.0f, 4.0f}, {3.5f, 3.5f}, {3.0f, 3.0f}, {2.5f, 2.5f},
+            {2.0f, 2.0f}, {1.5f, 1.5f}, {1.0f, 1.0f}, {0.5f, 0.5f},
+            {0.0f, 0.0f}
+        };
+        followPath(fake_path);
     }
 
     /*
@@ -96,7 +106,20 @@ public:
     cerr << "una chiamata : " << endl;
     */
 }   
-    
+    void followPath(const std::vector<Eigen::Vector2f>& path) {
+        float dt_ms = 50.0f;  // Delay in millisecondi
+
+        for (const auto& p : path) {
+            my_robot->position = p;
+            RCLCPP_INFO(this->get_logger(), "➡️ Robot posizione: (%.3f, %.3f)", p.x(), p.y());
+            redisplay();
+            cv::waitKey(static_cast<int>(dt_ms));
+        }
+
+        RCLCPP_INFO(this->get_logger(), "✅ Path completato.");
+    }
+
+
         
     void redisplay() {
         if (background_image.empty()) return;

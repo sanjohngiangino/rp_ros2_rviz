@@ -1,0 +1,15 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:152:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvvoid[m[K’ does not name a type; did you mean ‘[01m[Kvoid[m[K’?
+  152 |     [01;31m[Kvvoid[m[K redisplay() {
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Kvoid[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In lambda function:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:69:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldNode[m[K’ has no member named ‘[01m[Kredisplay[m[K’
+   69 |             this->[01;31m[Kredisplay[m[K();
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:239:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  239 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

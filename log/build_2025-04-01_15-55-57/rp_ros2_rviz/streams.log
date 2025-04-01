@@ -1,0 +1,33 @@
+[0.013s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.072s] [ 26%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.072s] [ 53%] Built target pathplanner_node
+[0.072s] [ 73%] Built target dmap_node
+[3.629s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[3.629s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:202:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.629s]   202 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.629s]       |                                                  [01;35m[K~~~~^~~[m[K
+[9.690s] [ 80%] [32m[1mLinking CXX executable world_node[0m
+[10.599s] [100%] Built target world_node
+[10.612s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[10.622s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[10.631s] -- Install configuration: ""
+[10.631s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/dmap_node
+[10.631s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node
+[10.638s] -- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node" to ""
+[10.638s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node
+[10.638s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/package_run_dependencies/rp_ros2_rviz
+[10.639s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/parent_prefix_path/rp_ros2_rviz
+[10.639s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.sh
+[10.639s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.dsv
+[10.639s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.sh
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.dsv
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.bash
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.sh
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.zsh
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.dsv
+[10.640s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.dsv
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/packages/rp_ros2_rviz
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig.cmake
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig-version.cmake
+[10.640s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.xml
+[10.645s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
