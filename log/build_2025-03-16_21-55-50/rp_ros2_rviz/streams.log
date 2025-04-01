@@ -1,0 +1,16 @@
+[0.016s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.101s] [ 33%] Built target world_node
+[0.103s] [ 66%] Built target dmap_node
+[0.107s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[3.540s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[3.541s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcustom_image[m[K’ was not declared in this scope
+[3.541s]    32 |         [01;31m[Kcustom_image[m[K = cv::imread(image_path, cv::IMREAD_COLOR);
+[3.541s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[3.566s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.566s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:62:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcustom_image[m[K’ was not declared in this scope
+[3.566s]    62 |         [01;31m[Kcustom_image[m[K = cv::imread(image_path, cv::IMREAD_COLOR);
+[3.566s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[6.140s] gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+[6.140s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+[6.141s] gmake: *** [Makefile:146: all] Error 2
+[6.179s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

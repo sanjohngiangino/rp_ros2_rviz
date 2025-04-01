@@ -1,0 +1,42 @@
+[0.012s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.103s] [ 66%] Built target dmap_node
+[0.103s] [ 66%] Built target world_node
+[0.120s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[3.988s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.988s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[3.988s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[3.988s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[3.988s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.988s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:64:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.988s]    64 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Ricevuto PNG: '%s'"[m[K, image_path);
+[3.988s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.988s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:64:58:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.988s]    64 |         RCLCPP_INFO(this->get_logger(), "Ricevuto PNG: '[01;36m[K%s[m[K'", image_path);
+[3.988s]       |                                                         [01;36m[K~^[m[K
+[3.988s]       |                                                          [01;36m[K|[m[K
+[3.988s]       |                                                          [01;36m[Kchar*[m[K
+[10.471s] [ 80%] [32m[1mLinking CXX executable pathplanner_node[0m
+[11.047s] [100%] Built target pathplanner_node
+[11.062s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[11.082s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz
+[11.093s] -- Install configuration: ""
+[11.093s] -- Execute custom install script
+[11.093s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/dmap_node
+[11.093s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node
+[11.093s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node
+[11.093s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/package_run_dependencies/rp_ros2_rviz
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/parent_prefix_path/rp_ros2_rviz
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.sh
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.dsv
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.sh
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.dsv
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.bash
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.sh
+[11.096s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.zsh
+[11.097s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.dsv
+[11.097s] -- Symlinking: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.dsv
+[11.111s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/packages/rp_ros2_rviz
+[11.112s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig.cmake
+[11.112s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig-version.cmake
+[11.113s] -- Up-to-date symlink: /home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.xml
+[11.116s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz

@@ -1,0 +1,143 @@
+[0.007s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.092s] [ 25%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[4.577s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:92:11:[m[K [01;31m[Kerror: [m[K‘[01m[Krows[m[K’ is not a type
+[4.577s]    92 | DMap dmap([01;31m[Krows[m[K, cols);
+[4.577s]       |           [01;31m[K^~~~[m[K
+[4.577s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:92:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcols[m[K’ is not a type
+[4.578s]    92 | DMap dmap(rows, [01;31m[Kcols[m[K);
+[4.578s]       |                 [01;31m[K^~~~[m[K
+[4.579s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:93:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap[m[K’ does not name a type; did you mean ‘[01m[KDMap[m[K’?
+[4.579s]    93 | [01;31m[Kdmap[m[K.clear();
+[4.579s]       | [01;31m[K^~~~[m[K
+[4.579s]       | [32m[KDMap[m[K
+[4.579s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:94:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_points[m[K’ is not a type
+[4.579s]    94 | Vector2iVector obstacles([01;31m[Kn_points[m[K);
+[4.579s]       |                          [01;31m[K^~~~~~~~[m[K
+[4.579s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:95:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+[4.579s]    95 | [01;31m[Kfor[m[K (auto& o: obstacles) {
+[4.580s]       | [01;31m[K^~~[m[K
+[4.581s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:98:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap[m[K’ does not name a type; did you mean ‘[01m[KDMap[m[K’?
+[4.581s]    98 | [01;31m[Kdmap[m[K.update(obstacles);
+[4.581s]       | [01;31m[K^~~~[m[K
+[4.581s]       | [32m[KDMap[m[K
+[4.584s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:103:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ does not name a type; did you mean ‘[01m[KDMapPlanner[m[K’?
+[4.584s]   103 | [01;31m[Kplanner[m[K.init(resolution, 0.3, expansion_range, dmap);
+[4.584s]       | [01;31m[K^~~~~~~[m[K
+[4.584s]       | [32m[KDMapPlanner[m[K
+[4.588s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:104:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ does not name a type; did you mean ‘[01m[KDMapPlanner[m[K’?
+[4.588s]   104 | [01;31m[Kplanner[m[K.computePolicy(Vector2f::Zero());
+[4.588s]       | [01;31m[K^~~~~~~[m[K
+[4.588s]       | [32m[KDMapPlanner[m[K
+[4.592s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:105:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ does not name a type
+[4.592s]   105 | [01;31m[Kcerr[m[K << "planner ready" << endl;
+[4.592s]       | [01;31m[K^~~~[m[K
+[4.592s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:106:17:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[4.592s]   106 | cv::namedWindow([01;31m[K"planner"[m[K, cv::WINDOW_GUI_NORMAL | cv::WINDOW_AUTOSIZE);
+[4.592s]       |                 [01;31m[K^~~~~~~~~[m[K
+[4.592s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:106:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[4.592s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:106:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KnamedWindow[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.592s]   106 | [01;31m[Kcv[m[K::namedWindow("planner", cv::WINDOW_GUI_NORMAL | cv::WINDOW_AUTOSIZE);
+[4.593s]       | [01;31m[K^~[m[K
+[4.593s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:106:1:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[4.598s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:107:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ does not name a type
+[4.598s]   107 | [01;31m[Kbackground_image[m[K=grid2cv(planner.policy, true);
+[4.598s]       | [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.598s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:108:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ is not a type
+[4.598s]   108 | redisplay([01;31m[Kplanner[m[K.mapping);
+[4.598s]       |           [01;31m[K^~~~~~~[m[K
+[4.598s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:108:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K.[m[K’ token
+[4.598s]   108 | redisplay(planner[01;31m[K.[m[Kmapping);
+[4.598s]       |                  [01;31m[K^[m[K
+[4.598s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:108:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kredisplay[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.599s]   108 | [01;31m[Kredisplay[m[K(planner.mapping);
+[4.599s]       | [01;31m[K^~~~~~~~~[m[K
+[4.599s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:109:22:[m[K [01;31m[Kerror: [m[Kexpected identifier before string constant
+[4.599s]   109 | cv::setMouseCallback([01;31m[K"planner"[m[K, onMouse, &planner);
+[4.599s]       |                      [01;31m[K^~~~~~~~~[m[K
+[4.599s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:109:22:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before string constant
+[4.600s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:109:1:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KsetMouseCallback[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.600s]   109 | [01;31m[Kcv[m[K::setMouseCallback("planner", onMouse, &planner);
+[4.600s]       | [01;31m[K^~[m[K
+[4.600s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:109:1:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[4.600s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:110:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[4.600s]   110 | [01;31m[Kwhile[m[K (1) {
+[4.600s]       | [01;31m[K^~~~~[m[K
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:58:14:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.624s]    58 |     [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.624s]       |     [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:60:26:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::path[m[K’ in static member function
+[4.624s]    60 |     planner->computePath([01;31m[Kpath[m[K,
+[4.624s]       |                          [01;31m[K^~~~[m[K
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:15:21:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.624s]    15 | std::list<Vector2f> [01;36m[Kpath[m[K;
+[4.624s]       |                     [01;36m[K^~~~[m[K
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:64:26:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::use_gradient[m[K’ in static member function
+[4.624s]    64 |                          [01;31m[Kuse_gradient[m[K);
+[4.624s]       |                          [01;31m[K^~~~~~~~~~~~[m[K
+[4.624s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:21:6:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.625s]    21 | bool [01;36m[Kuse_gradient[m[K=false;
+[4.625s]       |      [01;36m[K^~~~~~~~~~~~[m[K
+[4.625s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:65:14:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.626s]    65 |     [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.626s]       |     [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.626s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:68:34:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::background_mode[m[K’ in static member function
+[4.627s]    68 |   cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+[4.627s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.627s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:19:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.627s]    19 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+[4.627s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.627s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:69:10:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::background_mode[m[K’ in static member function
+[4.627s]    69 |   switch([01;31m[Kbackground_mode[m[K) {
+[4.627s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.627s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:19:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.627s]    19 | int [01;36m[Kbackground_mode[m[K=0; // 0: DMap, 1:Obstacles, 2: Policy
+[4.627s]       |     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.633s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:50:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.633s]    50 | static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.633s]       |                                              [01;35m[K~~~~^~~[m[K
+[5.528s] In file included from [01m[K/usr/include/c++/13/bits/alloc_traits.h:33[m[K,
+[5.528s]                  from [01m[K/usr/include/c++/13/ext/alloc_traits.h:34[m[K,
+[5.528s]                  from [01m[K/usr/include/c++/13/bits/basic_string.h:39[m[K,
+[5.528s]                  from [01m[K/usr/include/c++/13/string:54[m[K,
+[5.529s]                  from [01m[K/usr/include/c++/13/bits/locale_classes.h:40[m[K,
+[5.529s]                  from [01m[K/usr/include/c++/13/bits/ios_base.h:41[m[K,
+[5.529s]                  from [01m[K/usr/include/c++/13/ios:44[m[K,
+[5.529s]                  from [01m[K/usr/include/c++/13/ostream:40[m[K,
+[5.529s]                  from [01m[K/usr/include/c++/13/iostream:41[m[K,
+[5.529s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:1[m[K:
+[5.529s] /usr/include/c++/13/bits/stl_construct.h: In instantiation of ‘[01m[Kvoid std::[01;32m[K_Construct[m[K(_Tp*, _Args&& ...) [35m[K[with _Tp = DmapNode; _Args = {}][m[K[m[K’:
+[5.530s] [01m[K/usr/include/c++/13/bits/alloc_traits.h:661:19:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<void> >::[01;32m[Kconstruct[m[K(allocator_type&, _Up*, _Args&& ...) [35m[K[with _Up = DmapNode; _Args = {}; allocator_type = std::allocator<void>][m[K[m[K’
+[5.530s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:604:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::[01;32m[K_Sp_counted_ptr_inplace[m[K(_Alloc, _Args&& ...) [35m[K[with _Args = {}; _Tp = DmapNode; _Alloc = std::allocator<void>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[5.530s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:971:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::[01;32m[K__shared_count[m[K(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [35m[K[with _Tp = DmapNode; _Alloc = std::allocator<void>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[5.531s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:1712:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::[01;32m[K__shared_ptr[m[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [35m[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = DmapNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K[m[K’
+[5.531s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:464:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::[01;32m[Kshared_ptr[m[K(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [35m[K[with _Alloc = std::allocator<void>; _Args = {}; _Tp = DmapNode][m[K[m[K’
+[5.531s] [01m[K/usr/include/c++/13/bits/shared_ptr.h:1009:14:[m[K   required from ‘[01m[Kstd::shared_ptr<typename std::enable_if<(! std::is_array< <template-parameter-1-1> >::value), _Tp>::type> std::[01;32m[Kmake_shared[m[K(_Args&& ...) [35m[K[with _Tp = DmapNode; _Args = {}; typename enable_if<(! is_array< <template-parameter-1-1> >::value), _Tp>::type = DmapNode][m[K[m[K’
+[5.531s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:141:44:[m[K   required from here
+[5.531s] [01m[K/usr/include/c++/13/bits/stl_construct.h:119:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KDmapNode::[01;32m[KDmapNode[m[K()[m[K’
+[5.531s]   119 |       [01;31m[K::new((void*)__p) _Tp(std::forward<_Args>(__args)...)[m[K;
+[5.531s]       |       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.532s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:12:7:[m[K [01;36m[Knote: [m[K‘[01m[KDmapNode::[01;32m[KDmapNode[m[K()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[5.532s]    12 | class [01;36m[KDmapNode[m[K : public rclcpp::Node {
+[5.532s]       |       [01;36m[K^~~~~~~~[m[K
+[5.532s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:12:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[5.532s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.532s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[5.532s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[5.532s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:2[m[K:
+[5.532s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const rclcpp::Node&, const std::string&)[m[K’
+[5.532s]  1629 |   [01;36m[KNode[m[K(
+[5.532s]       |   [01;36m[K^~~~[m[K
+[5.532s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1629:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.532s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const std::string&, const rclcpp::NodeOptions&)[m[K’
+[5.533s]   103 |   explicit [01;36m[KNode[m[K(
+[5.533s]       |            [01;36m[K^~~~[m[K
+[5.533s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:103:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[5.533s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::[01;32m[KNode[m[K(const std::string&, const rclcpp::NodeOptions&)[m[K’
+[5.533s]    91 |   explicit [01;36m[KNode[m[K(
+[5.533s]       |            [01;36m[K^~~~[m[K
+[5.533s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:91:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[6.000s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[6.001s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[6.002s] gmake: *** [Makefile:146: all] Error 2
+[6.011s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

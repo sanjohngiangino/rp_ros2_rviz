@@ -1,4 +1,0 @@
-[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KposeCallback[m[K(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:27:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   27 |     void poseCallback([01;35m[Kconst geometry_msgs::msg::Pose::SharedPtr msg[m[K) {
-      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

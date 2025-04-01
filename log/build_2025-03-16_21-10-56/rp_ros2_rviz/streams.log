@@ -1,0 +1,104 @@
+[0.016s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.112s] [ 33%] Built target world_node
+[0.125s] [ 66%] Built target dmap_node
+[0.132s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[2.147s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2iVector[m[K’ does not name a type
+[2.147s]    66 |     [01;31m[KVector2iVector[m[K getObstaclesFromImage(const cv::Mat& image) {
+[2.147s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.197s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[2.197s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[KDMap[m[K’ was not declared in this scope
+[2.197s]    27 |         [01;31m[KDMap[m[K dmap(rows, cols);
+[2.197s]       |         [01;31m[K^~~~[m[K
+[2.204s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdmap[m[K’ was not declared in this scope
+[2.204s]    28 |         [01;31m[Kdmap[m[K.clear();
+[2.204s]       |         [01;31m[K^~~~[m[K
+[2.214s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[KVector2iVector[m[K’ was not declared in this scope
+[2.214s]    30 |         [01;31m[KVector2iVector[m[K obs = getObstaclesFromImage(custom_image);
+[2.214s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.222s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:31:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobs[m[K’ was not declared in this scope; did you mean ‘[01m[Kabs[m[K’?
+[2.222s]    31 |         dmap.update([01;31m[Kobs[m[K);
+[2.222s]       |                     [01;31m[K^~~[m[K
+[2.222s]       |                     [32m[Kabs[m[K
+[2.234s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+[2.234s]    33 |         [01;31m[Kmy_robot[m[K = std::make_unique<Robot>(10.0f, 0.0f, 0, 1);
+[2.235s]       |         [01;31m[K^~~~~~~~[m[K
+[2.244s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:37:[m[K [01;31m[Kerror: [m[K‘[01m[KRobot[m[K’ was not declared in this scope
+[2.244s]    33 |         my_robot = std::make_unique<[01;31m[KRobot[m[K>(10.0f, 0.0f, 0, 1);
+[2.244s]       |                                     [01;31m[K^~~~~[m[K
+[2.244s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_unique<<expression error> >(float, float, int, int)[m[K’
+[2.244s]    33 |         my_robot = [01;31m[Kstd::make_unique<Robot>(10.0f, 0.0f, 0, 1)[m[K;
+[2.244s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.244s] In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+[2.245s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K,
+[2.245s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[2.245s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’
+[2.245s]  1069 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+[2.245s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.245s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1069:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.245s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.245s]    33 |         my_robot = [01;31m[Kstd::make_unique<Robot>(10.0f, 0.0f, 0, 1)[m[K;
+[2.245s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.246s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::__detail::__unique_ptr_array_t<_Tp> std::[01;32m[Kmake_unique[m[K(size_t)[m[K’
+[2.246s]  1084 |     [01;36m[Kmake_unique[m[K(size_t __num)
+[2.246s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.246s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1084:5:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[2.247s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::__detail::__invalid_make_unique_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...)[m[K’ (deleted)
+[2.247s]  1094 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+[2.247s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.247s] [01m[K/usr/include/c++/13/bits/unique_ptr.h:1094:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.247s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.247s]    33 |         my_robot = [01;31m[Kstd::make_unique<Robot>(10.0f, 0.0f, 0, 1)[m[K;
+[2.247s]       |                    [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[2.247s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:34:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcerr[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cerr[m[K’?
+[2.247s]    34 |         [01;31m[Kcerr[m[K << "robot_pose in definition: " << my_robot->position << endl;
+[2.247s]       |         [01;31m[K^~~~[m[K
+[2.247s]       |         [32m[Kstd::cerr[m[K
+[2.248s] In file included from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:1[m[K:
+[2.248s] [01m[K/usr/include/c++/13/iostream:64:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cerr[m[K’ declared here
+[2.248s]    64 |   extern ostream [01;36m[Kcerr[m[K;          ///< Linked to standard error (unbuffered)
+[2.248s]       |                  [01;36m[K^~~~[m[K
+[2.248s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:34:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::endl[m[K’?
+[2.248s]    34 |         cerr << "robot_pose in definition: " << my_robot->position << [01;31m[Kendl[m[K;
+[2.249s]       |                                                                       [01;31m[K^~~~[m[K
+[2.249s]       |                                                                       [32m[Kstd::endl[m[K
+[2.249s] In file included from [01m[K/usr/include/c++/13/iostream:41[m[K:
+[2.249s] [01m[K/usr/include/c++/13/ostream:735:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ declared here
+[2.249s]   735 |     [01;36m[Kendl[m[K(basic_ostream<_CharT, _Traits>& __os)
+[2.249s]       |     [01;36m[K^~~~[m[K
+[2.255s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kplanner[m[K’ was not declared in this scope
+[2.255s]    37 |         [01;31m[Kplanner[m[K.init(resolution, 0.3, expansion_range, dmap);
+[2.255s]       |         [01;31m[K^~~~~~~[m[K
+[2.265s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:37:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kresolution[m[K’ was not declared in this scope
+[2.265s]    37 |         planner.init([01;31m[Kresolution[m[K, 0.3, expansion_range, dmap);
+[2.265s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[2.265s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:41:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+[2.266s]    41 |         [01;31m[Kcv[m[K::namedWindow("planner", cv::WINDOW_GUI_NORMAL | cv::WINDOW_AUTOSIZE);
+[2.266s]       |         [01;31m[K^~[m[K
+[2.266s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:41:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+[2.266s]    41 |         cv::namedWindow("planner", [01;31m[Kcv[m[K::WINDOW_GUI_NORMAL | cv::WINDOW_AUTOSIZE);
+[2.266s]       |                                    [01;31m[K^~[m[K
+[2.266s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:41:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ has not been declared
+[2.266s]    41 |         cv::namedWindow("planner", cv::WINDOW_GUI_NORMAL | [01;31m[Kcv[m[K::WINDOW_AUTOSIZE);
+[2.266s]       |                                                            [01;31m[K^~[m[K
+[2.278s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:43:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+[2.278s]    43 |         [01;31m[Kbackground_image[m[K=grid2cv(planner.policy, true);
+[2.278s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.286s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:43:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid2cv[m[K’ was not declared in this scope
+[2.286s]    43 |         background_image=[01;31m[Kgrid2cv[m[K(planner.policy, true);
+[2.286s]       |                          [01;31m[K^~~~~~~[m[K
+[2.288s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.288s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.288s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K:
+[2.288s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.289s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:52:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.289s]    52 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Ricevuto PNG: '%s'"[m[K, image_path);
+[2.289s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.289s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:52:58:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.289s]    52 |         RCLCPP_INFO(this->get_logger(), "Ricevuto PNG: '[01;36m[K%s[m[K'", image_path);
+[2.289s]       |                                                         [01;36m[K~^[m[K
+[2.289s]       |                                                          [01;36m[K|[m[K
+[2.289s]       |                                                          [01;36m[Kchar*[m[K
+[4.375s] gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+[4.375s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+[4.376s] gmake: *** [Makefile:146: all] Error 2
+[4.383s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

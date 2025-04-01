@@ -1,0 +1,10 @@
+[ 33%] Built target world_node
+[ 66%] Built target dmap_node
+[ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:56:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+   56 |         [01;31m[Kmy_robot[m[K = std::make_unique<Robot>(10.0f, 0.0f, 0, 1);
+      |         [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

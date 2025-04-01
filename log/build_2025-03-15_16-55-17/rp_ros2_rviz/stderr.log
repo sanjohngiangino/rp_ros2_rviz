@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o: in function `DmapNode::DmapNode()':
+dmap_node.cpp:(.text._ZN8DmapNodeC2Ev[_ZN8DmapNodeC5Ev]+0x398): undefined reference to `Robot::Robot(int, int, float, int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:275: dmap_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

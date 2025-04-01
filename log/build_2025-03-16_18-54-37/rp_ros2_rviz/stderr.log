@@ -1,0 +1,27 @@
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:40:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   40 |     [01;31m[Kauto[m[K bool_msg = std_msgs::msg::Bool();
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_msg[m[K’ does not name a type
+   41 |     [01;31m[Kbool_msg[m[K.data = false;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   17 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KpublishBool[m[K()[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects a matching ‘[01m[Kchar*[m[K’ argument [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   33 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Publishing Boolean '%s'"[m[K);
+      |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:33:63:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   33 |         RCLCPP_INFO(this->get_logger(), "Publishing Boolean '[01;36m[K%s[m[K'");
+      |                                                              [01;36m[K~^[m[K
+      |                                                               [01;36m[K|[m[K
+      |                                                               [01;36m[Kchar*[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

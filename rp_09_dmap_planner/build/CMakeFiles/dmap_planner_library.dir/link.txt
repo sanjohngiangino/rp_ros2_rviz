@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdmap_planner_library.a CMakeFiles/dmap_planner_library.dir/dmap.cpp.o CMakeFiles/dmap_planner_library.dir/dmap_planner.cpp.o
-/usr/bin/ranlib libdmap_planner_library.a

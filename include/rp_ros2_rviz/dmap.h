@@ -1,5 +1,5 @@
 #pragma once
-#include "grid_path.h"
+#include "grid.h"
 #include <iostream>
 #include <Eigen/Core>
 

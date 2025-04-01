@@ -1,0 +1,19 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:2[m[K:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:150:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  150 |                 RCLCPP_INFO(node->get_logger(), [01;35m[K"policy: (%d, %d) val: %d parent: (%d, %d)"[m[K, y, x, [32m[Kplanner->policy.at(y, x)[m[K, parent_pos[0], parent_pos[1]);
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                      [32m[K|[m[K
+      |                                                                                                                      [32m[Kdouble[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:150:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  150 |     RCLCPP_INFO(node->get_logger(), "policy: (%d, %d) val: [01;36m[K%d[m[K parent: (%d, %d)", y, x, planner->policy.at(y, x), parent_pos[0], parent_pos[1]);
+      |                                                            [01;36m[K~^[m[K
+      |                                                             [01;36m[K|[m[K
+      |                                                             [01;36m[Kint[m[K
+      |                                                            [32m[K%f[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:115:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  115 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                      [01;35m[K~~~~^~~[m[K

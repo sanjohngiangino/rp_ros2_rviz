@@ -2,11 +2,11 @@
 #include <Eigen/Core>
 #include <Eigen/Geometry>
 #include "dmap.h"
-#include "grid_map.h"
+#include "grid_mapping.h"
 #include <list>
 
 struct DMapPlanner {
-  GridMap mapping; // to convert from world to grid coordinates
+  GridMapping mapping; // to convert from world to grid coordinates
   Grid_<float> obstacle_costs; // cost of a cell based on distance
   Grid_<float> distances; // useless, kept only for visualization
   Grid_<float> policy; // surface pointing to the goal
@@ -38,7 +38,7 @@ struct DMapPlanner {
             float max_range,
             const DMap& dmap);
   
-  void computePolicy(const Vector2f& goal);
+  void computePolicy(const Eigen::Vector2f& goal);
 
   float  computePath(std::list<Vector2f>& path,
                      const Eigen::Vector2f& start_pose,

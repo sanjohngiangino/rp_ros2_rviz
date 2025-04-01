@@ -1,5 +1,0 @@
-[31mCMake Error at CMakeLists.txt:34 (install):
-  install TARGETS given target "canvas_node" which does not exist.
-
-[0m
-gmake: *** [Makefile:430: cmake_check_build_system] Error 1

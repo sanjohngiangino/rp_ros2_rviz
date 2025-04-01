@@ -1,0 +1,15 @@
+[0.012s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.077s] [ 33%] Built target dmap_node
+[0.079s] [ 66%] Built target world_node
+[0.113s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[3.300s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[3.301s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:15:5:[m[K [01;31m[Kerror: [m[Kuninitialized reference member in ‘[01m[Kclass std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.301s]    15 |     [01;31m[KPathPlanner[m[K() : Node("path_planner")
+[3.301s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[3.301s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:115:26:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::__cxx11::list<Eigen::Matrix<float, 2, 1> >& PathPlanner::path[m[K’ should be initialized
+[3.301s]   115 |     std::list<Vector2f>& [01;36m[Kpath[m[K;  // Memorizza il percorso
+[3.301s]       |                          [01;36m[K^~~~[m[K
+[5.811s] gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+[5.814s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+[5.814s] gmake: *** [Makefile:146: all] Error 2
+[5.819s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -1,0 +1,18 @@
+[0.015s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.096s] [ 33%] Built target world_node
+[0.097s] [ 66%] Built target pathplanner_node
+[0.114s] [ 73%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[3.725s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[3.725s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:104:29:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KEigen::Vector2f world_pose[m[K’
+[3.725s]   104 |             Eigen::Vector2f [01;31m[Kworld_pose[m[K=planner->mapping.g2w(Eigen::Vector2f(0,0));
+[3.725s]       |                             [01;31m[K^~~~~~~~~~[m[K
+[3.725s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:103:29:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Vector2f world_pose[m[K’ previously declared here
+[3.725s]   103 |             Eigen::Vector2f [01;36m[Kworld_pose[m[K=planner->mapping.g2w(Eigen::Vector2f(y,x));
+[3.725s]       |                             [01;36m[K^~~~~~~~~~[m[K
+[3.725s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:98:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.725s]    98 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.725s]       |                                                      [01;35m[K~~~~^~~[m[K
+[4.961s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[4.961s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/dmap_node.dir/all] Error 2
+[4.962s] gmake: *** [Makefile:146: all] Error 2
+[4.964s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

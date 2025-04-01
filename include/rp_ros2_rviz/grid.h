@@ -1,31 +1,88 @@
 #pragma once
 #include <cstdint> // for uint8_t
-#include <utility> // for std::pair
 #include <Eigen/Core>
+#include <vector>
 
 using Vector2i=Eigen::Matrix<int,2,1>;
 
-struct Grid {
-  using CellType=uint8_t;
+template <typename CellType_>
+struct Grid_ {
+  using CellType=CellType_;
+  using CellGradientType=Eigen::Matrix<CellType, 2, 1>;
+  using GridGradientType=Grid_<CellGradientType>;
+  using CellTypeVector=std::vector<CellType_>;
   int rows=0;
   int cols=0;
-  CellType* values=0;
+  CellTypeVector values;
 
-  void clear();
-  void resize(int r, int c);
+  /* This is new :)*/
+  GridGradientType gradient() const {
+    GridGradientType grad(rows, cols);
+    std::fill(grad.values.begin(), grad.values.end(), CellGradientType(0,0));
+    for (int r=1; r<rows-1; ++r){ 
+      for (int c=1; c<cols-1; ++c) {
+        grad.at(r,c)=CellGradientType(at(r+1,c)-at(r-1,c),
+                                      at(r,c+1)-at(r,c-1));
+      }
+    }
+    return grad;
+  }
 
-  Grid(int rows=0, int cols=0);
-  ~Grid();
+  /* This also is new :)*/
+  inline std::pair<CellType, bool> atBilinear(float r, float c) const {
+    int ix0=floor(r);
+    int iy0=floor(c);
+    if (ix0<0
+        || ix0>rows-2
+        || iy0<0
+        || iy0>cols-2)
+      return std::make_pair(CellType(), false);
+    const CellType& f00=at(ix0, iy0);
+    const CellType& f01=at(ix0, iy0+1);
+    const CellType& f10=at(ix0+1, iy0);
+    const CellType& f11=at(ix0+1, iy0+1);
+    const float dx=r-ix0;
+    const float dy=c-iy0;
+    return std::make_pair(f00*(1.-dx)*(1.-dy)+f01*(1.-dx)*dy+f10*dx*(1.-dy)+f11*dx*dy, true);
+  }
 
-  // disabling assignment and copy ctor
-  Grid& operator = (const Grid&) = delete;
-  Grid(const Grid&) = delete;
+  /* This is cool new :)*/
+  template <typename DestCellType>
+  Grid_<DestCellType> cast() const {
+    Grid_<DestCellType> dest(rows, cols);
+    for (size_t i=0; i<values.size(); ++i) {
+      dest.values[i]=static_cast<DestCellType>(values[i]);
+    }
+    return dest;
+  }
+  
+  void clear() {
+    values.clear();
+    rows=0;
+    cols=0;
+  }
+    
+  void resize(int r, int c) {
+    if (r==rows && c==cols)
+      return;
+    rows=r;
+    cols=c;
+    values.resize(rows*cols);
+  }
 
-  inline CellType& at(int r, int c){
+  Grid_(int rows=0, int cols=0) {
+    resize(rows, cols);
+  }
+
+  ~Grid_() {
+    clear();
+  }
+
+  inline CellType_& at(int r, int c){
     return values[r*cols+c];
   }
 
-  inline const CellType& at(int r, int c) const{
+  inline const CellType_& at(int r, int c) const{
     return values[r*cols+c];
   }
 
@@ -33,23 +90,8 @@ struct Grid {
     return r>=0 && r<rows && c>=0 && c<cols;
   }
 
-  inline std::pair<int, int> ptr2rc(const CellType* ptr) const {
-    int offset=ptr-values;
-    return std::pair<int, int>(offset/cols, offset%cols);
+  inline Eigen::Vector2i ptr2rc(const CellType_* ptr) const {
+    int offset=ptr-&values[0];
+    return Vector2i(offset/cols, offset%cols);
   }
-
-  int scanSegment(int& x,
-                  int& y,
-                  float angle,
-                  const CellType& val_min,
-                  const int max_range) const;
-
-  int getValue(int r, int c) const {
-    if (r >= 0 && r < rows && c >= 0 && c < cols) {
-      return values[r * cols + c];  // Usa l'operatore [] per l'accesso all'array
-      } else {
-        return -1;  // Gestisci i casi fuori dai limiti
-    }
-}
-
 };

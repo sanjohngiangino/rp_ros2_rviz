@@ -1,0 +1,122 @@
+[0.018s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.105s] [ 20%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[0.109s] [ 40%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/robot.cpp.o[0m
+[1.258s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:5:1:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KRobot::[m[K’ on member ‘[01m[KRobot[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.259s]     5 | [01;31m[KRobot[m[K::Robot(float x, float y, float orientation, int radius)
+[1.259s]       | [01;31m[K^~~~~[m[K
+[1.259s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:5:1:[m[K [01;31m[Kerror: [m[K‘[01m[KRobot::[01;32m[KRobot[m[K(float, float, float, int)[m[K’ cannot be overloaded with ‘[01m[KRobot::[01;32m[KRobot[m[K(float, float, float, int)[m[K’
+[1.259s] In file included from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:2[m[K:
+[1.259s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:16:5:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KRobot::[01;32m[KRobot[m[K(float, float, float, int)[m[K’
+[1.260s]    16 |     [01;36m[KRobot[m[K(float x, float y, float orientation, int radius);
+[1.260s]       |     [01;36m[K^~~~~[m[K
+[1.260s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:9:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KRobot::[m[K’ on member ‘[01m[Kmove[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.260s]     9 | void [01;31m[KRobot[m[K::move(const Eigen::Vector2f& direction) {
+[1.260s]       |      [01;31m[K^~~~~[m[K
+[1.260s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:9:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Robot::[01;32m[Kmove[m[K(const Eigen::Vector2f&)[m[K’ cannot be overloaded with ‘[01m[Kvoid Robot::[01;32m[Kmove[m[K(const Eigen::Vector2f&)[m[K’
+[1.260s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:18:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid Robot::[01;32m[Kmove[m[K(const Eigen::Vector2f&)[m[K’
+[1.260s]    18 |     void [01;36m[Kmove[m[K(const Eigen::Vector2f& direction);
+[1.260s]       |          [01;36m[K^~~~[m[K
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:13:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KRobot::[m[K’ on member ‘[01m[KsetPosition[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.262s]    13 | void [01;31m[KRobot[m[K::setPosition(float x, float y) {
+[1.262s]       |      [01;31m[K^~~~~[m[K
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:13:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Robot::[01;32m[KsetPosition[m[K(float, float)[m[K’ cannot be overloaded with ‘[01m[Kvoid Robot::[01;32m[KsetPosition[m[K(float, float)[m[K’
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:19:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid Robot::[01;32m[KsetPosition[m[K(float, float)[m[K’
+[1.262s]    19 |     void [01;36m[KsetPosition[m[K(float x, float y);
+[1.262s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:17:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KRobot::[m[K’ on member ‘[01m[KfollowPath[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.262s]    17 | void [01;31m[KRobot[m[K::followPath(const std::vector<Eigen::Vector2f>& path) {
+[1.262s]       |      [01;31m[K^~~~~[m[K
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:17:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’ cannot be overloaded with ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’
+[1.262s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:20:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’
+[1.263s]    20 |     void [01;36m[KfollowPath[m[K(const std::vector<Eigen::Vector2f>& path) {
+[1.263s]       |          [01;36m[K^~~~~~~~~~[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:23:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.263s]    23 | }
+[1.263s]       |  [01;31m[K^[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:6:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.263s]     6 | class Robot [01;36m[K{[m[K
+[1.263s]       |             [01;36m[K^[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:[m[K In member function ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’:
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:20:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.263s]    20 |     void followPath([01;35m[Kconst std::vector<Eigen::Vector2f>& path[m[K) {
+[1.263s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:[m[K In member function ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’:
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:20:18:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen::Vector2f[m[K’ {aka ‘[01m[Kclass Eigen::Matrix<float, 2, 1>[m[K’} has no member named ‘[01m[Kmove[m[K’
+[1.263s]    20 |         position.[01;31m[Kmove[m[K(target);
+[1.263s]       |                  [01;31m[K^~~~[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:21:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.263s]    21 |         std::[01;31m[Kcout[m[K << "Robot posizione: (" << position.x << ", " << position.y << ")" << std::endl;
+[1.263s]       |              [01;31m[K^~~~[m[K
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:3:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[1.263s]     2 | #include "rp_ros2_rviz/robot.h"
+[1.263s]   +++ |+[32m[K#include <iostream>[m[K
+[1.263s]     3 | 
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:[m[K At global scope:
+[1.263s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/robot.cpp:23:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[1.263s]    23 | }
+[1.264s]       |  [01;31m[K^[m[K
+[1.363s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:118: CMakeFiles/dmap_node.dir/src/robot.cpp.o] Error 1
+[1.363s] gmake[2]: *** Waiting for unfinished jobs....
+[3.901s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:10:7:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Knamespace[m[K’
+[3.901s]    10 | using [01;31m[Knamespace[m[K std;
+[3.901s]       |       [01;31m[K^~~~~~~~~[m[K
+[3.901s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:11:7:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Knamespace[m[K’
+[3.901s]    11 | using [01;31m[Knamespace[m[K cv;
+[3.901s]       |       [01;31m[K^~~~~~~~~[m[K
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:21:11:[m[K [01;31m[Kerror: [m[Kfield ‘[01m[Kmy_robot[m[K’ has incomplete type ‘[01m[KRobot[m[K’
+[3.903s]    21 |     Robot [01;31m[Kmy_robot[m[K;
+[3.903s]       |           [01;31m[K^~~~~~~~[m[K
+[3.903s] In file included from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:8[m[K:
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:6:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass Robot[m[K’
+[3.903s]     6 | class [01;36m[KRobot[m[K {
+[3.903s]       |       [01;36m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:221:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.905s]   221 | }
+[3.905s]       |  [01;31m[K^[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:6:13:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.905s]     6 | class Robot [01;36m[K{[m[K
+[3.905s]       |             [01;36m[K^[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:[m[K In member function ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’:
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:20:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.905s]    20 |     void followPath([01;35m[Kconst std::vector<Eigen::Vector2f>& path[m[K) {
+[3.905s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.933s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void Robot::DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[3.934s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:130:40:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::list<Eigen::Matrix<float, 2, 1> >[m[K’ to ‘[01m[Kconst std::vector<Eigen::Matrix<float, 2, 1> >&[m[K’
+[3.934s]   130 |             my_robot->followPath([01;31m[Knode->path[m[K);
+[3.934s]       |                                  [01;31m[K~~~~~~^~~~[m[K
+[3.934s]       |                                        [01;31m[K|[m[K
+[3.934s]       |                                        [01;31m[Kstd::__cxx11::list<Eigen::Matrix<float, 2, 1> >[m[K
+[3.934s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:20:57:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid Robot::[01;32m[KfollowPath[m[K(const std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’
+[3.934s]    20 |     void followPath([01;36m[Kconst std::vector<Eigen::Vector2f>& path[m[K) {
+[3.934s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[3.935s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.935s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[3.935s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[3.936s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:2[m[K:
+[3.936s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:156:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.936s]   156 |                 RCLCPP_INFO(node->get_logger(), [01;35m[K"policy: (%d, %d) val: %d parent: (%d, %d)"[m[K, y, x, [32m[Kplanner->policy.at(y, x)[m[K, parent_pos[0], parent_pos[1]);
+[3.936s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.936s]       |                                                                                                                      [32m[K|[m[K
+[3.936s]       |                                                                                                                      [32m[Kdouble[m[K
+[3.936s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:156:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.936s]   156 |     RCLCPP_INFO(node->get_logger(), "policy: (%d, %d) val: [01;36m[K%d[m[K parent: (%d, %d)", y, x, planner->policy.at(y, x), parent_pos[0], parent_pos[1]);
+[3.936s]       |                                                            [01;36m[K~^[m[K
+[3.936s]       |                                                             [01;36m[K|[m[K
+[3.937s]       |                                                             [01;36m[Kint[m[K
+[3.937s]       |                                                            [32m[K%f[m[K
+[3.937s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:116:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.937s]   116 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.937s]       |                                                      [01;35m[K~~~~^~~[m[K
+[3.939s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void Robot::DmapNode::[01;32m[KonClick[m[K(int, int, int, int, void*)[m[K’:
+[3.939s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:191:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.939s]   191 |            static void onClick(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.939s]       |                                                         [01;35m[K~~~~^~~[m[K
+[3.939s] 
+[3.941s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K At global scope:
+[3.942s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:221:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[3.942s]   221 | }
+[3.942s]       |  [01;31m[K^[m[K
+[5.306s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[5.306s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[5.306s] gmake: *** [Makefile:146: all] Error 2
+[5.312s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

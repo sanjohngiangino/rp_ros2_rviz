@@ -1,0 +1,45 @@
+[0.015s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.042s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.200s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.206s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.237s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.244s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.261s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.309s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.310s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.359s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.405s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.417s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.436s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.452s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.455s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.545s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.545s] -- Configured cppcheck include dirs: /home/john/Desktop/path_ros/rp_ros2_rviz/include
+[0.545s] -- Configured cppcheck exclude dirs and/or files: 
+[0.547s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.547s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.550s] -- Added test 'lint_cmake' to check CMake code style
+[0.551s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.561s] -- Added test 'uncrustify' to check C / C++ code style
+[0.561s] -- Configured uncrustify additional arguments: 
+[0.562s] -- Added test 'xmllint' to check XML markup files
+[0.563s] -- Configuring done (0.5s)
+[0.583s] -- Generating done (0.0s)
+[0.587s] -- Build files have been written to: /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz
+[0.629s] [ 25%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[0.629s] [ 50%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_planner.cpp.o[0m
+[0.629s] [ 75%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap.cpp.o[0m
+[0.860s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[0.860s]     4 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K
+[0.860s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.860s] compilation terminated.
+[0.862s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[0.862s] gmake[2]: *** Waiting for unfinished jobs....
+[1.929s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[1.929s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.929s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[1.929s]       |        [01;35m[K^~~~~~~~~[m[K
+[2.620s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[2.620s] gmake: *** [Makefile:146: all] Error 2
+[2.629s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

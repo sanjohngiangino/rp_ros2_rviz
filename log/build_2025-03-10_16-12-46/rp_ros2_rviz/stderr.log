@@ -1,7 +1,0 @@
-[01m[K/home/john/Desktop/rp_ros2_rviz/src/grid.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kgrid.h: No such file or directory
-    1 | #include [01;31m[K"grid.h"[m[K
-      |          [01;31m[K^~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/world_node.dir/build.make:118: CMakeFiles/world_node.dir/src/grid.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/world_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

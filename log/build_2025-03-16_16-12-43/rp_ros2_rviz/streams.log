@@ -1,0 +1,70 @@
+[0.013s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.080s] [ 50%] Built target dmap_node
+[0.084s] [ 60%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[2.635s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[2.635s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[2.635s]    31 |     [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", 10);
+[2.635s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.635s]       |     [32m[Krmw_publisher_t[m[K
+[2.637s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:56:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kcv::String[m[K’?
+[2.637s]    31 |     publisher_ = this->create_publisher<std_msgs::msg::[01;31m[KString[m[K>("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", 10);
+[2.637s]       |                                                        [01;31m[K^~~~~~[m[K
+[2.637s] In file included from [01m[K/usr/include/opencv4/opencv2/core/base.hpp:58[m[K,
+[2.637s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:53[m[K,
+[2.637s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[2.637s]                  from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:43[m[K,
+[2.637s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:4[m[K:
+[2.637s] [01m[K/usr/include/opencv4/opencv2/core/cvstd.hpp:152:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::String[m[K’ declared here
+[2.637s]   152 | typedef std::string [01;36m[KString[m[K;
+[2.637s]       |                     [01;36m[K^~~~~~[m[K
+[2.638s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:63:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWorldNode::create_publisher<<expression error> >(const char [59], int)[m[K’
+[2.638s]    31 |     publisher_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", 10)[m[K;
+[2.638s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.638s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.638s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.638s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[2.638s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:2[m[K:
+[2.638s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.638s]   197 |   [01;36m[Kcreate_publisher[m[K(
+[2.638s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.638s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.638s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.639s]    31 |     publisher_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", 10)[m[K;
+[2.639s]       |                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.647s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+[2.648s]    35 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[2.648s]       |     [01;31m[K^~~~~~[m[K
+[2.648s]       |     [32m[Ktimer_t[m[K
+[2.648s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:37:20:[m[K [01;31m[Kerror: [m[K‘[01m[KStringPublisher[m[K’ has not been declared
+[2.648s]    37 |         std::bind(&[01;31m[KStringPublisher[m[K::publishMessage, this));
+[2.648s]       |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.648s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:39:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Krows[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.648s]    39 |     int [01;35m[Krows[m[K=custom_image.rows, cols=custom_image.cols;
+[2.648s]       |         [01;35m[K^~~~[m[K
+[2.648s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:39:33:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcols[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.649s]    39 |     int rows=custom_image.rows, [01;35m[Kcols[m[K=custom_image.cols;
+[2.649s]       |                                 [01;35m[K^~~~[m[K
+[2.649s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:40:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresolution[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.649s]    40 |     float [01;35m[Kresolution[m[K=0.05;
+[2.649s]       |           [01;35m[K^~~~~~~~~~[m[K
+[2.649s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:45:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kexpansion_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.649s]    45 |     float [01;35m[Kexpansion_range[m[K=1;
+[2.649s]       |           [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.649s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[2.649s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:72:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+[2.649s]    72 |         auto message = [01;31m[Kgeometry_msgs[m[K::msg::Point();
+[2.649s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[2.649s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:78:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldNode[m[K’ has no member named ‘[01m[Kpoint_publisher_[m[K’; did you mean ‘[01m[Kcount_publishers[m[K’?
+[2.649s]    78 |         node->[01;31m[Kpoint_publisher_[m[K->publish(message);
+[2.649s]       |               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.649s]       |               [32m[Kcount_publishers[m[K
+[2.650s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:70:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kevent[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.650s]    70 |     static void onMouse([01;35m[Kint event[m[K, int x, int y, int val, void* arg) {
+[2.650s]       |                         [01;35m[K~~~~^~~~~[m[K
+[2.650s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:70:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.650s]    70 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[2.650s]       |                                                  [01;35m[K~~~~^~~[m[K
+[3.525s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[3.525s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+[3.525s] gmake: *** [Makefile:146: all] Error 2
+[3.532s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

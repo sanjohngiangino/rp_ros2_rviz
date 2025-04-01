@@ -1,0 +1,14 @@
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:40:5:[m[K [01;31m[Kerror: [m[Knon-static data member declared with placeholder ‘[01m[Kauto[m[K’
+   40 |     [01;31m[Kauto[m[K bool_msg = std_msgs::msg::Bool();
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_msg[m[K’ does not name a type
+   41 |     [01;31m[Kbool_msg[m[K.data = false;
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In constructor ‘[01m[KPathPlanner::[01;32m[KPathPlanner[m[K()[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:17:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   17 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

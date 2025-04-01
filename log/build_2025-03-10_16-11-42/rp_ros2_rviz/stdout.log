@@ -1,4 +1,0 @@
-[ 25%] Built target listener_node
-[ 50%] Built target canvas_node
-[ 62%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/grid_map.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable world_node[0m

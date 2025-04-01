@@ -8,7 +8,6 @@ struct GridMapping {
   float resolution;
   float inv_resolution;
   Eigen::Vector2f center;
-  
   void resize(int r, int c, float res) {
     rows=r;
     cols=c;

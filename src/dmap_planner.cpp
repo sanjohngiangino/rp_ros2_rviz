@@ -22,7 +22,7 @@ void DMapPlanner::init(float resolution,
       obstacle_costs.at(r,c)=cost;
     }
   }
-  //mapping.resize(obstacle_costs.rows, obstacle_costs.cols, resolution);
+  mapping.resize(obstacle_costs.rows, obstacle_costs.cols, resolution);
   policy_ok=false;
 }
   
@@ -37,7 +37,7 @@ struct DijkstraPQCompare {
 
 using DijkstraFrontier=std::priority_queue<DMapPlanner::DijkstraCell*,std::vector<DMapPlanner::DijkstraCell*>, DijkstraPQCompare>;
   
-void DMapPlanner::computePolicy(const Vector2f& goal) {
+void DMapPlanner::computePolicy(const Eigen::Vector2f& goal) {
   d_grid.resize(mapping.rows, mapping.cols);
   std::fill(d_grid.values.begin(), d_grid.values.end(), DijkstraCell());
   Vector2i goal_i=mapping.w2g(goal).cast<int>();
@@ -108,7 +108,6 @@ float  DMapPlanner::computePath(std::list<Vector2f>& path,
 
   if (use_gradient) {
     auto current=start_pose;
-
     while (path.size()<max_path_length) { 
       path.push_back(current);
       auto pgf=mapping.w2g(current);
@@ -136,7 +135,6 @@ float  DMapPlanner::computePath(std::list<Vector2f>& path,
       gradient.normalize();
       current = current - gradient*0.2*mapping.resolution;
     }
-
     return -1;
   } else {
     auto pgf=mapping.w2g(start_pose);
@@ -159,92 +157,5 @@ float  DMapPlanner::computePath(std::list<Vector2f>& path,
   }
 }
 
-/*
+
     
-std::string DMapPlanner::computePath2(std::list<Vector2f>& path,
-                                     const Eigen::Vector2f& start_pose,
-                                     float approach_cost,
-                                     size_t max_path_length,
-                                     bool use_gradient) const {
-  path.clear();
-  if (!policy_ok)
-    return "";
-
-  if (approach_cost < 0)
-    approach_cost = mapping.resolution * 2;
-
-  std::string pathString = "";
-
-  if (use_gradient) {
-    auto current = start_pose;
-
-    while (path.size() < max_path_length) { 
-      path.push_back(current);
-      auto pgf = mapping.w2g(current);
-      auto pg = pgf.cast<int>();
-
-      if (!policy.inside(pg.x(), pg.y())) {
-        cerr << "outside, abort " << pg.transpose() << " current: " << current.transpose() << endl;
-        return "";
-      }
-
-      float cost = policy.at(pg.x(), pg.y());
-      auto gradient = policy_gradients.atBilinear(pg.x(), pg.y()).first;
-
-      if (cost < 0) {
-        cerr << "size: " << path.size() << "pos: " << current.transpose() 
-             << "gradient: " << gradient.transpose() << " cost : " << cost << endl;
-        cerr << "abort(cost)" << endl;
-        return "";
-      }
-
-      if (cost < approach_cost) {
-        return pathString;  // Ritorna la stringa di comandi
-      }
-
-      if (gradient.squaredNorm() < 1e-5) {
-        cerr << "abort(no gradient)" << endl;
-        return "";
-      }
-
-      gradient.normalize();
-      current = current - gradient * 0.2 * mapping.resolution;
-    }
-    
-    return "";
-  } else {
-    auto pgf = mapping.w2g(start_pose);
-    auto pg = pgf.cast<int>();
-
-    if (!d_grid.inside(pg.x(), pg.y())) {
-      cerr << "path outside" << pg.transpose() << " " << start_pose.transpose() << endl;
-      return "";
-    }
-
-    auto current = &d_grid.at(pg.x(), pg.y());
-    if (!current->parent) {
-      cerr << "no_parent" << endl;
-      return "";
-    }
-
-    Vector2f prev = mapping.g2w(d_grid.ptr2rc(current).cast<float>());
-
-    while (current->parent != current && current->cost > approach_cost) {
-      Vector2f curr = mapping.g2w(d_grid.ptr2rc(current).cast<float>());
-
-      if (curr.y() > prev.y()) pathString += "w";  // Su
-      else if (curr.y() < prev.y()) pathString += "s";  // Giù
-      else if (curr.x() > prev.x()) pathString += "d";  // Destra
-      else if (curr.x() < prev.x()) pathString += "a";  // Sinistra
-
-      prev = curr;
-      current = current->parent;
-    }
-
-    std::reverse(pathString.begin(), pathString.end()); 
-    cerr << "Path String: " << pathString << endl; 
-
-    return pathString;
-  }
-}
-*/

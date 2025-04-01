@@ -1,0 +1,29 @@
+[0.014s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.111s] [ 20%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[4.435s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:21:20:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[4.435s]    21 |     Robot my_robot([01;31m[K10.0f[m[K, 0.0f, 0, 1);
+[4.439s]       |                    [01;31m[K^~~~~[m[K
+[4.440s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:21:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[4.441s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In constructor ‘[01m[KDmapNode::[01;32m[KDmapNode[m[K()[m[K’:
+[4.441s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:64:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkey[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.441s]    64 |         int [01;35m[Kkey[m[K = cv::waitKey(1); // Piccola attesa per evitare di bloccare il thread
+[4.441s]       |             [01;35m[K^~~[m[K
+[4.457s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’:
+[4.457s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:129:52:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KRobot DmapNode::[01;32m[Kmy_robot[m[K(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[4.457s]   129 |             cerr << "robot_pose in redisplay: " << [01;31m[Kmy_robot[m[K.position << endl;
+[4.457s]       |                                                    [01;31m[K^~~~~~~~[m[K
+[4.458s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:130:46:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KRobot DmapNode::[01;32m[Kmy_robot[m[K(int)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[4.458s]   130 |             Eigen::Vector2f robot_position = [01;31m[Kmy_robot[m[K.position;
+[4.458s]       |                                              [01;31m[K^~~~~~~~[m[K
+[4.458s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.458s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:140:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.458s]   140 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.458s]       |                                                      [01;35m[K~~~~^~~[m[K
+[4.461s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonClick[m[K(int, int, int, int, void*)[m[K’:
+[4.461s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:218:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.461s]   218 |             static void onClick(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.461s]       |                                                          [01;35m[K~~~~^~~[m[K
+[6.008s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[6.008s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[6.009s] gmake: *** [Makefile:146: all] Error 2
+[6.014s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

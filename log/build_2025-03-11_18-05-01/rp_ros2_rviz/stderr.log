@@ -1,6 +1,0 @@
-/usr/bin/ld: CMakeFiles/world_node.dir/src/control_robot.cpp.o: in function `main':
-control_robot.cpp:(.text+0x88): multiple definition of `main'; CMakeFiles/world_node.dir/src/world_node.cpp.o:world_node.cpp:(.text+0x88): first defined here
-collect2: error: ld returned 1 exit status
-gmake[2]: *** [CMakeFiles/world_node.dir/build.make:346: world_node] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/world_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

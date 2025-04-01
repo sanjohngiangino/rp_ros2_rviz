@@ -1,4 +1,0 @@
-/home/john/Desktop/robotprogramming_2024_25-main/source/rp_09_dmap_planner/build/CMakeFiles/dmap_planner_library.dir
-/home/john/Desktop/robotprogramming_2024_25-main/source/rp_09_dmap_planner/build/CMakeFiles/dmap_planner_test.dir
-/home/john/Desktop/robotprogramming_2024_25-main/source/rp_09_dmap_planner/build/CMakeFiles/edit_cache.dir
-/home/john/Desktop/robotprogramming_2024_25-main/source/rp_09_dmap_planner/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,16 @@
+[ 33%] Built target world_node
+[ 66%] Built target dmap_node
+[ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[Kstring_callback[m[K(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:65:29:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[KVector2iVector[m[K’ {aka ‘[01m[Kstd::vector<Eigen::Matrix<int, 2, 1> >[m[K’} to ‘[01m[Kstd::__cxx11::list<Eigen::Matrix<float, 2, 1> >&[m[K’
+   65 |         planner.computePath([01;31m[Kpath[m[K,
+      |                             [01;31m[K^~~~[m[K
+      |                             [01;31m[K|[m[K
+      |                             [01;31m[KVector2iVector {aka std::vector<Eigen::Matrix<int, 2, 1> >}[m[K
+In file included from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/pathplanner_node.cpp:8[m[K:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:43:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kfloat DMapPlanner::[01;32m[KcomputePath[m[K(std::__cxx11::list<Eigen::Matrix<float, 2, 1> >&, const Eigen::Vector2f&, float, size_t, bool) const[m[K’
+   43 |   float  computePath([01;36m[Kstd::list<Vector2f>& path[m[K,
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

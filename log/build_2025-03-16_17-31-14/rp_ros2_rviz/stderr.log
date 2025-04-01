@@ -1,0 +1,66 @@
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:41:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   31 |     rclcpp::Subscription<std_msgs::msg::[01;31m[KBool[m[K>::SharedPtr bool_subscriber_;
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |     rclcpp::Subscription<std_msgs::msg::Bool[01;31m[K>[m[K::SharedPtr bool_subscriber_;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:45:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   31 |     rclcpp::Subscription<std_msgs::msg::Bool>::[01;31m[KSharedPtr[m[K bool_subscriber_;
+      |                                                [01;31m[K^~~~~~~~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:31:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_subscriber_[m[K’ does not name a type
+   31 |     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr [01;31m[Kbool_subscriber_[m[K;
+      |                                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:101:45:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+  101 |     void bool_callback(const std_msgs::msg::[01;31m[KBool[m[K::SharedPtr msg)
+      |                                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:101:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+  101 |     void bool_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:101:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+  101 |     void bool_callback[34m[K([m[Kconst std_msgs::msg::Bool::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+      |                       [34m[K~[m[K                                    [01;31m[K^[m[K[32m[K~~~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:101:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  101 |     void bool_callback(const std_msgs::msg::Bool::[01;31m[KSharedPtr[m[K msg)
+      |                                                   [01;31m[K^~~~~~~~~[m[K
+      |                                                            [32m[K;[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:101:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+  101 |     void bool_callback(const std_msgs::msg::Bool::SharedPtr [01;31m[Kmsg[m[K)
+      |                                                             [01;31m[K^~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kcount_subscribers[m[K’?
+   44 |     [01;31m[Kbool_subscriber_[m[K = this->create_subscription<std_msgs::msg::Bool>(
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kcount_subscribers[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:44:65:[m[K [01;31m[Kerror: [m[K‘[01m[KBool[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+   44 |     bool_subscriber_ = this->create_subscription<std_msgs::msg::[01;31m[KBool[m[K>(
+      |                                                                 [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:44:70:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWorldNode::create_subscription<<expression error> >(const char [11], int, std::_Bind_helper<false, void (WorldNode::*)(...), WorldNode*, const std::_Placeholder<1>&>::type)[m[K’
+   44 |     bool_subscriber_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   45 | [01;31m[K        "bool_topic", 10, std::bind(&WorldNode::bool_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+                 from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:2[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::[01;32m[Kcreate_subscription[m[K(const std::string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  221 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:221:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:44:70:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   44 |     bool_subscriber_ = [01;31m[Kthis->create_subscription<std_msgs::msg::Bool>([m[K
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   45 | [01;31m[K        "bool_topic", 10, std::bind(&WorldNode::bool_callback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:[m[K In static member function ‘[01m[Kstatic void WorldNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/world_node.cpp:123:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  123 |     static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+      |                                                  [01;35m[K~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,1427 @@
+[0.016s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.145s] [ 25%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[0.704s] In file included from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.704s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.704s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.705s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.705s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.706s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.706s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.707s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.708s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.709s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.711s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.712s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.714s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.715s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.716s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.717s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.718s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.719s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.720s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.720s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.720s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.720s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2[m[K,
+[0.720s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:8[m[K:
+[0.720s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:1:22:[m[K [01;31m[Kerror: [m[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)
+[0.720s]     1 | #include <Eigen/Core>
+[0.720s]       |                      [01;31m[K^[m[K
+[0.720s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:2:32:[m[K [01;31m[Kerror: [m[K#include nested depth 200 exceeds maximum of 200 (use -fmax-include-depth=DEPTH to increase the maximum)
+[0.720s]     2 | #include "rp_ros2_rviz/robot.h"
+[0.720s]       |                                [01;31m[K^[m[K
+[3.840s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.840s]     4 | struct [01;31m[KRobot[m[K {
+[3.840s]       |        [01;31m[K^~~~~[m[K
+[3.840s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.840s]     4 | struct [01;36m[KRobot[m[K {
+[3.840s]       |        [01;36m[K^~~~~[m[K
+[3.840s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.840s]     4 | struct [01;31m[KRobot[m[K {
+[3.841s]       |        [01;31m[K^~~~~[m[K
+[3.841s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.842s]     4 | struct [01;36m[KRobot[m[K {
+[3.842s]       |        [01;36m[K^~~~~[m[K
+[3.842s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.842s]     4 | struct [01;31m[KRobot[m[K {
+[3.842s]       |        [01;31m[K^~~~~[m[K
+[3.842s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.842s]     4 | struct [01;36m[KRobot[m[K {
+[3.842s]       |        [01;36m[K^~~~~[m[K
+[3.842s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.843s]     4 | struct [01;31m[KRobot[m[K {
+[3.843s]       |        [01;31m[K^~~~~[m[K
+[3.843s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.843s]     4 | struct [01;36m[KRobot[m[K {
+[3.843s]       |        [01;36m[K^~~~~[m[K
+[3.843s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.843s]     4 | struct [01;31m[KRobot[m[K {
+[3.843s]       |        [01;31m[K^~~~~[m[K
+[3.843s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.843s]     4 | struct [01;36m[KRobot[m[K {
+[3.843s]       |        [01;36m[K^~~~~[m[K
+[3.843s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.845s]     4 | struct [01;31m[KRobot[m[K {
+[3.845s]       |        [01;31m[K^~~~~[m[K
+[3.845s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.845s]     4 | struct [01;36m[KRobot[m[K {
+[3.845s]       |        [01;36m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;31m[KRobot[m[K {
+[3.846s]       |        [01;31m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;36m[KRobot[m[K {
+[3.846s]       |        [01;36m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;31m[KRobot[m[K {
+[3.846s]       |        [01;31m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;36m[KRobot[m[K {
+[3.846s]       |        [01;36m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;31m[KRobot[m[K {
+[3.846s]       |        [01;31m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;36m[KRobot[m[K {
+[3.846s]       |        [01;36m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;31m[KRobot[m[K {
+[3.846s]       |        [01;31m[K^~~~~[m[K
+[3.846s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.846s]     4 | struct [01;36m[KRobot[m[K {
+[3.846s]       |        [01;36m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;31m[KRobot[m[K {
+[3.847s]       |        [01;31m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;36m[KRobot[m[K {
+[3.847s]       |        [01;36m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;31m[KRobot[m[K {
+[3.847s]       |        [01;31m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;36m[KRobot[m[K {
+[3.847s]       |        [01;36m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;31m[KRobot[m[K {
+[3.847s]       |        [01;31m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;36m[KRobot[m[K {
+[3.847s]       |        [01;36m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.847s]     4 | struct [01;31m[KRobot[m[K {
+[3.847s]       |        [01;31m[K^~~~~[m[K
+[3.847s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;36m[KRobot[m[K {
+[3.848s]       |        [01;36m[K^~~~~[m[K
+[3.848s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;31m[KRobot[m[K {
+[3.848s]       |        [01;31m[K^~~~~[m[K
+[3.848s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;36m[KRobot[m[K {
+[3.848s]       |        [01;36m[K^~~~~[m[K
+[3.848s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;31m[KRobot[m[K {
+[3.848s]       |        [01;31m[K^~~~~[m[K
+[3.848s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;36m[KRobot[m[K {
+[3.848s]       |        [01;36m[K^~~~~[m[K
+[3.848s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.848s]     4 | struct [01;31m[KRobot[m[K {
+[3.849s]       |        [01;31m[K^~~~~[m[K
+[3.849s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.849s]     4 | struct [01;36m[KRobot[m[K {
+[3.849s]       |        [01;36m[K^~~~~[m[K
+[3.850s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.850s]     4 | struct [01;31m[KRobot[m[K {
+[3.850s]       |        [01;31m[K^~~~~[m[K
+[3.850s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.850s]     4 | struct [01;36m[KRobot[m[K {
+[3.850s]       |        [01;36m[K^~~~~[m[K
+[3.850s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.850s]     4 | struct [01;31m[KRobot[m[K {
+[3.850s]       |        [01;31m[K^~~~~[m[K
+[3.850s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.850s]     4 | struct [01;36m[KRobot[m[K {
+[3.851s]       |        [01;36m[K^~~~~[m[K
+[3.851s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.851s]     4 | struct [01;31m[KRobot[m[K {
+[3.851s]       |        [01;31m[K^~~~~[m[K
+[3.851s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.851s]     4 | struct [01;36m[KRobot[m[K {
+[3.851s]       |        [01;36m[K^~~~~[m[K
+[3.851s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.852s]     4 | struct [01;31m[KRobot[m[K {
+[3.852s]       |        [01;31m[K^~~~~[m[K
+[3.852s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.852s]     4 | struct [01;36m[KRobot[m[K {
+[3.852s]       |        [01;36m[K^~~~~[m[K
+[3.852s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.852s]     4 | struct [01;31m[KRobot[m[K {
+[3.852s]       |        [01;31m[K^~~~~[m[K
+[3.852s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.852s]     4 | struct [01;36m[KRobot[m[K {
+[3.852s]       |        [01;36m[K^~~~~[m[K
+[3.852s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.852s]     4 | struct [01;31m[KRobot[m[K {
+[3.853s]       |        [01;31m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.853s]     4 | struct [01;36m[KRobot[m[K {
+[3.853s]       |        [01;36m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.853s]     4 | struct [01;31m[KRobot[m[K {
+[3.853s]       |        [01;31m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.853s]     4 | struct [01;36m[KRobot[m[K {
+[3.853s]       |        [01;36m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.853s]     4 | struct [01;31m[KRobot[m[K {
+[3.853s]       |        [01;31m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.853s]     4 | struct [01;36m[KRobot[m[K {
+[3.853s]       |        [01;36m[K^~~~~[m[K
+[3.853s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;31m[KRobot[m[K {
+[3.854s]       |        [01;31m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;36m[KRobot[m[K {
+[3.854s]       |        [01;36m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;31m[KRobot[m[K {
+[3.854s]       |        [01;31m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;36m[KRobot[m[K {
+[3.854s]       |        [01;36m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;31m[KRobot[m[K {
+[3.854s]       |        [01;31m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;36m[KRobot[m[K {
+[3.854s]       |        [01;36m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;31m[KRobot[m[K {
+[3.854s]       |        [01;31m[K^~~~~[m[K
+[3.854s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.854s]     4 | struct [01;36m[KRobot[m[K {
+[3.855s]       |        [01;36m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;31m[KRobot[m[K {
+[3.855s]       |        [01;31m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;36m[KRobot[m[K {
+[3.855s]       |        [01;36m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;31m[KRobot[m[K {
+[3.855s]       |        [01;31m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;36m[KRobot[m[K {
+[3.855s]       |        [01;36m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;31m[KRobot[m[K {
+[3.855s]       |        [01;31m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;36m[KRobot[m[K {
+[3.855s]       |        [01;36m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;31m[KRobot[m[K {
+[3.855s]       |        [01;31m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.855s]     4 | struct [01;36m[KRobot[m[K {
+[3.855s]       |        [01;36m[K^~~~~[m[K
+[3.855s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;31m[KRobot[m[K {
+[3.856s]       |        [01;31m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;36m[KRobot[m[K {
+[3.856s]       |        [01;36m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;31m[KRobot[m[K {
+[3.856s]       |        [01;31m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;36m[KRobot[m[K {
+[3.856s]       |        [01;36m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;31m[KRobot[m[K {
+[3.856s]       |        [01;31m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;36m[KRobot[m[K {
+[3.856s]       |        [01;36m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;31m[KRobot[m[K {
+[3.856s]       |        [01;31m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;36m[KRobot[m[K {
+[3.856s]       |        [01;36m[K^~~~~[m[K
+[3.856s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.856s]     4 | struct [01;31m[KRobot[m[K {
+[3.856s]       |        [01;31m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;36m[KRobot[m[K {
+[3.857s]       |        [01;36m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;31m[KRobot[m[K {
+[3.857s]       |        [01;31m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;36m[KRobot[m[K {
+[3.857s]       |        [01;36m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;31m[KRobot[m[K {
+[3.857s]       |        [01;31m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;36m[KRobot[m[K {
+[3.857s]       |        [01;36m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;31m[KRobot[m[K {
+[3.857s]       |        [01;31m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;36m[KRobot[m[K {
+[3.857s]       |        [01;36m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;31m[KRobot[m[K {
+[3.857s]       |        [01;31m[K^~~~~[m[K
+[3.857s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.857s]     4 | struct [01;36m[KRobot[m[K {
+[3.858s]       |        [01;36m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;31m[KRobot[m[K {
+[3.858s]       |        [01;31m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;36m[KRobot[m[K {
+[3.858s]       |        [01;36m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;31m[KRobot[m[K {
+[3.858s]       |        [01;31m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;36m[KRobot[m[K {
+[3.858s]       |        [01;36m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;31m[KRobot[m[K {
+[3.858s]       |        [01;31m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.858s]     4 | struct [01;36m[KRobot[m[K {
+[3.858s]       |        [01;36m[K^~~~~[m[K
+[3.858s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.859s]     4 | struct [01;31m[KRobot[m[K {
+[3.859s]       |        [01;31m[K^~~~~[m[K
+[3.859s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.859s]     4 | struct [01;36m[KRobot[m[K {
+[3.859s]       |        [01;36m[K^~~~~[m[K
+[3.859s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.859s]     4 | struct [01;31m[KRobot[m[K {
+[3.859s]       |        [01;31m[K^~~~~[m[K
+[3.859s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.859s]     4 | struct [01;36m[KRobot[m[K {
+[3.859s]       |        [01;36m[K^~~~~[m[K
+[3.859s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.859s]     4 | struct [01;31m[KRobot[m[K {
+[3.859s]       |        [01;31m[K^~~~~[m[K
+[3.859s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.860s]     4 | struct [01;36m[KRobot[m[K {
+[3.860s]       |        [01;36m[K^~~~~[m[K
+[3.860s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.860s]     4 | struct [01;31m[KRobot[m[K {
+[3.860s]       |        [01;31m[K^~~~~[m[K
+[3.860s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.860s]     4 | struct [01;36m[KRobot[m[K {
+[3.860s]       |        [01;36m[K^~~~~[m[K
+[3.860s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.860s]     4 | struct [01;31m[KRobot[m[K {
+[3.860s]       |        [01;31m[K^~~~~[m[K
+[3.860s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;36m[KRobot[m[K {
+[3.861s]       |        [01;36m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;31m[KRobot[m[K {
+[3.861s]       |        [01;31m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;36m[KRobot[m[K {
+[3.861s]       |        [01;36m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;31m[KRobot[m[K {
+[3.861s]       |        [01;31m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;36m[KRobot[m[K {
+[3.861s]       |        [01;36m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;31m[KRobot[m[K {
+[3.861s]       |        [01;31m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;36m[KRobot[m[K {
+[3.861s]       |        [01;36m[K^~~~~[m[K
+[3.861s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.861s]     4 | struct [01;31m[KRobot[m[K {
+[3.861s]       |        [01;31m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;36m[KRobot[m[K {
+[3.862s]       |        [01;36m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;31m[KRobot[m[K {
+[3.862s]       |        [01;31m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;36m[KRobot[m[K {
+[3.862s]       |        [01;36m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;31m[KRobot[m[K {
+[3.862s]       |        [01;31m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;36m[KRobot[m[K {
+[3.862s]       |        [01;36m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;31m[KRobot[m[K {
+[3.862s]       |        [01;31m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.862s]     4 | struct [01;36m[KRobot[m[K {
+[3.862s]       |        [01;36m[K^~~~~[m[K
+[3.862s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;31m[KRobot[m[K {
+[3.863s]       |        [01;31m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;36m[KRobot[m[K {
+[3.863s]       |        [01;36m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;31m[KRobot[m[K {
+[3.863s]       |        [01;31m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;36m[KRobot[m[K {
+[3.863s]       |        [01;36m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;31m[KRobot[m[K {
+[3.863s]       |        [01;31m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;36m[KRobot[m[K {
+[3.863s]       |        [01;36m[K^~~~~[m[K
+[3.863s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.863s]     4 | struct [01;31m[KRobot[m[K {
+[3.864s]       |        [01;31m[K^~~~~[m[K
+[3.864s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.864s]     4 | struct [01;36m[KRobot[m[K {
+[3.864s]       |        [01;36m[K^~~~~[m[K
+[3.864s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.864s]     4 | struct [01;31m[KRobot[m[K {
+[3.864s]       |        [01;31m[K^~~~~[m[K
+[3.864s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.864s]     4 | struct [01;36m[KRobot[m[K {
+[3.864s]       |        [01;36m[K^~~~~[m[K
+[3.864s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.864s]     4 | struct [01;31m[KRobot[m[K {
+[3.864s]       |        [01;31m[K^~~~~[m[K
+[3.864s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;36m[KRobot[m[K {
+[3.866s]       |        [01;36m[K^~~~~[m[K
+[3.866s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;31m[KRobot[m[K {
+[3.866s]       |        [01;31m[K^~~~~[m[K
+[3.866s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;36m[KRobot[m[K {
+[3.866s]       |        [01;36m[K^~~~~[m[K
+[3.866s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;31m[KRobot[m[K {
+[3.866s]       |        [01;31m[K^~~~~[m[K
+[3.866s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;36m[KRobot[m[K {
+[3.866s]       |        [01;36m[K^~~~~[m[K
+[3.866s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.866s]     4 | struct [01;31m[KRobot[m[K {
+[3.866s]       |        [01;31m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;36m[KRobot[m[K {
+[3.867s]       |        [01;36m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;31m[KRobot[m[K {
+[3.867s]       |        [01;31m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;36m[KRobot[m[K {
+[3.867s]       |        [01;36m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;31m[KRobot[m[K {
+[3.867s]       |        [01;31m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;36m[KRobot[m[K {
+[3.867s]       |        [01;36m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;31m[KRobot[m[K {
+[3.867s]       |        [01;31m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;36m[KRobot[m[K {
+[3.867s]       |        [01;36m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;31m[KRobot[m[K {
+[3.867s]       |        [01;31m[K^~~~~[m[K
+[3.867s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.867s]     4 | struct [01;36m[KRobot[m[K {
+[3.867s]       |        [01;36m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.868s]     4 | struct [01;31m[KRobot[m[K {
+[3.868s]       |        [01;31m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.868s]     4 | struct [01;36m[KRobot[m[K {
+[3.868s]       |        [01;36m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.868s]     4 | struct [01;31m[KRobot[m[K {
+[3.868s]       |        [01;31m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.868s]     4 | struct [01;36m[KRobot[m[K {
+[3.868s]       |        [01;36m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.868s]     4 | struct [01;31m[KRobot[m[K {
+[3.868s]       |        [01;31m[K^~~~~[m[K
+[3.868s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.869s]     4 | struct [01;36m[KRobot[m[K {
+[3.869s]       |        [01;36m[K^~~~~[m[K
+[3.869s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.869s]     4 | struct [01;31m[KRobot[m[K {
+[3.869s]       |        [01;31m[K^~~~~[m[K
+[3.869s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.869s]     4 | struct [01;36m[KRobot[m[K {
+[3.869s]       |        [01;36m[K^~~~~[m[K
+[3.869s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.869s]     4 | struct [01;31m[KRobot[m[K {
+[3.869s]       |        [01;31m[K^~~~~[m[K
+[3.870s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.870s]     4 | struct [01;36m[KRobot[m[K {
+[3.870s]       |        [01;36m[K^~~~~[m[K
+[3.870s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.870s]     4 | struct [01;31m[KRobot[m[K {
+[3.870s]       |        [01;31m[K^~~~~[m[K
+[3.870s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.870s]     4 | struct [01;36m[KRobot[m[K {
+[3.870s]       |        [01;36m[K^~~~~[m[K
+[3.870s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.870s]     4 | struct [01;31m[KRobot[m[K {
+[3.870s]       |        [01;31m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;36m[KRobot[m[K {
+[3.871s]       |        [01;36m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;31m[KRobot[m[K {
+[3.871s]       |        [01;31m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;36m[KRobot[m[K {
+[3.871s]       |        [01;36m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;31m[KRobot[m[K {
+[3.871s]       |        [01;31m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;36m[KRobot[m[K {
+[3.871s]       |        [01;36m[K^~~~~[m[K
+[3.871s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.871s]     4 | struct [01;31m[KRobot[m[K {
+[3.872s]       |        [01;31m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;36m[KRobot[m[K {
+[3.872s]       |        [01;36m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;31m[KRobot[m[K {
+[3.872s]       |        [01;31m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;36m[KRobot[m[K {
+[3.872s]       |        [01;36m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;31m[KRobot[m[K {
+[3.872s]       |        [01;31m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;36m[KRobot[m[K {
+[3.872s]       |        [01;36m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;31m[KRobot[m[K {
+[3.872s]       |        [01;31m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;36m[KRobot[m[K {
+[3.872s]       |        [01;36m[K^~~~~[m[K
+[3.872s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.872s]     4 | struct [01;31m[KRobot[m[K {
+[3.873s]       |        [01;31m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;36m[KRobot[m[K {
+[3.873s]       |        [01;36m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;31m[KRobot[m[K {
+[3.873s]       |        [01;31m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;36m[KRobot[m[K {
+[3.873s]       |        [01;36m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;31m[KRobot[m[K {
+[3.873s]       |        [01;31m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;36m[KRobot[m[K {
+[3.873s]       |        [01;36m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;31m[KRobot[m[K {
+[3.873s]       |        [01;31m[K^~~~~[m[K
+[3.873s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.873s]     4 | struct [01;36m[KRobot[m[K {
+[3.874s]       |        [01;36m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;31m[KRobot[m[K {
+[3.874s]       |        [01;31m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;36m[KRobot[m[K {
+[3.874s]       |        [01;36m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;31m[KRobot[m[K {
+[3.874s]       |        [01;31m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;36m[KRobot[m[K {
+[3.874s]       |        [01;36m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;31m[KRobot[m[K {
+[3.874s]       |        [01;31m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;36m[KRobot[m[K {
+[3.874s]       |        [01;36m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;31m[KRobot[m[K {
+[3.874s]       |        [01;31m[K^~~~~[m[K
+[3.874s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.874s]     4 | struct [01;36m[KRobot[m[K {
+[3.874s]       |        [01;36m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;31m[KRobot[m[K {
+[3.875s]       |        [01;31m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;36m[KRobot[m[K {
+[3.875s]       |        [01;36m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;31m[KRobot[m[K {
+[3.875s]       |        [01;31m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;36m[KRobot[m[K {
+[3.875s]       |        [01;36m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;31m[KRobot[m[K {
+[3.875s]       |        [01;31m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;36m[KRobot[m[K {
+[3.875s]       |        [01;36m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;31m[KRobot[m[K {
+[3.875s]       |        [01;31m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;36m[KRobot[m[K {
+[3.875s]       |        [01;36m[K^~~~~[m[K
+[3.875s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.875s]     4 | struct [01;31m[KRobot[m[K {
+[3.875s]       |        [01;31m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;36m[KRobot[m[K {
+[3.876s]       |        [01;36m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;31m[KRobot[m[K {
+[3.876s]       |        [01;31m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;36m[KRobot[m[K {
+[3.876s]       |        [01;36m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;31m[KRobot[m[K {
+[3.876s]       |        [01;31m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;36m[KRobot[m[K {
+[3.876s]       |        [01;36m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;31m[KRobot[m[K {
+[3.876s]       |        [01;31m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;36m[KRobot[m[K {
+[3.876s]       |        [01;36m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;31m[KRobot[m[K {
+[3.876s]       |        [01;31m[K^~~~~[m[K
+[3.876s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.876s]     4 | struct [01;36m[KRobot[m[K {
+[3.876s]       |        [01;36m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;31m[KRobot[m[K {
+[3.877s]       |        [01;31m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;36m[KRobot[m[K {
+[3.877s]       |        [01;36m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;31m[KRobot[m[K {
+[3.877s]       |        [01;31m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;36m[KRobot[m[K {
+[3.877s]       |        [01;36m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;31m[KRobot[m[K {
+[3.877s]       |        [01;31m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;36m[KRobot[m[K {
+[3.877s]       |        [01;36m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;31m[KRobot[m[K {
+[3.877s]       |        [01;31m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;36m[KRobot[m[K {
+[3.877s]       |        [01;36m[K^~~~~[m[K
+[3.877s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.877s]     4 | struct [01;31m[KRobot[m[K {
+[3.877s]       |        [01;31m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;36m[KRobot[m[K {
+[3.878s]       |        [01;36m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;31m[KRobot[m[K {
+[3.878s]       |        [01;31m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;36m[KRobot[m[K {
+[3.878s]       |        [01;36m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;31m[KRobot[m[K {
+[3.878s]       |        [01;31m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;36m[KRobot[m[K {
+[3.878s]       |        [01;36m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;31m[KRobot[m[K {
+[3.878s]       |        [01;31m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.878s]     4 | struct [01;36m[KRobot[m[K {
+[3.878s]       |        [01;36m[K^~~~~[m[K
+[3.878s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;31m[KRobot[m[K {
+[3.879s]       |        [01;31m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;36m[KRobot[m[K {
+[3.879s]       |        [01;36m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;31m[KRobot[m[K {
+[3.879s]       |        [01;31m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;36m[KRobot[m[K {
+[3.879s]       |        [01;36m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;31m[KRobot[m[K {
+[3.879s]       |        [01;31m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;36m[KRobot[m[K {
+[3.879s]       |        [01;36m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.879s]     4 | struct [01;31m[KRobot[m[K {
+[3.879s]       |        [01;31m[K^~~~~[m[K
+[3.879s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.880s]     4 | struct [01;36m[KRobot[m[K {
+[3.880s]       |        [01;36m[K^~~~~[m[K
+[3.880s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.880s]     4 | struct [01;31m[KRobot[m[K {
+[3.880s]       |        [01;31m[K^~~~~[m[K
+[3.880s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.880s]     4 | struct [01;36m[KRobot[m[K {
+[3.880s]       |        [01;36m[K^~~~~[m[K
+[3.880s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;31m[KRobot[m[K {
+[3.881s]       |        [01;31m[K^~~~~[m[K
+[3.881s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;36m[KRobot[m[K {
+[3.881s]       |        [01;36m[K^~~~~[m[K
+[3.881s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;31m[KRobot[m[K {
+[3.881s]       |        [01;31m[K^~~~~[m[K
+[3.881s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;36m[KRobot[m[K {
+[3.881s]       |        [01;36m[K^~~~~[m[K
+[3.881s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;31m[KRobot[m[K {
+[3.881s]       |        [01;31m[K^~~~~[m[K
+[3.881s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.881s]     4 | struct [01;36m[KRobot[m[K {
+[3.882s]       |        [01;36m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;31m[KRobot[m[K {
+[3.882s]       |        [01;31m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;36m[KRobot[m[K {
+[3.882s]       |        [01;36m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;31m[KRobot[m[K {
+[3.882s]       |        [01;31m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;36m[KRobot[m[K {
+[3.882s]       |        [01;36m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;31m[KRobot[m[K {
+[3.882s]       |        [01;31m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;36m[KRobot[m[K {
+[3.882s]       |        [01;36m[K^~~~~[m[K
+[3.882s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.882s]     4 | struct [01;31m[KRobot[m[K {
+[3.882s]       |        [01;31m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;36m[KRobot[m[K {
+[3.883s]       |        [01;36m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;31m[KRobot[m[K {
+[3.883s]       |        [01;31m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;36m[KRobot[m[K {
+[3.883s]       |        [01;36m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;31m[KRobot[m[K {
+[3.883s]       |        [01;31m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;36m[KRobot[m[K {
+[3.883s]       |        [01;36m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.883s]     4 | struct [01;31m[KRobot[m[K {
+[3.883s]       |        [01;31m[K^~~~~[m[K
+[3.883s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.884s]     4 | struct [01;36m[KRobot[m[K {
+[3.884s]       |        [01;36m[K^~~~~[m[K
+[3.884s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.884s]     4 | struct [01;31m[KRobot[m[K {
+[3.884s]       |        [01;31m[K^~~~~[m[K
+[3.884s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.884s]     4 | struct [01;36m[KRobot[m[K {
+[3.884s]       |        [01;36m[K^~~~~[m[K
+[3.884s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.884s]     4 | struct [01;31m[KRobot[m[K {
+[3.884s]       |        [01;31m[K^~~~~[m[K
+[3.884s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.884s]     4 | struct [01;36m[KRobot[m[K {
+[3.885s]       |        [01;36m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;31m[KRobot[m[K {
+[3.885s]       |        [01;31m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;36m[KRobot[m[K {
+[3.885s]       |        [01;36m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;31m[KRobot[m[K {
+[3.885s]       |        [01;31m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;36m[KRobot[m[K {
+[3.885s]       |        [01;36m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;31m[KRobot[m[K {
+[3.885s]       |        [01;31m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;36m[KRobot[m[K {
+[3.885s]       |        [01;36m[K^~~~~[m[K
+[3.885s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.885s]     4 | struct [01;31m[KRobot[m[K {
+[3.885s]       |        [01;31m[K^~~~~[m[K
+[3.886s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.886s]     4 | struct [01;36m[KRobot[m[K {
+[3.886s]       |        [01;36m[K^~~~~[m[K
+[3.886s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.886s]     4 | struct [01;31m[KRobot[m[K {
+[3.886s]       |        [01;31m[K^~~~~[m[K
+[3.886s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.886s]     4 | struct [01;36m[KRobot[m[K {
+[3.886s]       |        [01;36m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.887s]     4 | struct [01;31m[KRobot[m[K {
+[3.887s]       |        [01;31m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.887s]     4 | struct [01;36m[KRobot[m[K {
+[3.887s]       |        [01;36m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.887s]     4 | struct [01;31m[KRobot[m[K {
+[3.887s]       |        [01;31m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.887s]     4 | struct [01;36m[KRobot[m[K {
+[3.887s]       |        [01;36m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.887s]     4 | struct [01;31m[KRobot[m[K {
+[3.887s]       |        [01;31m[K^~~~~[m[K
+[3.887s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.888s]     4 | struct [01;36m[KRobot[m[K {
+[3.888s]       |        [01;36m[K^~~~~[m[K
+[3.888s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.888s]     4 | struct [01;31m[KRobot[m[K {
+[3.888s]       |        [01;31m[K^~~~~[m[K
+[3.888s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.888s]     4 | struct [01;36m[KRobot[m[K {
+[3.888s]       |        [01;36m[K^~~~~[m[K
+[3.888s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.888s]     4 | struct [01;31m[KRobot[m[K {
+[3.888s]       |        [01;31m[K^~~~~[m[K
+[3.888s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.888s]     4 | struct [01;36m[KRobot[m[K {
+[3.888s]       |        [01;36m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;31m[KRobot[m[K {
+[3.889s]       |        [01;31m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;36m[KRobot[m[K {
+[3.889s]       |        [01;36m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;31m[KRobot[m[K {
+[3.889s]       |        [01;31m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;36m[KRobot[m[K {
+[3.889s]       |        [01;36m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;31m[KRobot[m[K {
+[3.889s]       |        [01;31m[K^~~~~[m[K
+[3.889s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.889s]     4 | struct [01;36m[KRobot[m[K {
+[3.889s]       |        [01;36m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;31m[KRobot[m[K {
+[3.890s]       |        [01;31m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;36m[KRobot[m[K {
+[3.890s]       |        [01;36m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;31m[KRobot[m[K {
+[3.890s]       |        [01;31m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;36m[KRobot[m[K {
+[3.890s]       |        [01;36m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;31m[KRobot[m[K {
+[3.890s]       |        [01;31m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;36m[KRobot[m[K {
+[3.890s]       |        [01;36m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;31m[KRobot[m[K {
+[3.890s]       |        [01;31m[K^~~~~[m[K
+[3.890s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.890s]     4 | struct [01;36m[KRobot[m[K {
+[3.890s]       |        [01;36m[K^~~~~[m[K
+[3.891s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.891s]     4 | struct [01;31m[KRobot[m[K {
+[3.891s]       |        [01;31m[K^~~~~[m[K
+[3.891s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.891s]     4 | struct [01;36m[KRobot[m[K {
+[3.891s]       |        [01;36m[K^~~~~[m[K
+[3.891s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.891s]     4 | struct [01;31m[KRobot[m[K {
+[3.891s]       |        [01;31m[K^~~~~[m[K
+[3.891s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.891s]     4 | struct [01;36m[KRobot[m[K {
+[3.891s]       |        [01;36m[K^~~~~[m[K
+[3.892s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.892s]     4 | struct [01;31m[KRobot[m[K {
+[3.892s]       |        [01;31m[K^~~~~[m[K
+[3.892s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.892s]     4 | struct [01;36m[KRobot[m[K {
+[3.893s]       |        [01;36m[K^~~~~[m[K
+[3.893s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.893s]     4 | struct [01;31m[KRobot[m[K {
+[3.893s]       |        [01;31m[K^~~~~[m[K
+[3.893s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.893s]     4 | struct [01;36m[KRobot[m[K {
+[3.893s]       |        [01;36m[K^~~~~[m[K
+[3.893s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.893s]     4 | struct [01;31m[KRobot[m[K {
+[3.894s]       |        [01;31m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.894s]     4 | struct [01;36m[KRobot[m[K {
+[3.894s]       |        [01;36m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.894s]     4 | struct [01;31m[KRobot[m[K {
+[3.894s]       |        [01;31m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.894s]     4 | struct [01;36m[KRobot[m[K {
+[3.894s]       |        [01;36m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.894s]     4 | struct [01;31m[KRobot[m[K {
+[3.894s]       |        [01;31m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.894s]     4 | struct [01;36m[KRobot[m[K {
+[3.894s]       |        [01;36m[K^~~~~[m[K
+[3.894s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;31m[KRobot[m[K {
+[3.895s]       |        [01;31m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;36m[KRobot[m[K {
+[3.895s]       |        [01;36m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;31m[KRobot[m[K {
+[3.895s]       |        [01;31m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;36m[KRobot[m[K {
+[3.895s]       |        [01;36m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;31m[KRobot[m[K {
+[3.895s]       |        [01;31m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;36m[KRobot[m[K {
+[3.895s]       |        [01;36m[K^~~~~[m[K
+[3.895s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.895s]     4 | struct [01;31m[KRobot[m[K {
+[3.896s]       |        [01;31m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;36m[KRobot[m[K {
+[3.896s]       |        [01;36m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;31m[KRobot[m[K {
+[3.896s]       |        [01;31m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;36m[KRobot[m[K {
+[3.896s]       |        [01;36m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;31m[KRobot[m[K {
+[3.896s]       |        [01;31m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;36m[KRobot[m[K {
+[3.896s]       |        [01;36m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;31m[KRobot[m[K {
+[3.896s]       |        [01;31m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.896s]     4 | struct [01;36m[KRobot[m[K {
+[3.896s]       |        [01;36m[K^~~~~[m[K
+[3.896s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.897s]     4 | struct [01;31m[KRobot[m[K {
+[3.897s]       |        [01;31m[K^~~~~[m[K
+[3.897s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.897s]     4 | struct [01;36m[KRobot[m[K {
+[3.897s]       |        [01;36m[K^~~~~[m[K
+[3.897s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.897s]     4 | struct [01;31m[KRobot[m[K {
+[3.897s]       |        [01;31m[K^~~~~[m[K
+[3.897s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.897s]     4 | struct [01;36m[KRobot[m[K {
+[3.897s]       |        [01;36m[K^~~~~[m[K
+[3.897s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.897s]     4 | struct [01;31m[KRobot[m[K {
+[3.897s]       |        [01;31m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;36m[KRobot[m[K {
+[3.898s]       |        [01;36m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;31m[KRobot[m[K {
+[3.898s]       |        [01;31m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;36m[KRobot[m[K {
+[3.898s]       |        [01;36m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;31m[KRobot[m[K {
+[3.898s]       |        [01;31m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;36m[KRobot[m[K {
+[3.898s]       |        [01;36m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.898s]     4 | struct [01;31m[KRobot[m[K {
+[3.898s]       |        [01;31m[K^~~~~[m[K
+[3.898s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.899s]     4 | struct [01;36m[KRobot[m[K {
+[3.899s]       |        [01;36m[K^~~~~[m[K
+[3.899s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.899s]     4 | struct [01;31m[KRobot[m[K {
+[3.899s]       |        [01;31m[K^~~~~[m[K
+[3.899s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.899s]     4 | struct [01;36m[KRobot[m[K {
+[3.899s]       |        [01;36m[K^~~~~[m[K
+[3.899s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.899s]     4 | struct [01;31m[KRobot[m[K {
+[3.899s]       |        [01;31m[K^~~~~[m[K
+[3.899s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.899s]     4 | struct [01;36m[KRobot[m[K {
+[3.900s]       |        [01;36m[K^~~~~[m[K
+[3.900s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.900s]     4 | struct [01;31m[KRobot[m[K {
+[3.900s]       |        [01;31m[K^~~~~[m[K
+[3.900s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.900s]     4 | struct [01;36m[KRobot[m[K {
+[3.901s]       |        [01;36m[K^~~~~[m[K
+[3.901s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.901s]     4 | struct [01;31m[KRobot[m[K {
+[3.901s]       |        [01;31m[K^~~~~[m[K
+[3.901s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.901s]     4 | struct [01;36m[KRobot[m[K {
+[3.901s]       |        [01;36m[K^~~~~[m[K
+[3.901s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.901s]     4 | struct [01;31m[KRobot[m[K {
+[3.901s]       |        [01;31m[K^~~~~[m[K
+[3.902s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.902s]     4 | struct [01;36m[KRobot[m[K {
+[3.902s]       |        [01;36m[K^~~~~[m[K
+[3.902s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.902s]     4 | struct [01;31m[KRobot[m[K {
+[3.902s]       |        [01;31m[K^~~~~[m[K
+[3.902s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.902s]     4 | struct [01;36m[KRobot[m[K {
+[3.902s]       |        [01;36m[K^~~~~[m[K
+[3.902s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.902s]     4 | struct [01;31m[KRobot[m[K {
+[3.903s]       |        [01;31m[K^~~~~[m[K
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.903s]     4 | struct [01;36m[KRobot[m[K {
+[3.903s]       |        [01;36m[K^~~~~[m[K
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.903s]     4 | struct [01;31m[KRobot[m[K {
+[3.903s]       |        [01;31m[K^~~~~[m[K
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.903s]     4 | struct [01;36m[KRobot[m[K {
+[3.903s]       |        [01;36m[K^~~~~[m[K
+[3.903s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.903s]     4 | struct [01;31m[KRobot[m[K {
+[3.903s]       |        [01;31m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;36m[KRobot[m[K {
+[3.904s]       |        [01;36m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;31m[KRobot[m[K {
+[3.904s]       |        [01;31m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;36m[KRobot[m[K {
+[3.904s]       |        [01;36m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;31m[KRobot[m[K {
+[3.904s]       |        [01;31m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;36m[KRobot[m[K {
+[3.904s]       |        [01;36m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;31m[KRobot[m[K {
+[3.904s]       |        [01;31m[K^~~~~[m[K
+[3.904s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.904s]     4 | struct [01;36m[KRobot[m[K {
+[3.904s]       |        [01;36m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.905s]     4 | struct [01;31m[KRobot[m[K {
+[3.905s]       |        [01;31m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.905s]     4 | struct [01;36m[KRobot[m[K {
+[3.905s]       |        [01;36m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.905s]     4 | struct [01;31m[KRobot[m[K {
+[3.905s]       |        [01;31m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.905s]     4 | struct [01;36m[KRobot[m[K {
+[3.905s]       |        [01;36m[K^~~~~[m[K
+[3.905s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.905s]     4 | struct [01;31m[KRobot[m[K {
+[3.905s]       |        [01;31m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;36m[KRobot[m[K {
+[3.906s]       |        [01;36m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;31m[KRobot[m[K {
+[3.906s]       |        [01;31m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;36m[KRobot[m[K {
+[3.906s]       |        [01;36m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;31m[KRobot[m[K {
+[3.906s]       |        [01;31m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;36m[KRobot[m[K {
+[3.906s]       |        [01;36m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.906s]     4 | struct [01;31m[KRobot[m[K {
+[3.906s]       |        [01;31m[K^~~~~[m[K
+[3.906s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;36m[KRobot[m[K {
+[3.907s]       |        [01;36m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;31m[KRobot[m[K {
+[3.907s]       |        [01;31m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;36m[KRobot[m[K {
+[3.907s]       |        [01;36m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;31m[KRobot[m[K {
+[3.907s]       |        [01;31m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;36m[KRobot[m[K {
+[3.907s]       |        [01;36m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.907s]     4 | struct [01;31m[KRobot[m[K {
+[3.907s]       |        [01;31m[K^~~~~[m[K
+[3.907s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;36m[KRobot[m[K {
+[3.908s]       |        [01;36m[K^~~~~[m[K
+[3.908s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;31m[KRobot[m[K {
+[3.908s]       |        [01;31m[K^~~~~[m[K
+[3.908s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;36m[KRobot[m[K {
+[3.908s]       |        [01;36m[K^~~~~[m[K
+[3.908s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;31m[KRobot[m[K {
+[3.908s]       |        [01;31m[K^~~~~[m[K
+[3.908s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;36m[KRobot[m[K {
+[3.908s]       |        [01;36m[K^~~~~[m[K
+[3.908s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.908s]     4 | struct [01;31m[KRobot[m[K {
+[3.908s]       |        [01;31m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.909s]     4 | struct [01;36m[KRobot[m[K {
+[3.909s]       |        [01;36m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.909s]     4 | struct [01;31m[KRobot[m[K {
+[3.909s]       |        [01;31m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.909s]     4 | struct [01;36m[KRobot[m[K {
+[3.909s]       |        [01;36m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.909s]     4 | struct [01;31m[KRobot[m[K {
+[3.909s]       |        [01;31m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.909s]     4 | struct [01;36m[KRobot[m[K {
+[3.909s]       |        [01;36m[K^~~~~[m[K
+[3.909s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;31m[KRobot[m[K {
+[3.910s]       |        [01;31m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;36m[KRobot[m[K {
+[3.910s]       |        [01;36m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;31m[KRobot[m[K {
+[3.910s]       |        [01;31m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;36m[KRobot[m[K {
+[3.910s]       |        [01;36m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;31m[KRobot[m[K {
+[3.910s]       |        [01;31m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.910s]     4 | struct [01;36m[KRobot[m[K {
+[3.910s]       |        [01;36m[K^~~~~[m[K
+[3.910s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;31m[KRobot[m[K {
+[3.911s]       |        [01;31m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;36m[KRobot[m[K {
+[3.911s]       |        [01;36m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;31m[KRobot[m[K {
+[3.911s]       |        [01;31m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;36m[KRobot[m[K {
+[3.911s]       |        [01;36m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;31m[KRobot[m[K {
+[3.911s]       |        [01;31m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;36m[KRobot[m[K {
+[3.911s]       |        [01;36m[K^~~~~[m[K
+[3.911s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.911s]     4 | struct [01;31m[KRobot[m[K {
+[3.912s]       |        [01;31m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;36m[KRobot[m[K {
+[3.912s]       |        [01;36m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;31m[KRobot[m[K {
+[3.912s]       |        [01;31m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;36m[KRobot[m[K {
+[3.912s]       |        [01;36m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;31m[KRobot[m[K {
+[3.912s]       |        [01;31m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;36m[KRobot[m[K {
+[3.912s]       |        [01;36m[K^~~~~[m[K
+[3.912s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Robot[m[K’
+[3.912s]     4 | struct [01;31m[KRobot[m[K {
+[3.913s]       |        [01;31m[K^~~~~[m[K
+[3.913s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/include/rp_ros2_rviz/robot.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Robot[m[K’
+[3.913s]     4 | struct [01;36m[KRobot[m[K {
+[3.913s]       |        [01;36m[K^~~~~[m[K
+[3.913s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In constructor ‘[01m[KDmapNode::[01;32m[KDmapNode[m[K()[m[K’:
+[3.913s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:33:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kn_points[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.913s]    33 |     int [01;35m[Kn_points[m[K=100;
+[3.913s]       |         [01;35m[K^~~~~~~~[m[K
+[3.913s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’:
+[3.913s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:112:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot[m[K’ was not declared in this scope; did you mean ‘[01m[KRobot[m[K’?
+[3.913s]   112 |             cv::circle(shown_image, cv::Point([01;31m[Krobot[m[K.position.x(), robot.position.y()), 5, cv::Scalar(0, 0, 255), -1);
+[3.913s]       |                                               [01;31m[K^~~~~[m[K
+[3.913s]       |                                               [32m[KRobot[m[K
+[3.913s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.913s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[3.914s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[3.914s]                  from [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:2[m[K:
+[3.914s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[3.914s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:149:49:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.914s]   149 |                 RCLCPP_INFO(node->get_logger(), [01;35m[K"policy: (%d, %d) val: %d parent: (%d, %d)"[m[K, y, x, [32m[Kplanner->policy.at(y, x)[m[K, parent_pos[0], parent_pos[1]);
+[3.914s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.915s]       |                                                                                                                      [32m[K|[m[K
+[3.915s]       |                                                                                                                      [32m[Kdouble[m[K
+[3.915s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:149:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.916s]   149 |     RCLCPP_INFO(node->get_logger(), "policy: (%d, %d) val: [01;36m[K%d[m[K parent: (%d, %d)", y, x, planner->policy.at(y, x), parent_pos[0], parent_pos[1]);
+[3.916s]       |                                                            [01;36m[K~^[m[K
+[3.916s]       |                                                             [01;36m[K|[m[K
+[3.916s]       |                                                             [01;36m[Kint[m[K
+[3.916s]       |                                                            [32m[K%f[m[K
+[3.916s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:116:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.916s]   116 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[3.916s]       |                                                      [01;35m[K~~~~^~~[m[K
+[5.188s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[5.188s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[5.188s] gmake: *** [Makefile:146: all] Error 2
+[5.191s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

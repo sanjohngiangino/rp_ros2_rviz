@@ -1,3 +1,0 @@
-[ 18%] Built target control_robot
-[ 27%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
-[ 36%] [32m[1mLinking CXX executable world_node[0m

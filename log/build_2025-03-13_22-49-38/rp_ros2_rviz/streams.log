@@ -1,0 +1,40 @@
+[0.012s] Invoking command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.113s] [ 25%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o[0m
+[4.018s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:[m[K In static member function ‘[01m[Kstatic void DmapNode::[01;32m[KonMouse[m[K(int, int, int, int, void*)[m[K’:
+[4.018s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:105:22:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.018s]   105 |             [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.018s]       |             [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.018s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:107:34:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::path[m[K’ in static member function
+[4.018s]   107 |             planner->computePath([01;31m[Kpath[m[K,
+[4.019s]       |                                  [01;31m[K^~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:135:25:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.019s]   135 |     std::list<Vector2f> [01;36m[Kpath[m[K;
+[4.019s]       |                         [01;36m[K^~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:111:33:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::use_gradient[m[K’ in static member function
+[4.019s]   111 |                                 [01;31m[Kuse_gradient[m[K);
+[4.019s]       |                                 [01;31m[K^~~~~~~~~~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:139:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.019s]   139 |     bool [01;36m[Kuse_gradient[m[K = false;
+[4.019s]       |          [01;36m[K^~~~~~~~~~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:112:22:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[Kvoid DmapNode::[01;32m[Kredisplay[m[K(const GridMapping&)[m[K’ without object
+[4.019s]   112 |             [01;31m[Kredisplay(planner->mapping)[m[K;
+[4.019s]       |             [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:115:44:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::background_mode[m[K’ in static member function
+[4.019s]   115 |             cerr << "background_mode= " << [01;31m[Kbackground_mode[m[K << endl;
+[4.019s]       |                                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:138:9:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.019s]   138 |     int [01;36m[Kbackground_mode[m[K = 0;
+[4.019s]       |         [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.019s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:116:20:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KDmapNode::background_mode[m[K’ in static member function
+[4.019s]   116 |             switch([01;31m[Kbackground_mode[m[K) {
+[4.020s]       |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.020s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:138:9:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.020s]   138 |     int [01;36m[Kbackground_mode[m[K = 0;
+[4.020s]       |         [01;36m[K^~~~~~~~~~~~~~~[m[K
+[4.028s] [01m[K/home/john/Desktop/path_ros/rp_ros2_rviz/src/dmap_node.cpp:97:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.028s]    97 |         static void onMouse(int event, int x, int y, [01;35m[Kint val[m[K, void* arg) {
+[4.028s]       |                                                      [01;35m[K~~~~^~~[m[K
+[5.542s] gmake[2]: *** [CMakeFiles/dmap_node.dir/build.make:76: CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o] Error 1
+[5.543s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/dmap_node.dir/all] Error 2
+[5.543s] gmake: *** [Makefile:146: all] Error 2
+[5.547s] Invoked command in '/home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

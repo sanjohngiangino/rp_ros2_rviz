@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/john/Desktop/rp_ros2_rviz
+CMAKE_SOURCE_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+CMAKE_BINARY_DIR = /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/path_ros/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,17 +198,17 @@ rp_ros2_rviz_uninstall/fast:
 .PHONY : rp_ros2_rviz_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named control_robot
+# Target rules for targets named dmap_node
 
 # Build rule for target.
-control_robot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 control_robot
-.PHONY : control_robot
+dmap_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dmap_node
+.PHONY : dmap_node
 
 # fast build rule for target.
-control_robot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/build
-.PHONY : control_robot/fast
+dmap_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/build
+.PHONY : dmap_node/fast
 
 #=============================================================================
 # Target rules for targets named world_node
@@ -223,84 +223,27 @@ world_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/build
 .PHONY : world_node/fast
 
-src/canvas.o: src/canvas.cpp.o
-.PHONY : src/canvas.o
+#=============================================================================
+# Target rules for targets named pathplanner_node
 
-# target to build an object file
-src/canvas.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.o
-.PHONY : src/canvas.cpp.o
+# Build rule for target.
+pathplanner_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pathplanner_node
+.PHONY : pathplanner_node
 
-src/canvas.i: src/canvas.cpp.i
-.PHONY : src/canvas.i
-
-# target to preprocess a source file
-src/canvas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.i
-.PHONY : src/canvas.cpp.i
-
-src/canvas.s: src/canvas.cpp.s
-.PHONY : src/canvas.s
-
-# target to generate assembly for a file
-src/canvas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/canvas.cpp.s
-.PHONY : src/canvas.cpp.s
-
-src/control_robot.o: src/control_robot.cpp.o
-.PHONY : src/control_robot.o
-
-# target to build an object file
-src/control_robot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.o
-.PHONY : src/control_robot.cpp.o
-
-src/control_robot.i: src/control_robot.cpp.i
-.PHONY : src/control_robot.i
-
-# target to preprocess a source file
-src/control_robot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.i
-.PHONY : src/control_robot.cpp.i
-
-src/control_robot.s: src/control_robot.cpp.s
-.PHONY : src/control_robot.s
-
-# target to generate assembly for a file
-src/control_robot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/control_robot.dir/build.make CMakeFiles/control_robot.dir/src/control_robot.cpp.s
-.PHONY : src/control_robot.cpp.s
-
-src/differential_drive_robot.o: src/differential_drive_robot.cpp.o
-.PHONY : src/differential_drive_robot.o
-
-# target to build an object file
-src/differential_drive_robot.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.o
-.PHONY : src/differential_drive_robot.cpp.o
-
-src/differential_drive_robot.i: src/differential_drive_robot.cpp.i
-.PHONY : src/differential_drive_robot.i
-
-# target to preprocess a source file
-src/differential_drive_robot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.i
-.PHONY : src/differential_drive_robot.cpp.i
-
-src/differential_drive_robot.s: src/differential_drive_robot.cpp.s
-.PHONY : src/differential_drive_robot.s
-
-# target to generate assembly for a file
-src/differential_drive_robot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/differential_drive_robot.cpp.s
-.PHONY : src/differential_drive_robot.cpp.s
+# fast build rule for target.
+pathplanner_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/build
+.PHONY : pathplanner_node/fast
 
 src/dmap.o: src/dmap.cpp.o
 .PHONY : src/dmap.o
 
 # target to build an object file
 src/dmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.o
 .PHONY : src/dmap.cpp.o
 
 src/dmap.i: src/dmap.cpp.i
@@ -308,7 +251,9 @@ src/dmap.i: src/dmap.cpp.i
 
 # target to preprocess a source file
 src/dmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.i
 .PHONY : src/dmap.cpp.i
 
 src/dmap.s: src/dmap.cpp.s
@@ -316,15 +261,43 @@ src/dmap.s: src/dmap.cpp.s
 
 # target to generate assembly for a file
 src/dmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.s
 .PHONY : src/dmap.cpp.s
+
+src/dmap_node.o: src/dmap_node.cpp.o
+.PHONY : src/dmap_node.o
+
+# target to build an object file
+src/dmap_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_node.cpp.o
+.PHONY : src/dmap_node.cpp.o
+
+src/dmap_node.i: src/dmap_node.cpp.i
+.PHONY : src/dmap_node.i
+
+# target to preprocess a source file
+src/dmap_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_node.cpp.i
+.PHONY : src/dmap_node.cpp.i
+
+src/dmap_node.s: src/dmap_node.cpp.s
+.PHONY : src/dmap_node.s
+
+# target to generate assembly for a file
+src/dmap_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_node.cpp.s
+.PHONY : src/dmap_node.cpp.s
 
 src/dmap_planner.o: src/dmap_planner.cpp.o
 .PHONY : src/dmap_planner.o
 
 # target to build an object file
 src/dmap_planner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_planner.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.o
 .PHONY : src/dmap_planner.cpp.o
 
 src/dmap_planner.i: src/dmap_planner.cpp.i
@@ -332,7 +305,9 @@ src/dmap_planner.i: src/dmap_planner.cpp.i
 
 # target to preprocess a source file
 src/dmap_planner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_planner.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.i
 .PHONY : src/dmap_planner.cpp.i
 
 src/dmap_planner.s: src/dmap_planner.cpp.s
@@ -340,104 +315,64 @@ src/dmap_planner.s: src/dmap_planner.cpp.s
 
 # target to generate assembly for a file
 src/dmap_planner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/dmap_planner.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.s
 .PHONY : src/dmap_planner.cpp.s
 
-src/grid.o: src/grid.cpp.o
-.PHONY : src/grid.o
+src/pathplanner_node.o: src/pathplanner_node.cpp.o
+.PHONY : src/pathplanner_node.o
 
 # target to build an object file
-src/grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.o
-.PHONY : src/grid.cpp.o
+src/pathplanner_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o
+.PHONY : src/pathplanner_node.cpp.o
 
-src/grid.i: src/grid.cpp.i
-.PHONY : src/grid.i
+src/pathplanner_node.i: src/pathplanner_node.cpp.i
+.PHONY : src/pathplanner_node.i
 
 # target to preprocess a source file
-src/grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.i
-.PHONY : src/grid.cpp.i
+src/pathplanner_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.i
+.PHONY : src/pathplanner_node.cpp.i
 
-src/grid.s: src/grid.cpp.s
-.PHONY : src/grid.s
+src/pathplanner_node.s: src/pathplanner_node.cpp.s
+.PHONY : src/pathplanner_node.s
 
 # target to generate assembly for a file
-src/grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid.cpp.s
-.PHONY : src/grid.cpp.s
+src/pathplanner_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.s
+.PHONY : src/pathplanner_node.cpp.s
 
-src/grid_map.o: src/grid_map.cpp.o
-.PHONY : src/grid_map.o
+src/robot.o: src/robot.cpp.o
+.PHONY : src/robot.o
 
 # target to build an object file
-src/grid_map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.o
-.PHONY : src/grid_map.cpp.o
+src/robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/robot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.o
+.PHONY : src/robot.cpp.o
 
-src/grid_map.i: src/grid_map.cpp.i
-.PHONY : src/grid_map.i
-
-# target to preprocess a source file
-src/grid_map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.i
-.PHONY : src/grid_map.cpp.i
-
-src/grid_map.s: src/grid_map.cpp.s
-.PHONY : src/grid_map.s
-
-# target to generate assembly for a file
-src/grid_map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/grid_map.cpp.s
-.PHONY : src/grid_map.cpp.s
-
-src/lidar.o: src/lidar.cpp.o
-.PHONY : src/lidar.o
-
-# target to build an object file
-src/lidar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.o
-.PHONY : src/lidar.cpp.o
-
-src/lidar.i: src/lidar.cpp.i
-.PHONY : src/lidar.i
+src/robot.i: src/robot.cpp.i
+.PHONY : src/robot.i
 
 # target to preprocess a source file
-src/lidar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.i
-.PHONY : src/lidar.cpp.i
+src/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/robot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.i
+.PHONY : src/robot.cpp.i
 
-src/lidar.s: src/lidar.cpp.s
-.PHONY : src/lidar.s
-
-# target to generate assembly for a file
-src/lidar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/lidar.cpp.s
-.PHONY : src/lidar.cpp.s
-
-src/world.o: src/world.cpp.o
-.PHONY : src/world.o
-
-# target to build an object file
-src/world.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.o
-.PHONY : src/world.cpp.o
-
-src/world.i: src/world.cpp.i
-.PHONY : src/world.i
-
-# target to preprocess a source file
-src/world.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.i
-.PHONY : src/world.cpp.i
-
-src/world.s: src/world.cpp.s
-.PHONY : src/world.s
+src/robot.s: src/robot.cpp.s
+.PHONY : src/robot.s
 
 # target to generate assembly for a file
-src/world.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/world.cpp.s
-.PHONY : src/world.cpp.s
+src/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/src/robot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.s
+.PHONY : src/robot.cpp.s
 
 src/world_node.o: src/world_node.cpp.o
 .PHONY : src/world_node.o
@@ -478,35 +413,24 @@ help:
 	@echo "... test"
 	@echo "... rp_ros2_rviz_uninstall"
 	@echo "... uninstall"
-	@echo "... control_robot"
+	@echo "... dmap_node"
+	@echo "... pathplanner_node"
 	@echo "... world_node"
-	@echo "... src/canvas.o"
-	@echo "... src/canvas.i"
-	@echo "... src/canvas.s"
-	@echo "... src/control_robot.o"
-	@echo "... src/control_robot.i"
-	@echo "... src/control_robot.s"
-	@echo "... src/differential_drive_robot.o"
-	@echo "... src/differential_drive_robot.i"
-	@echo "... src/differential_drive_robot.s"
 	@echo "... src/dmap.o"
 	@echo "... src/dmap.i"
 	@echo "... src/dmap.s"
+	@echo "... src/dmap_node.o"
+	@echo "... src/dmap_node.i"
+	@echo "... src/dmap_node.s"
 	@echo "... src/dmap_planner.o"
 	@echo "... src/dmap_planner.i"
 	@echo "... src/dmap_planner.s"
-	@echo "... src/grid.o"
-	@echo "... src/grid.i"
-	@echo "... src/grid.s"
-	@echo "... src/grid_map.o"
-	@echo "... src/grid_map.i"
-	@echo "... src/grid_map.s"
-	@echo "... src/lidar.o"
-	@echo "... src/lidar.i"
-	@echo "... src/lidar.s"
-	@echo "... src/world.o"
-	@echo "... src/world.i"
-	@echo "... src/world.s"
+	@echo "... src/pathplanner_node.o"
+	@echo "... src/pathplanner_node.i"
+	@echo "... src/pathplanner_node.s"
+	@echo "... src/robot.o"
+	@echo "... src/robot.i"
+	@echo "... src/robot.s"
 	@echo "... src/world_node.o"
 	@echo "... src/world_node.i"
 	@echo "... src/world_node.s"

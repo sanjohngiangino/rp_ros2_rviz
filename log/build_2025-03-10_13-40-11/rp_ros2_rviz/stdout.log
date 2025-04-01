@@ -1,4 +1,0 @@
-[ 25%] [32mBuilding CXX object CMakeFiles/canvas_node.dir/src/canvas.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/listener_node.dir/src/listener.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable canvas_node[0m
-[ 75%] Built target canvas_node
