@@ -48,7 +48,7 @@ void redisplay(const GridMapping& mapping) {
 }
 
 static void onMouse(int event, int x, int y, int val, void* arg) {
-  
+
   DMapPlanner* planner=static_cast<DMapPlanner*>(arg);
   Eigen::Vector2f world_pose=planner->mapping.g2w(Eigen::Vector2f(y,x));
   
@@ -100,6 +100,7 @@ int main(int argc, char** argv) {
   //1 compute dmap
   DMap dmap(rows, cols);
   dmap.clear();
+  
   Vector2iVector obstacles(n_points);
   for (auto& o: obstacles) {
     o=Vector2i(drand48()*rows, drand48()*cols);
@@ -112,10 +113,15 @@ int main(int argc, char** argv) {
   planner.init(resolution, 0.3, expansion_range, dmap);
   planner.computePolicy(Vector2f::Zero());
   cerr << "planner ready" << endl;
+
   cv::namedWindow("planner", cv::WINDOW_GUI_NORMAL | cv::WINDOW_AUTOSIZE);
+
   background_image=grid2cv(planner.policy, true);
+  
   redisplay(planner.mapping);
+  
   cv::setMouseCallback("planner", onMouse, &planner);
+
   while (1) {
     int key=cv::waitKey();
     switch(key) {
