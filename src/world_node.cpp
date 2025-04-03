@@ -9,6 +9,8 @@
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/point.hpp"  // Per il messaggio Point
 #include "std_msgs/msg/bool.hpp"  // Questo è l'header corretto per il messaggio booleano
+#include "geometry_msgs/msg/pose_array.hpp"
+#include "geometry_msgs/msg/pose.hpp"
 
 using namespace std;
 using namespace cv;
@@ -26,13 +28,16 @@ private:
     bool use_gradient = false;
     float resolution = 0.05;
     float expansion_range = 1.0;
-    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr point_publisher_;  
+    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr goal_publisher_;
     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr robot_publisher_;  
 
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;  
     rclcpp::TimerBase::SharedPtr timer_; 
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr bool_subscriber_;
+
     bool continue_publishing_= true;
+    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr pose_sub_;
+
 
 
 public:
@@ -43,8 +48,14 @@ public:
         "stop_publish", 10, std::bind(&WorldNode::bool_callback, this, std::placeholders::_1));
      
     publisher_ = this->create_publisher<std_msgs::msg::String>("PathImage", 10);
-    point_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("PointPub", 10);
+    goal_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);
+
     robot_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);
+    
+    pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
+        "path_poses", 10,
+        std::bind(&WorldNode::pathCallback, this, std::placeholders::_1));
+    
 
     custom_image = cv::imread("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", cv::IMREAD_COLOR);
     
@@ -60,17 +71,6 @@ public:
     } else {
         background_image = custom_image.clone();
         shown_image = background_image.clone();
-
-        /*
-        std::vector<Eigen::Vector2f> fake_path = {
-            {10.0f, 10.0f}, {9.5f, 9.5f}, {9.0f, 9.0f}, {8.5f, 8.5f},
-            {8.0f, 8.0f}, {7.5f, 7.5f}, {7.0f, 7.0f}, {6.5f, 6.5f},
-            {6.0f, 6.0f}, {5.5f, 5.5f}, {5.0f, 5.0f}, {4.5f, 4.5f},
-            {4.0f, 4.0f}, {3.5f, 3.5f}, {3.0f, 3.0f}, {2.5f, 2.5f},
-            {2.0f, 2.0f}, {1.5f, 1.5f}, {1.0f, 1.0f}, {0.5f, 0.5f},
-            {0.0f, 0.0f}
-        };
-        followPath(fake_path);*/
     }
 
     /*
@@ -107,18 +107,30 @@ public:
     cerr << "una chiamata : " << endl;
     */
 }   
-    void followPath(const std::vector<Eigen::Vector2f>& path) {
-        float dt_ms = 50.0f;  // Delay in millisecondi
+    void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+        path.clear();
+        for (const auto& pose : msg->poses) {
+            path.emplace_back(pose.position.x, pose.position.y);
+        }
+        RCLCPP_INFO(this->get_logger(), "📥 Ricevuto nuovo path con %lu pose", msg->poses.size());
+        followPath(msg);
+    }
 
-        for (const auto& p : path) {
-            my_robot->position = p;
-            RCLCPP_INFO(this->get_logger(), "➡️ Robot posizione: (%.3f, %.3f)", p.x(), p.y());
+    void followPath(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+        float dt_ms = 50.0f;
+    
+        for (const auto& pose : msg->poses) {
+            Eigen::Vector2f world = planner.mapping.g2w(Eigen::Vector2f(pose.position.x, pose.position.y));
+            my_robot->position = world;
+
+            RCLCPP_INFO(this->get_logger(), "➡️ Robot posizione: (%.3f, %.3f)", pose.position.x, pose.position.y);
             redisplay();
             cv::waitKey(static_cast<int>(dt_ms));
         }
-
+    
         RCLCPP_INFO(this->get_logger(), "✅ Path completato.");
     }
+    
 
 
         
@@ -202,18 +214,20 @@ public:
         
     }
 
-    static void onMouse(int event, int x, int y, int val, void* arg) {
-        WorldNode* node = static_cast<WorldNode*>(arg);  
-        
-        if (event == EVENT_LBUTTONDOWN) {
-            auto point_message = geometry_msgs::msg::Point();
-            point_message.x = static_cast<float>(x);
-            point_message.y = static_cast<float>(y);
-            point_message.z = 0.0;
-            RCLCPP_INFO(node->get_logger(), "Publishing Point: (%f, %f, %f)", point_message.x, point_message.y, point_message.z);
-            node->point_publisher_->publish(point_message);
-        }
-    } 
+    static void onMouse(int event, int x, int y, int, void* arg) {
+    WorldNode* node = static_cast<WorldNode*>(arg);  
+
+    if (event == EVENT_LBUTTONDOWN) {
+        auto point_message = geometry_msgs::msg::Point();
+        point_message.x = static_cast<float>(x);
+        point_message.y = static_cast<float>(y);
+        point_message.z = 0.0;
+
+        RCLCPP_INFO(node->get_logger(), "🎯 Nuovo goal impostato: (%f, %f)", point_message.x, point_message.y);
+        node->goal_publisher_->publish(point_message);
+    }
+}
+
     
     Vector2iVector getObstaclesFromImage(const cv::Mat& image) {
         Vector2iVector obstacles;  

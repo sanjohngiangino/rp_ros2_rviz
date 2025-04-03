@@ -1,0 +1,17 @@
+[0.014s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.088s] [ 33%] Built target dmap_node
+[0.088s] [ 66%] Built target pathplanner_node
+[0.096s] [ 73%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[3.635s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KpathCallback[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.635s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__shared_ptr_access<geometry_msgs::msg::PoseArray_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type[m[K’ {aka ‘[01m[Kgeometry_msgs::msg::PoseArray_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<geometry_msgs::msg::PoseArray_<std::allocator<void> > >[m[K’}
+[3.635s]   116 |         followPath([01;31m[K*msg[m[K);
+[3.635s]       |                    [01;31m[K^~~~[m[K
+[3.635s]       |                    [01;31m[K|[m[K
+[3.635s]       |                    [01;31m[Kstd::__shared_ptr_access<geometry_msgs::msg::PoseArray_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type {aka geometry_msgs::msg::PoseArray_<std::allocator<void> >}[m[K
+[3.635s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:119:68:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WorldNode::[01;32m[KfollowPath[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’
+[3.635s]   119 |     void followPath([01;36m[Kconst geometry_msgs::msg::PoseArray::SharedPtr msg[m[K) {
+[3.635s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.992s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[6.992s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+[6.994s] gmake: *** [Makefile:146: all] Error 2
+[7.002s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

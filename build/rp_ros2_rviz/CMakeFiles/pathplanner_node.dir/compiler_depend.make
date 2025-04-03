@@ -876,7 +876,19 @@ CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: /home/john/Desktop/r
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
@@ -2479,13 +2491,19 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/opencv4/opencv2/photo.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+/usr/include/opencv4/opencv2/imgproc/types_c.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
+/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
+
+/usr/include/opencv4/opencv2/flann/timer.h:
+
+/usr/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/opencv4/opencv2/flann/sampling.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
 
@@ -2533,10 +2551,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
 
-/opt/ros/jazzy/include/rcl/rcl/client.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
-
 /opt/ros/jazzy/include/rcl/rcl/allocator.h:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
@@ -2551,15 +2565,33 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+
+/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/linux/stddef.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:
+
+/usr/include/pthread.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/client.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
 
 /usr/include/opencv4/opencv2/core/async.hpp:
-
-/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/c++/13/bits/regex_scanner.h:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
@@ -2586,6 +2618,8 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
 /usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
@@ -2703,7 +2737,11 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
 /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
@@ -2741,6 +2779,8 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /usr/include/c++/13/bits/exception.h:
@@ -2765,10 +2805,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/src/misc/Image.h:
 
-/usr/include/pthread.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/StlIterators.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
@@ -2792,10 +2828,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/c++/13/debug/debug.h:
-
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
-/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
@@ -2833,7 +2865,7 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/src/Core/NoAlias.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
 
@@ -2921,6 +2953,10 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/aarch64-linux-gnu/bits/timex.h:
 
+/usr/include/opencv4/opencv2/objdetect.hpp:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
 /usr/include/c++/13/typeinfo:
 
 /opt/ros/jazzy/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
@@ -2968,6 +3004,8 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -3017,8 +3055,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
-/usr/include/opencv4/opencv2/flann/sampling.h:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
@@ -3033,8 +3069,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/time.h:
 
-/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
-
 /usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
@@ -3044,6 +3078,10 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/aarch64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
+
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/init_options.hpp:
 
@@ -3191,16 +3229,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/aarch64-linux-gnu/bits/fp-fast.h:
 
-/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
-/usr/include/c++/13/limits:
-
-/usr/include/opencv4/opencv2/flann/result_set.h:
-
-/usr/include/c++/13/bits/chrono.h:
-
 /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
 
 /opt/ros/jazzy/include/rmw/rmw/message_sequence.h:
@@ -3233,10 +3261,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/opencv4/opencv2/flann/params.h:
 
-/opt/ros/jazzy/include/rcutils/rcutils/types/char_array.h:
-
-/opt/ros/jazzy/include/rmw/rmw/names_and_types.h:
-
 /usr/include/eigen3/Eigen/src/Householder/Householder.h:
 
 /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h:
@@ -3258,6 +3282,12 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/aarch64-linux-gnu/bits/byteswap.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigstack.h:
+
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
@@ -3282,10 +3312,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/aarch64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
-
-/usr/include/opencv4/opencv2/imgcodecs.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp:
 
@@ -3381,6 +3407,10 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/list:
 
+/usr/include/opencv4/opencv2/ml.hpp:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
 /usr/include/c++/13/new:
 
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/TypeCasting.h:
@@ -3401,11 +3431,9 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/array:
 
-/usr/include/aarch64-linux-gnu/bits/sigstack.h:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp:
 
-/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
@@ -3430,8 +3458,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/eigen3/Eigen/src/Core/Matrix.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
 
@@ -3472,8 +3498,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/hash_map.h:
-
-/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:
 
@@ -3545,10 +3569,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/cwctype:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
-
-/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
-
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/c++/13/cstdint:
@@ -3564,8 +3584,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics_state.hpp:
 
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -3675,6 +3693,22 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/climits:
 
+/usr/include/aarch64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/__sigval_t.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
+
+/usr/include/c++/13/bits/regex_scanner.h:
+
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
+
 /usr/include/c++/13/compare:
 
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
@@ -3719,6 +3753,10 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/Jacobi:
 
+/usr/include/c++/13/iomanip:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/eigen3/Eigen/src/Core/Swap.h:
@@ -3741,6 +3779,8 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/bits/stl_stack.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp:
+
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
@@ -3754,6 +3794,10 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
+
+/usr/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/include/asm-generic/types.h:
 
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
@@ -3781,9 +3825,33 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/usr/include/c++/13/limits:
+
+/usr/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/opt/ros/jazzy/include/rcutils/rcutils/types/char_array.h:
+
+/opt/ros/jazzy/include/rmw/rmw/names_and_types.h:
 
 /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
 
@@ -3923,8 +3991,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_timer.hpp:
 
-/usr/include/opencv4/opencv2/flann/saving.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
@@ -3968,10 +4034,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/time.hpp:
-
-/usr/include/c++/13/tr1/modified_bessel_func.tcc:
-
-/usr/include/opencv4/opencv2/objdetect.hpp:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
@@ -4095,10 +4157,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/types.h:
@@ -4111,9 +4169,9 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/api/dynamic_type.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
-
 /usr/include/opencv4/opencv2/dnn/layer.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
 /usr/include/opencv4/opencv2/dnn/dnn.hpp:
 
@@ -4423,8 +4481,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
 
-/usr/include/opencv4/opencv2/flann/timer.h:
-
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
 
 /usr/include/c++/13/bits/stl_map.h:
@@ -4466,8 +4522,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/aarch64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/opencv4/opencv2/imgproc/types_c.h:
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
 
@@ -4555,8 +4609,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/bitset:
 
-/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
-
 /usr/include/c++/13/chrono:
 
 /opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
@@ -4575,10 +4627,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/c++/13/future:
 
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/c++/13/iomanip:
-
 /usr/include/c++/13/iterator:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/uchar.h:
@@ -4588,6 +4636,8 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
 
 /usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
 
 /usr/include/c++/13/memory:
 
@@ -4610,10 +4660,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/c++/13/stack:
 
 /usr/include/c++/13/stdlib.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/opencv4/opencv2/ml.hpp:
 
 /usr/include/c++/13/thread:
 
@@ -4649,8 +4695,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 
 /usr/include/linux/posix_types.h:
 
-/usr/include/linux/stddef.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /usr/include/linux/types.h:
@@ -4660,8 +4704,6 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/opencv4/opencv2/calib3d.hpp:
 
 /usr/include/opencv4/opencv2/core.hpp:
-
-/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/opencv4/opencv2/core/check.hpp:
 
@@ -4716,9 +4758,3 @@ CMakeFiles/pathplanner_node.dir/src/robot.cpp.o: /home/john/Desktop/rp_ros2_rviz
 /usr/include/opencv4/opencv2/flann/lsh_table.h:
 
 /usr/include/opencv4/opencv2/flann/matrix.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/opencv4/opencv2/imgproc.hpp:
-
-/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:

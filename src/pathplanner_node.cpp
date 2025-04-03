@@ -9,6 +9,8 @@
 #include "rp_ros2_rviz/display_utils.h"
 #include "rp_ros2_rviz/robot.h"
 #include "geometry_msgs/msg/point.hpp"
+#include "geometry_msgs/msg/pose_array.hpp"
+#include "geometry_msgs/msg/pose.hpp"
 
 class PathPlanner : public rclcpp::Node
 {
@@ -27,6 +29,12 @@ public:
         robot_position_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
             "Robot", 10, std::bind(&PathPlanner::robotCallback, this, std::placeholders::_1));
         
+        pose_array_pub_ = this->create_publisher<geometry_msgs::msg::PoseArray>("path_poses", 10);
+        
+        goal_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
+            "goal_point", 10, std::bind(&PathPlanner::goalCallback, this, std::placeholders::_1));
+
+            
         // Creazione del timer
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
@@ -37,15 +45,32 @@ public:
     }
 
 private:
+
+
+    void goalCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
+        latest_goal_position = Eigen::Vector2f(msg->x, msg->y);
+        
+        Eigen::Vector2f goal_world = planner.mapping.w2g(latest_goal_position);
+        
+        has_goal_ = true;
+
+        RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", goal_world.x(), goal_world.y());
+
+        // Ricomputiamo il path dinamicamente se tutto è pronto
+        if (has_robot_position_ && dmap_ready_) {
+            makePath(this->dmap, 0.05, 1.0,goal_world);
+        }
+    }
+
+
     void robotCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
         latest_robot_position = Eigen::Vector2f(msg->x, msg->y);
         has_robot_position_ = true;
-        RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
-                    latest_robot_position.x(), latest_robot_position.y());
+        /*RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
+                    latest_robot_position.x(), latest_robot_position.y());*/
         if (!dmap_ready_) return;
-
         
-        makePath(this->dmap, 0.05, 1.0);
+        //makePath(this->dmap, 0.05, 1.0);
 
     }
 
@@ -74,7 +99,7 @@ private:
         RCLCPP_INFO(this->get_logger(), "✅ DMap pronto. Aspetto posizione robot...");
     }
 
-    void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range){
+    void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
         int retries = 200;
         while (!has_robot_position_ && rclcpp::ok() && retries-- > 0) {
             RCLCPP_WARN(this->get_logger(), "⏳ In attesa della posizione del robot...");
@@ -90,16 +115,34 @@ private:
                 latest_robot_position.x(), latest_robot_position.y());
 
         planner.init(resolution, 0.3, expansion_range, *dmap);
-        //planner.computePolicy(my_robot->position);
+        planner.computePolicy(goal_position);
     
         Eigen::Vector2f world_goal = planner.mapping.g2w(latest_robot_position);
     
         planner.computePath(path, world_goal, planner.mapping.resolution * 2, 10000, use_gradient);
-    
-        //my_robot->followPath(path);
-        /*
-        RCLCPP_INFO(this->get_logger(), "🏁 Path completato. Posizione finale: (%.2f, %.2f)",
-                    my_robot->position.x(), my_robot->position.y());*/
+
+        geometry_msgs::msg::PoseArray pose_array;
+        pose_array.header.frame_id = "map";
+        pose_array.header.stamp = this->now();
+        
+        for (const auto& p : path) {
+            geometry_msgs::msg::Pose pose;
+            pose.position.x = p.x();
+            pose.position.y = p.y();
+            pose.position.z = 0.0;
+        
+            // Nessuna rotazione (quaternion identità)
+            pose.orientation.x = 0.0;
+            pose.orientation.y = 0.0;
+            pose.orientation.z = 0.0;
+            pose.orientation.w = 1.0;
+        
+            pose_array.poses.push_back(pose);
+        }
+        
+        RCLCPP_INFO(this->get_logger(), "📤 Publishing %ld poses in PoseArray", pose_array.poses.size());
+        pose_array_pub_->publish(pose_array);
+        
     }
     
 
@@ -143,7 +186,11 @@ private:
     std::string image_path;
     cv::Mat custom_image;
     DMapPlanner planner;
+
     Eigen::Vector2f latest_robot_position = Eigen::Vector2f::Zero();
+    Eigen::Vector2f latest_goal_position = Eigen::Vector2f(0, 0);
+    bool has_goal_ = false;
+
     bool has_robot_position_ = false;
     rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr robot_position_sub_;
     //std::unique_ptr<Robot> my_robot;  // 🔹 Puntatore unico a Robot (inizialmente nullo)    
@@ -152,6 +199,9 @@ private:
     bool dmap_ready_ = false;
     bool path_generated_ = false;
     std::shared_ptr<DMap>  dmap;
+    rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr pose_array_pub_;
+    
+    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr goal_sub_;
 };
 
 int main(int argc, char **argv)
@@ -159,13 +209,10 @@ int main(int argc, char **argv)
     rclcpp::init(argc, argv);
     auto path_planner_node = std::make_shared<PathPlanner>();
 
-    // Creazione dell'esecutore
     rclcpp::executors::MultiThreadedExecutor executor;
 
-    // Aggiungi il nodo all'esecutore
     executor.add_node(path_planner_node);
 
-    // Esegui l'esecutore, che gestisce lo spin in modo automatico
     executor.spin();
 
     rclcpp::shutdown();

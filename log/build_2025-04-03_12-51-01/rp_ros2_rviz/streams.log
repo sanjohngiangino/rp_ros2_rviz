@@ -1,0 +1,56 @@
+[0.009s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.071s] [ 66%] Built target dmap_node
+[0.071s] [ 66%] Built target world_node
+[0.078s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[3.745s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.745s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[3.745s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[3.745s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[3.745s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KgoalCallback[m[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.745s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:56:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.745s]    56 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"🎯 Nuovo goal ricevuto (in griglia): (%d, %d)"[m[K, [32m[Kgoal_grid.x()[m[K, goal_grid.y());
+[3.745s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~~~[m[K
+[3.745s]       |                                                                                                     [32m[K|[m[K
+[3.745s]       |                                                                                                     [32m[Kdouble[m[K
+[3.745s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:56:81:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.745s]    56 |         RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto (in griglia): ([01;36m[K%d[m[K, %d)", goal_grid.x(), goal_grid.y());
+[3.745s]       |                                                                                [01;36m[K~^[m[K
+[3.745s]       |                                                                                 [01;36m[K|[m[K
+[3.745s]       |                                                                                 [01;36m[Kint[m[K
+[3.746s]       |                                                                                [32m[K%f[m[K
+[3.746s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:56:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kdouble[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[3.746s]    56 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"🎯 Nuovo goal ricevuto (in griglia): (%d, %d)"[m[K, goal_grid.x(), [32m[Kgoal_grid.y()[m[K);
+[3.746s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                 [32m[K~~~~~~~~~~~~~[m[K
+[3.746s]       |                                                                                                                    [32m[K|[m[K
+[3.746s]       |                                                                                                                    [32m[Kdouble[m[K
+[3.746s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:56:85:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[3.746s]    56 |         RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto (in griglia): (%d, [01;36m[K%d[m[K)", goal_grid.x(), goal_grid.y());
+[3.746s]       |                                                                                    [01;36m[K~^[m[K
+[3.746s]       |                                                                                     [01;36m[K|[m[K
+[3.746s]       |                                                                                     [01;36m[Kint[m[K
+[3.746s]       |                                                                                    [32m[K%f[m[K
+[11.327s] [ 80%] [32m[1mLinking CXX executable pathplanner_node[0m
+[13.028s] [100%] Built target pathplanner_node
+[13.045s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[13.061s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[13.073s] -- Install configuration: ""
+[13.077s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/dmap_node
+[13.078s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node
+[13.080s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node
+[13.087s] -- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node" to ""
+[13.087s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/package_run_dependencies/rp_ros2_rviz
+[13.087s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/parent_prefix_path/rp_ros2_rviz
+[13.087s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.sh
+[13.088s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.dsv
+[13.088s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.sh
+[13.088s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.dsv
+[13.088s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.bash
+[13.089s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.sh
+[13.089s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.zsh
+[13.089s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.dsv
+[13.090s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.dsv
+[13.090s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/packages/rp_ros2_rviz
+[13.090s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig.cmake
+[13.090s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig-version.cmake
+[13.090s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.xml
+[13.093s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz

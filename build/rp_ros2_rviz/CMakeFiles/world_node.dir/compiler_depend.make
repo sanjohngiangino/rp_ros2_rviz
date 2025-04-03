@@ -1336,7 +1336,19 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+  /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp \
   /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
@@ -2477,19 +2489,19 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/opencv4/opencv2/photo.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+/usr/include/opencv4/opencv2/imgproc/types_c.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
-/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
+/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
+/usr/include/opencv4/opencv2/flann/timer.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
+/usr/include/opencv4/opencv2/flann/saving.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+/usr/include/opencv4/opencv2/flann/sampling.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
@@ -2519,10 +2531,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
 
-/opt/ros/jazzy/include/rcl/rcl/client.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
-
 /opt/ros/jazzy/include/rcl/rcl/allocator.h:
 
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
@@ -2537,7 +2545,29 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+
+/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/linux/stddef.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:
+
+/usr/include/pthread.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
+
+/opt/ros/jazzy/include/rcl/rcl/client.h:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/identifier.h:
 
@@ -2557,6 +2587,10 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
+/usr/include/opencv4/opencv2/ml.hpp:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
 /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h:
@@ -2569,6 +2603,10 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
 
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
+
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
 
 /usr/include/eigen3/Eigen/src/Core/Stride.h:
@@ -2580,6 +2618,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
 /usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
 
@@ -2612,10 +2652,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /opt/ros/jazzy/include/rcutils/rcutils/types.h:
 
 /usr/include/c++/13/string:
-
-/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
 /usr/include/eigen3/Eigen/SVD:
 
@@ -2741,6 +2777,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp:
+
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
 
 /usr/include/c++/13/bits/exception.h:
@@ -2765,10 +2803,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/src/misc/Image.h:
 
-/usr/include/pthread.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/executors/events_executor/simple_events_queue.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/StlIterators.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/generic_subscription.hpp:
@@ -2792,14 +2826,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /opt/ros/jazzy/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/c++/13/debug/debug.h:
-
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
-/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_base.hpp:
 
@@ -2832,6 +2858,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/opencv4/opencv2/core/vsx_utils.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/NoAlias.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/IO.h:
 
@@ -2973,6 +3001,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
+
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
@@ -3022,8 +3052,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/opencv4/opencv2/flann/sampling.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
@@ -3245,6 +3273,12 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
+/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/sigstack.h:
+
+/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
+
 /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
 /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h:
@@ -3263,15 +3297,13 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/bits/range_access.h:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
 /usr/include/c++/13/bits/move.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
-
-/usr/include/opencv4/opencv2/imgcodecs.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/impl/cpp/demangle.hpp:
 
@@ -3315,8 +3347,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
-
 /opt/ros/jazzy/include/rcl/rcl/arguments.h:
 
 /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/point.hpp:
@@ -3326,8 +3356,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/c++/13/bits/stl_iterator.h:
 
 /opt/ros/jazzy/include/rmw/rmw/event.h:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
 
 /usr/include/opencv4/opencv2/videoio.hpp:
 
@@ -3361,10 +3389,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/aarch64-linux-gnu/bits/posix2_lim.h:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
-
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
-
 /usr/include/c++/13/bits/regex_compiler.h:
 
 /usr/include/c++/13/list:
@@ -3389,11 +3413,9 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/array:
 
-/usr/include/aarch64-linux-gnu/bits/sigstack.h:
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp:
 
-/usr/include/aarch64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/aarch64-linux-gnu/bits/types/error_t.h:
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/c++/13/bits/functional_hash.h:
 
@@ -3420,8 +3442,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/eigen3/Eigen/src/Core/Matrix.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/requires_hosted.h:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/message_info.hpp:
 
@@ -3462,8 +3482,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
 
 /opt/ros/jazzy/include/rcutils/rcutils/types/hash_map.h:
-
-/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:
 
@@ -3669,6 +3687,14 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/bits/regex_scanner.h:
 
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
+
 /usr/include/c++/13/compare:
 
 /opt/ros/jazzy/include/rcl/rcl/wait.h:
@@ -3713,6 +3739,10 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/Jacobi:
 
+/usr/include/c++/13/iomanip:
+
+/usr/include/c++/13/pstl/pstl_config.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/eigen3/Eigen/src/Core/Swap.h:
@@ -3735,6 +3765,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/bits/stl_stack.h:
 
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp:
+
 /usr/include/c++/13/tr1/bessel_function.tcc:
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/msg/detail/field_type__struct.h:
@@ -3748,6 +3780,10 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
 /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
+
+/usr/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/include/asm-generic/types.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/get_parameters.hpp:
 
@@ -3773,6 +3809,34 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/opt/ros/jazzy/include/rclcpp/rclcpp/contexts/default_context.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+
+/opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
+/opt/ros/jazzy/include/sensor_msgs/sensor_msgs/msg/image.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
+
+/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/duration.hpp:
@@ -3781,9 +3845,9 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
 
-/usr/include/c++/13/limits:
-
 /usr/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/c++/13/limits:
 
 /usr/include/c++/13/bits/chrono.h:
 
@@ -3938,8 +4002,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/c++/13/cerrno:
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/create_timer.hpp:
-
-/usr/include/opencv4/opencv2/flann/saving.h:
 
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
@@ -4107,10 +4169,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
 
-/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
-/opt/ros/jazzy/include/rclcpp/rclcpp/subscription_factory.hpp:
-
 /opt/ros/jazzy/include/rclcpp/rclcpp/subscription_traits.hpp:
 
 /opt/ros/jazzy/include/rmw/rmw/types.h:
@@ -4159,11 +4217,11 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/rcpputils/rcpputils/pointer_traits.hpp:
 
-/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
-
 /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
 
 /usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+
+/usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
@@ -4435,8 +4493,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__functions.h:
 
-/usr/include/opencv4/opencv2/flann/timer.h:
-
 /opt/ros/jazzy/include/type_description_interfaces/type_description_interfaces/srv/detail/get_type_description__struct.h:
 
 /usr/include/c++/13/bits/stl_map.h:
@@ -4478,8 +4534,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/aarch64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/aarch64-linux-gnu/bits/sigstksz.h:
-
-/usr/include/opencv4/opencv2/imgproc/types_c.h:
 
 /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
 
@@ -4567,8 +4621,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/bitset:
 
-/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
-
 /usr/include/c++/13/chrono:
 
 /opt/ros/jazzy/include/rcl/rcl/guard_condition.h:
@@ -4587,10 +4639,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/future:
 
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/c++/13/iomanip:
-
 /usr/include/c++/13/iterator:
 
 /opt/ros/jazzy/include/rosidl_dynamic_typesupport/rosidl_dynamic_typesupport/uchar.h:
@@ -4600,6 +4648,8 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
 
 /usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp:
 
 /usr/include/c++/13/memory:
 
@@ -4623,10 +4673,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/c++/13/stdlib.h:
 
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/opencv4/opencv2/ml.hpp:
-
 /usr/include/c++/13/thread:
 
 /usr/include/c++/13/unordered_set:
@@ -4649,8 +4695,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 
 /usr/include/linux/posix_types.h:
 
-/usr/include/linux/stddef.h:
-
 /opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /usr/include/linux/types.h:
@@ -4660,8 +4704,6 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/opencv4/opencv2/calib3d.hpp:
 
 /usr/include/opencv4/opencv2/core.hpp:
-
-/usr/include/opencv4/opencv2/core/bufferpool.hpp:
 
 /usr/include/opencv4/opencv2/core/check.hpp:
 
@@ -4716,9 +4758,3 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: /home/john/Desktop/rp_ros2_rviz/
 /usr/include/opencv4/opencv2/flann/lsh_table.h:
 
 /usr/include/opencv4/opencv2/flann/matrix.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/opencv4/opencv2/imgproc.hpp:
-
-/usr/include/opencv4/opencv2/imgproc/segmentation.hpp:

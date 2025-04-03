@@ -1,0 +1,17 @@
+[ 66%] Built target dmap_node
+[ 66%] Built target world_node
+[ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:2[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KgoalCallback[m[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:57:91:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEigen::Vector2f[m[K’ {aka ‘[01m[KEigen::Matrix<float, 2, 1>[m[K’}
+   57 |         RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", goal_world[01;31m[K->[m[Kx, goal_world->y);
+      |                                                                                           [01;31m[K^~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:57:106:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEigen::Vector2f[m[K’ {aka ‘[01m[KEigen::Matrix<float, 2, 1>[m[K’}
+   57 |         RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", goal_world->x, goal_world[01;31m[K->[m[Ky);
+      |                                                                                                          [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,21 @@
+[0.024s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.140s] [ 33%] Built target world_node
+[0.149s] [ 66%] Built target dmap_node
+[0.158s] [ 73%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[5.288s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::[01;32m[KmakePath[m[K(const std::shared_ptr<DMap>&, float, float)[m[K’:
+[5.288s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:97:32:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[5.288s]    97 |         planner.computePolicy(([01;35m[K10.0f[m[K, 10.0f));
+[5.288s]       |                                [01;35m[K^~~~~[m[K
+[5.288s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:97:37:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst Eigen::Vector2f&[m[K’ {aka ‘[01m[Kconst Eigen::Matrix<float, 2, 1>&[m[K’}
+[5.288s]    97 |         planner.computePolicy([01;31m[K(10.0f, 10.0f)[m[K);
+[5.288s]       |                               [01;31m[K~~~~~~^~~~~~~~[m[K
+[5.288s]       |                                     [01;31m[K|[m[K
+[5.288s]       |                                     [01;31m[Kfloat[m[K
+[5.288s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:8[m[K:
+[5.288s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:41:45:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’
+[5.288s]    41 |   void computePolicy([01;36m[Kconst Eigen::Vector2f& goal[m[K);
+[5.288s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[8.715s] gmake[2]: *** [CMakeFiles/pathplanner_node.dir/build.make:76: CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o] Error 1
+[8.716s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/pathplanner_node.dir/all] Error 2
+[8.716s] gmake: *** [Makefile:146: all] Error 2
+[8.723s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

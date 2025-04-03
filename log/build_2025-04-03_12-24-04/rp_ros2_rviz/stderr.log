@@ -1,0 +1,12 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KpathCallback[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:20:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kconst geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<geometry_msgs::msg::PoseArray_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst geometry_msgs::msg::PoseArray&[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::PoseArray_<std::allocator<void> >&[m[K’}
+  116 |         followPath([01;31m[Kmsg[m[K);
+      |                    [01;31m[K^~~[m[K
+      |                    [01;31m[K|[m[K
+      |                    [01;31m[Kconst geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr {aka const std::shared_ptr<geometry_msgs::msg::PoseArray_<std::allocator<void> > >}[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:119:58:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid WorldNode::[01;32m[KfollowPath[m[K(const geometry_msgs::msg::PoseArray&)[m[K’
+  119 |     void followPath([01;36m[Kconst geometry_msgs::msg::PoseArray& pose_array[m[K) {
+      |                     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

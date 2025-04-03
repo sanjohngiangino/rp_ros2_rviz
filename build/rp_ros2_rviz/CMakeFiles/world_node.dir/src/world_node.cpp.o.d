@@ -1066,4 +1066,16 @@ CMakeFiles/world_node.dir/src/world_node.cpp.o: \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
  /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
- /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp
+ /opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
+ /opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp
