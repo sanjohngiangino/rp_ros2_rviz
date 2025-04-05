@@ -7,6 +7,7 @@ using namespace std;
 
 struct DMapCell {
   DMapCell* parent=0;
+  int dist = std::numeric_limits<int>::max();
 };
 
 using DMapGrid=Grid_<DMapCell>;

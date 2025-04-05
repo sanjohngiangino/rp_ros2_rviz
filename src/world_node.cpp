@@ -59,7 +59,8 @@ public:
 
     custom_image = cv::imread("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", cv::IMREAD_COLOR);
     
-    my_robot = std::make_unique<Robot>(10.0f, 10.0f, 0, 1);
+    // y , x
+    my_robot = std::make_unique<Robot>(130.0f,90.0f, 0, 1);
     
     timer_ = this->create_wall_timer(
         std::chrono::seconds(1),
@@ -72,40 +73,6 @@ public:
         background_image = custom_image.clone();
         shown_image = background_image.clone();
     }
-
-    /*
-
-    if (custom_image.empty()) {
-            RCLCPP_ERROR(this->get_logger(), "Errore nel caricamento dell'immagine.");
-        } else {
-            cv::imshow("planner", custom_image);
-            cv::setMouseCallback("planner", onMouse, this);
-
-            while (true) {
-                int key = cv::waitKey(1); 
-                if (key == 27) { 
-                    break;
-                }
-            }
-        }
-
-    */
-    
-    //cv::imshow("planner", shown_image);
-
-    /*
-    int rows=custom_image.rows, cols=custom_image.cols;
-    float resolution=0.05;
-    
-    my_robot = std::make_unique<Robot>(10.0f, 0.0f, 0, 1);
-    cerr << "robot_pose in definition: " << my_robot->position << endl;
-
-    float expansion_range=1;
-    
-    cv::setMouseCallback("planner", onMouse, this);
-
-    cerr << "una chiamata : " << endl;
-    */
 }   
     void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         path.clear();
@@ -120,8 +87,8 @@ public:
         float dt_ms = 50.0f;
     
         for (const auto& pose : msg->poses) {
-            Eigen::Vector2f world = planner.mapping.g2w(Eigen::Vector2f(pose.position.x, pose.position.y));
-            my_robot->position = world;
+            //Eigen::Vector2f world = planner.mapping.g2w(Eigen::Vector2f(pose.position.x, pose.position.y));
+            my_robot->position = Eigen::Vector2f(pose.position.x, pose.position.y);
 
             RCLCPP_INFO(this->get_logger(), "➡️ Robot posizione: (%.3f, %.3f)", pose.position.x, pose.position.y);
             redisplay();
@@ -138,10 +105,12 @@ public:
         if (background_image.empty()) return;
         background_image.copyTo(shown_image);
         drawPoints(shown_image, planner.mapping, Eigen::Isometry2f::Identity(), path, 255);
+        
         if (my_robot) {
-            Eigen::Vector2f robot_pos = my_robot->position;
-            auto robot_grid = planner.mapping.w2g(robot_pos);
-            cv::circle(shown_image, cv::Point(robot_grid.y(), robot_grid.x()), 5, cv::Scalar(0, 0, 255), -1);
+            Eigen::Vector2f robot_pos = my_robot->position; //130,90
+            //auto robot_grid = planner.mapping.w2g(robot_pos);
+            cv::circle(shown_image, cv::Point(robot_pos.x(), robot_pos.y()), 5, cv::Scalar(0, 0, 255), -1); //1300,90
+
         }
         cv::imshow("planner", shown_image);
     }
@@ -227,36 +196,6 @@ public:
         node->goal_publisher_->publish(point_message);
     }
 }
-
-    
-    Vector2iVector getObstaclesFromImage(const cv::Mat& image) {
-        Vector2iVector obstacles;  
-    
-        if (image.empty()) {
-            std::cerr << "Immagine non trovata o vuota!" << std::endl;
-            return obstacles;
-        }
-    
-        cv::Mat gray;
-        if (image.channels() == 3) {  
-            cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
-        } else {
-            gray = image.clone();  
-        }
-        cv::Mat rotated;
-        cv::rotate(gray, rotated, cv::ROTATE_90_CLOCKWISE);
-
-        for (int r = 0; r < rotated.rows; ++r) {
-            for (int c = 0; c < rotated.cols; ++c) {
-                uchar pixel = rotated.at<uchar>(r, c);            
-                if (pixel < 127) {  
-                    obstacles.push_back(Vector2i(rotated.cols - c - 1, r)); 
-                }
-            }
-        }
-    
-        return obstacles;
-    }
 
 };
 

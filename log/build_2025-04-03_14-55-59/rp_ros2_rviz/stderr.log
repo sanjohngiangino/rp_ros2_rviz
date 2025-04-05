@@ -1,0 +1,54 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[KfollowPath[m[K(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:93:39:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEigen::Vector2f[m[K’ {aka ‘[01m[KEigen::Matrix<float, 2, 1>[m[K’} and ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’})
+   93 |             my_robot->position = pose.[01;31m[Kposition[m[K;
+      |                                       [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:295[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/dmap_planner.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:6[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:223:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(const Eigen::DenseBase<OtherDerived>&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  223 |     EIGEN_STRONG_INLINE Matrix& [01;36m[Koperator[m[K=(const DenseBase<OtherDerived>& other)
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:223:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:93:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst Eigen::DenseBase<Derived>[m[K’
+   93 |             my_robot->position = pose.[01;36m[Kposition[m[K;
+      |                                       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:236:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(const Eigen::EigenBase<OtherDerived>&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  236 |     EIGEN_STRONG_INLINE Matrix& [01;36m[Koperator[m[K=(const EigenBase<OtherDerived> &other)
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:236:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:93:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’
+   93 |             my_robot->position = pose.[01;36m[Kposition[m[K;
+      |                                       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:243:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(const Eigen::ReturnByValue<OtherDerived>&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  243 |     EIGEN_STRONG_INLINE Matrix& [01;36m[Koperator[m[K=(const ReturnByValue<OtherDerived>& func)
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:243:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:93:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst Eigen::ReturnByValue<Derived>[m[K’
+   93 |             my_robot->position = pose.[01;36m[Kposition[m[K;
+      |                                       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:438:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(const Eigen::RotationBase<OtherDerived, Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::ColsAtCompileTime>&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  438 |     Matrix& [01;36m[Koperator[m[K=(const RotationBase<OtherDerived,ColsAtCompileTime>& r);
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:438:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:93:39:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} is not derived from ‘[01m[Kconst Eigen::RotationBase<OtherDerived, 1>[m[K’
+   93 |             my_robot->position = pose.[01;36m[Kposition[m[K;
+      |                                       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:206:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(const Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  206 |     EIGEN_STRONG_INLINE Matrix& [01;36m[Koperator[m[K=(const Matrix& other)
+      |                                 [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:206:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[Kconst Eigen::Matrix<float, 2, 1>&[m[K’
+  206 |     EIGEN_STRONG_INLINE Matrix& operator=([01;36m[Kconst Matrix& other[m[K)
+      |                                           [01;36m[K~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:279:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>& Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::[01;32m[Koperator=[m[K(Eigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>&&) [35m[K[with _Scalar = float; int _Rows = 2; int _Cols = 1; int _Options = 0; int _MaxRows = 2; int _MaxCols = 1][m[K[m[K’
+  279 |     Matrix& [01;36m[Koperator[m[K=(Matrix&& other) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_assignable<Scalar>::value)
+      |             [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:279:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst geometry_msgs::msg::Pose_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kconst geometry_msgs::msg::Point_<std::allocator<void> >[m[K’} to ‘[01m[KEigen::Matrix<float, 2, 1>&&[m[K’
+  279 |     Matrix& operator=([01;36m[KMatrix&& other[m[K) EIGEN_NOEXCEPT_IF(std::is_nothrow_move_assignable<Scalar>::value)
+      |                       [01;36m[K~~~~~~~~~^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::[01;32m[Kredisplay[m[K()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:112:47:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_grid[m[K’ was not declared in this scope
+  112 |             cv::circle(shown_image, cv::Point([01;31m[Krobot_grid[m[K.x(), robot_grid.y()), 5, cv::Scalar(0, 0, 255), -1); //1300,90
+      |                                               [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

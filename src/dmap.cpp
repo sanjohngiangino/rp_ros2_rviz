@@ -7,39 +7,49 @@ void DMap::clear(){
 }
 
 void DMap::update(const Vector2iVector& obstacles) {
-  using DMapCellQueue=std::queue<DMapCell*>;
+  using DMapCellQueue = std::deque<DMapCell*>;
   DMapCellQueue q;
-  for (const auto& o: obstacles) {
-    if (! inside(o.x(), o.y()))
-      continue;
-    auto& cell=at(o.x(), o.y());
-    cell.parent=&cell;
-    q.push(&cell);
+
+  for (const auto& o : obstacles) {
+      if (!inside(o.x(), o.y())) continue;
+
+      DMapCell& cell = at(o.x(), o.y());
+      cell.parent = &cell;
+      cell.dist = 0;
+      q.push_back(&cell);
   }
-    
-  while (! q.empty()) {
-    auto expanded=q.front();
-    q.pop();
-    Vector2i expanded_pos=ptr2rc(expanded);
-    Vector2i parent_pos=ptr2rc(expanded->parent);
-    for (int dr=-1; dr<=1; ++dr) {
-      for (int dc=-1; dc<=1; ++dc) {
-        if (dr==0 && dc==0)
-          continue;
-        Vector2i increment(dr, dc);
-        Vector2i next_pos=increment+expanded_pos;
-        if (! inside(next_pos.x(), next_pos.y()))
-          continue;
-        auto& next=at(next_pos.x(), next_pos.y());
-        int d_next=(parent_pos-next_pos).squaredNorm();
-        if ( ! next.parent || d_next  < parentDistance(&next)) {
-          next.parent=expanded->parent;
-          q.push(&next);
-        }
+
+  while (!q.empty()) {
+      DMapCell* current = q.front();
+      q.pop_front();
+
+      Vector2i current_pos = ptr2rc(current);
+      Vector2i parent_pos = ptr2rc(current->parent);
+
+      for (int dr = -1; dr <= 1; ++dr) {
+          for (int dc = -1; dc <= 1; ++dc) {
+              if (dr == 0 && dc == 0) continue;
+
+              Vector2i offset(dr, dc);
+              Vector2i neighbor_pos = current_pos + offset;
+
+              if (!inside(neighbor_pos.x(), neighbor_pos.y()))
+                  continue;
+
+              DMapCell& neighbor = at(neighbor_pos.x(), neighbor_pos.y());
+
+              int dist_to_parent = (parent_pos - neighbor_pos).squaredNorm();
+
+              if (!neighbor.parent || dist_to_parent < neighbor.dist) {
+                  neighbor.parent = current->parent;
+                  neighbor.dist = dist_to_parent;
+                  q.push_back(&neighbor);
+              }
+          }
       }
-    }
   }
 }
+
 
 Grid_<float> DMap::distances(float max_distance) const {
   Grid_<float> dest(rows, cols);

@@ -50,15 +50,18 @@ private:
     void goalCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
         latest_goal_position = Eigen::Vector2f(msg->x, msg->y);
         
-        Eigen::Vector2f goal_world = planner.mapping.w2g(latest_goal_position);
+        //Eigen::Vector2f goal_world = planner.mapping.w2g(latest_goal_position);
         
         has_goal_ = true;
 
-        RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", goal_world.x(), goal_world.y());
 
         // Ricomputiamo il path dinamicamente se tutto è pronto
-        if (has_robot_position_ && dmap_ready_) {
-            makePath(this->dmap, 0.05, 1.0,goal_world);
+        if (!is_moving_ && has_robot_position_ && dmap_ready_ ) {
+            is_moving_= true;
+            RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", latest_goal_position.x(), latest_goal_position.y());
+            makePath(this->dmap, 0.05, 1.0,latest_goal_position);
+            is_moving_= false;
+
         }
     }
 
@@ -90,13 +93,22 @@ private:
 
         dmap =std::make_shared<DMap>(rows, cols);
         dmap->clear();
+        RCLCPP_INFO(this->get_logger(), "Getting the obstacles..");
 
         Vector2iVector obs = getObstaclesFromImage(custom_image);
+        RCLCPP_INFO(this->get_logger(), "OK obstacles,updating dmap..");
+
         dmap->update(obs);
+        RCLCPP_INFO(this->get_logger(), "OK updating dmap..");
+
         dmap_ready_ = true;
         path_generated_ = false;
 
-        RCLCPP_INFO(this->get_logger(), "✅ DMap pronto. Aspetto posizione robot...");
+
+        planner.init(0.05, 0.3, 1.0, *dmap);
+        RCLCPP_INFO(this->get_logger(), "DMap ready planner initalized. Waiting Goal Click...");
+
+
     }
 
     void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
@@ -110,28 +122,31 @@ private:
             RCLCPP_ERROR(this->get_logger(), "❌ Posizione del robot non ricevuta. Aborto pianificazione.");
             return;
         }
-            
-        RCLCPP_INFO(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)", 
-                latest_robot_position.x(), latest_robot_position.y());
 
-        planner.init(resolution, 0.3, expansion_range, *dmap);
-        planner.computePolicy(goal_position);
+
+        Eigen::Vector2f click = planner.mapping.g2w(goal_position);
+
+        planner.computePolicy(click);
     
         Eigen::Vector2f world_goal = planner.mapping.g2w(latest_robot_position);
-    
-        planner.computePath(path, world_goal, planner.mapping.resolution * 2, 10000, use_gradient);
+
+        RCLCPP_INFO(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)", 
+                world_goal.x(), world_goal.y());
+
+        planner.computePath(path, world_goal, planner.mapping.resolution * 2, 3000, use_gradient);
 
         geometry_msgs::msg::PoseArray pose_array;
         pose_array.header.frame_id = "map";
         pose_array.header.stamp = this->now();
         
         for (const auto& p : path) {
+            Eigen::Vector2f world_point = planner.mapping.w2g(p); 
+        
             geometry_msgs::msg::Pose pose;
-            pose.position.x = p.x();
-            pose.position.y = p.y();
+            pose.position.x = world_point.x();
+            pose.position.y = world_point.y();
             pose.position.z = 0.0;
         
-            // Nessuna rotazione (quaternion identità)
             pose.orientation.x = 0.0;
             pose.orientation.y = 0.0;
             pose.orientation.z = 0.0;
@@ -139,6 +154,7 @@ private:
         
             pose_array.poses.push_back(pose);
         }
+        
         
         RCLCPP_INFO(this->get_logger(), "📤 Publishing %ld poses in PoseArray", pose_array.poses.size());
         pose_array_pub_->publish(pose_array);
@@ -152,32 +168,32 @@ private:
     }
 
     Vector2iVector getObstaclesFromImage(const cv::Mat& image) {
-        Vector2iVector obstacles;  
+        Vector2iVector obstacles;
     
         if (image.empty()) {
             std::cerr << "Immagine non trovata o vuota!" << std::endl;
             return obstacles;
         }
+    
         cv::Mat gray;
-        if (image.channels() == 3) {  
+        if (image.channels() == 3)
             cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
-        } else {
-            gray = image.clone();  
-        }
-        cv::Mat rotated;
-        cv::rotate(gray, rotated, cv::ROTATE_90_CLOCKWISE);
-
-        for (int r = 0; r < rotated.rows; ++r) {
-            for (int c = 0; c < rotated.cols; ++c) {
-                uchar pixel = rotated.at<uchar>(r, c);            
-                if (pixel < 127) {  
-                    obstacles.push_back(Vector2i(rotated.cols - c - 1, r)); 
-                }
-            }
-        }
+        else
+            gray = image.clone();
+    
+        cv::Mat binary;
+        cv::threshold(gray, binary, 127, 255, cv::THRESH_BINARY_INV);
+    
+        std::vector<cv::Point> nonZeroPoints;
+        cv::findNonZero(binary, nonZeroPoints);
+    
+        for (const auto& pt : nonZeroPoints)
+            obstacles.push_back(Vector2i(pt.x, pt.y));
     
         return obstacles;
     }
+    
+
 
     std_msgs::msg::Bool bool_msg;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
@@ -198,10 +214,12 @@ private:
     bool use_gradient = false;
     bool dmap_ready_ = false;
     bool path_generated_ = false;
+    bool is_moving_ = false;
     std::shared_ptr<DMap>  dmap;
     rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr pose_array_pub_;
     
     rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr goal_sub_;
+    
 };
 
 int main(int argc, char **argv)
