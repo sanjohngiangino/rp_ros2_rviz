@@ -1,0 +1,47 @@
+[0.019s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.126s] [  6%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
+[0.129s] [ 13%] [32mBuilding CXX object CMakeFiles/dmap_node.dir/src/dmap_planner.cpp.o[0m
+[0.153s] [ 20%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.o[0m
+[2.235s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[2.236s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.236s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[2.236s]       |        [01;35m[K^~~~~~~~~[m[K
+[2.261s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[2.261s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.261s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[2.261s]       |        [01;35m[K^~~~~~~~~[m[K
+[2.303s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::[01;32m[KcomputePolicy[m[K(const Eigen::Vector2f&)[m[K’:
+[2.303s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.303s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[2.303s]       |        [01;35m[K^~~~~~~~~[m[K
+[4.017s] [ 26%] [32m[1mLinking CXX executable dmap_node[0m
+[4.018s] [ 33%] [32m[1mLinking CXX executable pathplanner_node[0m
+[4.022s] [ 40%] [32m[1mLinking CXX executable world_node[0m
+[6.576s] [ 60%] Built target dmap_node
+[6.681s] [ 80%] Built target pathplanner_node
+[6.869s] [100%] Built target world_node
+[6.893s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[6.915s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
+[6.930s] -- Install configuration: ""
+[6.935s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/dmap_node
+[6.942s] -- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/dmap_node" to ""
+[6.943s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node
+[6.959s] -- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/world_node" to ""
+[6.961s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node
+[6.970s] -- Set non-toolchain portion of runtime path of "/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/lib/rp_ros2_rviz/pathplanner_node" to ""
+[6.970s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/package_run_dependencies/rp_ros2_rviz
+[6.971s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/parent_prefix_path/rp_ros2_rviz
+[6.971s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.sh
+[6.971s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/ament_prefix_path.dsv
+[6.971s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.sh
+[6.972s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/environment/path.dsv
+[6.972s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.bash
+[6.972s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.sh
+[6.972s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.zsh
+[6.972s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/local_setup.dsv
+[6.972s] -- Installing: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.dsv
+[6.980s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/ament_index/resource_index/packages/rp_ros2_rviz
+[6.980s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig.cmake
+[6.980s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/cmake/rp_ros2_rvizConfig-version.cmake
+[6.980s] -- Up-to-date: /home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz/share/rp_ros2_rviz/package.xml
+[6.982s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz

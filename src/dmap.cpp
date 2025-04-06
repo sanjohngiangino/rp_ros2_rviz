@@ -9,7 +9,7 @@ void DMap::clear(){
 void DMap::update(const Vector2iVector& obstacles) {
   using DMapCellQueue = std::deque<DMapCell*>;
   DMapCellQueue q;
-
+  
   for (const auto& o : obstacles) {
       if (!inside(o.x(), o.y())) continue;
 

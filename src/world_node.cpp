@@ -58,9 +58,11 @@ public:
     
 
     custom_image = cv::imread("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", cv::IMREAD_COLOR);
-    
+    if (!custom_image.empty()) {
+        cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
+    }
     // y , x
-    my_robot = std::make_unique<Robot>(130.0f,90.0f, 0, 1);
+    my_robot = std::make_unique<Robot>(10,10, 0, 1);
     
     timer_ = this->create_wall_timer(
         std::chrono::seconds(1),

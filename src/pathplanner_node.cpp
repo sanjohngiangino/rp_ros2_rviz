@@ -86,10 +86,15 @@ private:
         bool_msg.data = true;
         bool_pub_path->publish(bool_msg);
         custom_image = cv::imread(image_path, cv::IMREAD_COLOR);
+        if (!custom_image.empty()) {
+            cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
+        }
         /*if (timer_) {
             timer_->cancel();  // Ferma il timer
         }*/
-        int rows=custom_image.rows, cols=custom_image.cols;
+        int cols=custom_image.rows, rows=custom_image.cols;
+
+        RCLCPP_INFO(this->get_logger(), "🖼️ Image size: rows = %d, cols = %d", rows, cols);
 
         dmap =std::make_shared<DMap>(rows, cols);
         dmap->clear();
@@ -100,12 +105,20 @@ private:
 
         dmap->update(obs);
         RCLCPP_INFO(this->get_logger(), "OK updating dmap..");
-
         dmap_ready_ = true;
         path_generated_ = false;
 
-
+        
         planner.init(0.05, 0.3, 1.0, *dmap);
+
+        RCLCPP_INFO(this->get_logger(), "Mapping size: %d rows × %d cols", 
+    planner.mapping.rows, planner.mapping.cols);
+    
+    RCLCPP_INFO(this->get_logger(), "Mapping center: (%.2f, %.2f)", 
+        planner.mapping.center.x(), planner.mapping.center.y());
+        
+        //showDMapDebug(dmap, obs, planner.mapping.center);
+
         RCLCPP_INFO(this->get_logger(), "DMap ready planner initalized. Waiting Goal Click...");
 
 
@@ -122,6 +135,15 @@ private:
             RCLCPP_ERROR(this->get_logger(), "❌ Posizione del robot non ricevuta. Aborto pianificazione.");
             return;
         }
+        auto inBounds = [&](const Eigen::Vector2f& p) {
+            return (p.x() >= 0 && p.x() < planner.mapping.rows &&
+                    p.y() >= 0 && p.y() < planner.mapping.cols);
+        };
+    
+        if (!inBounds(goal_position) || !inBounds(latest_robot_position)) {
+            RCLCPP_ERROR(this->get_logger(), "❌ Goal or robot position is out of bounds!");
+            return;
+        }
 
 
         Eigen::Vector2f click = planner.mapping.g2w(goal_position);
@@ -131,8 +153,8 @@ private:
         Eigen::Vector2f world_goal = planner.mapping.g2w(latest_robot_position);
 
         RCLCPP_INFO(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)", 
-                world_goal.x(), world_goal.y());
-
+        latest_robot_position.x(), latest_robot_position.y());
+        
         planner.computePath(path, world_goal, planner.mapping.resolution * 2, 3000, use_gradient);
 
         geometry_msgs::msg::PoseArray pose_array;
@@ -161,7 +183,27 @@ private:
         
     }
     
-
+    void showDMapDebug(const std::shared_ptr<DMap>& dmap, const Vector2iVector& obstacles, const Eigen::Vector2f& center) {
+        cv::Mat dmap_vis = cv::Mat::zeros(dmap->rows, dmap->cols, CV_8UC3);
+    
+        for (const auto& o : obstacles) {
+            if (o.y() >= 0 && o.y() < dmap_vis.rows && o.x() >= 0 && o.x() < dmap_vis.cols) {
+                dmap_vis.at<cv::Vec3b>(o.y(), o.x()) = cv::Vec3b(0, 0, 255);  // rosso
+            }
+        }
+    
+        // Centra correttamente
+        int cx = static_cast<int>(center.x());
+        int cy = static_cast<int>(center.y());
+        if (cy >= 0 && cy < dmap_vis.rows && cx >= 0 && cx < dmap_vis.cols) {
+            cv::circle(dmap_vis, cv::Point(cx, cy), 5, cv::Scalar(255, 255, 0), -1);  // giallo
+        }
+    
+        cv::imshow("📊 DMap Debug", dmap_vis);
+        cv::waitKey(1);
+    }
+    
+    
     void publishBool()
     {
         bool_pub_path->publish(bool_msg);
@@ -189,7 +231,16 @@ private:
     
         for (const auto& pt : nonZeroPoints)
             obstacles.push_back(Vector2i(pt.x, pt.y));
-    
+        
+        cv::Mat vis = cv::Mat::zeros(binary.size(), CV_8UC3);
+        for (const auto& obs : obstacles) {
+            vis.at<cv::Vec3b>(obs.y(), obs.x()) = cv::Vec3b(0, 0, 255);
+        }
+        
+        cv::imshow("Ostacoli rilevati", vis);
+        cv::imwrite("/tmp/ostacoli.png", vis);
+        cv::waitKey(1); 
+        
         return obstacles;
     }
     
@@ -229,8 +280,10 @@ int main(int argc, char **argv)
 
     rclcpp::executors::MultiThreadedExecutor executor;
 
-    executor.add_node(path_planner_node);
+    //cv::namedWindow("📊 DMap Debug", cv::WINDOW_AUTOSIZE);
+    //cv::startWindowThread();
 
+    executor.add_node(path_planner_node);
     executor.spin();
 
     rclcpp::shutdown();
