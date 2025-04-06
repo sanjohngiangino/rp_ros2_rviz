@@ -54,7 +54,7 @@ private:
 
         if (!is_moving_ && has_robot_position_ && dmap_ready_ ) {
             is_moving_= true;
-            RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", latest_goal_position.x(), latest_goal_position.y());
+            RCLCPP_INFO(this->get_logger(), "Click received: (%.2f, %.2f)", latest_goal_position.x(), latest_goal_position.y());
             makePath(this->dmap, 0.05, 1.0,latest_goal_position);
             is_moving_= false;
 
@@ -76,8 +76,8 @@ private:
     void string_callback(const std_msgs::msg::String::SharedPtr msg)
     {   
         image_path =  msg->data;
-        RCLCPP_INFO(this->get_logger(), "Ricevuto PNG: '%s'", image_path.c_str());
-        RCLCPP_INFO(this->get_logger(), "Inizializzazione Dmap");
+        RCLCPP_INFO(this->get_logger(), "Received PNG: '%s'", image_path.c_str());
+        RCLCPP_INFO(this->get_logger(), "Start Dmap");
 
         bool_msg.data = true;
         bool_pub_path->publish(bool_msg);
@@ -90,7 +90,7 @@ private:
         }*/
         int cols=custom_image.rows, rows=custom_image.cols;
 
-        RCLCPP_INFO(this->get_logger(), "🖼️ Image size: rows = %d, cols = %d", rows, cols);
+        //RCLCPP_INFO(this->get_logger(), "Image size: rows = %d, cols = %d", rows, cols);
 
         dmap =std::make_shared<DMap>(rows, cols);
         dmap->clear();
@@ -121,12 +121,12 @@ private:
     void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
         int retries = 200;
         while (!has_robot_position_ && rclcpp::ok() && retries-- > 0) {
-            RCLCPP_WARN(this->get_logger(), "⏳ In attesa della posizione del robot...");
+            RCLCPP_WARN(this->get_logger(), "Waiting Robot position...");
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
 
         if (!has_robot_position_) {
-            RCLCPP_ERROR(this->get_logger(), "❌ Posizione del robot non ricevuta. Aborto pianificazione.");
+            RCLCPP_ERROR(this->get_logger(), "No robot position.");
             return;
         }
         auto inBounds = [&](const Eigen::Vector2f& p) {
@@ -135,7 +135,7 @@ private:
         };
     
         if (!inBounds(goal_position) || !inBounds(latest_robot_position)) {
-            RCLCPP_ERROR(this->get_logger(), "❌ Goal or robot position is out of bounds!");
+            RCLCPP_ERROR(this->get_logger(), "Gol out of bound");
             return;
         }
 
@@ -146,7 +146,7 @@ private:
     
         Eigen::Vector2f world_goal = planner.mapping.g2w(latest_robot_position);
 
-        RCLCPP_INFO(this->get_logger(), "🤖 Posizione robot da topic: (%.2f, %.2f)", 
+        RCLCPP_INFO(this->get_logger(), "Start Position: (%.2f, %.2f)", 
         latest_robot_position.x(), latest_robot_position.y());
         
         planner.computePath(path, world_goal, planner.mapping.resolution * 2, 3000, use_gradient);
@@ -172,7 +172,7 @@ private:
         }
         
         
-        RCLCPP_INFO(this->get_logger(), "📤 Publishing %ld poses in PoseArray", pose_array.poses.size());
+        RCLCPP_INFO(this->get_logger(), "Publishing %ld poses to world node", pose_array.poses.size());
         pose_array_pub_->publish(pose_array);
         
     }
@@ -188,7 +188,7 @@ private:
         Vector2iVector obstacles;
     
         if (image.empty()) {
-            std::cerr << "Immagine non trovata o vuota!" << std::endl;
+            std::cerr << "No image!" << std::endl;
             return obstacles;
         }
     
@@ -206,7 +206,7 @@ private:
     
         for (const auto& pt : nonZeroPoints)
             obstacles.push_back(Vector2i(pt.x, pt.y));
-        
+        /*
         cv::Mat vis = cv::Mat::zeros(binary.size(), CV_8UC3);
         for (const auto& obs : obstacles) {
             vis.at<cv::Vec3b>(obs.y(), obs.x()) = cv::Vec3b(0, 0, 255);
@@ -215,7 +215,7 @@ private:
         cv::imshow("Ostacoli rilevati", vis);
         cv::imwrite("/tmp/ostacoli.png", vis);
         cv::waitKey(1); 
-        
+        */
         return obstacles;
     }
     

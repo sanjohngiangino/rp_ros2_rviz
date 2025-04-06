@@ -17,6 +17,5 @@ void Robot::setPosition(float x, float y) {
 void Robot::followPath(const std::list<Eigen::Vector2f>& path) {
     for (auto it = path.rbegin(); it != path.rend(); ++it) {
         this->position = *it;
-        std::cout << "Robot posizione: (" << this->position << ")" << std::endl;
     }
 }

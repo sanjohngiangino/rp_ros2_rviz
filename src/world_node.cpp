@@ -70,7 +70,7 @@ public:
     
 
     if (custom_image.empty()) {
-        RCLCPP_ERROR(this->get_logger(), "Errore nel caricamento dell'immagine.");
+        RCLCPP_ERROR(this->get_logger(), "Error loading image");
     } else {
         background_image = custom_image.clone();
         shown_image = background_image.clone();
@@ -81,7 +81,7 @@ public:
         for (const auto& pose : msg->poses) {
             path.emplace_back(pose.position.x, pose.position.y);
         }
-        RCLCPP_INFO(this->get_logger(), "📥 Ricevuto nuovo path con %lu pose", msg->poses.size());
+        RCLCPP_INFO(this->get_logger(), "path with %lu pose received", msg->poses.size());
         followPath(msg);
     }
 
@@ -92,12 +92,12 @@ public:
             //Eigen::Vector2f world = planner.mapping.g2w(Eigen::Vector2f(pose.position.x, pose.position.y));
             my_robot->position = Eigen::Vector2f(pose.position.x, pose.position.y);
 
-            RCLCPP_INFO(this->get_logger(), "➡️ Robot posizione: (%.3f, %.3f)", pose.position.x, pose.position.y);
+            RCLCPP_INFO(this->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
             redisplay();
             cv::waitKey(static_cast<int>(dt_ms));
         }
     
-        RCLCPP_INFO(this->get_logger(), "✅ Path completato.");
+        RCLCPP_INFO(this->get_logger(), "Path Completed.");
     }
     
 
@@ -135,7 +135,7 @@ public:
                 pos_msg.x = robot_pos.x();
                 pos_msg.y = robot_pos.y();
                 pos_msg.z = 0.0;
-                RCLCPP_INFO(this->get_logger(), "📤 Posizione robot pubblicata: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+                RCLCPP_INFO(this->get_logger(), "Potion published: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
                 robot_publisher_->publish(pos_msg);
             }
             
@@ -160,7 +160,7 @@ public:
             RCLCPP_INFO(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
             publisher_->publish(string_message);
         } else {
-            RCLCPP_INFO(this->get_logger(), "La pubblicazione è stata fermata.");
+            RCLCPP_INFO(this->get_logger(), "Stopped publishing path.");
             if (timer_) {
                 timer_->cancel();
             }
@@ -175,7 +175,7 @@ public:
             RCLCPP_INFO(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
             publisher_->publish(string_message);
         } else {
-            RCLCPP_INFO(this->get_logger(), "La pubblicazione è stata fermata.");
+            RCLCPP_INFO(this->get_logger(), "Stopped Publishing path");
             if (timer_) {
                 timer_->cancel(); 
             }
@@ -192,7 +192,7 @@ public:
         point_message.y = static_cast<float>(y);
         point_message.z = 0.0;
 
-        RCLCPP_INFO(node->get_logger(), "🎯 Nuovo goal impostato: (%f, %f)", point_message.x, point_message.y);
+        RCLCPP_INFO(node->get_logger(), "Click setted to: (%f, %f)", point_message.x, point_message.y);
         node->goal_publisher_->publish(point_message);
     }
 }
