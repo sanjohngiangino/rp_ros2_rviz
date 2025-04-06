@@ -7,8 +7,8 @@
 #include "rp_ros2_rviz/display_utils.h"
 #include "rp_ros2_rviz/robot.h"
 #include "std_msgs/msg/string.hpp"
-#include "geometry_msgs/msg/point.hpp"  // Per il messaggio Point
-#include "std_msgs/msg/bool.hpp"  // Questo è l'header corretto per il messaggio booleano
+#include "geometry_msgs/msg/point.hpp"  
+#include "std_msgs/msg/bool.hpp" 
 #include "geometry_msgs/msg/pose_array.hpp"
 #include "geometry_msgs/msg/pose.hpp"
 
@@ -125,8 +125,8 @@ public:
             continue_publishing_ = false;
     
             if (timer_) {
-                timer_->cancel();  // Ferma il timer
-                timer_.reset();    // Libera la memoria del timer
+                timer_->cancel();  
+                timer_.reset();   
             }
 
             if (my_robot) {
@@ -155,7 +155,6 @@ public:
     void publishMessage() {
     
         if (continue_publishing_) {
-            // Crea e pubblica il messaggio con il percorso del PNG
             auto string_message = std_msgs::msg::String();
             string_message.data = "/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png";
             RCLCPP_INFO(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
@@ -163,7 +162,7 @@ public:
         } else {
             RCLCPP_INFO(this->get_logger(), "La pubblicazione è stata fermata.");
             if (timer_) {
-                timer_->cancel();  // Ferma il timer
+                timer_->cancel();
             }
         }
         
@@ -171,7 +170,6 @@ public:
     void publishRobot() {
     
         if (continue_publishing_) {
-            // Crea e pubblica il messaggio con il percorso del PNG
             auto string_message = std_msgs::msg::String();
             string_message.data = "/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png";
             RCLCPP_INFO(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
@@ -179,7 +177,7 @@ public:
         } else {
             RCLCPP_INFO(this->get_logger(), "La pubblicazione è stata fermata.");
             if (timer_) {
-                timer_->cancel();  // Ferma il timer
+                timer_->cancel(); 
             }
         }
         

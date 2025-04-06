@@ -15,9 +15,7 @@ void Robot::setPosition(float x, float y) {
 }
 
 void Robot::followPath(const std::list<Eigen::Vector2f>& path) {
-    // Itera sulla lista in ordine inverso
     for (auto it = path.rbegin(); it != path.rend(); ++it) {
-        // Muovi il robot direttamente al prossimo punto
         this->position = *it;
         std::cout << "Robot posizione: (" << this->position << ")" << std::endl;
     }

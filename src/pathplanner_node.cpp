@@ -20,7 +20,6 @@ public:
         RCLCPP_INFO(this->get_logger(), "PathPlanner started");
         bool_msg.data = false;
 
-        // Creazione della subscription e pubblicazione
         subscription_ = this->create_subscription<std_msgs::msg::String>(
             "PathImage", 10, std::bind(&PathPlanner::string_callback, this, std::placeholders::_1));
 
@@ -34,8 +33,6 @@ public:
         goal_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
             "goal_point", 10, std::bind(&PathPlanner::goalCallback, this, std::placeholders::_1));
 
-            
-        // Creazione del timer
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
             std::bind(&PathPlanner::publishBool, this));
@@ -55,7 +52,6 @@ private:
         has_goal_ = true;
 
 
-        // Ricomputiamo il path dinamicamente se tutto è pronto
         if (!is_moving_ && has_robot_position_ && dmap_ready_ ) {
             is_moving_= true;
             RCLCPP_INFO(this->get_logger(), "🎯 Nuovo goal ricevuto: (%.2f, %.2f)", latest_goal_position.x(), latest_goal_position.y());
@@ -117,8 +113,6 @@ private:
     RCLCPP_INFO(this->get_logger(), "Mapping center: (%.2f, %.2f)", 
         planner.mapping.center.x(), planner.mapping.center.y());
         
-        //showDMapDebug(dmap, obs, planner.mapping.center);
-
         RCLCPP_INFO(this->get_logger(), "DMap ready planner initalized. Waiting Goal Click...");
 
 
@@ -183,25 +177,6 @@ private:
         
     }
     
-    void showDMapDebug(const std::shared_ptr<DMap>& dmap, const Vector2iVector& obstacles, const Eigen::Vector2f& center) {
-        cv::Mat dmap_vis = cv::Mat::zeros(dmap->rows, dmap->cols, CV_8UC3);
-    
-        for (const auto& o : obstacles) {
-            if (o.y() >= 0 && o.y() < dmap_vis.rows && o.x() >= 0 && o.x() < dmap_vis.cols) {
-                dmap_vis.at<cv::Vec3b>(o.y(), o.x()) = cv::Vec3b(0, 0, 255);  // rosso
-            }
-        }
-    
-        // Centra correttamente
-        int cx = static_cast<int>(center.x());
-        int cy = static_cast<int>(center.y());
-        if (cy >= 0 && cy < dmap_vis.rows && cx >= 0 && cx < dmap_vis.cols) {
-            cv::circle(dmap_vis, cv::Point(cx, cy), 5, cv::Scalar(255, 255, 0), -1);  // giallo
-        }
-    
-        cv::imshow("📊 DMap Debug", dmap_vis);
-        cv::waitKey(1);
-    }
     
     
     void publishBool()
@@ -260,7 +235,7 @@ private:
 
     bool has_robot_position_ = false;
     rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr robot_position_sub_;
-    //std::unique_ptr<Robot> my_robot;  // 🔹 Puntatore unico a Robot (inizialmente nullo)    
+
     std::list<Vector2f> path;
     bool use_gradient = false;
     bool dmap_ready_ = false;
@@ -279,9 +254,6 @@ int main(int argc, char **argv)
     auto path_planner_node = std::make_shared<PathPlanner>();
 
     rclcpp::executors::MultiThreadedExecutor executor;
-
-    //cv::namedWindow("📊 DMap Debug", cv::WINDOW_AUTOSIZE);
-    //cv::startWindowThread();
 
     executor.add_node(path_planner_node);
     executor.spin();
