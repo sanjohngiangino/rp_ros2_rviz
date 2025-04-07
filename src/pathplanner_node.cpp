@@ -51,7 +51,6 @@ private:
         
         has_goal_ = true;
 
-
         if (!is_moving_ && has_robot_position_ && dmap_ready_ ) {
             is_moving_= true;
             RCLCPP_INFO(this->get_logger(), "Click received: (%.2f, %.2f)", latest_goal_position.x(), latest_goal_position.y());
@@ -155,21 +154,37 @@ private:
         pose_array.header.frame_id = "map";
         pose_array.header.stamp = this->now();
         
+        Eigen::Vector2f previous;
+        bool has_prev = false;
+
         for (const auto& p : path) {
-            Eigen::Vector2f world_point = planner.mapping.w2g(p); 
-        
+            Eigen::Vector2f world_point = planner.mapping.w2g(p);
+
             geometry_msgs::msg::Pose pose;
             pose.position.x = world_point.x();
             pose.position.y = world_point.y();
             pose.position.z = 0.0;
-        
-            pose.orientation.x = 0.0;
-            pose.orientation.y = 0.0;
-            pose.orientation.z = 0.0;
-            pose.orientation.w = 1.0;
-        
+
+            if (has_prev) {
+                Eigen::Vector2f dir = (world_point - previous).normalized();
+                float yaw = std::atan2(dir.y(), dir.x());
+
+                pose.orientation.x = 0.0;
+                pose.orientation.y = 0.0;
+                pose.orientation.z = std::sin(yaw * 0.5);
+                pose.orientation.w = std::cos(yaw * 0.5);
+            } else {
+                pose.orientation.x = 0.0;
+                pose.orientation.y = 0.0;
+                pose.orientation.z = 0.0;
+                pose.orientation.w = 1.0;
+            }
+
             pose_array.poses.push_back(pose);
+            previous = world_point;
+            has_prev = true;
         }
+
         
         
         RCLCPP_INFO(this->get_logger(), "Publishing %ld poses to world node", pose_array.poses.size());

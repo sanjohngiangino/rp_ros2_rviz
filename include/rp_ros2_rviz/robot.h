@@ -9,14 +9,11 @@ using namespace std;
 
 class Robot {
 public:
-    Eigen::Vector2f position;  // Posizione del robot (x, y)
-    float orientation;         // Orientamento in radianti
-    int radius;                // Raggio del robot in pixel
-
-    // 🔹 Costruttore di default
+    Eigen::Vector2f position;  
+    float orientation;         
+    int radius;                
     Robot() : position(0, 0), orientation(0.0f), radius(5) {}
 
-    // 🔹 Costruttore con parametri
     Robot(float x, float y, float orientation, int radius);
 
     void move(const Eigen::Vector2f& direction);
@@ -25,4 +22,4 @@ public:
 
 };
 
-#endif  // ROBOT_H
+#endif  
