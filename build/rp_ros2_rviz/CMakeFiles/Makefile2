@@ -63,7 +63,6 @@ CMAKE_BINARY_DIR = /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/dmap_node.dir/all
 all: CMakeFiles/world_node.dir/all
 all: CMakeFiles/pathplanner_node.dir/all
 .PHONY : all
@@ -75,7 +74,6 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/rp_ros2_rviz_uninstall.dir/clean
-clean: CMakeFiles/dmap_node.dir/clean
 clean: CMakeFiles/world_node.dir/clean
 clean: CMakeFiles/pathplanner_node.dir/clean
 .PHONY : clean
@@ -133,39 +131,13 @@ CMakeFiles/rp_ros2_rviz_uninstall.dir/clean:
 .PHONY : CMakeFiles/rp_ros2_rviz_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/dmap_node.dir
-
-# All Build rule for target.
-CMakeFiles/dmap_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles --progress-num=1,2,3,4,5 "Built target dmap_node"
-.PHONY : CMakeFiles/dmap_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/dmap_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dmap_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles 0
-.PHONY : CMakeFiles/dmap_node.dir/rule
-
-# Convenience name for target.
-dmap_node: CMakeFiles/dmap_node.dir/rule
-.PHONY : dmap_node
-
-# clean rule for target.
-CMakeFiles/dmap_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dmap_node.dir/build.make CMakeFiles/dmap_node.dir/clean
-.PHONY : CMakeFiles/dmap_node.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/world_node.dir
 
 # All Build rule for target.
 CMakeFiles/world_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles --progress-num=11,12,13,14,15 "Built target world_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles --progress-num=6,7,8,9,10 "Built target world_node"
 .PHONY : CMakeFiles/world_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -191,7 +163,7 @@ CMakeFiles/world_node.dir/clean:
 CMakeFiles/pathplanner_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles --progress-num=6,7,8,9,10 "Built target pathplanner_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles --progress-num=1,2,3,4,5 "Built target pathplanner_node"
 .PHONY : CMakeFiles/pathplanner_node.dir/all
 
 # Build rule for subdir invocation for target.

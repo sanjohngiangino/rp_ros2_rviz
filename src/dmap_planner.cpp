@@ -82,7 +82,9 @@ void DMapPlanner::computePolicy(const Eigen::Vector2f& goal) {
     }
   }
   policy.resize(mapping.rows, mapping.cols);
+
   std::fill(policy.values.begin(), policy.values.end(), -1);
+  
   for(size_t i=0; i<d_grid.values.size(); ++i) {
     const auto& cell=d_grid.values[i];
     if (! cell.parent)

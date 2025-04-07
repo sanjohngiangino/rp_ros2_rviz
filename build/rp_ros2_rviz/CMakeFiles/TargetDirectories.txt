@@ -1,6 +1,5 @@
 /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/uninstall.dir
 /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/rp_ros2_rviz_uninstall.dir
-/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/dmap_node.dir
 /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/world_node.dir
 /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/pathplanner_node.dir
 /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz/CMakeFiles/test.dir

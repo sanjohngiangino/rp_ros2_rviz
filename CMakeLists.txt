@@ -16,20 +16,12 @@ find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 
 # Define the executable and link dependencies
-add_executable(dmap_node src/dmap_node.cpp src/dmap_planner.cpp src/dmap.cpp src/robot.cpp)
+#add_executable(dmap_node src/dmap_node.cpp src/dmap_planner.cpp src/dmap.cpp src/robot.cpp)
 add_executable(world_node src/world_node.cpp src/dmap_planner.cpp src/dmap.cpp src/robot.cpp)
 add_executable(pathplanner_node src/pathplanner_node.cpp src/dmap_planner.cpp src/dmap.cpp src/robot.cpp)
 
 # Link the necessary ROS 2 packages with the target
-ament_target_dependencies(dmap_node 
-  rclcpp 
-  geometry_msgs 
-  Eigen3 
-  OpenCV 
-  std_msgs 
-  sensor_msgs 
-  cv_bridge  # cv_bridge is included here
-)
+
 ament_target_dependencies(world_node 
   rclcpp 
   geometry_msgs 
@@ -68,7 +60,7 @@ include_directories(
 )
 include_directories($ENV{ROS2_INSTALL_PATH}/include)
 
-install(TARGETS dmap_node world_node pathplanner_node
+install(TARGETS  world_node pathplanner_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

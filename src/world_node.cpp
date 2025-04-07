@@ -106,7 +106,6 @@ public:
     void redisplay() {
         if (background_image.empty()) return;
         background_image.copyTo(shown_image);
-        drawPoints(shown_image, planner.mapping, Eigen::Isometry2f::Identity(), path, 255);
         
         if (my_robot) {
             Eigen::Vector2f robot_pos = my_robot->position; //130,90
