@@ -249,6 +249,11 @@ public:
           //  return;
         }
 
+
+        // Imposta modalità automatica
+        node->is_following_path_ = true;
+        node->update_goal_ = false;
+
         auto point_message = geometry_msgs::msg::Point();
         point_message.x = static_cast<float>(x);
         point_message.y = static_cast<float>(y);
@@ -258,6 +263,68 @@ public:
         node->goal_publisher_->publish(point_message);
     }
 }
+void handleKeyboard(int key) {
+    // 🛑 Se stava seguendo un path → fermalo e passa al controllo manuale
+    if (is_following_path_) {
+        update_goal_ = true;                // Forza uscita dal for nel followPath
+        is_following_path_ = false;         // Disabilita il flag di path attivo
+        RCLCPP_WARN(this->get_logger(), "⛔ Path interrotto manualmente da tastiera.");
+        return; // ❗ Rimuovi se vuoi che il primo tasto venga comunque processato dopo
+    }
+
+    float step = 2.0f;         // pixel per movimento
+    float rotation_step = 0.15f;
+
+    Eigen::Vector2f delta(0, 0);
+
+    switch (key) {
+        case 'w': delta.y() -= step; break;
+        case 's': delta.y() += step; break;
+        case 'a': delta.x() -= step; break;
+        case 'd': delta.x() += step; break;
+        case 'q':
+            my_robot->orientation -= rotation_step;
+            return redisplay();
+        case 'e':
+            my_robot->orientation += rotation_step;
+            return redisplay();
+        default:
+            return;
+    }
+
+    Eigen::Vector2f new_pos = my_robot->position + delta;
+
+    if (new_pos.x() < 0 || new_pos.x() >= background_image.cols ||
+        new_pos.y() < 0 || new_pos.y() >= background_image.rows) {
+        RCLCPP_WARN(this->get_logger(), "📦 Movimento fuori mappa.");
+        return;
+    }
+
+    uchar pixel_value = background_image.at<cv::Vec3b>(
+        static_cast<int>(new_pos.y()),
+        static_cast<int>(new_pos.x()))[0];
+
+    if (pixel_value < 127) {
+        RCLCPP_WARN(this->get_logger(), "⛔ Ostacolo nero rilevato. Movimento bloccato.");
+        return;
+    }
+
+    my_robot->position = new_pos;
+
+    if (delta.norm() > 0.01f) {
+        my_robot->orientation = std::atan2(delta.y(), delta.x());
+    }
+
+    geometry_msgs::msg::Point robot_msg;
+    robot_msg.x = new_pos.x();
+    robot_msg.y = new_pos.y();
+    robot_msg.z = 0.0;
+    robot_publisher_->publish(robot_msg);
+
+    redisplay();
+}
+
+
 
 
 };
@@ -274,7 +341,10 @@ int main(int argc, char** argv) {
 
     while (rclcpp::ok()) {
         node->redisplay();        
-        cv::waitKey(30);           
+        int key = cv::waitKey(30);
+        if (key != -1) {
+            node->handleKeyboard(key);
+        }
         executor.spin_some();      
     }
     rclcpp::shutdown();
