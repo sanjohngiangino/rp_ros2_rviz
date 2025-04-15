@@ -35,13 +35,16 @@ private:
     rclcpp::TimerBase::SharedPtr timer_; 
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr bool_subscriber_;
 
+    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr controller_stop_publisher_;
+
     bool continue_publishing_= true;
     bool is_following_path_=false;
     bool update_goal_=false;
     bool first_position_sent_=false;
 
-    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr pose_sub_;
+    //rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr pose_sub_;
 
+    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr step_pose_sub_;
 
 
 public:
@@ -50,17 +53,21 @@ public:
 
     bool_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
         "stop_publish", 10, std::bind(&WorldNode::bool_callback, this, std::placeholders::_1));
-     
+    
     publisher_ = this->create_publisher<std_msgs::msg::String>("PathImage", 10);
     goal_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);
-
+    controller_stop_publisher_ = this->create_publisher<std_msgs::msg::Bool>("stop_controller", 10);
     robot_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);
-    
+    /*
     pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
         "path_poses", 10,
         std::bind(&WorldNode::pathCallback, this, std::placeholders::_1));
-    
+*/
+    step_pose_sub_ = this->create_subscription<geometry_msgs::msg::Pose>(
+        "step_pose", 10,
+        std::bind(&WorldNode::stepPoseCallback, this, std::placeholders::_1));
 
+        
     custom_image = cv::imread("/home/john/Desktop/path_ros/rp_ros2_rviz/map/labirinto.png", cv::IMREAD_COLOR);
     if (!custom_image.empty()) {
         cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
@@ -80,6 +87,20 @@ public:
         shown_image = background_image.clone();
     }
 }   
+    void stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose) {
+        my_robot->position = Eigen::Vector2f(pose->position.x, pose->position.y);
+        my_robot->orientation = 2.0f * std::atan2(pose->orientation.z, pose->orientation.w);
+
+        geometry_msgs::msg::Point robot_msg;
+        robot_msg.x = my_robot->position.x();
+        robot_msg.y = my_robot->position.y();
+        robot_msg.z = 0.0;
+        robot_publisher_->publish(robot_msg);
+
+        redisplay();
+    }
+
+
     void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         path.clear();
         for (const auto& pose : msg->poses) {
@@ -243,17 +264,31 @@ public:
     
 
     if (event == EVENT_LBUTTONDOWN) {
+        /*
         if (node->is_following_path_) {
             node->update_goal_ =true;
             RCLCPP_WARN(node->get_logger(), "Goal updated. Stopping the robot.");
-          //  return;
+            return;
         }
-
+*/
 
         // Imposta modalità automatica
-        node->is_following_path_ = true;
-        node->update_goal_ = false;
+  //      node->is_following_path_ = true;
+ //       node->update_goal_ = false;
+        std_msgs::msg::Bool stop_msg;
+        stop_msg.data = true;
+        node->controller_stop_publisher_->publish(stop_msg);
+        RCLCPP_INFO(node->get_logger(), "🛑 Stop inviato al Controller.");
+        
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
 
+        geometry_msgs::msg::Point pos_msg;
+        pos_msg.x = node->my_robot->position.x();
+        pos_msg.y = node->my_robot->position.y();
+        pos_msg.z = 0.0;
+        node->robot_publisher_->publish(pos_msg);
+        RCLCPP_INFO(node->get_logger(), "📍 Posizione attuale pubblicata: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+        
         auto point_message = geometry_msgs::msg::Point();
         point_message.x = static_cast<float>(x);
         point_message.y = static_cast<float>(y);
@@ -263,33 +298,39 @@ public:
         node->goal_publisher_->publish(point_message);
     }
 }
+
 void handleKeyboard(int key) {
-    // 🛑 Se stava seguendo un path → fermalo e passa al controllo manuale
-    if (is_following_path_) {
-        update_goal_ = true;                // Forza uscita dal for nel followPath
-        is_following_path_ = false;         // Disabilita il flag di path attivo
-        RCLCPP_WARN(this->get_logger(), "⛔ Path interrotto manualmente da tastiera.");
-        return; // ❗ Rimuovi se vuoi che il primo tasto venga comunque processato dopo
-    }
-
-    float step = 2.0f;         // pixel per movimento
+    float step = 2.0f;
     float rotation_step = 0.15f;
-
     Eigen::Vector2f delta(0, 0);
+    bool should_stop_controller = false;
 
     switch (key) {
-        case 'w': delta.y() -= step; break;
-        case 's': delta.y() += step; break;
-        case 'a': delta.x() -= step; break;
-        case 'd': delta.x() += step; break;
+        case 'w': delta.y() -= step; should_stop_controller = true; break;
+        case 's': delta.y() += step; should_stop_controller = true; break;
+        case 'a': delta.x() -= step; should_stop_controller = true; break;
+        case 'd': delta.x() += step; should_stop_controller = true; break;
         case 'q':
             my_robot->orientation -= rotation_step;
-            return redisplay();
+            should_stop_controller = true;
+            redisplay();
+            return;
         case 'e':
             my_robot->orientation += rotation_step;
-            return redisplay();
+            should_stop_controller = true;
+            redisplay();
+            return;
         default:
             return;
+    }
+
+    if (should_stop_controller) {
+        std_msgs::msg::Bool stop_msg;
+        stop_msg.data = true;
+        controller_stop_publisher_->publish(stop_msg);
+        update_goal_ = true;
+        is_following_path_ = false;
+        RCLCPP_WARN(this->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
     }
 
     Eigen::Vector2f new_pos = my_robot->position + delta;
@@ -301,11 +342,10 @@ void handleKeyboard(int key) {
     }
 
     uchar pixel_value = background_image.at<cv::Vec3b>(
-        static_cast<int>(new_pos.y()),
-        static_cast<int>(new_pos.x()))[0];
+        static_cast<int>(new_pos.y()), static_cast<int>(new_pos.x()))[0];
 
     if (pixel_value < 127) {
-        RCLCPP_WARN(this->get_logger(), "⛔ Ostacolo nero rilevato. Movimento bloccato.");
+        RCLCPP_WARN(this->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
         return;
     }
 
@@ -325,6 +365,8 @@ void handleKeyboard(int key) {
 }
 
 
+/*
+*/
 
 
 };
@@ -341,10 +383,11 @@ int main(int argc, char** argv) {
 
     while (rclcpp::ok()) {
         node->redisplay();        
-        int key = cv::waitKey(30);
+        int key = cv::waitKey(1);
         if (key != -1) {
             node->handleKeyboard(key);
         }
+
         executor.spin_some();      
     }
     rclcpp::shutdown();

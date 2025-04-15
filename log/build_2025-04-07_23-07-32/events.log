@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.000777] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.001815] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.020188] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.021657] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.021725] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'john', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/john', 'OLDPWD': '/home/john/Desktop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1954', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install:/home/john/Desktop/path_ros/rp_ros2_rviz/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'john', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'john', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/john/.pixi/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/john:@/tmp/.ICE-unix/1908,unix/john:/tmp/.ICE-unix/1908', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f1c10453_a918_43ff_81f3_33e10473296a', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.X5EW42', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.114', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy'}), 'shell': False}
+[0.100300] (-) TimerEvent: {}
+[0.107655] (rp_ros2_rviz) StdoutLine: {'line': b'[ 33%] Built target pathplanner_node\n'}
+[0.111020] (rp_ros2_rviz) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.115222] (rp_ros2_rviz) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o\x1b[0m\n'}
+[0.200805] (-) TimerEvent: {}
+[0.302074] (-) TimerEvent: {}
+[0.402622] (-) TimerEvent: {}
+[0.502910] (-) TimerEvent: {}
+[0.605094] (-) TimerEvent: {}
+[0.705565] (-) TimerEvent: {}
+[0.806711] (-) TimerEvent: {}
+[0.907946] (-) TimerEvent: {}
+[1.009297] (-) TimerEvent: {}
+[1.109812] (-) TimerEvent: {}
+[1.211060] (-) TimerEvent: {}
+[1.311464] (-) TimerEvent: {}
+[1.413041] (-) TimerEvent: {}
+[1.513416] (-) TimerEvent: {}
+[1.614214] (-) TimerEvent: {}
+[1.715039] (-) TimerEvent: {}
+[1.815616] (-) TimerEvent: {}
+[1.921710] (-) TimerEvent: {}
+[2.022248] (-) TimerEvent: {}
+[2.126763] (-) TimerEvent: {}
+[2.227802] (-) TimerEvent: {}
+[2.330186] (-) TimerEvent: {}
+[2.430862] (-) TimerEvent: {}
+[2.527741] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KControllerNode::\x1b[01;32m\x1b[KControllerNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.527945] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:18:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstop_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.527986] (rp_ros2_rviz) StderrLine: {'line': b'   18 |         \x1b[01;31m\x1b[Kstop_sub_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[2.528019] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.529960] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:18:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.530146] (rp_ros2_rviz) StderrLine: {'line': b'   18 |         stop_sub_ = this->create_subscription<std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K>(\n'}
+[2.530185] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.530257] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:20:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBool\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.530623] (rp_ros2_rviz) StderrLine: {'line': b'   20 |             [this](const std_msgs::msg::\x1b[01;31m\x1b[KBool\x1b[m\x1b[K::SharedPtr msg) {\n'}
+[2.530656] (rp_ros2_rviz) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.530688] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[2.530719] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:27:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.530750] (rp_ros2_rviz) StderrLine: {'line': b'   27 |             })\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[2.530780] (rp_ros2_rviz) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.530809] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KControllerNode::\x1b[01;32m\x1b[KControllerNode\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.530839] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:27:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.530869] (-) TimerEvent: {}
+[2.530939] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/controller_node.cpp:18:67:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.530973] (rp_ros2_rviz) StderrLine: {'line': b'   18 |         stop_sub_ = this->create_subscription<std_msgs::msg::Bool>\x1b[01;36m\x1b[K(\x1b[m\x1b[K\n'}
+[2.531002] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                   \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.631064] (-) TimerEvent: {}
+[2.734032] (-) TimerEvent: {}
+[2.839300] (-) TimerEvent: {}
+[2.939807] (-) TimerEvent: {}
+[3.042536] (-) TimerEvent: {}
+[3.144173] (-) TimerEvent: {}
+[3.244621] (-) TimerEvent: {}
+[3.344947] (-) TimerEvent: {}
+[3.447039] (-) TimerEvent: {}
+[3.550032] (-) TimerEvent: {}
+[3.654244] (-) TimerEvent: {}
+[3.755004] (-) TimerEvent: {}
+[3.855296] (-) TimerEvent: {}
+[3.960677] (-) TimerEvent: {}
+[4.061119] (-) TimerEvent: {}
+[4.164143] (-) TimerEvent: {}
+[4.264976] (-) TimerEvent: {}
+[4.366741] (-) TimerEvent: {}
+[4.468896] (-) TimerEvent: {}
+[4.569828] (-) TimerEvent: {}
+[4.671735] (-) TimerEvent: {}
+[4.772940] (-) TimerEvent: {}
+[4.826764] (rp_ros2_rviz) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/controller_node.dir/build.make:76: CMakeFiles/controller_node.dir/src/controller_node.cpp.o] Error 1\n'}
+[4.827707] (rp_ros2_rviz) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/controller_node.dir/all] Error 2\n'}
+[4.827848] (rp_ros2_rviz) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[4.873151] (-) TimerEvent: {}
+[4.976077] (-) TimerEvent: {}
+[5.076611] (-) TimerEvent: {}
+[5.177480] (-) TimerEvent: {}
+[5.277971] (-) TimerEvent: {}
+[5.379264] (-) TimerEvent: {}
+[5.480437] (-) TimerEvent: {}
+[5.580870] (-) TimerEvent: {}
+[5.682106] (-) TimerEvent: {}
+[5.782634] (-) TimerEvent: {}
+[5.883066] (-) TimerEvent: {}
+[5.983785] (-) TimerEvent: {}
+[6.085410] (-) TimerEvent: {}
+[6.185971] (-) TimerEvent: {}
+[6.287988] (-) TimerEvent: {}
+[6.388576] (-) TimerEvent: {}
+[6.492747] (-) TimerEvent: {}
+[6.593956] (-) TimerEvent: {}
+[6.694417] (-) TimerEvent: {}
+[6.795136] (-) TimerEvent: {}
+[6.895810] (-) TimerEvent: {}
+[6.996269] (-) TimerEvent: {}
+[7.096752] (-) TimerEvent: {}
+[7.197040] (-) TimerEvent: {}
+[7.298520] (-) TimerEvent: {}
+[7.399032] (-) TimerEvent: {}
+[7.500007] (-) TimerEvent: {}
+[7.600835] (-) TimerEvent: {}
+[7.701132] (-) TimerEvent: {}
+[7.801784] (-) TimerEvent: {}
+[7.903273] (-) TimerEvent: {}
+[8.003703] (-) TimerEvent: {}
+[8.104602] (-) TimerEvent: {}
+[8.205514] (-) TimerEvent: {}
+[8.306520] (-) TimerEvent: {}
+[8.407170] (-) TimerEvent: {}
+[8.508280] (-) TimerEvent: {}
+[8.608777] (-) TimerEvent: {}
+[8.709527] (-) TimerEvent: {}
+[8.809839] (-) TimerEvent: {}
+[8.910585] (-) TimerEvent: {}
+[9.010936] (-) TimerEvent: {}
+[9.111732] (-) TimerEvent: {}
+[9.212060] (-) TimerEvent: {}
+[9.312754] (-) TimerEvent: {}
+[9.413035] (-) TimerEvent: {}
+[9.514162] (-) TimerEvent: {}
+[9.616881] (-) TimerEvent: {}
+[9.717684] (-) TimerEvent: {}
+[9.818086] (-) TimerEvent: {}
+[9.919136] (-) TimerEvent: {}
+[10.019422] (-) TimerEvent: {}
+[10.120246] (-) TimerEvent: {}
+[10.221518] (-) TimerEvent: {}
+[10.322032] (-) TimerEvent: {}
+[10.423240] (-) TimerEvent: {}
+[10.524432] (-) TimerEvent: {}
+[10.624786] (-) TimerEvent: {}
+[10.725169] (-) TimerEvent: {}
+[10.825629] (-) TimerEvent: {}
+[10.925997] (-) TimerEvent: {}
+[11.026488] (-) TimerEvent: {}
+[11.127537] (-) TimerEvent: {}
+[11.228468] (-) TimerEvent: {}
+[11.329212] (-) TimerEvent: {}
+[11.430786] (-) TimerEvent: {}
+[11.531581] (-) TimerEvent: {}
+[11.632416] (-) TimerEvent: {}
+[11.732896] (-) TimerEvent: {}
+[11.833924] (-) TimerEvent: {}
+[11.934669] (-) TimerEvent: {}
+[12.035386] (-) TimerEvent: {}
+[12.135707] (-) TimerEvent: {}
+[12.236056] (-) TimerEvent: {}
+[12.336441] (-) TimerEvent: {}
+[12.437480] (-) TimerEvent: {}
+[12.538003] (-) TimerEvent: {}
+[12.621932] (rp_ros2_rviz) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX executable world_node\x1b[0m\n'}
+[12.638618] (-) TimerEvent: {}
+[12.739012] (-) TimerEvent: {}
+[12.840602] (-) TimerEvent: {}
+[12.941799] (-) TimerEvent: {}
+[13.042886] (-) TimerEvent: {}
+[13.144037] (-) TimerEvent: {}
+[13.245595] (-) TimerEvent: {}
+[13.347649] (-) TimerEvent: {}
+[13.448884] (-) TimerEvent: {}
+[13.549201] (-) TimerEvent: {}
+[13.650454] (-) TimerEvent: {}
+[13.751072] (-) TimerEvent: {}
+[13.851511] (-) TimerEvent: {}
+[13.951901] (-) TimerEvent: {}
+[14.053413] (-) TimerEvent: {}
+[14.154249] (-) TimerEvent: {}
+[14.255010] (-) TimerEvent: {}
+[14.323720] (rp_ros2_rviz) StdoutLine: {'line': b'[ 73%] Built target world_node\n'}
+[14.325223] (rp_ros2_rviz) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.328015] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[14.355143] (-) TimerEvent: {}
+[14.356663] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[14.367581] (-) EventReactorShutdown: {}

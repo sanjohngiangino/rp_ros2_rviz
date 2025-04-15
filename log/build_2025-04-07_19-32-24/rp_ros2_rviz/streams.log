@@ -1,0 +1,13 @@
+[0.011s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.063s] [ 33%] Built target controller_node
+[0.063s] [ 40%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.064s] [ 73%] Built target pathplanner_node
+[3.413s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
+[3.413s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstep_pose_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpose_sub_[m[K’?
+[3.413s]    64 |     [01;31m[Kstep_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+[3.413s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.413s]       |     [32m[Kpose_sub_[m[K
+[7.365s] gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[7.366s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
+[7.366s] gmake: *** [Makefile:146: all] Error 2
+[7.369s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/john/Desktop/path_ros/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

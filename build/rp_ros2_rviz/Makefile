@@ -198,6 +198,19 @@ rp_ros2_rviz_uninstall/fast:
 .PHONY : rp_ros2_rviz_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named controller_node
+
+# Build rule for target.
+controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller_node
+.PHONY : controller_node
+
+# fast build rule for target.
+controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/build
+.PHONY : controller_node/fast
+
+#=============================================================================
 # Target rules for targets named world_node
 
 # Build rule for target.
@@ -223,11 +236,49 @@ pathplanner_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/build
 .PHONY : pathplanner_node/fast
 
+#=============================================================================
+# Target rules for targets named map_server
+
+# Build rule for target.
+map_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 map_server
+.PHONY : map_server
+
+# fast build rule for target.
+map_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_server.dir/build.make CMakeFiles/map_server.dir/build
+.PHONY : map_server/fast
+
+src/controller_node.o: src/controller_node.cpp.o
+.PHONY : src/controller_node.o
+
+# target to build an object file
+src/controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/controller_node.cpp.o
+.PHONY : src/controller_node.cpp.o
+
+src/controller_node.i: src/controller_node.cpp.i
+.PHONY : src/controller_node.i
+
+# target to preprocess a source file
+src/controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/controller_node.cpp.i
+.PHONY : src/controller_node.cpp.i
+
+src/controller_node.s: src/controller_node.cpp.s
+.PHONY : src/controller_node.s
+
+# target to generate assembly for a file
+src/controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/controller_node.cpp.s
+.PHONY : src/controller_node.cpp.s
+
 src/dmap.o: src/dmap.cpp.o
 .PHONY : src/dmap.o
 
 # target to build an object file
 src/dmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.o
 .PHONY : src/dmap.cpp.o
@@ -237,6 +288,7 @@ src/dmap.i: src/dmap.cpp.i
 
 # target to preprocess a source file
 src/dmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.i
 .PHONY : src/dmap.cpp.i
@@ -246,6 +298,7 @@ src/dmap.s: src/dmap.cpp.s
 
 # target to generate assembly for a file
 src/dmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap.cpp.s
 .PHONY : src/dmap.cpp.s
@@ -255,6 +308,7 @@ src/dmap_planner.o: src/dmap_planner.cpp.o
 
 # target to build an object file
 src/dmap_planner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap_planner.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.o
 .PHONY : src/dmap_planner.cpp.o
@@ -264,6 +318,7 @@ src/dmap_planner.i: src/dmap_planner.cpp.i
 
 # target to preprocess a source file
 src/dmap_planner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap_planner.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.i
 .PHONY : src/dmap_planner.cpp.i
@@ -273,9 +328,34 @@ src/dmap_planner.s: src/dmap_planner.cpp.s
 
 # target to generate assembly for a file
 src/dmap_planner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/dmap_planner.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/dmap_planner.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.s
 .PHONY : src/dmap_planner.cpp.s
+
+src/mapserver.o: src/mapserver.cpp.o
+.PHONY : src/mapserver.o
+
+# target to build an object file
+src/mapserver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_server.dir/build.make CMakeFiles/map_server.dir/src/mapserver.cpp.o
+.PHONY : src/mapserver.cpp.o
+
+src/mapserver.i: src/mapserver.cpp.i
+.PHONY : src/mapserver.i
+
+# target to preprocess a source file
+src/mapserver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_server.dir/build.make CMakeFiles/map_server.dir/src/mapserver.cpp.i
+.PHONY : src/mapserver.cpp.i
+
+src/mapserver.s: src/mapserver.cpp.s
+.PHONY : src/mapserver.s
+
+# target to generate assembly for a file
+src/mapserver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/map_server.dir/build.make CMakeFiles/map_server.dir/src/mapserver.cpp.s
+.PHONY : src/mapserver.cpp.s
 
 src/pathplanner_node.o: src/pathplanner_node.cpp.o
 .PHONY : src/pathplanner_node.o
@@ -306,6 +386,7 @@ src/robot.o: src/robot.cpp.o
 
 # target to build an object file
 src/robot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/robot.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.o
 .PHONY : src/robot.cpp.o
@@ -315,6 +396,7 @@ src/robot.i: src/robot.cpp.i
 
 # target to preprocess a source file
 src/robot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/robot.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.i
 .PHONY : src/robot.cpp.i
@@ -324,6 +406,7 @@ src/robot.s: src/robot.cpp.s
 
 # target to generate assembly for a file
 src/robot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controller_node.dir/build.make CMakeFiles/controller_node.dir/src/robot.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/world_node.dir/build.make CMakeFiles/world_node.dir/src/robot.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pathplanner_node.dir/build.make CMakeFiles/pathplanner_node.dir/src/robot.cpp.s
 .PHONY : src/robot.cpp.s
@@ -367,14 +450,22 @@ help:
 	@echo "... test"
 	@echo "... rp_ros2_rviz_uninstall"
 	@echo "... uninstall"
+	@echo "... controller_node"
+	@echo "... map_server"
 	@echo "... pathplanner_node"
 	@echo "... world_node"
+	@echo "... src/controller_node.o"
+	@echo "... src/controller_node.i"
+	@echo "... src/controller_node.s"
 	@echo "... src/dmap.o"
 	@echo "... src/dmap.i"
 	@echo "... src/dmap.s"
 	@echo "... src/dmap_planner.o"
 	@echo "... src/dmap_planner.i"
 	@echo "... src/dmap_planner.s"
+	@echo "... src/mapserver.o"
+	@echo "... src/mapserver.i"
+	@echo "... src/mapserver.s"
 	@echo "... src/pathplanner_node.o"
 	@echo "... src/pathplanner_node.i"
 	@echo "... src/pathplanner_node.s"

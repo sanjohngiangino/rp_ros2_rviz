@@ -64,8 +64,8 @@ private:
     void robotCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
         latest_robot_position = Eigen::Vector2f(msg->x, msg->y);
         has_robot_position_ = true;
-        /*RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
-                    latest_robot_position.x(), latest_robot_position.y());*/
+        RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
+                    latest_robot_position.x(), latest_robot_position.y());
         if (!dmap_ready_) return;
         
         //makePath(this->dmap, 0.05, 1.0);
