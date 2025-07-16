@@ -1,0 +1,21 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:84:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   84 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+      |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:72:63:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >::SharedPtr WorldNode::step_pose_sub_[m[K’
+   72 |     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr [01;31m[Kstep_pose_sub_[m[K;
+      |                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:59:63:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >::SharedPtr WorldNode::step_pose_sub_[m[K’
+   59 |     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr [01;36m[Kstep_pose_sub_[m[K;
+      |                                                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:308:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  308 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:309:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  309 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+      |                         [01;35m[K^[m[K
+make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

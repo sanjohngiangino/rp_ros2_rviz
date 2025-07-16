@@ -1,3 +1,0 @@
-[ 20%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
-[ 53%] Built target pathplanner_node
-[ 73%] Built target dmap_node

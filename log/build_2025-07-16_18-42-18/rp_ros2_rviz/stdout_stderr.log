@@ -1,0 +1,21 @@
+[ 20%] Built target controller_node
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 40%] Built target pathplanner_node
+[ 60%] Built target world_node
+[ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:106:38:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  106 |             initializeParticles(2000)
+      |                                      [01;31m[K^[m[K
+      |                                      [32m[K;[m[K
+  107 | 
+  108 |         [32m[K}[m[K
+      |         [32m[K~[m[K                             
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:255:81:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  255 |           void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+      |                                                                          [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,51 @@
+[0.007s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.048s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.076s] [ 28%] Built target pathplanner_node
+[0.076s] [ 40%] Built target controller_node
+[0.087s] [ 44%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.097s] [ 64%] Built target world_node
+[0.114s] [ 84%] Built target mapserver
+[1.535s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[1.535s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:99:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.535s]    99 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+[1.535s]       |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[1.546s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’:
+[1.546s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:326:76:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kstd::initializer_list<auto>&&[m[K’ from ‘[01m[K{(-3.1415926535897931e+0 / (double)6), (-3.1415926535897931e+0 / (double)12), 0, (3.1415926535897931e+0 / (double)12), (3.1415926535897931e+0 / (double)6)}[m[K’
+[1.546s]   326 |           for (double theta_test : { -M_PI/6, -M_PI/12, 0, M_PI/12, M_PI/6 [01;31m[K}[m[K) {
+[1.546s]       |                                                                            [01;31m[K^[m[K
+[1.546s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:326:76:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kauto[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kint[m[K’)
+[1.556s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:327:32:[m[K [01;31m[Kerror: [m[K‘[01m[KrasterizeScan[m[K’ was not declared in this scope
+[1.556s]   327 |             cv::Mat scan_img = [01;31m[KrasterizeScan[m[K(scan, theta_test);
+[1.556s]       |                                [01;31m[K^~~~~~~~~~~~~[m[K
+[1.564s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:333:27:[m[K [01;31m[Kerror: [m[K‘[01m[KgridToWorldX[m[K’ was not declared in this scope
+[1.564s]   333 |               double wx = [01;31m[KgridToWorldX[m[K(maxLoc.x);
+[1.564s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[1.571s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:334:27:[m[K [01;31m[Kerror: [m[K‘[01m[KgridToWorldY[m[K’ was not declared in this scope
+[1.571s]   334 |               double wy = [01;31m[KgridToWorldY[m[K(maxLoc.y);
+[1.571s]       |                           [01;31m[K^~~~~~~~~~~~[m[K
+[1.579s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K At global scope:
+[1.579s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:532:9:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+[1.579s]   532 | cv::Mat [01;31m[KParticleFilterNode[m[K::rasterizeScan(
+[1.579s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.579s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:532:9:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+[1.579s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ParticleFilterNode[m[K’ defined here
+[1.579s]    21 | class [01;36m[KParticleFilterNode[m[K : public rclcpp::Node {
+[1.579s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.579s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:550:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble ParticleFilterNode::gridToWorldX(int)[m[K’
+[1.579s]   550 | double [01;31m[KParticleFilterNode[m[K::gridToWorldX(int ix) {
+[1.580s]       |        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.580s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:550:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kdouble ParticleFilterNode::gridToWorldX(int)[m[K’
+[1.580s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ParticleFilterNode[m[K’ defined here
+[1.580s]    21 | class [01;36m[KParticleFilterNode[m[K : public rclcpp::Node {
+[1.580s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.580s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:553:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble ParticleFilterNode::gridToWorldY(int)[m[K’
+[1.580s]   553 | double [01;31m[KParticleFilterNode[m[K::gridToWorldY(int iy) {
+[1.580s]       |        [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.580s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:553:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kdouble ParticleFilterNode::gridToWorldY(int)[m[K’
+[1.580s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass ParticleFilterNode[m[K’ defined here
+[1.580s]    21 | class [01;36m[KParticleFilterNode[m[K : public rclcpp::Node {
+[1.580s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.234s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[3.234s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[3.234s] make: *** [Makefile:141: all] Error 2
+[3.236s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

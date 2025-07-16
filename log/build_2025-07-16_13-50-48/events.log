@@ -1,0 +1,266 @@
+[0.000000] (-) TimerEvent: {}
+[0.000185] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.000218] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.004721] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.005256] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.006857] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('SSH_AGENT_PID', '1667'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/john'), ('OLDPWD', '/home/john/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1554'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'john'), ('JOURNAL_STREAM', '9:43083'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'john'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/john/ros2_ws/src/aws-robomaker-hospital-world/models_extra/gazebo_models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john:@/tmp/.ICE-unix/1721,unix/john:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', 'ad066e4c693c44b3bc643b17d7ef1004'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/98049b66_cf90_45d4_bcc6_5e395e9d0d4a'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy')]), 'shell': False}
+[0.040370] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target particle_node_filter\x1b[0m\n'}
+[0.067258] (rp_ros2_rviz) StdoutLine: {'line': b'[ 20%] Built target controller_node\n'}
+[0.067705] (rp_ros2_rviz) StdoutLine: {'line': b'[ 40%] Built target world_node\n'}
+[0.075777] (rp_ros2_rviz) StdoutLine: {'line': b'[ 60%] Built target pathplanner_node\n'}
+[0.079958] (rp_ros2_rviz) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o\x1b[0m\n'}
+[0.098238] (rp_ros2_rviz) StdoutLine: {'line': b'[ 84%] Built target mapserver\n'}
+[0.099555] (-) TimerEvent: {}
+[0.202521] (-) TimerEvent: {}
+[0.306640] (-) TimerEvent: {}
+[0.406912] (-) TimerEvent: {}
+[0.507188] (-) TimerEvent: {}
+[0.609020] (-) TimerEvent: {}
+[0.712172] (-) TimerEvent: {}
+[0.812799] (-) TimerEvent: {}
+[0.914868] (-) TimerEvent: {}
+[1.019724] (-) TimerEvent: {}
+[1.124370] (-) TimerEvent: {}
+[1.225467] (-) TimerEvent: {}
+[1.325736] (-) TimerEvent: {}
+[1.426984] (-) TimerEvent: {}
+[1.528370] (-) TimerEvent: {}
+[1.629465] (-) TimerEvent: {}
+[1.650923] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:216:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[1.651161] (rp_ros2_rviz) StderrLine: {'line': b'  216 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[1.651200] (rp_ros2_rviz) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.651229] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:23:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651259] (rp_ros2_rviz) StderrLine: {'line': b'   23 | class ParticleFilterNode : public rclcpp::Node \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[1.651290] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[1.651318] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KParticleFilterNode::ParticleFilterNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.651346] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KParticleFilterNode\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kgen_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.651374] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), \x1b[01;31m\x1b[Kgen_\x1b[m\x1b[K(rd_()), dist_uni_(0.0, 1.0), tf_buffer_(this->get_clock()), tf_listener_(tf_buffer_)\n'}
+[1.651402] (rp_ros2_rviz) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.653485] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krd_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.653607] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), gen_(\x1b[01;31m\x1b[Krd_\x1b[m\x1b[K()), dist_uni_(0.0, 1.0), tf_buffer_(this->get_clock()), tf_listener_(tf_buffer_)\n'}
+[1.653674] (rp_ros2_rviz) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.653776] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KParticleFilterNode\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kdist_uni_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.653809] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), gen_(rd_()), \x1b[01;31m\x1b[Kdist_uni_\x1b[m\x1b[K(0.0, 1.0), tf_buffer_(this->get_clock()), tf_listener_(tf_buffer_)\n'}
+[1.653837] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.653866] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KParticleFilterNode\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Ktf_buffer_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.653894] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), gen_(rd_()), dist_uni_(0.0, 1.0), \x1b[01;31m\x1b[Ktf_buffer_\x1b[m\x1b[K(this->get_clock()), tf_listener_(tf_buffer_)\n'}
+[1.653921] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.653948] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KParticleFilterNode\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Ktf_listener_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.653976] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), gen_(rd_()), dist_uni_(0.0, 1.0), tf_buffer_(this->get_clock()), \x1b[01;31m\x1b[Ktf_listener_\x1b[m\x1b[K(tf_buffer_)\n'}
+[1.654003] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.660279] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:26:115:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.660415] (rp_ros2_rviz) StderrLine: {'line': b'   26 |     : Node("particle_node_filter"), gen_(rd_()), dist_uni_(0.0, 1.0), tf_buffer_(this->get_clock()), tf_listener_(\x1b[01;31m\x1b[Ktf_buffer_\x1b[m\x1b[K)\n'}
+[1.660447] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                                                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.665811] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:38:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_max_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.665926] (rp_ros2_rviz) StderrLine: {'line': b'   38 |         this->get_parameter("num_particles_max", \x1b[01;31m\x1b[KN_max_\x1b[m\x1b[K);\n'}
+[1.665963] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.668070] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:39:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_min_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.668157] (rp_ros2_rviz) StderrLine: {'line': b'   39 |         this->get_parameter("num_particles_min", \x1b[01;31m\x1b[KN_min_\x1b[m\x1b[K);\n'}
+[1.668189] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.671959] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:40:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksigma_s_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksigmask\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.672073] (rp_ros2_rviz) StderrLine: {'line': b'   40 |         this->get_parameter("sensor_sigma", \x1b[01;31m\x1b[Ksigma_s_\x1b[m\x1b[K);\n'}
+[1.672103] (rp_ros2_rviz) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.672133] (rp_ros2_rviz) StderrLine: {'line': b'      |                                             \x1b[32m\x1b[Ksigmask\x1b[m\x1b[K\n'}
+[1.675442] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:41:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha1_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.675524] (rp_ros2_rviz) StderrLine: {'line': b'   41 |         this->get_parameter("odom_alpha1", \x1b[01;31m\x1b[Kalpha1_\x1b[m\x1b[K);\n'}
+[1.675554] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.678646] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:42:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha2_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.678721] (rp_ros2_rviz) StderrLine: {'line': b'   42 |         this->get_parameter("odom_alpha2", \x1b[01;31m\x1b[Kalpha2_\x1b[m\x1b[K);\n'}
+[1.678753] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.681926] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:43:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha3_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.682005] (rp_ros2_rviz) StderrLine: {'line': b'   43 |         this->get_parameter("odom_alpha3", \x1b[01;31m\x1b[Kalpha3_\x1b[m\x1b[K);\n'}
+[1.682034] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.685226] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:44:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha4_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.685305] (rp_ros2_rviz) StderrLine: {'line': b'   44 |         this->get_parameter("odom_alpha4", \x1b[01;31m\x1b[Kalpha4_\x1b[m\x1b[K);\n'}
+[1.685334] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.686701] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:45:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Keps_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.686771] (rp_ros2_rviz) StderrLine: {'line': b'   45 |         this->get_parameter("kld_epsilon", \x1b[01;31m\x1b[Keps_\x1b[m\x1b[K);\n'}
+[1.686799] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.689308] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:46:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdelta_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.689382] (rp_ros2_rviz) StderrLine: {'line': b'   46 |         this->get_parameter("kld_delta", \x1b[01;31m\x1b[Kdelta_\x1b[m\x1b[K);\n'}
+[1.689418] (rp_ros2_rviz) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.690640] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:47:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdt_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.690709] (rp_ros2_rviz) StderrLine: {'line': b'   47 |         \x1b[01;31m\x1b[Kdt_\x1b[m\x1b[K = 0.1;\n'}
+[1.690737] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.694634] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:50:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.694709] (rp_ros2_rviz) StderrLine: {'line': b'   50 |         \x1b[01;31m\x1b[Kmap_sub_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>("/map", 1,\n'}
+[1.694740] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.708731] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:52:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.708828] (rp_ros2_rviz) StderrLine: {'line': b'   52 |         \x1b[01;31m\x1b[Kodom_sub_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::Odometry>("/odom", 10,\n'}
+[1.708865] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.719684] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:54:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.719795] (rp_ros2_rviz) StderrLine: {'line': b'   54 |         \x1b[01;31m\x1b[Kscan_sub_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan", 10,\n'}
+[1.719830] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.730394] (-) TimerEvent: {}
+[1.733665] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:56:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.733757] (rp_ros2_rviz) StderrLine: {'line': b'   56 |         \x1b[01;31m\x1b[Kparticles_pub_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::PoseArray>("particles", 10);\n'}
+[1.733791] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.742506] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:58:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.742613] (rp_ros2_rviz) StderrLine: {'line': b'   58 |         \x1b[01;31m\x1b[Kinitialized_\x1b[m\x1b[K = false;\n'}
+[1.742647] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.835070] (-) TimerEvent: {}
+[1.905636] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.905789] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:63:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.905823] (rp_ros2_rviz) StderrLine: {'line': b'   63 |         \x1b[01;31m\x1b[Kmap_\x1b[m\x1b[K = *msg;\n'}
+[1.905856] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.912380] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:66:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.912475] (rp_ros2_rviz) StderrLine: {'line': b'   66 |         \x1b[01;31m\x1b[Kinitialized_\x1b[m\x1b[K = true;\n'}
+[1.912508] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.921797] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.921934] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:71:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.921967] (rp_ros2_rviz) StderrLine: {'line': b'   71 |         if (!\x1b[01;31m\x1b[Kinitialized_\x1b[m\x1b[K) return;\n'}
+[1.921996] (rp_ros2_rviz) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.923569] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:72:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdt_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.923668] (rp_ros2_rviz) StderrLine: {'line': b'   72 |         double dx = msg->twist.twist.linear.x * \x1b[01;31m\x1b[Kdt_\x1b[m\x1b[K;\n'}
+[1.923703] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.932540] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.932627] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:78:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kinitialized_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.932657] (rp_ros2_rviz) StderrLine: {'line': b'   78 |         if (!\x1b[01;31m\x1b[Kinitialized_\x1b[m\x1b[K) return;\n'}
+[1.932685] (rp_ros2_rviz) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.934299] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::buildDistanceField()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.934384] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:85:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.934415] (rp_ros2_rviz) StderrLine: {'line': b'   85 |         int w = \x1b[01;31m\x1b[Kmap_\x1b[m\x1b[K.info.width;\n'}
+[1.934443] (rp_ros2_rviz) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.935136] (-) TimerEvent: {}
+[1.936416] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:92:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.936498] (rp_ros2_rviz) StderrLine: {'line': b'   92 |         cv::distanceTransform(occ, \x1b[01;31m\x1b[Kdmap_\x1b[m\x1b[K, cv::DIST_L2, 5);\n'}
+[1.936539] (rp_ros2_rviz) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.937919] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::globalInitialize()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.937995] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:97:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.938024] (rp_ros2_rviz) StderrLine: {'line': b'   97 |         \x1b[01;31m\x1b[KN_\x1b[m\x1b[K = N_max_;\n'}
+[1.938052] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.940149] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:97:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_max_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.940225] (rp_ros2_rviz) StderrLine: {'line': b'   97 |         N_ = \x1b[01;31m\x1b[KN_max_\x1b[m\x1b[K;\n'}
+[1.940253] (rp_ros2_rviz) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.944308] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:98:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.944389] (rp_ros2_rviz) StderrLine: {'line': b'   98 |         \x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K.resize(N_);\n'}
+[1.944417] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.944445] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.946291] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:99:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.946395] (rp_ros2_rviz) StderrLine: {'line': b'   99 |         std::uniform_int_distribution<int> idx_w(0, \x1b[01;31m\x1b[Kmap_\x1b[m\x1b[K.info.width-1);\n'}
+[1.946427] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.947962] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:103:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgen_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.948044] (rp_ros2_rviz) StderrLine: {'line': b'  103 |             int xi=idx_w(\x1b[01;31m\x1b[Kgen_\x1b[m\x1b[K), yi=idx_h(gen_);\n'}
+[1.948080] (rp_ros2_rviz) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.949337] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:104:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kyi\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kyn\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.949420] (rp_ros2_rviz) StderrLine: {'line': b'  104 |             if(map_.data[xi+\x1b[01;31m\x1b[Kyi\x1b[m\x1b[K*map_.info.width]==0) {\n'}
+[1.949449] (rp_ros2_rviz) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.949477] (rp_ros2_rviz) StderrLine: {'line': b'      |                             \x1b[32m\x1b[Kyn\x1b[m\x1b[K\n'}
+[1.954151] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:107:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdist_uni_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.954231] (rp_ros2_rviz) StderrLine: {'line': b'  107 |                 particles_[count].theta = \x1b[01;31m\x1b[Kdist_uni_\x1b[m\x1b[K(gen_)*2*M_PI - M_PI;\n'}
+[1.954260] (rp_ros2_rviz) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.954288] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:100:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kidx_h\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[1.954316] (rp_ros2_rviz) StderrLine: {'line': b'  100 |         std::uniform_int_distribution<int> \x1b[01;35m\x1b[Kidx_h\x1b[m\x1b[K(0, map_.info.height-1);\n'}
+[1.954347] (rp_ros2_rviz) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.957470] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::motionUpdate(double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.957544] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:115:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha1_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.957574] (rp_ros2_rviz) StderrLine: {'line': b'  115 |         std::normal_distribution<double> noise_trans(\x1b[01;31m\x1b[Kalpha1_\x1b[m\x1b[K*std::fabs(delta_trans));\n'}
+[1.957602] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.960804] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:116:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kalpha3_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.960906] (rp_ros2_rviz) StderrLine: {'line': b'  116 |         std::normal_distribution<double> noise_rot(\x1b[01;31m\x1b[Kalpha3_\x1b[m\x1b[K*std::fabs(delta_theta));\n'}
+[1.961075] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.966386] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:117:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.966509] (rp_ros2_rviz) StderrLine: {'line': b'  117 |         for(auto& p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K) {\n'}
+[1.966539] (rp_ros2_rviz) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.966566] (rp_ros2_rviz) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.968226] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:118:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgen_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.968275] (rp_ros2_rviz) StderrLine: {'line': b'  118 |             double nt = delta_trans + noise_trans(\x1b[01;31m\x1b[Kgen_\x1b[m\x1b[K);\n'}
+[1.968303] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.969424] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:122:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.969471] (rp_ros2_rviz) StderrLine: {'line': b'  122 |             p.weight = 1.0/\x1b[01;31m\x1b[KN_\x1b[m\x1b[K;\n'}
+[1.969498] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.973509] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::sensorUpdate(const LaserScan&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.973556] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:127:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.973583] (rp_ros2_rviz) StderrLine: {'line': b'  127 |         for(auto &p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K) {\n'}
+[1.973610] (rp_ros2_rviz) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.973636] (rp_ros2_rviz) StderrLine: {'line': b'      |                     \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.975766] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:134:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.975838] (rp_ros2_rviz) StderrLine: {'line': b'  134 |                     int mx=(rx-\x1b[01;31m\x1b[Kmap_\x1b[m\x1b[K.info.origin.position.x)/map_.info.resolution;\n'}
+[1.975871] (rp_ros2_rviz) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.978307] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:136:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.978393] (rp_ros2_rviz) StderrLine: {'line': b'  136 |                     if(mx>=0&&mx<\x1b[01;31m\x1b[Kdmap_\x1b[m\x1b[K.cols&&my>=0&&my<dmap_.rows) {\n'}
+[1.978422] (rp_ros2_rviz) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.978450] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:137:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.978478] (rp_ros2_rviz) StderrLine: {'line': b'  137 |                         float dist=dmap_.at<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(my,mx);\n'}
+[1.978506] (rp_ros2_rviz) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.982115] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:138:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksigma_s_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksigmask\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.982209] (rp_ros2_rviz) StderrLine: {'line': b'  138 |                         w*=std::exp(-(dist*dist)/(2*\x1b[01;31m\x1b[Ksigma_s_\x1b[m\x1b[K*sigma_s_));\n'}
+[1.982240] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.982268] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                     \x1b[32m\x1b[Ksigmask\x1b[m\x1b[K\n'}
+[1.986712] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:145:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.986813] (rp_ros2_rviz) StderrLine: {'line': b'  145 |         double sum=0;for(auto&p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K)sum+=p.weight;\n'}
+[1.986842] (rp_ros2_rviz) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.986881] (rp_ros2_rviz) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.991303] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:146:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.991408] (rp_ros2_rviz) StderrLine: {'line': b'  146 |         for(auto&p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K)p.weight/=sum;\n'}
+[1.991437] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.991465] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.995749] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::resample()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.995832] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:150:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.995861] (rp_ros2_rviz) StderrLine: {'line': b'  150 |         double sumsq=0;for(auto&p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K)sumsq+=p.weight*p.weight;\n'}
+[1.995889] (rp_ros2_rviz) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.995916] (rp_ros2_rviz) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[1.998514] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:152:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdelta_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.998610] (rp_ros2_rviz) StderrLine: {'line': b'  152 |         double z=chi2inv(1-\x1b[01;31m\x1b[Kdelta_\x1b[m\x1b[K,(K>1?K-1:1));\n'}
+[1.998641] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.000148] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:153:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Keps_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.000226] (rp_ros2_rviz) StderrLine: {'line': b'  153 |         int N_req=static_cast<int>(std::ceil(z/(2*\x1b[01;31m\x1b[Keps_\x1b[m\x1b[K)));\n'}
+[2.000254] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.001304] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:155:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.001364] (rp_ros2_rviz) StderrLine: {'line': b'  155 |         \x1b[01;31m\x1b[KN_\x1b[m\x1b[K = std::min(std::max(N_req, N_min_), N_max_);\n'}
+[2.001398] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.003524] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:155:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_min_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.003591] (rp_ros2_rviz) StderrLine: {'line': b'  155 |         N_ = std::min(std::max(N_req, \x1b[01;31m\x1b[KN_min_\x1b[m\x1b[K), N_max_);\n'}
+[2.003624] (rp_ros2_rviz) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.005623] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:155:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KN_max_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.005685] (rp_ros2_rviz) StderrLine: {'line': b'  155 |         N_ = std::min(std::max(N_req, N_min_), \x1b[01;31m\x1b[KN_max_\x1b[m\x1b[K);\n'}
+[2.005714] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.010787] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:157:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.010867] (rp_ros2_rviz) StderrLine: {'line': b'  157 |         std::vector<double> cdf(\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K.size());\n'}
+[2.010896] (rp_ros2_rviz) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.010924] (rp_ros2_rviz) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[2.016729] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:161:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgen_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.016827] (rp_ros2_rviz) StderrLine: {'line': b'  161 |         double r=dist_uni_(\x1b[01;31m\x1b[Kgen_\x1b[m\x1b[K)/N_;\n'}
+[2.016855] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.021508] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:161:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kdist_uni_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.021584] (rp_ros2_rviz) StderrLine: {'line': b'  161 |         double r=\x1b[01;31m\x1b[Kdist_uni_\x1b[m\x1b[K(gen_)/N_;\n'}
+[2.021613] (rp_ros2_rviz) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.031003] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint ParticleFilterNode::countOccupiedBins()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.031092] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:174:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.031122] (rp_ros2_rviz) StderrLine: {'line': b'  174 |         for(auto&p:\x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K) {\n'}
+[2.031153] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.031180] (rp_ros2_rviz) StderrLine: {'line': b'      |                    \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[2.033857] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ParticleFilterNode::publishParticles()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.033941] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:188:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.033980] (rp_ros2_rviz) StderrLine: {'line': b'  188 |         arr.header.frame_id = \x1b[01;31m\x1b[Kmap_\x1b[m\x1b[K.header.frame_id;\n'}
+[2.034008] (rp_ros2_rviz) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.035212] (-) TimerEvent: {}
+[2.038172] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:194:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KParticle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.038246] (rp_ros2_rviz) StderrLine: {'line': b'  194 |         for (auto &p : \x1b[01;31m\x1b[Kparticles_\x1b[m\x1b[K) {\n'}
+[2.038274] (rp_ros2_rviz) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.038302] (rp_ros2_rviz) StderrLine: {'line': b'      |                        \x1b[32m\x1b[KParticle\x1b[m\x1b[K\n'}
+[2.046390] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:207:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticles_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.046470] (rp_ros2_rviz) StderrLine: {'line': b'  207 |         \x1b[01;31m\x1b[Kparticles_pub_\x1b[m\x1b[K->publish(arr);\n'}
+[2.046498] (rp_ros2_rviz) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.048916] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.049002] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:216:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[2.049033] (rp_ros2_rviz) StderrLine: {'line': b'  216 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.049061] (rp_ros2_rviz) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.138245] (-) TimerEvent: {}
+[2.238849] (-) TimerEvent: {}
+[2.339647] (-) TimerEvent: {}
+[2.444518] (-) TimerEvent: {}
+[2.548363] (-) TimerEvent: {}
+[2.651949] (-) TimerEvent: {}
+[2.753999] (-) TimerEvent: {}
+[2.857715] (-) TimerEvent: {}
+[2.961949] (-) TimerEvent: {}
+[3.066618] (-) TimerEvent: {}
+[3.171265] (-) TimerEvent: {}
+[3.274349] (-) TimerEvent: {}
+[3.354986] (rp_ros2_rviz) StderrLine: {'line': b'make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1\n'}
+[3.355264] (rp_ros2_rviz) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2\n'}
+[3.355344] (rp_ros2_rviz) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[3.357779] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[3.364107] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[3.374513] (-) EventReactorShutdown: {}

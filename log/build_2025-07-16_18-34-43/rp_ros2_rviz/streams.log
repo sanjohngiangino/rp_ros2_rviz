@@ -1,0 +1,17 @@
+[0.007s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.049s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.084s] [  4%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.091s] [ 24%] Built target pathplanner_node
+[0.095s] [ 44%] Built target world_node
+[0.116s] [ 64%] Built target controller_node
+[0.137s] [ 84%] Built target mapserver
+[1.509s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:272:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’ cannot be overloaded with ‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’
+[1.509s]   272 |         std::vector<std::tuple<double,double,double>>[01;31m[KcorrelativeScanMatching[m[K(
+[1.509s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.509s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:252:55:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’
+[1.509s]   252 |         std::vector<std::tuple<double,double,double>> [01;36m[KcorrelativeScanMatching[m[K(
+[1.509s]       |                                                       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.219s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[3.219s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[3.219s] make: *** [Makefile:141: all] Error 2
+[3.222s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

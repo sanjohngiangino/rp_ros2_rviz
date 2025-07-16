@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 40%] Built target controller_node
+[ 40%] Built target pathplanner_node
+[ 44%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 64%] Built target world_node
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kstd::vector<std::tuple<float, float, float> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<float, float> >&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:212:57:[m[K [01;31m[Kerror: [m[K‘[01m[KM_MPI[m[K’ was not declared in this scope; did you mean ‘[01m[KM_PI[m[K’?
+  212 |     for (double th : { -M_PI/6, -M_PI/12, 0.0, M_PI/12, [01;31m[KM_MPI[m[K/6 }) {
+      |                                                         [01;31m[K^~~~~[m[K
+      |                                                         [32m[KM_PI[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:212:65:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kstd::initializer_list<auto>&&[m[K’ from ‘[01m[K{(-3.1415926535897931e+0 / (double)6), (-3.1415926535897931e+0 / (double)12), 0.0, (3.1415926535897931e+0 / (double)12), <expression error>}[m[K’
+  212 |     for (double th : { -M_PI/6, -M_PI/12, 0.0, M_PI/12, M_MPI/6 [01;31m[K}[m[K) {
+      |                                                                 [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,17 @@
+[35m[1mScanning dependencies of target pathplanner_node[0m
+[  4%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[ 28%] Built target controller_node
+[35m[1mScanning dependencies of target mapserver[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/mapserver.dir/src/mapserver.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/dmap_planner.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/mapserver.dir/src/dmap_planner.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/dmap.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/mapserver.dir/src/dmap.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/robot.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/mapserver.dir/src/robot.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable mapserver[0m
+[ 64%] Built target mapserver
+[ 68%] [32m[1mLinking CXX executable pathplanner_node[0m
+[ 68%] Built target pathplanner_node

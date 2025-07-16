@@ -1,12 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/controller_node.dir/src/controller_node.cpp.o"
-  "CMakeFiles/controller_node.dir/src/controller_node.cpp.o.d"
   "CMakeFiles/controller_node.dir/src/dmap.cpp.o"
-  "CMakeFiles/controller_node.dir/src/dmap.cpp.o.d"
   "CMakeFiles/controller_node.dir/src/dmap_planner.cpp.o"
-  "CMakeFiles/controller_node.dir/src/dmap_planner.cpp.o.d"
   "CMakeFiles/controller_node.dir/src/robot.cpp.o"
-  "CMakeFiles/controller_node.dir/src/robot.cpp.o.d"
   "controller_node"
   "controller_node.pdb"
 )

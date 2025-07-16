@@ -1,0 +1,31 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::resample()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:157:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  157 |         N_ = std::[01;31m[Kclamp[m[K(N_req, N_min_, N_max_);
+      |                   [01;31m[K^~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:152:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KNeff[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  152 |         double [01;35m[KNeff[m[K = 1.0/sumsq;
+      |                [01;35m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kint ParticleFilterNode::countOccupiedBins()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:176:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kunordered_set[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  176 |         std::[01;31m[Kunordered_set[m[K<long> bins;
+      |              [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:12:1:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unordered_set[m[K’ is defined in header ‘[01m[K<unordered_set>[m[K’; did you forget to ‘[01m[K#include <unordered_set>[m[K’?
+   11 | #include <Eigen/Dense>
+  +++ |+[32m[K#include <unordered_set>[m[K
+   12 | 
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:176:28:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Klong[m[K’
+  176 |         std::unordered_set<[01;31m[Klong[m[K> bins;
+      |                            [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:181:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbins[m[K’ was not declared in this scope
+  181 |             [01;31m[Kbins[m[K.insert(id);
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:183:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kbins[m[K’ was not declared in this scope
+  183 |         return [01;31m[Kbins[m[K.size();
+      |                [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kdouble ParticleFilterNode::chi2inv(double, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:186:27:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  186 |     double chi2inv([01;35m[Kdouble p[m[K, int v) {
+      |                    [01;35m[K~~~~~~~^[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

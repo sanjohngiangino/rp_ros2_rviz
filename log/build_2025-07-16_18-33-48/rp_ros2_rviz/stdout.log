@@ -1,0 +1,6 @@
+[ 20%] Built target pathplanner_node
+[ 40%] Built target controller_node
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 60%] Built target world_node
+[ 80%] Built target mapserver
+[ 84%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m

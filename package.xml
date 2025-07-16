@@ -1,21 +1,38 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd"
+            schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>rp_ros2_rviz</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="marcelo.1850518@studenti.uniroma1.it">john</maintainer>
-  <license>TODO: License declaration</license>
+  <version>0.1.0</version>
+
+  <description>RViz-based visualisation and planning demo for the RP ROS 2 project</description>
+
+  <maintainer email="marcelo.1850518@studenti.uniroma1.it">John</maintainer>
+
+  <license>Apache-2.0</license>
+
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+
+  <!-- Core ROS 2 -->
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
-  <depend>OpenCV</depend>
-  <depend>cv_bridge</depend>
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
   <depend>nav_msgs</depend>
+
+  <!-- TF2 -->
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <!-- Vision -->
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <!-- OpenCV (system library, ma lo dichiari così perché cv_bridge lo esporta) -->
+  <depend>OpenCV</depend>
+
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

@@ -1,8 +1,0 @@
-[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::[01;32m[KWorldNode[m[K()[m[K’:
-[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:65:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kustom_image[m[K’ was not declared in this scope; did you mean ‘[01m[Kcustom_image[m[K’?
-   65 |     my_robot = std::make_unique<Robot>([01;31m[Kustom_image[m[K.rows*0.9,custom_image.rows*0.9, 0, 1);
-      |                                        [01;31m[K^~~~~~~~~~~[m[K
-      |                                        [32m[Kcustom_image[m[K
-gmake[2]: *** [CMakeFiles/world_node.dir/build.make:76: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/world_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

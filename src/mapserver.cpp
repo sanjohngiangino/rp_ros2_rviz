@@ -1,83 +1,67 @@
-// map_server_node.cpp
-#include <rclcpp/rclcpp.hpp>
-#include <nav_msgs/msg/occupancy_grid.hpp>
-#include <cv_bridge/cv_bridge.hpp>
-#include <opencv2/opencv.hpp>
-#include <std_msgs/msg/header.hpp>
-#include <geometry_msgs/msg/pose.hpp>
+#include "rp_ros2_rviz/mapserver.hpp"
 
-class MapServer : public rclcpp::Node {
-public:
-    MapServer() : Node("map_server") {
-        this->declare_parameter<std::string>("map_path", "");
-        this->declare_parameter<double>("resolution", 0.05);
-        this->declare_parameter<std::vector<double>>("origin", {0.0, 0.0});
+MapServer::MapServer(const rclcpp::NodeOptions& options)
+    : Node("map_server", options)
+{
+    this->declare_parameter<std::string>("map_path", "");
+    this->get_parameter("map_path", map_path_);
 
-        this->get_parameter("map_path", map_path_);
-        this->get_parameter("resolution", resolution_);
-        this->get_parameter("origin", origin_);
+    RCLCPP_INFO(this->get_logger(), "🗺️ Tentativo di caricare la mappa da: '%s'", map_path_.c_str());
 
-        map_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("/map", 10);
-        timer_ = this->create_wall_timer(std::chrono::seconds(1), std::bind(&MapServer::publishMap, this));
+    map_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map", 10);
 
-        loadMap();
+    if (loadMap(map_path_)) {
+        timer_ = this->create_wall_timer(
+            std::chrono::seconds(1),
+            std::bind(&MapServer::publishMap, this)
+        );
     }
+}
 
-private:
-    rclcpp::Publisher<nav_msgs::msg::OccupancyGrid>::SharedPtr map_pub_;
-    rclcpp::TimerBase::SharedPtr timer_;
-
-    std::string map_path_;
-    double resolution_;
-    std::vector<double> origin_;
-
-    nav_msgs::msg::OccupancyGrid grid_msg_;
-    bool map_ready_ = false;
-
-    void loadMap() {
-        RCLCPP_INFO(this->get_logger(), "🗺️ Caricamento mappa da: %s", map_path_.c_str());
-        cv::Mat img = cv::imread(map_path_, cv::IMREAD_GRAYSCALE);
-        if (img.empty()) {
-            RCLCPP_ERROR(this->get_logger(), "❌ Impossibile caricare l'immagine.");
-            return;
+bool MapServer::loadMap(const std::string& image_path) {
+    cv::Mat img = cv::imread(map_path_, cv::IMREAD_GRAYSCALE);
+    if (img.empty()) {
+        RCLCPP_ERROR(this->get_logger(), "❌ Errore: impossibile caricare l'immagine da '%s'", image_path.c_str());
+        return false;
+    }
+    cv::Mat custom_image = img;
+        if (!custom_image.empty()) {
+            cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
         }
+    RCLCPP_INFO(this->get_logger(), "✅ Immagine caricata: %dx%d", custom_image.cols, custom_image.rows);
 
-        grid_msg_.header.frame_id = "map";
-        grid_msg_.info.resolution = resolution_;
-        grid_msg_.info.width = img.cols;
-        grid_msg_.info.height = img.rows;
+    map_msg_.header.frame_id = "map";
+    map_msg_.info.resolution = 0.05;
+    map_msg_.info.width = custom_image.cols;
+    map_msg_.info.height = custom_image.rows;
+    map_msg_.info.origin.position.x = 0.0;
+    map_msg_.info.origin.position.y = 0.0;
+    map_msg_.info.origin.position.z = 0.0;
+    map_msg_.info.origin.orientation.w = 1.0;
 
-        grid_msg_.info.origin.position.x = origin_[0];
-        grid_msg_.info.origin.position.y = origin_[1];
-        grid_msg_.info.origin.position.z = 0.0;
-        grid_msg_.info.origin.orientation.w = 1.0;
+    map_msg_.data.resize(custom_image.rows * custom_image.cols);
 
-        grid_msg_.data.resize(img.cols * img.rows);
-
-        for (int y = 0; y < img.rows; ++y) {
-            for (int x = 0; x < img.cols; ++x) {
-                int index = x + (img.rows - y - 1) * img.cols;
-                uchar pixel = img.at<uchar>(y, x);
-                grid_msg_.data[index] = (pixel < 127) ? 100 : 0;
-            }
+    for (int y = 0; y < custom_image.rows; ++y) {
+        for (int x = 0; x < custom_image.cols; ++x) {
+            uint8_t pixel = custom_image.at<uint8_t>(y, x);
+            int i = x + (custom_image.rows - 1 - y) * custom_image.cols;
+            map_msg_.data[i] = (pixel < 127) ? 100 : 0;
         }
-
-        map_ready_ = true;
-        RCLCPP_INFO(this->get_logger(), "✅ Mappa caricata e pronta.");
     }
 
-    void publishMap() {
-        if (!map_ready_) return;
-        grid_msg_.header.stamp = this->now();
-        map_pub_->publish(grid_msg_);
-        RCLCPP_INFO(this->get_logger(), "Mappa pubblicata.");
+    RCLCPP_INFO(this->get_logger(), "✅ Mappa convertita in OccupancyGrid.");
+    return true;
+}
 
-    }
-};
-
-int main(int argc, char** argv) {
+void MapServer::publishMap() {
+    map_msg_.header.stamp = this->now();
+    map_pub_->publish(map_msg_);
+    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 3000, "📡 Mappa pubblicata su /map");
+}
+int main(int argc, char * argv[]) {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<MapServer>());
+    rclcpp::NodeOptions options;
+    rclcpp::spin(std::make_shared<MapServer>(options));
     rclcpp::shutdown();
     return 0;
 }

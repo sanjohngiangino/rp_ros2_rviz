@@ -1,0 +1,23 @@
+[ 24%] Built target pathplanner_node
+[ 52%] Built target world_node
+[ 60%] Built target controller_node
+[ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:159:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kresample[m[K’ declared as function returning a function
+  159 |     [01;31m[Kvoid[m[K resample()() {
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:68:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KParticleFilterNode::publishMatchingParticles(std::__shared_ptr_access<sensor_msgs::msg::LaserScan_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type&)[m[K’
+   68 |         publishMatchingParticles(*scan[01;31m[K)[m[K;
+      |                                       [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:134:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid ParticleFilterNode::publishMatchingParticles()[m[K’
+  134 |     void [01;36m[KpublishMatchingParticles[m[K() {
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:134:10:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:69:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresample[m[K’ was not declared in this scope; did you mean ‘[01m[Krename[m[K’?
+   69 |         [01;31m[Kresample[m[K();
+      |         [01;31m[K^~~~~~~~[m[K
+      |         [32m[Krename[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,29 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.058s] [ 20%] Built target controller_node
+[0.063s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.097s] [ 40%] Built target world_node
+[0.109s] [ 60%] Built target pathplanner_node
+[0.109s] [ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.113s] [ 84%] Built target mapserver
+[1.587s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[1.587s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:112:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.587s]   112 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+[1.587s]       |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[1.618s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In function ‘[01m[Kint worldToGridX(double)[m[K’:
+[1.618s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:575:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_x_[m[K’ was not declared in this scope
+[1.618s]   575 |     return static_cast<int>((wx - [01;31m[Kmap_origin_x_[m[K) / map_resolution_);
+[1.618s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.623s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:575:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_resolution_[m[K’ was not declared in this scope
+[1.623s]   575 |     return static_cast<int>((wx - map_origin_x_) / [01;31m[Kmap_resolution_[m[K);
+[1.624s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.629s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In function ‘[01m[Kint worldToGridY(double)[m[K’:
+[1.629s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:579:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_y_[m[K’ was not declared in this scope
+[1.629s]   579 |     return static_cast<int>((wy - [01;31m[Kmap_origin_y_[m[K) / map_resolution_);
+[1.629s]       |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[1.635s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:579:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_resolution_[m[K’ was not declared in this scope
+[1.635s]   579 |     return static_cast<int>((wy - map_origin_y_) / [01;31m[Kmap_resolution_[m[K);
+[1.635s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.346s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[3.346s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[3.347s] make: *** [Makefile:141: all] Error 2
+[3.350s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

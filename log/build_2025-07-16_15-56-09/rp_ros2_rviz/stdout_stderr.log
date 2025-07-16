@@ -1,0 +1,14 @@
+[ 20%] Built target controller_node
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 40%] Built target world_node
+[ 60%] Built target pathplanner_node
+[ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::publishEstimate()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:301:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kvv[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv[m[K’?
+  301 |       tf2::Quaternion qq; [01;31m[Kvv[m[K.setRPY(0,0,p.theta);
+      |                           [01;31m[K^~[m[K
+      |                           [32m[Kcv[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

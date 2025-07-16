@@ -1,0 +1,6 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:253:11:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KParticleFilterNode::[m[K’ on member ‘[01m[KcorrelativeScanMatching[m[K’ [[01;31m[K-fpermissive[m[K]
+  253 |           [01;31m[KParticleFilterNode[m[K::correlativeScanMatching(
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

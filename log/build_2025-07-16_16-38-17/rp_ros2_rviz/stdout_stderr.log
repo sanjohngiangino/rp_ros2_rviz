@@ -1,0 +1,54 @@
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 20%] Built target world_node
+[ 40%] Built target pathplanner_node
+[ 44%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 64%] Built target controller_node
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:84:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   84 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+      |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:311:76:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kstd::initializer_list<auto>&&[m[K’ from ‘[01m[K{(-3.1415926535897931e+0 / (double)6), (-3.1415926535897931e+0 / (double)12), 0, (3.1415926535897931e+0 / (double)12), (3.1415926535897931e+0 / (double)6)}[m[K’
+  311 |           for (double theta_test : { -M_PI/6, -M_PI/12, 0, M_PI/12, M_PI/6 [01;31m[K}[m[K) {
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:311:76:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kauto[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kint[m[K’)
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:312:32:[m[K [01;31m[Kerror: [m[K‘[01m[KrasterizeScan[m[K’ was not declared in this scope
+  312 |             cv::Mat scan_img = [01;31m[KrasterizeScan[m[K(scan, theta_test);
+      |                                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:314:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_img_[m[K’ was not declared in this scope
+  314 |             cv::matchTemplate(scan_img, [01;31m[Kmap_img_[m[K, result, cv::TM_CCOEFF_NORMED);
+      |                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:318:27:[m[K [01;31m[Kerror: [m[K‘[01m[KgridToWorldX[m[K’ was not declared in this scope
+  318 |               double wx = [01;31m[KgridToWorldX[m[K(maxLoc.x);
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:319:27:[m[K [01;31m[Kerror: [m[K‘[01m[KgridToWorldY[m[K’ was not declared in this scope
+  319 |               double wy = [01;31m[KgridToWorldY[m[K(maxLoc.y);
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:339:61:[m[K [01;31m[Kerror: [m[K‘[01m[KK_candidates[m[K’ was not declared in this scope
+  339 |                 auto cands = correlativeScanMatching(clean, [01;31m[KK_candidates[m[K);
+      |                                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:342:57:[m[K [01;31m[Kerror: [m[K‘[01m[Ksigma_init_[m[K’ was not declared in this scope
+  342 |                 std::normal_distribution<double> N(0.0, [01;31m[Ksigma_init_[m[K);
+      |                                                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:343:28:[m[K [01;35m[Kwarning: [m[Kstructured bindings only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+  343 |                 for (auto& [01;35m[K[[m[Kxc, yc, tc] : cands) {
+      |                            [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:344:41:[m[K [01;31m[Kerror: [m[K‘[01m[KN_per_candidate_[m[K’ was not declared in this scope
+  344 |                     for (int i = 0; i < [01;31m[KN_per_candidate_[m[K; ++i) {
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:346:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kgen_[m[K’ was not declared in this scope
+  346 |                         p.x      = xc + N([01;31m[Kgen_[m[K);
+      |                                           [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:350:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_[m[K’ was not declared in this scope; did you mean ‘[01m[Kparticles[m[K’?
+  350 |                         [01;31m[Kparticles_[m[K.push_back(p);
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kparticles[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:354:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_[m[K’ was not declared in this scope; did you mean ‘[01m[Kparticles[m[K’?
+  354 |                 double invN = 1.0 / [01;31m[Kparticles_[m[K.size();
+      |                                     [01;31m[K^~~~~~~~~~[m[K
+      |                                     [32m[Kparticles[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -3,7 +3,7 @@
 #include <std_msgs/msg/string.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <sensor_msgs/msg/image.hpp>
-#include <cv_bridge/cv_bridge.hpp>
+#include <cv_bridge/cv_bridge.h>
 #include <opencv2/opencv.hpp>
 #include "rp_ros2_rviz/dmap_planner.h"
 #include "rp_ros2_rviz/display_utils.h"
@@ -11,6 +11,8 @@
 #include "geometry_msgs/msg/point.hpp"
 #include "geometry_msgs/msg/pose_array.hpp"
 #include "geometry_msgs/msg/pose.hpp"
+#include <Eigen/Core>
+#include <nav_msgs/msg/occupancy_grid.hpp>
 
 class PathPlanner : public rclcpp::Node
 {
@@ -20,11 +22,12 @@ public:
         RCLCPP_INFO(this->get_logger(), "PathPlanner started");
         bool_msg.data = false;
 
-        subscription_ = this->create_subscription<std_msgs::msg::String>(
-            "PathImage", 10, std::bind(&PathPlanner::string_callback, this, std::placeholders::_1));
+        sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+            "map", 10,
+            std::bind(&PathPlanner::mapCallback, this, std::placeholders::_1)
+        );
 
         bool_pub_path = this->create_publisher<std_msgs::msg::Bool>("stop_publish", 10);
-        
         robot_position_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
             "Robot", 10, std::bind(&PathPlanner::robotCallback, this, std::placeholders::_1));
         
@@ -72,22 +75,25 @@ private:
 
     }
 
-    void string_callback(const std_msgs::msg::String::SharedPtr msg)
-    {   
+    void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
+        /*
         image_path =  msg->data;
         RCLCPP_INFO(this->get_logger(), "Received PNG: '%s'", image_path.c_str());
-        RCLCPP_INFO(this->get_logger(), "Start Dmap");
+        RCLCPP_INFO(this->get_logger(), "Start Dmap");*/
 
         bool_msg.data = true;
         bool_pub_path->publish(bool_msg);
+
+        /*
         custom_image = cv::imread(image_path, cv::IMREAD_COLOR);
         if (!custom_image.empty()) {
             cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
-        }
+        }*/
+
         /*if (timer_) {
             timer_->cancel();  // Ferma il timer
         }*/
-        int cols=custom_image.rows, rows=custom_image.cols;
+        int rows=msg->info.width , cols=msg->info.height;
 
         //RCLCPP_INFO(this->get_logger(), "Image size: rows = %d, cols = %d", rows, cols);
 
@@ -95,7 +101,10 @@ private:
         dmap->clear();
         RCLCPP_INFO(this->get_logger(), "Getting the obstacles..");
 
-        Vector2iVector obs = getObstaclesFromImage(custom_image);
+        //Vector2iVector obs = getObstaclesFromImage(custom_image);
+
+        Vector2iVector obs = getObstaclesFromGrid(*msg);           
+
         RCLCPP_INFO(this->get_logger(), "OK obstacles,updating dmap..");
 
         dmap->update(obs);
@@ -199,6 +208,42 @@ private:
         bool_pub_path->publish(bool_msg);
     }
 
+
+    using Vector2i = Eigen::Vector2i;
+    using Vector2iVector = std::vector<Vector2i>;
+
+    Vector2iVector getObstaclesFromGrid(const nav_msgs::msg::OccupancyGrid& grid) {
+        Vector2iVector obstacles;
+    
+        int width = grid.info.width;
+        int height = grid.info.height;
+    
+        for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x) {
+                int flipped_y = height - 1 - y;
+                int index = x + flipped_y * width;
+                int value = grid.data[index];
+    
+                if (value >= 50) {
+                    obstacles.emplace_back(x, y);  // y here matches OpenCV rows
+                }
+            }
+        }
+        /*
+        // Visualizza ostacoli
+        cv::Mat vis = cv::Mat::zeros(height, width, CV_8UC3);
+        for (const auto& obs : obstacles) {
+            vis.at<cv::Vec3b>(obs.y(), obs.x()) = cv::Vec3b(0, 0, 255);  // Red
+        }
+    
+        cv::imshow("Ostacoli rilevati", vis);
+        cv::imwrite("/tmp/ostacoli.png", vis);
+        cv::waitKey(1); 
+        */
+        return obstacles;
+    }
+    
+    /*
     Vector2iVector getObstaclesFromImage(const cv::Mat& image) {
         Vector2iVector obstacles;
     
@@ -221,22 +266,14 @@ private:
     
         for (const auto& pt : nonZeroPoints)
             obstacles.push_back(Vector2i(pt.x, pt.y));
-        /*
-        cv::Mat vis = cv::Mat::zeros(binary.size(), CV_8UC3);
-        for (const auto& obs : obstacles) {
-            vis.at<cv::Vec3b>(obs.y(), obs.x()) = cv::Vec3b(0, 0, 255);
-        }
         
-        cv::imshow("Ostacoli rilevati", vis);
-        cv::imwrite("/tmp/ostacoli.png", vis);
-        cv::waitKey(1); 
-        */
         return obstacles;
-    }
+    }*/
     
 
 
     std_msgs::msg::Bool bool_msg;
+    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr sub_;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr bool_pub_path;
     rclcpp::TimerBase::SharedPtr timer_;

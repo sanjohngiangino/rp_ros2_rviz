@@ -1,0 +1,32 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.048s] [35m[1mScanning dependencies of target world_node[0m
+[0.057s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.099s] [  4%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.107s] [ 24%] Built target controller_node
+[0.114s] [ 28%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.131s] [ 48%] Built target pathplanner_node
+[0.192s] [ 68%] Built target mapserver
+[1.727s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[1.727s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:84:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.727s]    84 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+[1.727s]       |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[2.073s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:72:63:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >::SharedPtr WorldNode::step_pose_sub_[m[K’
+[2.073s]    72 |     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr [01;31m[Kstep_pose_sub_[m[K;
+[2.073s]       |                                                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.073s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:59:63:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Subscription<geometry_msgs::msg::Pose_<std::allocator<void> > >::SharedPtr WorldNode::step_pose_sub_[m[K’
+[2.073s]    59 |     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr [01;36m[Kstep_pose_sub_[m[K;
+[2.073s]       |                                                               [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.316s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[2.316s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:308:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.316s]   308 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+[2.316s]       |                         [01;35m[K^[m[K
+[2.316s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:309:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.316s]   309 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+[2.316s]       |                         [01;35m[K^[m[K
+[5.077s] make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[5.079s] make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+[5.080s] make[1]: *** Waiting for unfinished jobs....
+[6.087s] [ 72%] [32m[1mLinking CXX executable particle_node_filter[0m
+[6.525s] [ 84%] Built target particle_node_filter
+[6.525s] make: *** [Makefile:141: all] Error 2
+[6.527s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

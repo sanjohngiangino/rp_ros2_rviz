@@ -1,0 +1,29 @@
+[35m[1mScanning dependencies of target world_node[0m
+[ 20%] Built target pathplanner_node
+[ 40%] Built target controller_node
+[ 60%] Built target mapserver
+[ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/dmap.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/robot.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+   10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[ 80%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+   18 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::computePolicy(const Vector2f&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   54 |   bool [01;35m[Kstep_mode[m[K=true;
+      |        [01;35m[K^~~~~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

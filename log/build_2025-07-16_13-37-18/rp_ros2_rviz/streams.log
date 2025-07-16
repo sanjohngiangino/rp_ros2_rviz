@@ -1,0 +1,15 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.070s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.095s] [ 20%] Built target controller_node
+[0.099s] [ 40%] Built target world_node
+[0.103s] [ 60%] Built target pathplanner_node
+[0.134s] [ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.138s] [ 84%] Built target mapserver
+[0.180s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: No such file or directory
+[0.180s]     1 | #include [01;31m[K<ros/ros.h>[m[K
+[0.180s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[0.180s] compilation terminated.
+[0.182s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[0.182s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[0.183s] make: *** [Makefile:141: all] Error 2
+[0.184s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

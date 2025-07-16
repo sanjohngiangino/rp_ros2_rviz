@@ -1,0 +1,31 @@
+[0.013s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.064s] [35m[1mScanning dependencies of target world_node[0m
+[0.071s] [ 20%] Built target pathplanner_node
+[0.078s] [ 40%] Built target controller_node
+[0.102s] [ 60%] Built target mapserver
+[0.107s] [ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.111s] [ 68%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/dmap.cpp.o[0m
+[0.123s] [ 72%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/robot.cpp.o[0m
+[0.147s] [ 76%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.256s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.256s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[0.256s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.256s] compilation terminated.
+[0.259s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[0.259s] make[2]: *** Waiting for unfinished jobs....
+[0.264s] [ 80%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap_planner.cpp.o[0m
+[0.425s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:18:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.425s]    18 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[0.425s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.425s] compilation terminated.
+[0.432s] make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[0.432s] make[2]: *** Waiting for unfinished jobs....
+[0.819s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[0.819s] make[1]: *** Waiting for unfinished jobs....
+[0.846s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:[m[K In member function ‘[01m[Kvoid DMapPlanner::computePolicy(const Vector2f&)[m[K’:
+[0.846s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/dmap_planner.cpp:54:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kstep_mode[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.846s]    54 |   bool [01;35m[Kstep_mode[m[K=true;
+[0.846s]       |        [01;35m[K^~~~~~~~~[m[K
+[1.406s] make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+[1.406s] make: *** [Makefile:141: all] Error 2
+[1.408s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

@@ -1,0 +1,86 @@
+[0.006s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.047s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.064s] [ 20%] Built target controller_node
+[0.074s] [ 40%] Built target pathplanner_node
+[0.076s] [ 60%] Built target world_node
+[0.081s] [ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.102s] [ 84%] Built target mapserver
+[0.768s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:125:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_pub_[m[K’ does not name a type
+[0.769s]   125 |     [01;31m[Kparticles_pub_[m[K->publish(arr);
+[0.769s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.769s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:126:4:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[0.769s]   126 |   }
+[0.769s]       |    [01;31m[K^[m[K
+[0.769s]       |    [32m[K;[m[K
+[0.770s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In constructor ‘[01m[KParticleFilterNode::ParticleFilterNode()[m[K’:
+[0.771s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:14:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_sub_[m[K’ was not declared in this scope
+[0.771s]    14 |     [01;31m[Kmap_sub_[m[K = create_subscription<nav_msgs::msg::OccupancyGrid>(
+[0.771s]       |     [01;31m[K^~~~~~~~[m[K
+[0.783s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_sub_[m[K’ was not declared in this scope
+[0.783s]    18 |     [01;31m[Kodom_sub_[m[K = create_subscription<nav_msgs::msg::Odometry>(
+[0.783s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.792s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kscan_sub_[m[K’ was not declared in this scope
+[0.792s]    22 |     [01;31m[Kscan_sub_[m[K = create_subscription<sensor_msgs::msg::LaserScan>(
+[0.792s]       |     [01;31m[K^~~~~~~~~[m[K
+[0.801s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_pub_[m[K’ was not declared in this scope
+[0.801s]    28 |     [01;31m[Kparticles_pub_[m[K = create_publisher<geometry_msgs::msg::PoseArray>(
+[0.801s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.808s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:34:36:[m[K [01;31m[Kerror: [m[K‘[01m[Knum_particles_[m[K’ was not declared in this scope
+[0.808s]    34 |     get_parameter("num_particles", [01;31m[Knum_particles_[m[K);
+[0.809s]       |                                    [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.811s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[0.812s]    35 |     [01;31m[Kinitialized_[m[K = false;
+[0.812s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[0.814s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.814s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:40:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[0.814s]    40 |     [01;31m[Kmap_[m[K = *msg;
+[0.814s]       |     [01;31m[K^~~~[m[K
+[0.816s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:44:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[0.816s]    44 |     [01;31m[Kinitialized_[m[K = true;
+[0.816s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[0.820s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.820s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:49:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[0.820s]    49 |     if (![01;31m[Kinitialized_[m[K) return;
+[0.820s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.822s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_odom_[m[K’ was not declared in this scope
+[0.822s]    51 |     [01;31m[Klast_odom_[m[K = *msg;
+[0.822s]       |     [01;31m[K^~~~~~~~~~[m[K
+[0.827s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[0.827s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:55:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kinitialized_[m[K’ was not declared in this scope
+[0.827s]    55 |     if (![01;31m[Kinitialized_[m[K) return;
+[0.827s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.829s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticles()[m[K’:
+[0.829s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:64:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_[m[K’ was not declared in this scope
+[0.829s]    64 |     [01;31m[Kparticles_[m[K.clear();
+[0.829s]       |     [01;31m[K^~~~~~~~~~[m[K
+[0.830s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:66:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[0.830s]    66 |       [01;31m[Kmap_[m[K.info.origin.position.x,
+[0.830s]       |       [01;31m[K^~~~[m[K
+[0.833s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:74:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knum_particles_[m[K’ was not declared in this scope
+[0.833s]    74 |     for (int i = 0; i < [01;31m[Knum_particles_[m[K; ++i) {
+[0.833s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.833s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:75:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kgen_[m[K’ was not declared in this scope
+[0.833s]    75 |       particles_.push_back({ux([01;31m[Kgen_[m[K), uy(gen_), uth(gen_), 1.0/num_particles_});
+[0.833s]       |                                [01;31m[K^~~~[m[K
+[0.833s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::sensorUpdate(const LaserScan&)[m[K’:
+[0.833s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:90:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kscan[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.833s]    90 |   void sensorUpdate([01;35m[Kconst sensor_msgs::msg::LaserScan &scan[m[K) {
+[0.834s]       |                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[0.834s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::publishParticles()[m[K’:
+[0.834s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:103:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_[m[K’ was not declared in this scope
+[0.834s]   103 |     arr.header.frame_id = [01;31m[Kmap_[m[K.header.frame_id;
+[0.834s]       |                           [01;31m[K^~~~[m[K
+[0.836s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:109:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_[m[K’ was not declared in this scope
+[0.836s]   109 |     for (auto &p : [01;31m[Kparticles_[m[K) {
+[0.836s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[0.839s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_pub_[m[K’ was not declared in this scope
+[0.839s]   123 |     [01;31m[Kparticles_pub_[m[K->publish(arr);
+[0.839s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.854s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K At global scope:
+[0.854s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:139:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[0.854s]   139 | [01;31m[K}[m[K;
+[0.854s]       | [01;31m[K^[m[K
+[2.214s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[2.214s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[2.214s] make: *** [Makefile:141: all] Error 2
+[2.217s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

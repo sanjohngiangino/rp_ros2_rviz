@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.052s] [35m[1mScanning dependencies of target world_node[0m
+[0.081s] [ 20%] Built target controller_node
+[0.085s] [ 24%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.098s] [ 28%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.107s] [ 48%] Built target pathplanner_node
+[0.137s] [ 68%] Built target mapserver
+[0.142s] [ 72%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/dmap.cpp.o[0m
+[0.162s] [ 76%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/robot.cpp.o[0m
+[0.244s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.244s]    10 | #include [01;31m[K<tf2_geometry_msgs/tf2_geometry_msgs.hpp>[m[K
+[0.244s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.244s] compilation terminated.
+[0.249s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[0.249s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[0.249s] make[1]: *** Waiting for unfinished jobs....
+[2.136s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[2.136s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:303:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.136s]   303 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+[2.136s]       |                         [01;35m[K^[m[K
+[2.136s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:304:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.136s]   304 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+[2.136s]       |                         [01;35m[K^[m[K
+[7.357s] [ 80%] [32m[1mLinking CXX executable world_node[0m
+[8.047s] [ 84%] Built target world_node
+[8.047s] make: *** [Makefile:141: all] Error 2
+[8.049s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

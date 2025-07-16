@@ -1,0 +1,42 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:267:17:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KParticleFilterNode::[m[K’ on member ‘[01m[KrasterizeScan[m[K’ [[01;31m[K-fpermissive[m[K]
+  267 |         cv::Mat [01;31m[KParticleFilterNode[m[K::rasterizeScan(
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:285:16:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KParticleFilterNode::[m[K’ on member ‘[01m[KgridToWorldX[m[K’ [[01;31m[K-fpermissive[m[K]
+  285 |         double [01;31m[KParticleFilterNode[m[K::gridToWorldX(int ix) {
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:288:16:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KParticleFilterNode::[m[K’ on member ‘[01m[KgridToWorldY[m[K’ [[01;31m[K-fpermissive[m[K]
+  288 |         double [01;31m[KParticleFilterNode[m[K::gridToWorldY(int iy) {
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticlesNear(double, double, double, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:95:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcenter_theta[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   95 |         void initializeParticlesNear(double center_x, double center_y, [01;35m[Kdouble center_theta[m[K, int num_particles) {
+      |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:276:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_resolution_[m[K’ was not declared in this scope
+  276 |                 int dx = static_cast<int>(r * std::cos(ang) / [01;31m[Kmap_resolution_[m[K);
+      |                                                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kdouble ParticleFilterNode::gridToWorldX(int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:286:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_x_[m[K’ was not declared in this scope
+  286 |             return [01;31m[Kmap_origin_x_[m[K + ix * map_resolution_;
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:286:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_resolution_[m[K’ was not declared in this scope
+  286 |             return map_origin_x_ + ix * [01;31m[Kmap_resolution_[m[K;
+      |                                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kdouble ParticleFilterNode::gridToWorldY(int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:290:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_y_[m[K’ was not declared in this scope
+  290 |             return [01;31m[Kmap_origin_y_[m[K + (dmap_.rows - 1 - iy) * map_resolution_;
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:290:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_resolution_[m[K’ was not declared in this scope
+  290 |             return map_origin_y_ + (dmap_.rows - 1 - iy) * [01;31m[Kmap_resolution_[m[K;
+      |                                                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kstd::vector<std::tuple<double, double, double> > ParticleFilterNode::correlativeScanMatching(const std::vector<std::pair<double, double> >&, int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:346:76:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kstd::initializer_list<auto>&&[m[K’ from ‘[01m[K{(-3.1415926535897931e+0 / (double)6), (-3.1415926535897931e+0 / (double)12), 0, (3.1415926535897931e+0 / (double)12), (3.1415926535897931e+0 / (double)6)}[m[K’
+  346 |           for (double theta_test : { -M_PI/6, -M_PI/12, 0, M_PI/12, M_PI/6 [01;31m[K}[m[K) {
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:346:76:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[Kauto[m[K’ (‘[01m[Kdouble[m[K’ and ‘[01m[Kint[m[K’)
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:349:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_img_[m[K’ was not declared in this scope
+  349 |             cv::matchTemplate(scan_img, [01;31m[Kmap_img_[m[K, result, cv::TM_CCOEFF_NORMED);
+      |                                         [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

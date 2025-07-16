@@ -16,7 +16,7 @@ set(_rp_ros2_rviz_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT rp_ros2_rviz_FIND_QUIETLY)
-  message(STATUS "Found rp_ros2_rviz: 0.0.0 (${rp_ros2_rviz_DIR})")
+  message(STATUS "Found rp_ros2_rviz: 0.1.0 (${rp_ros2_rviz_DIR})")
 endif()
 
 # warn when using a deprecated package
@@ -27,7 +27,7 @@ if(NOT "" STREQUAL "")
     set(_msg "${_msg} ()")
   endif()
   # optionally quiet the deprecation message
-  if(NOT rp_ros2_rviz_DEPRECATED_QUIET)
+  if(NOT ${rp_ros2_rviz_DEPRECATED_QUIET})
     message(DEPRECATION "${_msg}")
   endif()
 endif()
