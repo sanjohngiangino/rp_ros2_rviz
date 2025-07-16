@@ -5,12 +5,10 @@ MapServer::MapServer(const rclcpp::NodeOptions& options)
 {
     this->declare_parameter<std::string>("map_path", "");
     this->get_parameter("map_path", map_path_);
-
-    RCLCPP_INFO(this->get_logger(), "🗺️ Tentativo di caricare la mappa da: '%s'", map_path_.c_str());
-
     map_pub_ = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map", 10);
 
     if (loadMap(map_path_)) {
+        RCLCPP_INFO(this->get_logger(), "Start publishin in /map");
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
             std::bind(&MapServer::publishMap, this)
@@ -20,15 +18,17 @@ MapServer::MapServer(const rclcpp::NodeOptions& options)
 
 bool MapServer::loadMap(const std::string& image_path) {
     cv::Mat img = cv::imread(map_path_, cv::IMREAD_GRAYSCALE);
+
     if (img.empty()) {
-        RCLCPP_ERROR(this->get_logger(), "❌ Errore: impossibile caricare l'immagine da '%s'", image_path.c_str());
+        RCLCPP_ERROR(this->get_logger(), "[ERROR] Empty Image in '%s'", image_path.c_str());
         return false;
     }
+
     cv::Mat custom_image = img;
         if (!custom_image.empty()) {
             cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
         }
-    RCLCPP_INFO(this->get_logger(), "✅ Immagine caricata: %dx%d", custom_image.cols, custom_image.rows);
+    RCLCPP_INFO(this->get_logger(), "- [MAP] Successful loaded: %dx%d", custom_image.cols, custom_image.rows);
 
     map_msg_.header.frame_id = "map";
     map_msg_.info.resolution = 0.05;
@@ -49,15 +49,15 @@ bool MapServer::loadMap(const std::string& image_path) {
         }
     }
 
-    RCLCPP_INFO(this->get_logger(), "✅ Mappa convertita in OccupancyGrid.");
+    RCLCPP_INFO(this->get_logger(), "Map converted in occupancy Grid");
     return true;
 }
 
 void MapServer::publishMap() {
     map_msg_.header.stamp = this->now();
     map_pub_->publish(map_msg_);
-    RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 3000, "📡 Mappa pubblicata su /map");
 }
+
 int main(int argc, char * argv[]) {
     rclcpp::init(argc, argv);
     rclcpp::NodeOptions options;
