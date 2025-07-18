@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/controller_node.dir/src/controller_node.cpp.o: in function `ControllerNode::stepLoop()':
+controller_node.cpp:(.text+0xbc4): undefined reference to `ControllerNode::readKey()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/controller_node.dir/build.make:284: controller_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:113: CMakeFiles/controller_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

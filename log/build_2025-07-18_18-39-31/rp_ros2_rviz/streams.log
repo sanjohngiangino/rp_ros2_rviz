@@ -1,0 +1,15 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.054s] [35m[1mScanning dependencies of target controller_node[0m
+[0.077s] [ 20%] Built target world_node
+[0.083s] [ 40%] Built target pathplanner_node
+[0.090s] [ 60%] Built target particle_node_filter
+[0.106s] [ 80%] Built target mapserver
+[0.133s] [ 84%] [32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o[0m
+[5.186s] [ 88%] [32m[1mLinking CXX executable controller_node[0m
+[5.454s] /usr/bin/ld: CMakeFiles/controller_node.dir/src/controller_node.cpp.o: in function `ControllerNode::stepLoop()':
+[5.454s] controller_node.cpp:(.text+0xbc4): undefined reference to `ControllerNode::readKey()'
+[5.455s] collect2: error: ld returned 1 exit status
+[5.456s] make[2]: *** [CMakeFiles/controller_node.dir/build.make:284: controller_node] Error 1
+[5.456s] make[1]: *** [CMakeFiles/Makefile2:113: CMakeFiles/controller_node.dir/all] Error 2
+[5.456s] make: *** [Makefile:141: all] Error 2
+[5.458s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

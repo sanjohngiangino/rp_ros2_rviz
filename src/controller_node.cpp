@@ -1,21 +1,13 @@
-#include <rclcpp/rclcpp.hpp>
-#include <geometry_msgs/msg/pose_array.hpp>
-#include <geometry_msgs/msg/pose.hpp>
-#include <termios.h>
-#include <unistd.h>
-#include <vector>
-#include <sys/ioctl.h>
-#include "std_msgs/msg/bool.hpp" 
+#include "rp_ros2_rviz/controller.h"
 
-class ControllerNode : public rclcpp::Node {
-public:
-    ControllerNode() : Node("controller_node") {
+
+ControllerNode::ControllerNode(const rclcpp::NodeOptions& options) 
+: Node("controller_node", options){
+
         sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
             "path_poses", 10,
             std::bind(&ControllerNode::pathCallback, this, std::placeholders::_1));
-
         pub_ = this->create_publisher<geometry_msgs::msg::Pose>("step_pose", 10);
-        
         stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
             "stop_controller", 10,
             [this](const std_msgs::msg::Bool::SharedPtr msg) {
@@ -23,37 +15,28 @@ public:
                     path_.clear();
                     current_index_ = 0;
                     paused_ = false;
-                    RCLCPP_WARN(this->get_logger(), "🛑 STOP ricevuto. Path eliminato.");
+                    RCLCPP_WARN(this->get_logger(), "Received stop. Actual path cancelled.");
                 }
             });
-        
+    
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(20),
             std::bind(&ControllerNode::stepLoop, this));
     }
 
-private:
-    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr sub_;
-    rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr pub_;
-    rclcpp::TimerBase::SharedPtr timer_;
 
-    std::vector<geometry_msgs::msg::Pose> path_;
-    size_t current_index_ = 0;
-    bool paused_ = false;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
-
-    void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+    void ControllerNode::pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         path_ = msg->poses;
         current_index_ = 0;
         paused_ = false;
-        RCLCPP_INFO(this->get_logger(), "📦 Nuovo path ricevuto con %zu pose", path_.size());
+        RCLCPP_INFO(this->get_logger(), "Received Path with %zu pose", path_.size());
     }
 
-    void stepLoop() {
+    void ControllerNode::stepLoop() {
         char c = readKey();
         if (c == ' ') {
             paused_ = !paused_;
-            RCLCPP_WARN(this->get_logger(), paused_ ? "⏸️ Pausa attiva" : "▶️ Ripresa movimento");
+            RCLCPP_WARN(this->get_logger(), paused_ ? "Pause Movement" : "Movement Restarted");
         }
 
         if (paused_ || path_.empty() || current_index_ >= path_.size()) return;
@@ -61,7 +44,7 @@ private:
         pub_->publish(path_[current_index_++]);
     }
 
-    char readKey() {
+    char ControllerNode::readKey() {
         struct termios oldt, newt;
         char c = 0;
         tcgetattr(STDIN_FILENO, &oldt);
@@ -76,7 +59,6 @@ private:
         tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
         return c;
     }
-};
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);

@@ -1,24 +1,8 @@
-#include <iostream>
-#include <rclcpp/rclcpp.hpp>
-#include <std_msgs/msg/string.hpp>
-#include <std_msgs/msg/bool.hpp>
-#include <sensor_msgs/msg/image.hpp>
-#include <cv_bridge/cv_bridge.h>
-#include <opencv2/opencv.hpp>
-#include "rp_ros2_rviz/dmap_planner.h"
-#include "rp_ros2_rviz/display_utils.h"
-#include "rp_ros2_rviz/robot.h"
-#include "geometry_msgs/msg/point.hpp"
-#include "geometry_msgs/msg/pose_array.hpp"
-#include "geometry_msgs/msg/pose.hpp"
-#include <Eigen/Core>
-#include <nav_msgs/msg/occupancy_grid.hpp>
+#include "rp_ros2_rviz/pathplanner.h"
 
-class PathPlanner : public rclcpp::Node
-{
-public:
-    PathPlanner() : Node("path_planner")
-    {
+PathPlanner::PathPlanner(const rclcpp::NodeOptions& options) 
+: Node("pathplanner_node", options){
+
         RCLCPP_INFO(this->get_logger(), "PathPlanner started");
         bool_msg.data = false;
 
@@ -44,14 +28,9 @@ public:
 
     }
 
-private:
 
-
-    void goalCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
-        latest_goal_position = Eigen::Vector2f(msg->x, msg->y);
-        
-        //Eigen::Vector2f goal_world = planner.mapping.w2g(latest_goal_position);
-        
+    void PathPlanner::goalCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
+        latest_goal_position = Eigen::Vector2f(msg->x, msg->y);        
         has_goal_ = true;
 
         if (!is_moving_ && has_robot_position_ && dmap_ready_ ) {
@@ -64,44 +43,28 @@ private:
     }
 
 
-    void robotCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
+    void PathPlanner::robotCallback(const geometry_msgs::msg::Point::SharedPtr msg) {
         latest_robot_position = Eigen::Vector2f(msg->x, msg->y);
         has_robot_position_ = true;
-        RCLCPP_INFO(this->get_logger(), "📡 Posizione robot aggiornata: (%.2f, %.2f)", 
+        RCLCPP_INFO(this->get_logger(), "Updated Robot Position: (%.2f, %.2f)", 
                     latest_robot_position.x(), latest_robot_position.y());
         if (!dmap_ready_) return;
-        
-        //makePath(this->dmap, 0.05, 1.0);
-
     }
 
-    void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
-        /*
-        image_path =  msg->data;
-        RCLCPP_INFO(this->get_logger(), "Received PNG: '%s'", image_path.c_str());
-        RCLCPP_INFO(this->get_logger(), "Start Dmap");*/
-
+    void PathPlanner::mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg){
         bool_msg.data = true;
         bool_pub_path->publish(bool_msg);
+        // STOP SUBSCRIBING TO MAP ONCE
+        if (sub_) {
+            sub_.reset(); 
+        }
 
-        /*
-        custom_image = cv::imread(image_path, cv::IMREAD_COLOR);
-        if (!custom_image.empty()) {
-            cv::resize(custom_image, custom_image, cv::Size(), 0.5, 0.5, cv::INTER_AREA);
-        }*/
-
-        /*if (timer_) {
-            timer_->cancel();  // Ferma il timer
-        }*/
         int rows=msg->info.width , cols=msg->info.height;
 
-        //RCLCPP_INFO(this->get_logger(), "Image size: rows = %d, cols = %d", rows, cols);
 
         dmap =std::make_shared<DMap>(rows, cols);
         dmap->clear();
         RCLCPP_INFO(this->get_logger(), "Getting the obstacles..");
-
-        //Vector2iVector obs = getObstaclesFromImage(custom_image);
 
         Vector2iVector obs = getObstaclesFromGrid(*msg);           
 
@@ -116,9 +79,9 @@ private:
         planner.init(0.05, 0.3, 1.0, *dmap);
 
         RCLCPP_INFO(this->get_logger(), "Mapping size: %d rows × %d cols", 
-    planner.mapping.rows, planner.mapping.cols);
+        planner.mapping.rows, planner.mapping.cols);
     
-    RCLCPP_INFO(this->get_logger(), "Mapping center: (%.2f, %.2f)", 
+        RCLCPP_INFO(this->get_logger(), "Mapping center: (%.2f, %.2f)", 
         planner.mapping.center.x(), planner.mapping.center.y());
         
         RCLCPP_INFO(this->get_logger(), "DMap ready planner initalized. Waiting Goal Click...");
@@ -126,7 +89,7 @@ private:
 
     }
 
-    void makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
+    void PathPlanner::makePath(const std::shared_ptr<DMap>& dmap, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
         int retries = 200;
         while (!has_robot_position_ && rclcpp::ok() && retries-- > 0) {
             RCLCPP_WARN(this->get_logger(), "Waiting Robot position...");
@@ -201,18 +164,16 @@ private:
         
     }
     
-    
-    
-    void publishBool()
-    {
-        bool_pub_path->publish(bool_msg);
-    }
-
 
     using Vector2i = Eigen::Vector2i;
     using Vector2iVector = std::vector<Vector2i>;
+    
+    
+    void PathPlanner::publishBool(){
+        bool_pub_path->publish(bool_msg);
+    }
 
-    Vector2iVector getObstaclesFromGrid(const nav_msgs::msg::OccupancyGrid& grid) {
+    Vector2iVector PathPlanner::getObstaclesFromGrid(const nav_msgs::msg::OccupancyGrid& grid) {
         Vector2iVector obstacles;
     
         int width = grid.info.width;
@@ -225,12 +186,12 @@ private:
                 int value = grid.data[index];
     
                 if (value >= 50) {
-                    obstacles.emplace_back(x, y);  // y here matches OpenCV rows
+                    obstacles.emplace_back(x, y); 
                 }
             }
         }
         /*
-        // Visualizza ostacoli
+        // Look Obstacles
         cv::Mat vis = cv::Mat::zeros(height, width, CV_8UC3);
         for (const auto& obs : obstacles) {
             vis.at<cv::Vec3b>(obs.y(), obs.x()) = cv::Vec3b(0, 0, 255);  // Red
@@ -242,65 +203,9 @@ private:
         */
         return obstacles;
     }
-    
-    /*
-    Vector2iVector getObstaclesFromImage(const cv::Mat& image) {
-        Vector2iVector obstacles;
-    
-        if (image.empty()) {
-            std::cerr << "No image!" << std::endl;
-            return obstacles;
-        }
-    
-        cv::Mat gray;
-        if (image.channels() == 3)
-            cv::cvtColor(image, gray, cv::COLOR_BGR2GRAY);
-        else
-            gray = image.clone();
-    
-        cv::Mat binary;
-        cv::threshold(gray, binary, 127, 255, cv::THRESH_BINARY_INV);
-    
-        std::vector<cv::Point> nonZeroPoints;
-        cv::findNonZero(binary, nonZeroPoints);
-    
-        for (const auto& pt : nonZeroPoints)
-            obstacles.push_back(Vector2i(pt.x, pt.y));
-        
-        return obstacles;
-    }*/
-    
 
 
-    std_msgs::msg::Bool bool_msg;
-    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr sub_;
-    rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_;
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr bool_pub_path;
-    rclcpp::TimerBase::SharedPtr timer_;
-    std::string image_path;
-    cv::Mat custom_image;
-    DMapPlanner planner;
-
-    Eigen::Vector2f latest_robot_position = Eigen::Vector2f::Zero();
-    Eigen::Vector2f latest_goal_position = Eigen::Vector2f(0, 0);
-    bool has_goal_ = false;
-
-    bool has_robot_position_ = false;
-    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr robot_position_sub_;
-
-    std::list<Vector2f> path;
-    bool use_gradient = false;
-    bool dmap_ready_ = false;
-    bool path_generated_ = false;
-    bool is_moving_ = false;
-    std::shared_ptr<DMap>  dmap;
-    rclcpp::Publisher<geometry_msgs::msg::PoseArray>::SharedPtr pose_array_pub_;
-    
-    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr goal_sub_;
-    
-};
-
-int main(int argc, char **argv)
+    int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
     auto path_planner_node = std::make_shared<PathPlanner>();

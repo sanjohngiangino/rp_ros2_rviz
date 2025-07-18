@@ -31,3 +31,4 @@ def generate_launch_description():
             }]
         ),
     ])
+#ros2 run rp_ros2_rviz mapserver --ros-args -p map_path:=/home/john/Desktop/rp_ros2_rviz/map/labirinto.png

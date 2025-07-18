@@ -347,6 +347,7 @@ CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros2_rviz/dmap_planner.h
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros2_rviz/grid.h
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros2_rviz/grid_mapping.h
+CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros2_rviz/pathplanner.h
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../include/rp_ros2_rviz/robot.h
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: ../../src/pathplanner_node.cpp
 CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp

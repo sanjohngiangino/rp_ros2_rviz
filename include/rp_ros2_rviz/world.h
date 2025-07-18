@@ -59,7 +59,6 @@ private:
     bool is_following_path_=false;
     bool update_goal_=false;
     bool first_position_sent_=false;    
-    
     void publishSimulatedOdomAndScan();
     void stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose);
     void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg);
