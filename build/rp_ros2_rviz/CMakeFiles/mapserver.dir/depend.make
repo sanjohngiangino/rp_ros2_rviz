@@ -342,7 +342,7 @@ CMakeFiles/mapserver.dir/src/dmap_planner.cpp.o: /usr/include/eigen3/Eigen/src/p
 CMakeFiles/mapserver.dir/src/dmap_planner.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 CMakeFiles/mapserver.dir/src/dmap_planner.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
-CMakeFiles/mapserver.dir/src/mapserver.cpp.o: ../../include/rp_ros2_rviz/mapserver.hpp
+CMakeFiles/mapserver.dir/src/mapserver.cpp.o: ../../include/rp_ros2_rviz/mapserver.h
 CMakeFiles/mapserver.dir/src/mapserver.cpp.o: ../../src/mapserver.cpp
 CMakeFiles/mapserver.dir/src/mapserver.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 CMakeFiles/mapserver.dir/src/mapserver.cpp.o: /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp

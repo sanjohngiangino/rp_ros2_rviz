@@ -1,0 +1,171 @@
+[0.000000] (-) TimerEvent: {}
+[0.000096] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.000119] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.005368] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.005442] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.006333] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('SSH_AGENT_PID', '39356'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/john'), ('OLDPWD', '/home/john/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1554'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'john'), ('JOURNAL_STREAM', '9:43083'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'john'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john:@/tmp/.ICE-unix/1721,unix/john:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', 'ad066e4c693c44b3bc643b17d7ef1004'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b526ff72_09b5_4df5_9072_9b1cdda9756f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/tmp/ssh-hMP7iq6vqwcG/agent.39355'), ('AMENT_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy')]), 'shell': False}
+[0.052610] (rp_ros2_rviz) StdoutLine: {'line': b'[ 20%] Built target controller_node\n'}
+[0.059568] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target world_node\x1b[0m\n'}
+[0.085541] (rp_ros2_rviz) StdoutLine: {'line': b'[ 40%] Built target pathplanner_node\n'}
+[0.095932] (rp_ros2_rviz) StdoutLine: {'line': b'[ 60%] Built target particle_node_filter\n'}
+[0.099844] (-) TimerEvent: {}
+[0.100476] (rp_ros2_rviz) StdoutLine: {'line': b'[ 80%] Built target mapserver\n'}
+[0.109781] (rp_ros2_rviz) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.200022] (-) TimerEvent: {}
+[0.304722] (-) TimerEvent: {}
+[0.409597] (-) TimerEvent: {}
+[0.511965] (-) TimerEvent: {}
+[0.614479] (-) TimerEvent: {}
+[0.717007] (-) TimerEvent: {}
+[0.821598] (-) TimerEvent: {}
+[0.924850] (-) TimerEvent: {}
+[1.029433] (-) TimerEvent: {}
+[1.134111] (-) TimerEvent: {}
+[1.238772] (-) TimerEvent: {}
+[1.339046] (-) TimerEvent: {}
+[1.439317] (-) TimerEvent: {}
+[1.539589] (-) TimerEvent: {}
+[1.641590] (-) TimerEvent: {}
+[1.742808] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.742969] (-) TimerEvent: {}
+[1.743049] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.743087] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.743117] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.743144] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.743175] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.743203] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.743229] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.743257] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.743283] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[1.743311] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2\x1b[m\x1b[K,\n'}
+[1.743337] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1\x1b[m\x1b[K:\n'}
+[1.743367] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:85:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.743394] (rp_ros2_rviz) StderrLine: {'line': b'   85 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "WorldNode started");\n'}
+[1.743421] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.743447] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:85:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.743480] (rp_ros2_rviz) StderrLine: {'line': b'   85 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "WorldNode started");\n'}
+[1.743507] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.749238] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1\x1b[m\x1b[K:\n'}
+[1.749331] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:87:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.749367] (rp_ros2_rviz) StderrLine: {'line': b'   87 |     \x1b[01;31m\x1b[Klaser_pub_\x1b[m\x1b[K = this->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);\n'}
+[1.749397] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.755482] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:88:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.755562] (rp_ros2_rviz) StderrLine: {'line': b'   88 |     \x1b[01;31m\x1b[Kodom_publisher_\x1b[m\x1b[K = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);\n'}
+[1.755591] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.755620] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[1.761276] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:89:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.761348] (rp_ros2_rviz) StderrLine: {'line': b'   89 |     \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>("PathImage", 10);\n'}
+[1.761377] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.761404] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[1.766837] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:90:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.766909] (rp_ros2_rviz) StderrLine: {'line': b'   90 |     \x1b[01;31m\x1b[Kgoal_publisher_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);\n'}
+[1.766938] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.766965] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[1.776508] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:91:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontroller_stop_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.776667] (rp_ros2_rviz) StderrLine: {'line': b'   91 |     \x1b[01;31m\x1b[Kcontroller_stop_publisher_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::Bool>("stop_controller", 10);\n'}
+[1.776701] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.783650] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:92:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.783748] (rp_ros2_rviz) StderrLine: {'line': b'   92 |     \x1b[01;31m\x1b[Krobot_publisher_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);\n'}
+[1.783781] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.783809] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publisher_t\x1b[m\x1b[K\n'}
+[1.792012] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:94:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool_subscriber_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.792105] (rp_ros2_rviz) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[Kbool_subscriber_\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Bool>(\n'}
+[1.792136] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.800296] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:97:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstep_pose_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.800367] (rp_ros2_rviz) StderrLine: {'line': b'   97 |     \x1b[01;31m\x1b[Kstep_pose_sub_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::Pose>(\n'}
+[1.800397] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.804157] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:101:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.804231] (rp_ros2_rviz) StderrLine: {'line': b'  101 |     \x1b[01;31m\x1b[Kmap_sub_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>(\n'}
+[1.804260] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.812156] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:105:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kparticle_sub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.812226] (rp_ros2_rviz) StderrLine: {'line': b'  105 |     \x1b[01;31m\x1b[Kparticle_sub_\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::PoseArray>(\n'}
+[1.812255] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.812282] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:109:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.812310] (rp_ros2_rviz) StderrLine: {'line': b'  109 |         }\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.812337] (rp_ros2_rviz) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.815535] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:112:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmy_robot\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[1.815602] (rp_ros2_rviz) StderrLine: {'line': b'  112 |     \x1b[01;31m\x1b[Kmy_robot\x1b[m\x1b[K = std::make_unique<Robot>(351,251, 0, 1);\n'}
+[1.815630] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.816854] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:114:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.816927] (rp_ros2_rviz) StderrLine: {'line': b'  114 |     \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(\n'}
+[1.816955] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[1.816984] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[1.817615] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:6:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass WorldNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.817672] (rp_ros2_rviz) StderrLine: {'line': b'    6 | class \x1b[01;31m\x1b[KWorldNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[1.817702] (rp_ros2_rviz) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.817729] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1\x1b[m\x1b[K:\n'}
+[1.817756] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:22:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass WorldNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.817784] (rp_ros2_rviz) StderrLine: {'line': b'   22 | class \x1b[01;36m\x1b[KWorldNode\x1b[m\x1b[K : public rclcpp::Node {\n'}
+[1.817811] (rp_ros2_rviz) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.846560] (-) TimerEvent: {}
+[1.947381] (-) TimerEvent: {}
+[2.004352] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::redisplay()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.004495] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:283:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.004545] (rp_ros2_rviz) StderrLine: {'line': b'  283 |                     int \x1b[01;35m\x1b[Kx\x1b[m\x1b[K = static_cast<int>(pose.position.x);\n'}
+[2.004576] (rp_ros2_rviz) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.004605] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:284:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[2.004633] (rp_ros2_rviz) StderrLine: {'line': b'  284 |                     int \x1b[01;35m\x1b[Ky\x1b[m\x1b[K = static_cast<int>(pose.position.y);\n'}
+[2.004660] (rp_ros2_rviz) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.012105] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.012203] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:381:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot declare member function \xe2\x80\x98\x1b[01m\x1b[Kstatic void WorldNode::onMouse(int, int, int, int, void*)\x1b[m\x1b[K\xe2\x80\x99 to have static linkage [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[2.012239] (rp_ros2_rviz) StderrLine: {'line': b'  381 |     static void WorldNode::onMouse(int event, int x, int y, int, void* arg\x1b[01;31m\x1b[K)\x1b[m\x1b[K {\n'}
+[2.012269] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.025268] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.025391] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:484:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstatic void WorldNode::onMouse(int, int, int, int, void*)\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[2.025436] (rp_ros2_rviz) StderrLine: {'line': b'  484 |     cv::setMouseCallback("planner", WorldNode::\x1b[01;31m\x1b[KonMouse\x1b[m\x1b[K, node.get());\n'}
+[2.025464] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.025492] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:381:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[2.025520] (rp_ros2_rviz) StderrLine: {'line': b'  381 |     static void \x1b[01;36m\x1b[KWorldNode\x1b[m\x1b[K::onMouse(int event, int x, int y, int, void* arg) {\n'}
+[2.025547] (rp_ros2_rviz) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.025869] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:490:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::redisplay()\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[2.025938] (rp_ros2_rviz) StderrLine: {'line': b'  490 |         node->redisplay(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.025973] (rp_ros2_rviz) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.026003] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:262:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[2.026031] (rp_ros2_rviz) StderrLine: {'line': b'  262 |     void \x1b[01;36m\x1b[KWorldNode\x1b[m\x1b[K::redisplay() {\n'}
+[2.026058] (rp_ros2_rviz) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.026085] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:493:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::handleKeyboard(int)\x1b[m\x1b[K\xe2\x80\x99 is private within this context\n'}
+[2.026114] (rp_ros2_rviz) StderrLine: {'line': b'  493 |             node->handleKeyboard(key\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.026142] (rp_ros2_rviz) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.026168] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:411:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared private here\n'}
+[2.026195] (rp_ros2_rviz) StderrLine: {'line': b'  411 | void \x1b[01;36m\x1b[KWorldNode\x1b[m\x1b[K::handleKeyboard(int key) {\n'}
+[2.026222] (rp_ros2_rviz) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.047476] (-) TimerEvent: {}
+[2.147770] (-) TimerEvent: {}
+[2.251681] (-) TimerEvent: {}
+[2.356459] (-) TimerEvent: {}
+[2.461035] (-) TimerEvent: {}
+[2.528269] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[2.528408] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[2.528444] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/string:41\x1b[m\x1b[K,\n'}
+[2.528474] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/locale_classes.h:40\x1b[m\x1b[K,\n'}
+[2.528505] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/ios_base.h:41\x1b[m\x1b[K,\n'}
+[2.528533] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:42\x1b[m\x1b[K,\n'}
+[2.528560] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ostream:38\x1b[m\x1b[K,\n'}
+[2.528589] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/iostream:39\x1b[m\x1b[K,\n'}
+[2.528625] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:1\x1b[m\x1b[K,\n'}
+[2.528653] (rp_ros2_rviz) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.528680] (rp_ros2_rviz) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = WorldNode; _Args = {}; _Tp = WorldNode]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.528711] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:483:4:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = WorldNode; _Args = {}; _Tp = WorldNode; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<WorldNode>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528741] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = WorldNode; _Alloc = std::allocator<WorldNode>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528770] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = WorldNode; _Alloc = std::allocator<WorldNode>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528882] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<WorldNode>; _Args = {}; _Tp = WorldNode; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528916] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<WorldNode>; _Args = {}; _Tp = WorldNode]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528947] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = WorldNode; _Alloc = std::allocator<WorldNode>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.528976] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = WorldNode; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.529004] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:482:45:\x1b[m\x1b[K   required from here\n'}
+[2.529031] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:146:4:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KWorldNode::WorldNode()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.529059] (rp_ros2_rviz) StderrLine: {'line': b'  146 |  { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[2.529086] (rp_ros2_rviz) StderrLine: {'line': b'      |    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.529113] (rp_ros2_rviz) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1\x1b[m\x1b[K:\n'}
+[2.529142] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:83:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KWorldNode::WorldNode(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.529169] (rp_ros2_rviz) StderrLine: {'line': b'   83 |     explicit \x1b[01;36m\x1b[KWorldNode\x1b[m\x1b[K(const rclcpp::NodeOptions& options);\n'}
+[2.529195] (rp_ros2_rviz) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.529222] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:83:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 0 provided\n'}
+[2.565695] (-) TimerEvent: {}
+[2.670214] (-) TimerEvent: {}
+[2.694077] (rp_ros2_rviz) StderrLine: {'line': b'make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1\n'}
+[2.694288] (rp_ros2_rviz) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2\n'}
+[2.694421] (rp_ros2_rviz) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.695793] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[2.703425] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[2.713966] (-) EventReactorShutdown: {}

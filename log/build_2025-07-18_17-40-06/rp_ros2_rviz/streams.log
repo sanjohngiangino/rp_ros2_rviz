@@ -1,0 +1,111 @@
+[0.008s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.037s] [35m[1mScanning dependencies of target world_node[0m
+[0.056s] [ 20%] Built target controller_node
+[0.075s] [ 24%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.102s] [ 44%] Built target pathplanner_node
+[0.103s] [ 64%] Built target mapserver
+[0.115s] [ 84%] Built target particle_node_filter
+[1.724s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.724s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.725s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.725s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+[1.725s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[1.725s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:84:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[1.725s]    84 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "WorldNode started");
+[1.725s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.725s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:84:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[1.725s]    84 |     [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "WorldNode started");
+[1.725s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[1.731s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[1.731s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_pub_[m[K’ does not name a type
+[1.731s]    86 |     [01;31m[Klaser_pub_[m[K = this->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);
+[1.731s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.737s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[1.737s]    87 |     [01;31m[Kodom_publisher_[m[K = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
+[1.737s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.737s]       |     [32m[Krcl_publisher_t[m[K
+[1.743s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[1.743s]    88 |     [01;31m[Kpublisher_[m[K = this->create_publisher<std_msgs::msg::String>("PathImage", 10);
+[1.743s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.743s]       |     [32m[Krcl_publisher_t[m[K
+[1.748s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[1.748s]    89 |     [01;31m[Kgoal_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);
+[1.748s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.749s]       |     [32m[Krcl_publisher_t[m[K
+[1.757s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_stop_publisher_[m[K’ does not name a type
+[1.757s]    90 |     [01;31m[Kcontroller_stop_publisher_[m[K = this->create_publisher<std_msgs::msg::Bool>("stop_controller", 10);
+[1.757s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.764s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:91:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ does not name a type; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+[1.764s]    91 |     [01;31m[Krobot_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);
+[1.764s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.764s]       |     [32m[Krcl_publisher_t[m[K
+[1.772s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:93:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool_subscriber_[m[K’ does not name a type
+[1.772s]    93 |     [01;31m[Kbool_subscriber_[m[K = this->create_subscription<std_msgs::msg::Bool>(
+[1.772s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.781s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstep_pose_sub_[m[K’ does not name a type
+[1.781s]    96 |     [01;31m[Kstep_pose_sub_[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+[1.781s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.785s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_sub_[m[K’ does not name a type
+[1.785s]   100 |     [01;31m[Kmap_sub_[m[K = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+[1.785s]       |     [01;31m[K^~~~~~~~[m[K
+[1.794s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticle_sub_[m[K’ does not name a type
+[1.794s]   104 |     [01;31m[Kparticle_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseArray>(
+[1.794s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.794s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:108:10:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[1.794s]   108 |         }[01;31m[K)[m[K;
+[1.794s]       |          [01;31m[K^[m[K
+[1.797s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:111:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ does not name a type
+[1.797s]   111 |     [01;31m[Kmy_robot[m[K = std::make_unique<Robot>(351,251, 0, 1);
+[1.797s]       |     [01;31m[K^~~~~~~~[m[K
+[1.798s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:113:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ does not name a type; did you mean ‘[01m[Ktimer_t[m[K’?
+[1.798s]   113 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[1.798s]       |     [01;31m[K^~~~~~[m[K
+[1.798s]       |     [32m[Ktimer_t[m[K
+[1.799s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:6:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass WorldNode[m[K’
+[1.799s]     6 | class [01;31m[KWorldNode[m[K : public rclcpp::Node {
+[1.799s]       |       [01;31m[K^~~~~~~~~[m[K
+[1.799s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[1.799s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:22:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass WorldNode[m[K’
+[1.799s]    22 | class [01;36m[KWorldNode[m[K : public rclcpp::Node {
+[1.799s]       |       [01;36m[K^~~~~~~~~[m[K
+[1.989s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[1.989s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:283:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.989s]   283 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+[1.989s]       |                         [01;35m[K^[m[K
+[1.989s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:284:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.989s]   284 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+[1.989s]       |                         [01;35m[K^[m[K
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:381:75:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ to have static linkage [[01;31m[K-fpermissive[m[K]
+[1.997s]   381 |     static void WorldNode::onMouse(int event, int x, int y, int, void* arg[01;31m[K)[m[K {
+[1.997s]       |                                                                           [01;31m[K^[m[K
+[2.009s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.009s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:484:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ is private within this context
+[2.009s]   484 |     cv::setMouseCallback("planner", WorldNode::[01;31m[KonMouse[m[K, node.get());
+[2.009s]       |                                                [01;31m[K^~~~~~~[m[K
+[2.009s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:381:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.009s]   381 |     static void [01;36m[KWorldNode[m[K::onMouse(int event, int x, int y, int, void* arg) {
+[2.009s]       |                 [01;36m[K^~~~~~~~~[m[K
+[2.010s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:490:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::redisplay()[m[K’ is private within this context
+[2.010s]   490 |         node->redisplay([01;31m[K)[m[K;
+[2.010s]       |                         [01;31m[K^[m[K
+[2.010s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:262:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.010s]   262 |     void [01;36m[KWorldNode[m[K::redisplay() {
+[2.010s]       |          [01;36m[K^~~~~~~~~[m[K
+[2.010s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:493:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::handleKeyboard(int)[m[K’ is private within this context
+[2.010s]   493 |             node->handleKeyboard(key[01;31m[K)[m[K;
+[2.010s]       |                                     [01;31m[K^[m[K
+[2.010s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:411:6:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.010s]   411 | void [01;36m[KWorldNode[m[K::handleKeyboard(int key) {
+[2.010s]       |      [01;36m[K^~~~~~~~~[m[K
+[2.703s] make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[2.703s] make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+[2.703s] make: *** [Makefile:141: all] Error 2
+[2.705s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

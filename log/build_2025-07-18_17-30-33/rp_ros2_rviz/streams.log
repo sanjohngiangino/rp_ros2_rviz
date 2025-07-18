@@ -1,0 +1,49 @@
+[0.009s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.037s] [35m[1mScanning dependencies of target world_node[0m
+[0.085s] [  4%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.087s] [ 24%] Built target controller_node
+[0.097s] [ 44%] Built target pathplanner_node
+[0.102s] [ 64%] Built target particle_node_filter
+[0.110s] [ 84%] Built target mapserver
+[1.935s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::publishSimulatedOdomAndScan()[m[K’:
+[1.935s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:110:100:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KWorldNode::simulateLaserConeAndPublishScan(cv::Mat&, Eigen::Vector2f&, float&)[m[K’
+[1.935s]   110 |         simulateLaserConeAndPublishScan(background_image, my_robot->position, my_robot->orientation[01;31m[K)[m[K;
+[1.935s]       |                                                                                                    [01;31m[K^[m[K
+[1.935s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:54:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid WorldNode::simulateLaserConeAndPublishScan(const cv::Mat&, const Vector2f&, float, float, float, float)[m[K’
+[1.935s]    54 |     void [01;36m[KsimulateLaserConeAndPublishScan[m[K(const cv::Mat& background, const Eigen::Vector2f& robot_pos,float theta_rad,
+[1.935s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.935s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:54:10:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 3 provided
+[1.959s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[1.959s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:280:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.959s]   280 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+[1.959s]       |                         [01;35m[K^[m[K
+[1.959s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:281:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.959s]   281 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+[1.959s]       |                         [01;35m[K^[m[K
+[1.967s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[1.967s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:378:75:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ to have static linkage [[01;31m[K-fpermissive[m[K]
+[1.968s]   378 |     static void WorldNode::onMouse(int event, int x, int y, int, void* arg[01;31m[K)[m[K {
+[1.968s]       |                                                                           [01;31m[K^[m[K
+[1.982s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.982s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:481:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ is private within this context
+[1.982s]   481 |     cv::setMouseCallback("planner", WorldNode::[01;31m[KonMouse[m[K, node.get());
+[1.982s]       |                                                [01;31m[K^~~~~~~[m[K
+[1.982s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:378:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.982s]   378 |     static void [01;36m[KWorldNode[m[K::onMouse(int event, int x, int y, int, void* arg) {
+[1.982s]       |                 [01;36m[K^~~~~~~~~[m[K
+[1.982s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:487:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::redisplay()[m[K’ is private within this context
+[1.983s]   487 |         node->redisplay([01;31m[K)[m[K;
+[1.983s]       |                         [01;31m[K^[m[K
+[1.983s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:259:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.983s]   259 |     void [01;36m[KWorldNode[m[K::redisplay() {
+[1.983s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.983s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:490:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::handleKeyboard(int)[m[K’ is private within this context
+[1.983s]   490 |             node->handleKeyboard(key[01;31m[K)[m[K;
+[1.983s]       |                                     [01;31m[K^[m[K
+[1.983s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:408:6:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.983s]   408 | void [01;36m[KWorldNode[m[K::handleKeyboard(int key) {
+[1.983s]       |      [01;36m[K^~~~~~~~~[m[K
+[4.386s] make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[4.387s] make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+[4.387s] make: *** [Makefile:141: all] Error 2
+[4.389s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

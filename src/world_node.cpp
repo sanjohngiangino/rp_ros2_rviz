@@ -1,84 +1,10 @@
-#include <iostream>
-#include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/image.hpp>
-#include <cv_bridge/cv_bridge.h>
-#include <opencv2/opencv.hpp>
-#include "rp_ros2_rviz/dmap_planner.h"
-#include "rp_ros2_rviz/display_utils.h"
-#include "rp_ros2_rviz/robot.h"
-#include "std_msgs/msg/string.hpp"
-#include "geometry_msgs/msg/point.hpp"  
-#include "std_msgs/msg/bool.hpp" 
-#include "geometry_msgs/msg/pose_array.hpp"
-#include "geometry_msgs/msg/pose.hpp"
-#include <nav_msgs/msg/occupancy_grid.hpp>
-#include <sensor_msgs/msg/laser_scan.hpp>
-#include <nav_msgs/msg/odometry.hpp>
-#include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include "rp_ros2_rviz/world.h"
 
-
-using namespace std;
-using namespace cv;
-
-class WorldNode : public rclcpp::Node {
-
-private:
-
-    //const float RESOLUTION = 0.05;
-    //const float EXPANSION_RANGE = 1.0;
-    const float ROBOT_RADIUS = 5.0f;
-    //const float PARTICLE_RADIUS = 3.0f;
-    const float LASER_CONE_DEG = 270.0f;
-    const float LASER_MAX_RANGE = 150.0f;
-    const float LASER_ANGLE_STEP_DEG = 1.0f;
-    const float ROBOT_MOVE_STEP = 2.0f;
-    const float ROBOT_ROTATION_STEP = 0.15f;
-    const int TIMER_PERIOD_MS = 100;
-    const int OCCUPIED_THRESHOLD = 50;
-    const int BLACK_THRESHOLD = 127;
-    const bool USE_GRADIENT = false;
-    const int BACKGROUND_MODE = 0;
-
-    DMapPlanner planner;
-    std::list<Vector2f> path;
-    cv::Mat background_image;
-    cv::Mat shown_image;
-
-    std::unique_ptr<Robot> my_robot;   
-
-    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr goal_publisher_;
-    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr robot_publisher_;  
-    rclcpp::Publisher<sensor_msgs::msg::LaserScan>::SharedPtr laser_pub_;
-    rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;  
-    rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr controller_stop_publisher_;
-
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr bool_subscriber_;
-    rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr particle_sub_;
-    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr step_pose_sub_;
-    rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
-
-    rclcpp::TimerBase::SharedPtr timer_; 
-    geometry_msgs::msg::PoseArray::SharedPtr particles_;
-
-    bool continue_publishing_= true;
-    bool is_following_path_=false;
-    bool update_goal_=false;
-    bool first_position_sent_=false;    
-
-    //rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr pose_sub_;
-
-    //rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr step_pose_sub_;
-
-
-public:
-    WorldNode() : Node("World_Node") {
+WorldNode::WorldNode(const rclcpp::NodeOptions& options) 
+: Node("World_Node", options){
 
     RCLCPP_INFO(this->get_logger(), "WorldNode started");
     
-    // Declaration of subscriber and publishers
-
     laser_pub_ = this->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);
     odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
     publisher_ = this->create_publisher<std_msgs::msg::String>("PathImage", 10);
@@ -103,17 +29,75 @@ public:
             particles_ = msg;
         });
 
-    //Robot to change in order to initialPose
+
     my_robot = std::make_unique<Robot>(351,251, 0, 1);
 
     timer_ = this->create_wall_timer(
         std::chrono::milliseconds(100),  // 10 Hz
         std::bind(&WorldNode::publishSimulatedOdomAndScan, this)
     );
+}
 
-}   
+void WorldNode::simulateLaserConeAndPublishScan(const cv::Mat& background, const Eigen::Vector2f& robot_pos,float theta_rad,
+    float cone_deg = 270.0f, float max_range = 150.0f, float angle_step_deg = 1.0f){
 
-    void publishSimulatedOdomAndScan() {
+    auto scan_msg = std::make_shared<sensor_msgs::msg::LaserScan>();
+
+    scan_msg->header.stamp = this->get_clock()->now();
+    scan_msg->header.frame_id = "base_laser";
+    scan_msg->angle_min = -cone_deg * M_PI / 360.0f;
+    scan_msg->angle_max = cone_deg * M_PI / 360.0f;
+    scan_msg->angle_increment = angle_step_deg * M_PI / 180.0f;
+    scan_msg->range_min = 0.0f;
+    scan_msg->range_max = max_range;
+
+    int num_beams = std::ceil((scan_msg->angle_max - scan_msg->angle_min) / scan_msg->angle_increment);
+    scan_msg->ranges.resize(num_beams, scan_msg->range_max);
+
+    float angle = theta_rad + scan_msg->angle_min;
+
+    for (int i = 0; i < num_beams; ++i, angle += scan_msg->angle_increment) {
+        Eigen::Vector2f dir(std::cos(angle), std::sin(angle));
+
+        for (float d = scan_msg->range_min; d <= scan_msg->range_max; d += 1.0f) {
+            Eigen::Vector2f pt = robot_pos + dir * d;
+            int px = static_cast<int>(pt.x());
+            int py = static_cast<int>(pt.y());
+
+            if (px < 0 || px >= background.cols || py < 0 || py >= background.rows) break;
+
+            uchar pixel = background.at<cv::Vec3b>(py, px)[0];
+            if (pixel < 127) {
+                scan_msg->ranges[i] = d;
+                break;
+            }
+        }
+    }
+
+
+    nav_msgs::msg::Odometry odom_msg;
+    rclcpp::Time now = scan_msg->header.stamp;
+
+    odom_msg.header.stamp = now;
+    odom_msg.header.frame_id = "odom";
+    odom_msg.child_frame_id = "base_link";
+    odom_msg.pose.pose.position.x = robot_pos.x();
+    odom_msg.pose.pose.position.y = robot_pos.y();
+    odom_msg.pose.pose.position.z = 0.0;
+
+    tf2::Quaternion q;
+    q.setRPY(0, 0, theta_rad);
+    odom_msg.pose.pose.orientation = tf2::toMsg(q);
+
+    odom_msg.twist.twist.linear.x = 0.0;
+    odom_msg.twist.twist.linear.y = 0.0;
+    odom_msg.twist.twist.angular.z = 0.0;
+
+    laser_pub_->publish(*scan_msg);
+    odom_publisher_->publish(odom_msg);
+}
+
+void WorldNode::publishSimulatedOdomAndScan() {
         if (!my_robot || background_image.empty()) return;
 
         background_image.copyTo(shown_image);
@@ -121,11 +105,9 @@ public:
         simulateLaserConeAndPublishScan(background_image, my_robot->position, my_robot->orientation);
 
         redisplay();
-    }
+}
 
-
-
-    void stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose) {
+void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose) {
         my_robot->position = Eigen::Vector2f(pose->position.x, pose->position.y);
         my_robot->orientation = 2.0f * std::atan2(pose->orientation.z, pose->orientation.w);
 
@@ -138,7 +120,7 @@ public:
         redisplay();
     }
 
-    void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+    void WorldNode::pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         path.clear();
         for (const auto& pose : msg->poses) {
             path.emplace_back(pose.position.x, pose.position.y);
@@ -147,7 +129,7 @@ public:
         followPath(msg);
     }
 
-    void followPath(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+    void WorldNode::followPath(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         float dt_ms = 10.0f;
 
         is_following_path_ = true;
@@ -177,81 +159,10 @@ public:
         RCLCPP_INFO(this->get_logger(), "Path Completed.");
     }
     
+    
 
-
-    void simulateLaserConeAndPublishScan(
-        const cv::Mat& background,
-        const Eigen::Vector2f& robot_pos,
-        float theta_rad,
-        float cone_deg = 270.0f,
-        float max_range = 150.0f,
-        float angle_step_deg = 1.0f)
-    {
-        auto scan_msg = std::make_shared<sensor_msgs::msg::LaserScan>();
-    
-        scan_msg->header.stamp = this->get_clock()->now();
-        scan_msg->header.frame_id = "base_laser";
-        scan_msg->angle_min = -cone_deg * M_PI / 360.0f;
-        scan_msg->angle_max = cone_deg * M_PI / 360.0f;
-        scan_msg->angle_increment = angle_step_deg * M_PI / 180.0f;
-        scan_msg->range_min = 0.0f;
-        scan_msg->range_max = max_range;
-    
-        int num_beams = std::ceil((scan_msg->angle_max - scan_msg->angle_min) / scan_msg->angle_increment);
-        scan_msg->ranges.resize(num_beams, scan_msg->range_max);
-    
-        float angle = theta_rad + scan_msg->angle_min;
-    
-        for (int i = 0; i < num_beams; ++i, angle += scan_msg->angle_increment) {
-            Eigen::Vector2f dir(std::cos(angle), std::sin(angle));
-    
-            for (float d = scan_msg->range_min; d <= scan_msg->range_max; d += 1.0f) {
-                Eigen::Vector2f pt = robot_pos + dir * d;
-                int px = static_cast<int>(pt.x());
-                int py = static_cast<int>(pt.y());
-    
-                if (px < 0 || px >= background.cols || py < 0 || py >= background.rows) break;
-    
-                uchar pixel = background.at<cv::Vec3b>(py, px)[0];
-                if (pixel < 127) {
-                    scan_msg->ranges[i] = d;
-                    break;
-                }
-            }
-        }
-    
-        // Publish LaserScan and Odometry
-
-        nav_msgs::msg::Odometry odom_msg;
-        rclcpp::Time now = scan_msg->header.stamp;
-    
-        odom_msg.header.stamp = now;
-        odom_msg.header.frame_id = "odom";
-        odom_msg.child_frame_id = "base_link";
-        odom_msg.pose.pose.position.x = robot_pos.x();
-        odom_msg.pose.pose.position.y = robot_pos.y();
-        odom_msg.pose.pose.position.z = 0.0;
-    
-        tf2::Quaternion q;
-        q.setRPY(0, 0, theta_rad);
-        odom_msg.pose.pose.orientation = tf2::toMsg(q);
-    
-        odom_msg.twist.twist.linear.x = 0.0;
-        odom_msg.twist.twist.linear.y = 0.0;
-        odom_msg.twist.twist.angular.z = 0.0;
-
-        laser_pub_->publish(*scan_msg);
-        odom_publisher_->publish(odom_msg);
-    }
-
-    void drawSimulatedLaserOnImage(
-        const cv::Mat& background,
-        cv::Mat& shown_image,
-        const Eigen::Vector2f& robot_pos,
-        float theta_rad,
-        float cone_deg = 270.0f,
-        float max_range = 150.0f,
-        float angle_step_deg = 1.0f)
+    void WorldNode::drawSimulatedLaserOnImage(const cv::Mat& background, cv::Mat& shown_image, const Eigen::Vector2f& robot_pos,
+        float theta_rad, float cone_deg = 270.0f, float max_range = 150.0f, float angle_step_deg = 1.0f)
     {
         float angle_min = -cone_deg * M_PI / 360.0f;
         float angle_max = cone_deg * M_PI / 360.0f;
@@ -281,10 +192,8 @@ public:
         }
     }
     
-    
-    
 
-    void redisplay() {
+    void WorldNode::redisplay() {
         if (background_image.empty()) return;
         background_image.copyTo(shown_image);
         
@@ -305,8 +214,8 @@ public:
            
             if (particles_) {
                 for (const auto& pose : particles_->poses) {
-                    int x = static_cast<int>(pose.position.x);
-                    int y = static_cast<int>(pose.position.y);
+                    //int x = static_cast<int>(pose.position.x);
+                    //int y = static_cast<int>(pose.position.y);
                     int theha = 2.0f * std::atan2(pose.orientation.z, pose.orientation.w);
 
                     cv::Point centerp(pose.position.x, pose.position.y);
@@ -327,7 +236,7 @@ public:
         cv::imshow("planner", shown_image);
     }
     
-    void bool_callback(const std_msgs::msg::Bool::SharedPtr msg) {
+    void WorldNode::bool_callback(const std_msgs::msg::Bool::SharedPtr msg) {
     
         if (msg->data && !first_position_sent_) {
             //continue_publishing_ = false;
@@ -351,7 +260,7 @@ public:
         
     }
 
-    void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+    void WorldNode::mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
         int width = msg->info.width;
         int height = msg->info.height;
     
@@ -387,8 +296,7 @@ public:
         }
     }
     
-
-    void publishRobot() {
+    void WorldNode::publishRobot() {
     
         if (continue_publishing_) {
             auto string_message = std_msgs::msg::String();
@@ -404,7 +312,7 @@ public:
         
     }
 
-    static void onMouse(int event, int x, int y, int, void* arg) {
+    void WorldNode::onMouse(int event, int x, int y, int, void* arg) {
     WorldNode* node = static_cast<WorldNode*>(arg);  
     
 
@@ -434,7 +342,7 @@ public:
     }
 }
 
-void handleKeyboard(int key) {
+void WorldNode::handleKeyboard(int key) {
     float step = 2.0f;
     float rotation_step = 0.15f;
     Eigen::Vector2f delta(0, 0);
@@ -465,14 +373,14 @@ void handleKeyboard(int key) {
         controller_stop_publisher_->publish(stop_msg);
         update_goal_ = true;
         is_following_path_ = false;
-        RCLCPP_WARN(this->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+        RCLCPP_WARN(this->get_logger(), "[Manual control] Activated");
     }
 
     Eigen::Vector2f new_pos = my_robot->position + delta;
 
     if (new_pos.x() < 0 || new_pos.x() >= background_image.cols ||
         new_pos.y() < 0 || new_pos.y() >= background_image.rows) {
-        RCLCPP_WARN(this->get_logger(), "📦 Movimento fuori mappa.");
+        RCLCPP_WARN(this->get_logger(), "[Movement outside map]");
         return;
     }
 
@@ -480,7 +388,7 @@ void handleKeyboard(int key) {
         static_cast<int>(new_pos.y()), static_cast<int>(new_pos.x()))[0];
 
     if (pixel_value < 127) {
-        RCLCPP_WARN(this->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+        RCLCPP_WARN(this->get_logger(), "[Obstacle Rilevated]");
         return;
     }
 
@@ -499,8 +407,6 @@ void handleKeyboard(int key) {
     redisplay();
 }
 
-
-};
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);

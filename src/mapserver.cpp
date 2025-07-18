@@ -1,4 +1,4 @@
-#include "rp_ros2_rviz/mapserver.hpp"
+#include "rp_ros2_rviz/mapserver.h"
 
 MapServer::MapServer(const rclcpp::NodeOptions& options)
     : Node("map_server", options)

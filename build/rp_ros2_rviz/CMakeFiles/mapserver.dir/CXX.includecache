@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../../include/rp_ros2_rviz/mapserver.hpp
+../../include/rp_ros2_rviz/mapserver.h
 rclcpp/rclcpp.hpp
 -
 nav_msgs/msg/occupancy_grid.hpp
@@ -15,8 +15,8 @@ opencv2/opencv.hpp
 -
 
 /home/john/Desktop/rp_ros2_rviz/src/mapserver.cpp
-rp_ros2_rviz/mapserver.hpp
-/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/mapserver.hpp
+rp_ros2_rviz/mapserver.h
+/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/mapserver.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

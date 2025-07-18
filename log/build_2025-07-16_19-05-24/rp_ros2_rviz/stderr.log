@@ -1,0 +1,7 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:306:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  306 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:307:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  307 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+      |                         [01;35m[K^[m[K

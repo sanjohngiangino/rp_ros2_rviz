@@ -1,0 +1,749 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid publishSimulatedOdomAndScan()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:107:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  107 |         if (![01;31m[Kmy_robot[m[K || background_image.empty()) return;
+      |              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:107:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  107 |         if (!my_robot || [01;31m[Kbackground_image[m[K.empty()) return;
+      |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  109 |         [01;31m[Kbackground_image[m[K.copyTo(shown_image);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:109:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kshown_image[m[K’ was not declared in this scope
+  109 |         background_image.copyTo([01;31m[Kshown_image[m[K);
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:111:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  111 |         simulateLaserConeAndPublishScan(background_image, [01;31m[Kmy_robot[m[K->position, my_robot->orientation);
+      |                                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:111:9:[m[K [01;31m[Kerror: [m[K‘[01m[KsimulateLaserConeAndPublishScan[m[K’ was not declared in this scope
+  111 |         [01;31m[KsimulateLaserConeAndPublishScan[m[K(background_image, my_robot->position, my_robot->orientation);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:113:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kredisplay[m[K’ was not declared in this scope
+  113 |         [01;31m[Kredisplay[m[K();
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid stepPoseCallback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  117 |         [01;31m[Kmy_robot[m[K->position = Eigen::Vector2f(pose->position.x, pose->position.y);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:124:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  124 |         [01;31m[Krobot_publisher_[m[K->publish(robot_msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Krcl_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:126:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kredisplay[m[K’ was not declared in this scope
+  126 |         [01;31m[Kredisplay[m[K();
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid pathCallback(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:130:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath[m[K’ was not declared in this scope
+  130 |         [01;31m[Kpath[m[K.clear();
+      |         [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  134 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "path with %lu pose received", msg->poses.size());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  134 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "path with %lu pose received", msg->poses.size());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  134 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "path with %lu pose received", msg->poses.size());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  134 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "path with %lu pose received", msg->poses.size());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  134 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "path with %lu pose received", msg->poses.size());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:134:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  134 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "path with %lu pose received", msg->poses.size());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:135:9:[m[K [01;31m[Kerror: [m[K‘[01m[KfollowPath[m[K’ was not declared in this scope
+  135 |         [01;31m[KfollowPath[m[K(msg);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid followPath(geometry_msgs::msg::PoseArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:141:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_following_path_[m[K’ was not declared in this scope
+  141 |         [01;31m[Kis_following_path_[m[K = true;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:145:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  145 |             [01;31m[Kmy_robot[m[K->position = Eigen::Vector2f(pose.position.x, pose.position.y);
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:152:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  152 |             [01;31m[Krobot_publisher_[m[K->publish(robot_msg);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[Krcl_publisher_t[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  154 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  154 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  154 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  154 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  154 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:154:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  154 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Position Robot: (%.3f, %.3f)", pose.position.x, pose.position.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:155:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kredisplay[m[K’ was not declared in this scope
+  155 |             [01;31m[Kredisplay[m[K();
+      |             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:158:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kupdate_goal_[m[K’ was not declared in this scope
+  158 |             if ([01;31m[Kupdate_goal_[m[K) {
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  159 |                 RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Path interruptby new gol");
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  159 |                 [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "Path interruptby new gol");
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  159 |                 [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "Path interruptby new gol");
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  159 |                 [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "Path interruptby new gol");
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  159 |                 RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Path interruptby new gol");
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:159:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  159 |                 RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Path interruptby new gol");
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:163:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kupdate_goal_[m[K’ was not declared in this scope
+  163 |         [01;31m[Kupdate_goal_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  165 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Path Completed.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  165 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Path Completed.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  165 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Path Completed.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  165 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Path Completed.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  165 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Path Completed.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:165:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  165 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Path Completed.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid simulateLaserConeAndPublishScan(const cv::Mat&, const Vector2f&, float, float, float, float)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:173:34:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  173 |         scan_msg->header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:224:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_pub_[m[K’ was not declared in this scope
+  224 |         [01;31m[Klaser_pub_[m[K->publish(*scan_msg);
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:225:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  225 |         [01;31m[Kodom_publisher_[m[K->publish(odom_msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[Krcl_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid redisplay()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:261:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  261 |         if ([01;31m[Kbackground_image[m[K.empty()) return;
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:262:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  262 |         [01;31m[Kbackground_image[m[K.copyTo(shown_image);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:262:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kshown_image[m[K’ was not declared in this scope
+  262 |         background_image.copyTo([01;31m[Kshown_image[m[K);
+      |                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:265:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  265 |         if ([01;31m[Kmy_robot[m[K) {
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:273:45:[m[K [01;31m[Kerror: [m[K‘[01m[KROBOT_RADIUS[m[K’ was not declared in this scope
+  273 |                 center.x + static_cast<int>([01;31m[KROBOT_RADIUS[m[K * std::cos(robot_theta)),
+      |                                             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:279:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kparticles_[m[K’ was not declared in this scope
+  279 |             if ([01;31m[Kparticles_[m[K) {
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:281:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  281 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:282:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  282 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid bool_callback(std_msgs::msg::Bool_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:305:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_position_sent_[m[K’ was not declared in this scope
+  305 |         if (msg->data && ![01;31m[Kfirst_position_sent_[m[K) {
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:313:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  313 |             if ([01;31m[Kmy_robot[m[K) {
+      |                 [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  319 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  319 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  319 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:17:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  319 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  319 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:319:29:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  319 |                 RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                             [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:320:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  320 |                 [01;31m[Krobot_publisher_[m[K->publish(pos_msg);
+      |                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Krcl_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid mapCallback(nav_msgs::msg::OccupancyGrid_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:332:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  332 |         [01;31m[Kbackground_image[m[K = cv::Mat::zeros(height, width, CV_8UC3);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:344:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  344 |                 background_image.at<cv::Vec3b[01;31m[K>[m[K(y, x) = cv::Vec3b(pixel, pixel, pixel);
+      |                                              [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:344:48:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+  344 |                 background_image.at<cv::Vec3b>([01;35m[Ky[m[K, x) = cv::Vec3b(pixel, pixel, pixel);
+      |                                                [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:348:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kshown_image[m[K’ was not declared in this scope
+  348 |         [01;31m[Kshown_image[m[K = background_image.clone();
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  349 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  349 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  349 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  349 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  349 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:349:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  349 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "✅ Map received and converted to OpenCV image.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:351:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  351 |         if ([01;31m[Kmy_robot[m[K) {
+      |             [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  357 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  357 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  357 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  357 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  357 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:357:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  357 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Inital position robot: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:358:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  358 |             [01;31m[Krobot_publisher_[m[K->publish(pos_msg);
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[Krcl_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:359:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfirst_position_sent_[m[K’ was not declared in this scope
+  359 |             [01;31m[Kfirst_position_sent_[m[K = true;
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid publishRobot()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:365:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontinue_publishing_[m[K’ was not declared in this scope
+  365 |         if ([01;31m[Kcontinue_publishing_[m[K) {
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  368 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  368 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  368 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  368 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  368 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:368:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  368 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Publishing PNG path: '%s'", string_message.data.c_str());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:369:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+  369 |             [01;31m[Kpublisher_[m[K->publish(string_message);
+      |             [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  371 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Stopped Publishing path");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  371 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Stopped Publishing path");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  371 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Stopped Publishing path");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  371 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Stopped Publishing path");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  371 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Stopped Publishing path");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:371:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  371 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Stopped Publishing path");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:372:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+  372 |             if ([01;31m[Ktimer_[m[K) {
+      |                 [01;31m[K^~~~~~[m[K
+      |                 [32m[Ktimer_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid onMouse(int, int, int, int, void*)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:387:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Publisher<std_msgs::msg::Bool_<std::allocator<void> > >::SharedPtr WorldNode::controller_stop_publisher_[m[K’ is private within this context
+  387 |         node->[01;31m[Kcontroller_stop_publisher_[m[K->publish(stop_msg);
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:34:55:[m[K [01;36m[Knote: [m[Kdeclared private here
+   34 |     rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr [01;36m[Kcontroller_stop_publisher_[m[K;
+      |                                                       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:393:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::unique_ptr<Robot> WorldNode::my_robot[m[K’ is private within this context
+  393 |         pos_msg.x = node->[01;31m[Kmy_robot[m[K->position.x();
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:27:28:[m[K [01;36m[Knote: [m[Kdeclared private here
+   27 |     std::unique_ptr<Robot> [01;36m[Kmy_robot[m[K;
+      |                            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:394:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::unique_ptr<Robot> WorldNode::my_robot[m[K’ is private within this context
+  394 |         pos_msg.y = node->[01;31m[Kmy_robot[m[K->position.y();
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:27:28:[m[K [01;36m[Knote: [m[Kdeclared private here
+   27 |     std::unique_ptr<Robot> [01;36m[Kmy_robot[m[K;
+      |                            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:396:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr WorldNode::robot_publisher_[m[K’ is private within this context
+  396 |         node->[01;31m[Krobot_publisher_[m[K->publish(pos_msg);
+      |               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:30:61:[m[K [01;36m[Knote: [m[Kdeclared private here
+   30 |     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr [01;36m[Krobot_publisher_[m[K;
+      |                                                             [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:405:15:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Publisher<geometry_msgs::msg::Point_<std::allocator<void> > >::SharedPtr WorldNode::goal_publisher_[m[K’ is private within this context
+  405 |         node->[01;31m[Kgoal_publisher_[m[K->publish(point_message);
+      |               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:29:61:[m[K [01;36m[Knote: [m[Kdeclared private here
+   29 |     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr [01;36m[Kgoal_publisher_[m[K;
+      |                                                             [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kvoid handleKeyboard(int)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:421:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  421 |             [01;31m[Kmy_robot[m[K->orientation -= rotation_step;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:437:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_stop_publisher_[m[K’ was not declared in this scope
+  437 |         [01;31m[Kcontroller_stop_publisher_[m[K->publish(stop_msg);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:438:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kupdate_goal_[m[K’ was not declared in this scope
+  438 |         [01;31m[Kupdate_goal_[m[K = true;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:439:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_following_path_[m[K’ was not declared in this scope
+  439 |         [01;31m[Kis_following_path_[m[K = false;
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  440 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  440 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  440 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  440 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  440 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:440:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  440 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "🛑 Stop pubblicato: controllo manuale attivo.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:443:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_robot[m[K’ was not declared in this scope
+  443 |     Eigen::Vector2f new_pos = [01;31m[Kmy_robot[m[K->position + delta;
+      |                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:445:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  445 |     if (new_pos.x() < 0 || new_pos.x() >= [01;31m[Kbackground_image[m[K.cols ||
+      |                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  447 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "📦 Movimento fuori mappa.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  447 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "📦 Movimento fuori mappa.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  447 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "📦 Movimento fuori mappa.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  447 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "📦 Movimento fuori mappa.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  447 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "📦 Movimento fuori mappa.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:447:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  447 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "📦 Movimento fuori mappa.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:451:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kbackground_image[m[K’ was not declared in this scope
+  451 |     uchar pixel_value = [01;31m[Kbackground_image[m[K.at<cv::Vec3b>(
+      |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:451:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  451 |     uchar pixel_value = background_image.at<cv::Vec3b[01;31m[K>[m[K(
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:452:9:[m[K [01;35m[Kwarning: [m[Kvalue computed is not used [[01;35m[K-Wunused-value[m[K]
+  452 |         [01;35m[Kstatic_cast<int>(new_pos.y())[m[K, static_cast<int>(new_pos.x()))[0];
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:452:72:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+  452 |         static_cast<int>(new_pos.y()), static_cast<int>(new_pos.x()))[0[01;31m[K][m[K;
+      |                                                                        [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  455 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  455 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  455 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  455 |         [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/world.h:2[m[K,
+                 from [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  455 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:455:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  455 |         RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "⛔ Ostacolo rilevato. Movimento annullato.");
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:469:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_publisher_t[m[K’?
+  469 |     [01;31m[Krobot_publisher_[m[K->publish(robot_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Krcl_publisher_t[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:482:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ is private within this context
+  482 |     cv::setMouseCallback("planner", WorldNode::[01;31m[KonMouse[m[K, node.get());
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:58:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+   58 |     static void [01;36m[KonMouse[m[K(int event, int x, int y, int, void* arg);
+      |                 [01;36m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:488:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::redisplay()[m[K’ is private within this context
+  488 |         node->redisplay([01;31m[K)[m[K;
+      |                         [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:57:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   57 |     void [01;36m[Kredisplay[m[K();
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:491:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::handleKeyboard(int)[m[K’ is private within this context
+  491 |             node->handleKeyboard(key[01;31m[K)[m[K;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:59:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+   59 |     void [01;36m[KhandleKeyboard[m[K(int key);
+      |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:379:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid onMouse(int, int, int, int, void*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  379 |     static void [01;35m[KonMouse[m[K(int event, int x, int y, int, void* arg) {
+      |                 [01;35m[K^~~~~~~[m[K
+make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

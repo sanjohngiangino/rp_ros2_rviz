@@ -1,0 +1,15 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/mapserver.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krp_ros2_rviz/mapserver.h: No such file or directory
+    1 | #include [01;31m[K"rp_ros2_rviz/mapserver.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/mapserver.dir/build.make:63: CMakeFiles/mapserver.dir/src/mapserver.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:248: CMakeFiles/mapserver.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:288:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  288 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:289:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  289 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+      |                         [01;35m[K^[m[K
+make: *** [Makefile:141: all] Error 2

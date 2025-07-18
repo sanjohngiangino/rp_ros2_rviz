@@ -1,0 +1,42 @@
+[35m[1mScanning dependencies of target world_node[0m
+[ 40%] Built target pathplanner_node
+[ 44%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[ 40%] Built target controller_node
+[ 64%] Built target particle_node_filter
+[ 84%] Built target mapserver
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:3:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+    3 | WorldNode([01;31m[K)[m[K : Node("World_Node") {
+      |           [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In member function ‘[01m[Kvoid WorldNode::redisplay()[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:217:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  217 |                     int [01;35m[Kx[m[K = static_cast<int>(pose.position.x);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:218:25:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  218 |                     int [01;35m[Ky[m[K = static_cast<int>(pose.position.y);
+      |                         [01;35m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K At global scope:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:315:75:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ to have static linkage [[01;31m[K-fpermissive[m[K]
+  315 |     static void WorldNode::onMouse(int event, int x, int y, int, void* arg[01;31m[K)[m[K {
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:418:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kstatic void WorldNode::onMouse(int, int, int, int, void*)[m[K’ is private within this context
+  418 |     cv::setMouseCallback("planner", WorldNode::[01;31m[KonMouse[m[K, node.get());
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:315:17:[m[K [01;36m[Knote: [m[Kdeclared private here
+  315 |     static void [01;36m[KWorldNode[m[K::onMouse(int event, int x, int y, int, void* arg) {
+      |                 [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:424:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::redisplay()[m[K’ is private within this context
+  424 |         node->redisplay([01;31m[K)[m[K;
+      |                         [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:196:10:[m[K [01;36m[Knote: [m[Kdeclared private here
+  196 |     void [01;36m[KWorldNode[m[K::redisplay() {
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:427:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid WorldNode::handleKeyboard(int)[m[K’ is private within this context
+  427 |             node->handleKeyboard(key[01;31m[K)[m[K;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:345:6:[m[K [01;36m[Knote: [m[Kdeclared private here
+  345 | void [01;36m[KWorldNode[m[K::handleKeyboard(int key) {
+      |      [01;36m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

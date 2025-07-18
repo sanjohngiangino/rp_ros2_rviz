@@ -52,7 +52,7 @@ list
 iostream
 -
 
-/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp
+../../include/rp_ros2_rviz/world.h
 iostream
 -
 rclcpp/rclcpp.hpp
@@ -64,21 +64,21 @@ cv_bridge/cv_bridge.h
 opencv2/opencv.hpp
 -
 rp_ros2_rviz/dmap_planner.h
-/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/dmap_planner.h
+../../include/rp_ros2_rviz/rp_ros2_rviz/dmap_planner.h
 rp_ros2_rviz/display_utils.h
-/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/display_utils.h
+../../include/rp_ros2_rviz/rp_ros2_rviz/display_utils.h
 rp_ros2_rviz/robot.h
-/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/robot.h
+../../include/rp_ros2_rviz/rp_ros2_rviz/robot.h
 std_msgs/msg/string.hpp
-/home/john/Desktop/rp_ros2_rviz/src/std_msgs/msg/string.hpp
+../../include/rp_ros2_rviz/std_msgs/msg/string.hpp
 geometry_msgs/msg/point.hpp
-/home/john/Desktop/rp_ros2_rviz/src/geometry_msgs/msg/point.hpp
+../../include/rp_ros2_rviz/geometry_msgs/msg/point.hpp
 std_msgs/msg/bool.hpp
-/home/john/Desktop/rp_ros2_rviz/src/std_msgs/msg/bool.hpp
+../../include/rp_ros2_rviz/std_msgs/msg/bool.hpp
 geometry_msgs/msg/pose_array.hpp
-/home/john/Desktop/rp_ros2_rviz/src/geometry_msgs/msg/pose_array.hpp
+../../include/rp_ros2_rviz/geometry_msgs/msg/pose_array.hpp
 geometry_msgs/msg/pose.hpp
-/home/john/Desktop/rp_ros2_rviz/src/geometry_msgs/msg/pose.hpp
+../../include/rp_ros2_rviz/geometry_msgs/msg/pose.hpp
 nav_msgs/msg/occupancy_grid.hpp
 -
 sensor_msgs/msg/laser_scan.hpp
@@ -89,6 +89,10 @@ tf2/LinearMath/Quaternion.h
 -
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
+
+/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp
+rp_ros2_rviz/world.h
+/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/world.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
