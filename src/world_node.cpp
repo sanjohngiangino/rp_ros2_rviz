@@ -282,7 +282,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         }
     
         shown_image = background_image.clone();
-        RCLCPP_INFO(this->get_logger(), "✅ Map received and converted to OpenCV image.");
+        RCLCPP_INFO(this->get_logger(), "Map received.");
         
         if (my_robot) {
             auto robot_pos = my_robot->position;
@@ -321,7 +321,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         std_msgs::msg::Bool stop_msg;
         stop_msg.data = true;
         node->controller_stop_publisher_->publish(stop_msg);
-        RCLCPP_INFO(node->get_logger(), "🛑 Stop inviato al Controller.");
+        RCLCPP_INFO(node->get_logger(), "Stop send to controller.");
         
         std::this_thread::sleep_for(std::chrono::milliseconds(20));
 
@@ -330,7 +330,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         pos_msg.y = node->my_robot->position.y();
         pos_msg.z = 0.0;
         node->robot_publisher_->publish(pos_msg);
-        RCLCPP_INFO(node->get_logger(), "📍 Posizione attuale pubblicata: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
+        RCLCPP_INFO(node->get_logger(), "Actual position: (%.2f, %.2f)", pos_msg.x, pos_msg.y);
         
         auto point_message = geometry_msgs::msg::Point();
         point_message.x = static_cast<float>(x);
