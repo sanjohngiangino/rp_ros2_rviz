@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp
+../../include/rp_ros2_rviz/particle_filter.h
 rclcpp/rclcpp.hpp
 -
 nav_msgs/msg/occupancy_grid.hpp
@@ -41,6 +41,10 @@ iterator
 -
 functional
 -
+
+/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp
+rp_ros2_rviz/particle_filter.h
+/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/particle_filter.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

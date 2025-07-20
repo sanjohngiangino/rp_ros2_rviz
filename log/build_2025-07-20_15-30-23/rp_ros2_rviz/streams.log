@@ -1,0 +1,324 @@
+[0.010s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.046s] [35m[1mScanning dependencies of target pathplanner_node[0m
+[0.052s] [35m[1mScanning dependencies of target particle_node_filter[0m
+[0.087s] [ 20%] Built target controller_node
+[0.094s] [ 24%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[0.099s] [ 28%] [32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o[0m
+[0.120s] [ 48%] Built target world_node
+[0.145s] [ 68%] Built target mapserver
+[1.955s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.956s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:35:21:[m[K [01;31m[Kerror: [m[K‘[01m[KParticle[m[K’ was not declared in this scope
+[1.956s]    35 |         std::vector<[01;31m[KParticle[m[K> particles;
+[1.956s]       |                     [01;31m[K^~~~~~~~[m[K
+[1.956s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:35:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.956s]    35 |         std::vector<Particle[01;31m[K>[m[K particles;
+[1.956s]       |                             [01;31m[K^[m[K
+[1.956s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:35:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[1.962s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.962s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:54:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’ cannot be overloaded with ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+[1.962s]    54 |         cv::Mat [01;31m[KrasterizeScan[m[K(const std::vector<std::pair<double,double>>& scan, double theta);
+[1.962s]       |                 [01;31m[K^~~~~~~~~~~~~[m[K
+[1.962s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.962s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:31:17:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+[1.962s]    31 |         cv::Mat [01;36m[KrasterizeScan[m[K(const std::vector<std::pair<double,double>>& scan, double theta);
+[1.962s]       |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[1.988s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::publishParticlesAsPoseArray()[m[K’:
+[1.988s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:69:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[1.988s]    69 |             for (const auto& p : [01;31m[Kparticles[m[K) {
+[1.988s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[1.988s]       |                                  [32m[Kstd::begin[m[K
+[1.988s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[1.988s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.988s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.988s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.988s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.988s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.989s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.989s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[1.989s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.989s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[1.989s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[1.989s]       |                                     [01;36m[K^~~~~[m[K
+[1.989s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:69:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[1.989s]    69 |             for (const auto& p : [01;31m[Kparticles[m[K) {
+[1.989s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[1.989s]       |                                  [32m[Kstd::end[m[K
+[1.989s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[1.989s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[1.989s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[1.989s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[1.989s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[1.989s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[1.989s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.989s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[1.989s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.989s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[1.989s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[1.989s]       |                                     [01;36m[K^~~[m[K
+[1.994s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[1.994s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[1.994s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[1.994s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.994s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:83:83:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.994s]    83 |             RCLCPP_INFO(this->get_logger(), "Published %zu particles.", particles.[01;31m[Ksize[m[K());
+[1.994s]       |                                                                                   [01;31m[K^~~~[m[K
+[1.996s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::odomCallback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.996s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:114:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.996s]   114 |             for (size_t i = 0; i < particles.[01;31m[Ksize[m[K(); ++i) {
+[1.996s]       |                                              [01;31m[K^~~~[m[K
+[1.996s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:115:38:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+[1.996s]   115 |                 auto& p = particles[i[01;31m[K][m[K;
+[1.996s]       |                                      [01;31m[K^[m[K
+[1.996s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K At global scope:
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:140:28:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 5 of ‘[01m[Kstd::vector<float> ParticleFilterNode::simulateLaserFromPose(double, double, double, const LaserScan&, float, float)[m[K’ [[01;31m[K-fpermissive[m[K]
+[1.997s]   140 |         std::vector<float> [01;31m[KParticleFilterNode[m[K::simulateLaserFromPose(
+[1.997s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.997s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:50:28:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kstd::vector<float> ParticleFilterNode::simulateLaserFromPose(double, double, double, const LaserScan&, float, float)[m[K’ here
+[1.997s]    50 |         std::vector<float> [01;36m[KsimulateLaserFromPose[m[K(double x, double y, double theta, const sensor_msgs::msg::LaserScan& scan, float step_size = 1.0f, float dmap_hit_thresh = 1.0f);
+[1.997s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:140:28:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 6 of ‘[01m[Kstd::vector<float> ParticleFilterNode::simulateLaserFromPose(double, double, double, const LaserScan&, float, float)[m[K’ [[01;31m[K-fpermissive[m[K]
+[1.997s]   140 |         std::vector<float> [01;31m[KParticleFilterNode[m[K::simulateLaserFromPose(
+[1.997s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.997s] In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[1.997s] [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:50:28:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kstd::vector<float> ParticleFilterNode::simulateLaserFromPose(double, double, double, const LaserScan&, float, float)[m[K’ here
+[1.997s]    50 |         std::vector<float> [01;36m[KsimulateLaserFromPose[m[K(double x, double y, double theta, const sensor_msgs::msg::LaserScan& scan, float step_size = 1.0f, float dmap_hit_thresh = 1.0f);
+[1.997s]       |                            [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[1.998s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::initializeParticles(int)[m[K’:
+[1.998s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:207:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kclear[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.998s]   207 |             particles.[01;31m[Kclear[m[K();
+[1.998s]       |                       [01;31m[K^~~~~[m[K
+[1.998s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:217:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kpush_back[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[1.998s]   217 |                 particles.[01;31m[Kpush_back[m[K(part);
+[1.998s]       |                           [01;31m[K^~~~~~~~~[m[K
+[2.000s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::scanCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.000s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:237:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[2.000s]   237 |             for (auto& p : [01;31m[Kparticles[m[K) {
+[2.000s]       |                            [01;31m[K^~~~~~~~~[m[K
+[2.000s]       |                            [32m[Kstd::begin[m[K
+[2.000s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.001s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.001s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.001s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.001s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[2.001s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[2.001s]       |                                     [01;36m[K^~~~~[m[K
+[2.001s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:237:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[2.001s]   237 |             for (auto& p : [01;31m[Kparticles[m[K) {
+[2.001s]       |                            [01;31m[K^~~~~~~~~[m[K
+[2.001s]       |                            [32m[Kstd::end[m[K
+[2.001s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.001s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.001s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.001s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.001s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.001s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[2.001s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[2.001s]       |                                     [01;36m[K^~~[m[K
+[2.001s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:251:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[2.002s]   251 |             for (const auto& p : [01;31m[Kparticles[m[K) total_weight += p.weight;
+[2.002s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.002s]       |                                  [32m[Kstd::begin[m[K
+[2.002s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.002s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.002s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.002s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.002s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[2.002s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[2.002s]       |                                     [01;36m[K^~~~~[m[K
+[2.002s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:251:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[2.002s]   251 |             for (const auto& p : [01;31m[Kparticles[m[K) total_weight += p.weight;
+[2.002s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.002s]       |                                  [32m[Kstd::end[m[K
+[2.002s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.002s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.002s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.002s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.002s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.002s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[2.002s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[2.002s]       |                                     [01;36m[K^~~[m[K
+[2.002s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:253:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[2.003s]   253 |                 for (auto& p : [01;31m[Kparticles[m[K) p.weight /= total_weight;
+[2.003s]       |                                [01;31m[K^~~~~~~~~[m[K
+[2.003s]       |                                [32m[Kstd::begin[m[K
+[2.003s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.003s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.003s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.003s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.003s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[2.003s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[2.003s]       |                                     [01;36m[K^~~~~[m[K
+[2.003s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:253:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[2.003s]   253 |                 for (auto& p : [01;31m[Kparticles[m[K) p.weight /= total_weight;
+[2.003s]       |                                [01;31m[K^~~~~~~~~[m[K
+[2.003s]       |                                [32m[Kstd::end[m[K
+[2.003s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.003s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.003s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.003s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.004s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.004s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[2.004s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[2.004s]       |                                     [01;36m[K^~~[m[K
+[2.004s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:260:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[2.004s]   260 |             for (const auto& p : [01;31m[Kparticles[m[K) weight_sq_sum += p.weight * p.weight;
+[2.004s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.004s]       |                                  [32m[Kstd::begin[m[K
+[2.004s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.004s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.004s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.004s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.004s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[2.004s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[2.004s]       |                                     [01;36m[K^~~~~[m[K
+[2.004s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:260:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[2.004s]   260 |             for (const auto& p : [01;31m[Kparticles[m[K) weight_sq_sum += p.weight * p.weight;
+[2.004s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.004s]       |                                  [32m[Kstd::end[m[K
+[2.004s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.004s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.004s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.005s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.005s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.005s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[2.005s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[2.005s]       |                                     [01;36m[K^~~[m[K
+[2.005s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:263:34:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.005s]   263 |             if (neff < particles.[01;31m[Ksize[m[K() * 0.5) {
+[2.005s]       |                                  [01;31m[K^~~~[m[K
+[2.005s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:[m[K In member function ‘[01m[Kvoid ParticleFilterNode::resampleParticles()[m[K’:
+[2.005s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:274:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kempty[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.005s]   274 |             if (particles.[01;31m[Kempty[m[K()) return;
+[2.005s]       |                           [01;31m[K^~~~~[m[K
+[2.005s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:275:40:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.005s]   275 |             const size_t N = particles.[01;31m[Ksize[m[K();
+[2.005s]       |                                        [01;31m[K^~~~[m[K
+[2.005s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:280:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kbegin[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::begin[m[K’?
+[2.005s]   280 |             for (const auto &p : [01;31m[Kparticles[m[K) weight_sq_sum += p.weight * p.weight;
+[2.005s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.005s]       |                                  [32m[Kstd::begin[m[K
+[2.005s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.005s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.005s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.005s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.005s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.005s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.005s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.005s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.006s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.006s] [01m[K/usr/include/c++/9/bits/range_access.h:105:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::begin[m[K’ declared here
+[2.006s]   105 |   template<typename _Tp> const _Tp* [01;36m[Kbegin[m[K(const valarray<_Tp>&);
+[2.006s]       |                                     [01;36m[K^~~~~[m[K
+[2.006s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:280:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kend[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::end[m[K’?
+[2.006s]   280 |             for (const auto &p : [01;31m[Kparticles[m[K) weight_sq_sum += p.weight * p.weight;
+[2.006s]       |                                  [01;31m[K^~~~~~~~~[m[K
+[2.006s]       |                                  [32m[Kstd::end[m[K
+[2.006s] In file included from [01m[K/usr/include/c++/9/string:54[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.006s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.006s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.006s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.006s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.006s] [01m[K/usr/include/c++/9/bits/range_access.h:107:37:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::end[m[K’ declared here
+[2.006s]   107 |   template<typename _Tp> const _Tp* [01;36m[Kend[m[K(const valarray<_Tp>&);
+[2.006s]       |                                     [01;36m[K^~~[m[K
+[2.006s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:288:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kbegin[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.006s]   288 |                 particles.[01;31m[Kbegin[m[K(), particles.end(),
+[2.006s]       |                           [01;31m[K^~~~~[m[K
+[2.006s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:288:46:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kend[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.006s]   288 |                 particles.begin(), particles.[01;31m[Kend[m[K(),
+[2.006s]       |                                              [01;31m[K^~~[m[K
+[2.006s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:294:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+[2.006s]   294 |             cumulative[0] = particles[0[01;31m[K][m[K.weight;
+[2.006s]       |                                        [01;31m[K^[m[K
+[2.006s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:295:89:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+[2.006s]   295 |             for (size_t i = 1; i < N; ++i) cumulative[i] = cumulative[i-1] + particles[i[01;31m[K][m[K.weight;
+[2.006s]       |                                                                                         [01;31m[K^[m[K
+[2.008s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:326:43:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[size_t {aka long unsigned int}][m[K’ for array subscript
+[2.008s]   326 |                 Particle p = particles[idx[01;31m[K][m[K;
+[2.009s]       |                                           [01;31m[K^[m[K
+[2.009s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:353:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::remove_reference<std::vector<Particle>&>::type[m[K’ {aka ‘[01m[Kstd::vector<Particle>[m[K’} to ‘[01m[Kint[m[K’ in assignment
+[2.009s]   353 |             particles = [01;31m[Kstd::move(new_particles)[m[K;
+[2.009s]       |                         [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[2.009s]       |                                  [01;31m[K|[m[K
+[2.009s]       |                                  [01;31m[Kstd::remove_reference<std::vector<Particle>&>::type {aka std::vector<Particle>}[m[K
+[2.009s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.009s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.009s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:1[m[K,
+[2.009s]                  from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[2.009s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:356:53:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ksize[m[K’ in ‘[01m[K((ParticleFilterNode*)this)->ParticleFilterNode::particles[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.009s]   356 |                 keep_count, inject_count, particles.[01;31m[Ksize[m[K(), neff);
+[2.009s]       |                                                     [01;31m[K^~~~[m[K
+[2.447s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:[m[K In member function ‘[01m[Kvoid PathPlanner::makePath(const std::shared_ptr<DMap>&, float, float, const Vector2f&)[m[K’:
+[2.447s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:57:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdmap[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.447s]    92 | void PathPlanner::makePath([01;35m[Kconst std::shared_ptr<DMap>& dmap[m[K, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){
+[2.447s]       |                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.447s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresolution[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.447s]    92 | void PathPlanner::makePath(const std::shared_ptr<DMap>& dmap, [01;35m[Kfloat resolution[m[K, float expansion_range, const Eigen::Vector2f& goal_position){
+[2.447s]       |                                                               [01;35m[K~~~~~~^~~~~~~~~~[m[K
+[2.447s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kexpansion_range[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.447s]    92 | void PathPlanner::makePath(const std::shared_ptr<DMap>& dmap, float resolution, [01;35m[Kfloat expansion_range[m[K, const Eigen::Vector2f& goal_position){
+[2.447s]       |                                                                                 [01;35m[K~~~~~~^~~~~~~~~~~~~~~[m[K
+[4.055s] make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+[4.055s] make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+[4.055s] make[1]: *** Waiting for unfinished jobs....
+[6.209s] [ 72%] [32m[1mLinking CXX executable pathplanner_node[0m
+[6.541s] [ 84%] Built target pathplanner_node
+[6.541s] make: *** [Makefile:141: all] Error 2
+[6.543s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

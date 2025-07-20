@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target particle_node_filter[0m
+[ 20%] Built target world_node
+[ 40%] Built target pathplanner_node
+[ 60%] Built target controller_node
+[ 64%] [32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o[0m
+[ 84%] Built target mapserver
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:57:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’ cannot be overloaded with ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+   57 |         cv::Mat [01;31m[KrasterizeScan[m[K(const std::vector<std::pair<double,double>>& scan, double theta);
+      |                 [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:34:17:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kcv::Mat ParticleFilterNode::rasterizeScan(const std::vector<std::pair<double, double> >&, double)[m[K’
+   34 |         cv::Mat [01;36m[KrasterizeScan[m[K(const std::vector<std::pair<double,double>>& scan, double theta);
+      |                 [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:3:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct Particle[m[K’
+    3 | struct [01;31m[KParticle[m[K {
+      |        [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/john/Desktop/rp_ros2_rviz/src/particle_node_filter.cpp:1[m[K:
+[01m[K/home/john/Desktop/rp_ros2_rviz/include/rp_ros2_rviz/particle_filter.h:19:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct Particle[m[K’
+   19 | struct [01;36m[KParticle[m[K {
+      |        [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/particle_node_filter.dir/build.make:63: CMakeFiles/particle_node_filter.dir/src/particle_node_filter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:194: CMakeFiles/particle_node_filter.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
