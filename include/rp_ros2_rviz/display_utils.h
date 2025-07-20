@@ -16,11 +16,9 @@ void drawPoints(cv::Mat& dest,
 
 template <typename T>
 cv::Mat grid2cv(const Grid_<T>& src, bool normalize) {
-  // 1. we convert the grid to float
   Grid_<float> float_grid=src.template cast<float>();
 
   if (normalize) {
-    // 2. if normalize is selected, we scan for min and max
     float lower=std::numeric_limits<float>::max();
     float upper=std::numeric_limits<float>::min();
     for (const auto& v: float_grid.values) {

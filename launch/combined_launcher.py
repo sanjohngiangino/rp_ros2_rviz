@@ -27,7 +27,7 @@ def generate_launch_description():
             name='map_server',
             output='screen',
             parameters=[{
-                'map_path': '/home/john/Desktop/rp_ros2_rviz/map/labirinto.png'
+                'map_path': '/home/john/Desktop/rp_ros2_rviz/map/cappero_laser_odom_diag_2020-05-06-16-26-03.png'
             }]
         ),
     ])

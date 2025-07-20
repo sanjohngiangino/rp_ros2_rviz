@@ -13,6 +13,7 @@ public:
 explicit ControllerNode(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
 
 private:
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
     rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr sub_;
     rclcpp::Publisher<geometry_msgs::msg::Pose>::SharedPtr pub_;
     rclcpp::TimerBase::SharedPtr timer_;
@@ -20,11 +21,8 @@ private:
     std::vector<geometry_msgs::msg::Pose> path_;
     size_t current_index_ = 0;
     bool paused_ = false;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
 
     void pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg);
-
     void stepLoop();
-
     char readKey();
 };
