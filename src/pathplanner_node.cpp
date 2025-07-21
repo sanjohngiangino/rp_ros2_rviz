@@ -18,7 +18,7 @@ PathPlanner::PathPlanner(const rclcpp::NodeOptions& options)
         pose_array_pub_ = this->create_publisher<geometry_msgs::msg::PoseArray>("path_poses", 10);
         
         goal_sub_ = this->create_subscription<geometry_msgs::msg::Point>(
-            "goal_point", 10, std::bind(&PathPlanner::goalCallback, this, std::placeholders::_1));
+            "move_base/goal", 10, std::bind(&PathPlanner::goalCallback, this, std::placeholders::_1));
 
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),

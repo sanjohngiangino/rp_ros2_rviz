@@ -8,7 +8,7 @@ WorldNode::WorldNode(const rclcpp::NodeOptions& options)
     laser_pub_ = this->create_publisher<sensor_msgs::msg::LaserScan>("scan", 10);
     odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
     publisher_ = this->create_publisher<std_msgs::msg::String>("PathImage", 10);
-    goal_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);
+    goal_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("move_base/goal", 10);
     controller_stop_publisher_ = this->create_publisher<std_msgs::msg::Bool>("stop_controller", 10);
     robot_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);
 

@@ -88,12 +88,6 @@ iostream
 rp_ros2_rviz/pathplanner.h
 /home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/pathplanner.h
 
-/home/john/Desktop/rp_ros2_rviz/src/robot.cpp
-Eigen/Dense
--
-rp_ros2_rviz/robot.h
-/home/john/Desktop/rp_ros2_rviz/src/rp_ros2_rviz/robot.h
-
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/builtin_interfaces/msg/detail/duration__struct.hpp
