@@ -284,7 +284,9 @@ void WorldNode::bool_callback(const std_msgs::msg::Bool::SharedPtr msg) {
 void WorldNode::mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
         int width = msg->info.width;
         int height = msg->info.height;
-    
+        if (map_sub_) {
+            map_sub_.reset(); 
+        }
         // Convert OccupancyGrid to CV grayscale image
         background_image = cv::Mat::zeros(height, width, CV_8UC3);
     

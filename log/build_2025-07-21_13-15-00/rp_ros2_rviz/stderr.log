@@ -1,0 +1,4 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::WorldNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:37:5:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+   37 |     [01;35m[Kmy_robot[m[K;
+      |     [01;35m[K^~~~~~~~[m[K

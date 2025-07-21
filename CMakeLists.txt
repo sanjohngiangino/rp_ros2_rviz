@@ -5,9 +5,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# ------------------------------------------------------------------
-# Dependencies
-# ------------------------------------------------------------------
+
 find_package(ament_cmake          REQUIRED)
 find_package(rclcpp               REQUIRED)
 find_package(std_msgs             REQUIRED)
@@ -25,18 +23,13 @@ find_package(image_transport      REQUIRED)
 find_package(OpenCV               REQUIRED)
 find_package(Eigen3               REQUIRED)
 
-# ------------------------------------------------------------------
-# Include directories (Eigen e sorgenti interni)
-# cv_bridge / tf2* / OpenCV sono già esposti da find_package / ament
-# ------------------------------------------------------------------
+
 include_directories(
   ${EIGEN3_INCLUDE_DIRS}
   ${PROJECT_SOURCE_DIR}/include
 )
 
-# ------------------------------------------------------------------
-# Executable targets
-# ------------------------------------------------------------------
+
 add_executable(controller_node
   src/controller_node.cpp
   src/dmap_planner.cpp
@@ -72,9 +65,6 @@ add_executable(particle_node_filter
   src/robot.cpp
 )
 
-# ------------------------------------------------------------------
-# Link & ament deps  (OpenCV ed Eigen via target_link_libraries)
-# ------------------------------------------------------------------
 set(COMMON_DEPS
   rclcpp std_msgs sensor_msgs geometry_msgs nav_msgs
   tf2 tf2_ros tf2_geometry_msgs
@@ -92,9 +82,7 @@ install(TARGETS controller_node world_node pathplanner_node mapserver particle_n
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
-# ------------------------------------------------------------------
-# Testing (facoltativo, già presente)
-# ------------------------------------------------------------------
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   set(ament_cmake_copyright_FOUND TRUE)  # rimuovi quando aggiungi i copyright

@@ -75,7 +75,6 @@ ParticleFilterNode::ParticleFilterNode(const rclcpp::NodeOptions& options)
             }
         
             particles_pub_->publish(pose_array);
-            RCLCPP_INFO(this->get_logger(), "Published %zu particles.", particles.size());
         }
 
         void ParticleFilterNode::odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg) {
