@@ -1,0 +1,140 @@
+[0.000000] (-) TimerEvent: {}
+[0.000109] (rp_ros2_rviz) JobQueued: {'identifier': 'rp_ros2_rviz', 'dependencies': OrderedDict()}
+[0.000340] (rp_ros2_rviz) JobStarted: {'identifier': 'rp_ros2_rviz'}
+[0.005237] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'cmake'}
+[0.007345] (rp_ros2_rviz) JobProgress: {'identifier': 'rp_ros2_rviz', 'progress': 'build'}
+[0.007433] (rp_ros2_rviz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', '--', '-j4', '-l4'], 'cwd': '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('SSH_AGENT_PID', '39356'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/john'), ('OLDPWD', '/home/john/Desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1554'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'john'), ('JOURNAL_STREAM', '9:43083'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'john'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john:@/tmp/.ICE-unix/1721,unix/john:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', 'ad066e4c693c44b3bc643b17d7ef1004'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b526ff72_09b5_4df5_9072_9b1cdda9756f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.93'), ('SSH_AUTH_SOCK', '/tmp/ssh-hMP7iq6vqwcG/agent.39355'), ('AMENT_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/john/Desktop/rp_ros2_rviz/install/rp_ros2_rviz:/opt/ros/foxy')]), 'shell': False}
+[0.036908] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target world_node\x1b[0m\n'}
+[0.047132] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target particle_node_filter\x1b[0m\n'}
+[0.053461] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target controller_node\x1b[0m\n'}
+[0.075107] (rp_ros2_rviz) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o\x1b[0m\n'}
+[0.076877] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pathplanner_node\x1b[0m\n'}
+[0.099928] (-) TimerEvent: {}
+[0.110903] (rp_ros2_rviz) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/controller_node.dir/src/controller_node.cpp.o\x1b[0m\n'}
+[0.123436] (rp_ros2_rviz) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/particle_node_filter.dir/src/robot.cpp.o\x1b[0m\n'}
+[0.140332] (rp_ros2_rviz) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/pathplanner_node.cpp.o\x1b[0m\n'}
+[0.200041] (-) TimerEvent: {}
+[0.300368] (-) TimerEvent: {}
+[0.400714] (-) TimerEvent: {}
+[0.501059] (-) TimerEvent: {}
+[0.601402] (-) TimerEvent: {}
+[0.701782] (-) TimerEvent: {}
+[0.802211] (-) TimerEvent: {}
+[0.902568] (-) TimerEvent: {}
+[0.987615] (rp_ros2_rviz) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX executable particle_node_filter\x1b[0m\n'}
+[1.002803] (-) TimerEvent: {}
+[1.103264] (-) TimerEvent: {}
+[1.203763] (-) TimerEvent: {}
+[1.304525] (-) TimerEvent: {}
+[1.405023] (-) TimerEvent: {}
+[1.505348] (-) TimerEvent: {}
+[1.507977] (rp_ros2_rviz) StdoutLine: {'line': b'[ 32%] Built target particle_node_filter\n'}
+[1.525649] (rp_ros2_rviz) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mapserver\x1b[0m\n'}
+[1.605468] (-) TimerEvent: {}
+[1.623150] (rp_ros2_rviz) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/mapserver.dir/src/robot.cpp.o\x1b[0m\n'}
+[1.705586] (-) TimerEvent: {}
+[1.805976] (-) TimerEvent: {}
+[1.906474] (-) TimerEvent: {}
+[2.006867] (-) TimerEvent: {}
+[2.107250] (-) TimerEvent: {}
+[2.207643] (-) TimerEvent: {}
+[2.308068] (-) TimerEvent: {}
+[2.336595] (rp_ros2_rviz) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX executable mapserver\x1b[0m\n'}
+[2.356845] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KWorldNode::WorldNode(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.356997] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:15:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_sub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.357033] (rp_ros2_rviz) StderrLine: {'line': b'   15 |     \x1b[01;31m\x1b[Krobot_sub\x1b[m\x1b[K = this->create_subscription<geometry_msgs::msg::Pose>(\n'}
+[2.357064] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[2.366897] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:37:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K-Wunused-value\x1b[m\x1b[K]\n'}
+[2.367057] (rp_ros2_rviz) StderrLine: {'line': b'   37 |     \x1b[01;35m\x1b[Kmy_robot\x1b[m\x1b[K;\n'}
+[2.367091] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.408208] (-) TimerEvent: {}
+[2.504336] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PathPlanner::makePath(const std::shared_ptr<DMap>&, float, float, const Vector2f&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.504473] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kdmap\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.504509] (rp_ros2_rviz) StderrLine: {'line': b'   92 | void PathPlanner::makePath(\x1b[01;35m\x1b[Kconst std::shared_ptr<DMap>& dmap\x1b[m\x1b[K, float resolution, float expansion_range, const Eigen::Vector2f& goal_position){\n'}
+[2.504541] (rp_ros2_rviz) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[2.504569] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:69:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kresolution\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.504598] (rp_ros2_rviz) StderrLine: {'line': b'   92 | void PathPlanner::makePath(const std::shared_ptr<DMap>& dmap, \x1b[01;35m\x1b[Kfloat resolution\x1b[m\x1b[K, float expansion_range, const Eigen::Vector2f& goal_position){\n'}
+[2.504626] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                               \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.504653] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/pathplanner_node.cpp:92:87:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kexpansion_range\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[2.504682] (rp_ros2_rviz) StderrLine: {'line': b'   92 | void PathPlanner::makePath(const std::shared_ptr<DMap>& dmap, float resolution, \x1b[01;35m\x1b[Kfloat expansion_range\x1b[m\x1b[K, const Eigen::Vector2f& goal_position){\n'}
+[2.504710] (rp_ros2_rviz) StderrLine: {'line': b'      |                                                                                 \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.508309] (-) TimerEvent: {}
+[2.608797] (-) TimerEvent: {}
+[2.610667] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid WorldNode::initalPoseCallback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.610803] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:115:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_robot\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmy_robot\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.610837] (rp_ros2_rviz) StderrLine: {'line': b'  115 |     \x1b[01;31m\x1b[Kx_robot\x1b[m\x1b[K = pose->position.x;\n'}
+[2.610878] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.610907] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmy_robot\x1b[m\x1b[K\n'}
+[2.614714] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_robot\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmy_robot\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.614842] (rp_ros2_rviz) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Ky_robot\x1b[m\x1b[K = pose->position.y;\n'}
+[2.614871] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.614908] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmy_robot\x1b[m\x1b[K\n'}
+[2.619297] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:117:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kz_robot\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmy_robot\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.619466] (rp_ros2_rviz) StderrLine: {'line': b'  117 |     \x1b[01;31m\x1b[Kz_robot\x1b[m\x1b[K = pose->orientation.z;\n'}
+[2.619500] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.619530] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmy_robot\x1b[m\x1b[K\n'}
+[2.623848] (rp_ros2_rviz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:118:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kw_robot\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmy_robot\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.623995] (rp_ros2_rviz) StderrLine: {'line': b'  118 |     \x1b[01;31m\x1b[Kw_robot\x1b[m\x1b[K = pose->orientation.w;\n'}
+[2.624030] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.624061] (rp_ros2_rviz) StderrLine: {'line': b'      |     \x1b[32m\x1b[Kmy_robot\x1b[m\x1b[K\n'}
+[2.708921] (-) TimerEvent: {}
+[2.756476] (rp_ros2_rviz) StdoutLine: {'line': b'[ 52%] Built target mapserver\n'}
+[2.773083] (rp_ros2_rviz) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/pathplanner_node.dir/src/robot.cpp.o\x1b[0m\n'}
+[2.809047] (-) TimerEvent: {}
+[2.909497] (-) TimerEvent: {}
+[3.009967] (-) TimerEvent: {}
+[3.110498] (-) TimerEvent: {}
+[3.210969] (-) TimerEvent: {}
+[3.311879] (-) TimerEvent: {}
+[3.412528] (-) TimerEvent: {}
+[3.513132] (-) TimerEvent: {}
+[3.555630] (rp_ros2_rviz) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/controller_node.dir/src/robot.cpp.o\x1b[0m\n'}
+[3.613268] (-) TimerEvent: {}
+[3.713711] (-) TimerEvent: {}
+[3.814221] (-) TimerEvent: {}
+[3.914767] (-) TimerEvent: {}
+[4.015506] (-) TimerEvent: {}
+[4.116065] (-) TimerEvent: {}
+[4.216590] (-) TimerEvent: {}
+[4.317617] (-) TimerEvent: {}
+[4.369060] (rp_ros2_rviz) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/world_node.dir/src/robot.cpp.o\x1b[0m\n'}
+[4.417725] (-) TimerEvent: {}
+[4.518217] (-) TimerEvent: {}
+[4.624868] (-) TimerEvent: {}
+[4.725434] (-) TimerEvent: {}
+[4.825970] (-) TimerEvent: {}
+[4.926796] (-) TimerEvent: {}
+[5.031366] (-) TimerEvent: {}
+[5.131892] (-) TimerEvent: {}
+[5.232565] (-) TimerEvent: {}
+[5.333712] (-) TimerEvent: {}
+[5.435199] (-) TimerEvent: {}
+[5.535682] (-) TimerEvent: {}
+[5.636066] (-) TimerEvent: {}
+[5.736436] (-) TimerEvent: {}
+[5.810010] (rp_ros2_rviz) StderrLine: {'line': b'make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1\n'}
+[5.812213] (rp_ros2_rviz) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2\n'}
+[5.812263] (rp_ros2_rviz) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[5.836527] (-) TimerEvent: {}
+[5.941122] (-) TimerEvent: {}
+[6.045892] (-) TimerEvent: {}
+[6.146148] (-) TimerEvent: {}
+[6.250139] (-) TimerEvent: {}
+[6.354263] (-) TimerEvent: {}
+[6.454619] (-) TimerEvent: {}
+[6.522930] (rp_ros2_rviz) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable controller_node\x1b[0m\n'}
+[6.554923] (-) TimerEvent: {}
+[6.655186] (-) TimerEvent: {}
+[6.758979] (-) TimerEvent: {}
+[6.859432] (-) TimerEvent: {}
+[6.892892] (rp_ros2_rviz) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX executable pathplanner_node\x1b[0m\n'}
+[6.941573] (rp_ros2_rviz) StdoutLine: {'line': b'[ 80%] Built target controller_node\n'}
+[6.959536] (-) TimerEvent: {}
+[7.060309] (-) TimerEvent: {}
+[7.162201] (-) TimerEvent: {}
+[7.227147] (rp_ros2_rviz) StdoutLine: {'line': b'[ 88%] Built target pathplanner_node\n'}
+[7.227942] (rp_ros2_rviz) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[7.235982] (rp_ros2_rviz) CommandEnded: {'returncode': 2}
+[7.256320] (rp_ros2_rviz) JobEnded: {'identifier': 'rp_ros2_rviz', 'rc': 2}
+[7.263027] (-) TimerEvent: {}
+[7.267128] (-) EventReactorShutdown: {}

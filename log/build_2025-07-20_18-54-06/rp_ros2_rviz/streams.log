@@ -1,0 +1,18 @@
+[0.009s] Invoking command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4
+[0.086s] [35m[1mScanning dependencies of target world_node[0m
+[0.107s] [ 20%] Built target controller_node
+[0.118s] [ 40%] Built target pathplanner_node
+[0.127s] [ 60%] Built target particle_node_filter
+[0.134s] [ 64%] [32mBuilding CXX object CMakeFiles/world_node.dir/src/world_node.cpp.o[0m
+[0.141s] [ 84%] Built target mapserver
+[1.964s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::WorldNode(const rclcpp::NodeOptions&)[m[K’:
+[1.964s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_sub[m[K’ was not declared in this scope
+[1.964s]    15 |     [01;31m[Krobot_sub[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+[1.964s]       |     [01;31m[K^~~~~~~~~[m[K
+[1.973s] [01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:37:5:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+[1.973s]    37 |     [01;35m[Kmy_robot[m[K;
+[1.973s]       |     [01;35m[K^~~~~~~~[m[K
+[4.440s] make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+[4.440s] make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+[4.440s] make: *** [Makefile:141: all] Error 2
+[4.442s] Invoked command in '/home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/john/Desktop/rp_ros2_rviz/build/rp_ros2_rviz -- -j4 -l4

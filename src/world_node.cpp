@@ -11,7 +11,11 @@ WorldNode::WorldNode(const rclcpp::NodeOptions& options)
     goal_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("goal_point", 10);
     controller_stop_publisher_ = this->create_publisher<std_msgs::msg::Bool>("stop_controller", 10);
     robot_publisher_ = this->create_publisher<geometry_msgs::msg::Point>("Robot", 10);
-    
+
+    robot_sub = this->create_subscription<geometry_msgs::msg::Pose>(
+        "initialpose", 10,
+        std::bind(&WorldNode::initalPoseCallback, this, std::placeholders::_1));
+
     bool_subscriber_ = this->create_subscription<std_msgs::msg::Bool>(
         "stop_publish", 10, std::bind(&WorldNode::bool_callback, this, std::placeholders::_1));
     
@@ -30,7 +34,7 @@ WorldNode::WorldNode(const rclcpp::NodeOptions& options)
         });
 
 
-    my_robot = std::make_unique<Robot>(351,251, 0, 1);
+    my_robot;
 
     timer_ = this->create_wall_timer(
         std::chrono::milliseconds(100),  // 10 Hz
@@ -96,7 +100,6 @@ void WorldNode::simulateLaserConeAndPublishScan(const cv::Mat& background, const
     laser_pub_->publish(*scan_msg);
     odom_publisher_->publish(odom_msg);
 }
-
 void WorldNode::publishSimulatedOdomAndScan() {
         if (!my_robot || background_image.empty()) return;
 
@@ -106,8 +109,26 @@ void WorldNode::publishSimulatedOdomAndScan() {
 
         redisplay();
 }
+void WorldNode::initalPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose) {
 
+    my_robot=std::make_unique<Robot>(pose->position.x,pose->position.y, pose->orientation.z, pose->orientation.w);
+
+    my_robot->position = Eigen::Vector2f(pose->position.x, pose->position.y);
+    my_robot->orientation = 2.0f * std::atan2(pose->orientation.z,pose->orientation.w);
+
+    RCLCPP_INFO(this->get_logger(), "Initial Pose setted");
+
+
+    geometry_msgs::msg::Point robot_msg;
+    robot_msg.x = my_robot->position.x();
+    robot_msg.y = my_robot->position.y();
+    robot_msg.z = 0.0;
+    robot_publisher_->publish(robot_msg);
+
+    redisplay();
+}
 void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose) {
+    
         my_robot->position = Eigen::Vector2f(pose->position.x, pose->position.y);
         my_robot->orientation = 2.0f * std::atan2(pose->orientation.z, pose->orientation.w);
 
@@ -120,7 +141,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         redisplay();
     }
 
-    void WorldNode::pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+void WorldNode::pathCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         path.clear();
         for (const auto& pose : msg->poses) {
             path.emplace_back(pose.position.x, pose.position.y);
@@ -129,7 +150,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         followPath(msg);
     }
 
-    void WorldNode::followPath(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
+void WorldNode::followPath(const geometry_msgs::msg::PoseArray::SharedPtr msg) {
         float dt_ms = 10.0f;
 
         is_following_path_ = true;
@@ -161,7 +182,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
     
     
 
-    void WorldNode::drawSimulatedLaserOnImage(const cv::Mat& background, cv::Mat& shown_image, const Eigen::Vector2f& robot_pos,
+void WorldNode::drawSimulatedLaserOnImage(const cv::Mat& background, cv::Mat& shown_image, const Eigen::Vector2f& robot_pos,
         float theta_rad, float cone_deg = 270.0f, float max_range = 150.0f, float angle_step_deg = 1.0f)
     {
         float angle_min = -cone_deg * M_PI / 360.0f;
@@ -193,7 +214,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
     }
     
 
-    void WorldNode::redisplay() {
+void WorldNode::redisplay() {
         if (background_image.empty()) return;
         background_image.copyTo(shown_image);
         
@@ -236,7 +257,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         cv::imshow("planner", shown_image);
     }
     
-    void WorldNode::bool_callback(const std_msgs::msg::Bool::SharedPtr msg) {
+void WorldNode::bool_callback(const std_msgs::msg::Bool::SharedPtr msg) {
     
         if (msg->data && !first_position_sent_) {
             //continue_publishing_ = false;
@@ -260,7 +281,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         
     }
 
-    void WorldNode::mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
+void WorldNode::mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg) {
         int width = msg->info.width;
         int height = msg->info.height;
     
@@ -296,7 +317,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         }
     }
     
-    void WorldNode::publishRobot() {
+void WorldNode::publishRobot() {
     
         if (continue_publishing_) {
             auto string_message = std_msgs::msg::String();
@@ -312,7 +333,7 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         
     }
 
-    void WorldNode::onMouse(int event, int x, int y, int, void* arg) {
+void WorldNode::onMouse(int event, int x, int y, int, void* arg) {
     WorldNode* node = static_cast<WorldNode*>(arg);  
     
 
@@ -341,7 +362,6 @@ void WorldNode::stepPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose)
         node->goal_publisher_->publish(point_message);
     }
 }
-
 void WorldNode::handleKeyboard(int key) {
     float step = 2.0f;
     float rotation_step = 0.15f;
@@ -406,8 +426,6 @@ void WorldNode::handleKeyboard(int key) {
 
     redisplay();
 }
-
-
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
     

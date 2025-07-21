@@ -18,7 +18,6 @@ public:
 
     void move(const Eigen::Vector2f& direction);
     void setPosition(float x, float y);
-    void followPath(const std::list<Eigen::Vector2f>& path);
 
 };
 

@@ -14,8 +14,3 @@ void Robot::setPosition(float x, float y) {
     position = Eigen::Vector2f(x, y);  
 }
 
-void Robot::followPath(const std::list<Eigen::Vector2f>& path) {
-    for (auto it = path.rbegin(); it != path.rend(); ++it) {
-        this->position = *it;
-    }
-}

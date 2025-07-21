@@ -1,0 +1,10 @@
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:[m[K In constructor ‘[01m[KWorldNode::WorldNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:15:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_sub[m[K’ was not declared in this scope
+   15 |     [01;31m[Krobot_sub[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/john/Desktop/rp_ros2_rviz/src/world_node.cpp:37:5:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K-Wunused-value[m[K]
+   37 |     [01;35m[Kmy_robot[m[K;
+      |     [01;35m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/world_node.dir/build.make:63: CMakeFiles/world_node.dir/src/world_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:140: CMakeFiles/world_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

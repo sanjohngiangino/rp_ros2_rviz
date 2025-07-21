@@ -52,6 +52,8 @@ private:
     rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr particle_sub_;
     rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr step_pose_sub_;
     rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr robot_sub;
+    
     rclcpp::TimerBase::SharedPtr timer_; 
     geometry_msgs::msg::PoseArray::SharedPtr particles_;
 
@@ -70,6 +72,7 @@ private:
     void bool_callback(const std_msgs::msg::Bool::SharedPtr msg);
     void mapCallback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg);
     void publishRobot();
+    void initalPoseCallback(const geometry_msgs::msg::Pose::SharedPtr pose);
 
 
 public:
